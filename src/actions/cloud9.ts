@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloud9.html
  *
- * 2024-02-12T09:56:21.091Z
+ * 2025-02-24T21:47:01.928Z
  */
 export enum AwsCloud9Actions {
   /**

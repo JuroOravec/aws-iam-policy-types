@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdatasync.html
  *
- * 2024-02-12T09:56:54.106Z
+ * 2025-02-24T21:47:32.818Z
  */
 export enum AwsDatasyncActions {
   /**
@@ -345,6 +345,36 @@ export enum AwsDatasyncActions {
    */
   UpdateLocationAzureBlob = 'datasync:UpdateLocationAzureBlob',
   /**
+   * Grants permission to update an EFS sync Location
+   *
+   * See https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationEfs.html
+   */
+  UpdateLocationEfs = 'datasync:UpdateLocationEfs',
+  /**
+   * Grants permission to update an FSx Lustre sync Location
+   *
+   * See https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationFsxLustre.html
+   */
+  UpdateLocationFsxLustre = 'datasync:UpdateLocationFsxLustre',
+  /**
+   * Grants permission to update an FSx ONTAP sync Location
+   *
+   * See https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationFsxOntap.html
+   */
+  UpdateLocationFsxOntap = 'datasync:UpdateLocationFsxOntap',
+  /**
+   * Grants permission to update an FSx OpenZFS sync Location
+   *
+   * See https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationFsxOpenZfs.html
+   */
+  UpdateLocationFsxOpenZfs = 'datasync:UpdateLocationFsxOpenZfs',
+  /**
+   * Grants permission to update an FSx Windows sync Location
+   *
+   * See https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationFsxWindows.html
+   */
+  UpdateLocationFsxWindows = 'datasync:UpdateLocationFsxWindows',
+  /**
    * Grants permission to update an HDFS sync Location
    *
    * See https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationHdfs.html
@@ -362,6 +392,12 @@ export enum AwsDatasyncActions {
    * See https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationObjectStorage.html
    */
   UpdateLocationObjectStorage = 'datasync:UpdateLocationObjectStorage',
+  /**
+   * Grants permission to update an S3 sync Location
+   *
+   * See https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationS3.html
+   */
+  UpdateLocationS3 = 'datasync:UpdateLocationS3',
   /**
    * Grants permission to update a SMB sync location
    *

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsstepfunctions.html
  *
- * 2024-02-12T09:59:21.227Z
+ * 2025-02-24T21:49:50.787Z
  */
 export enum AwsStatesActions {
   /**
@@ -241,4 +241,10 @@ export enum AwsStatesActions {
    * See https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachineAlias.html
    */
   UpdateStateMachineAlias = 'states:UpdateStateMachineAlias',
+  /**
+   * Grants permission to validate a state machine definition
+   *
+   * See https://docs.aws.amazon.com/step-functions/latest/apireference/API_ValidateStateMachineDefinition.html
+   */
+  ValidateStateMachineDefinition = 'states:ValidateStateMachineDefinition',
 }

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkspacesthinclient.html
  *
- * 2024-02-12T09:59:43.552Z
+ * 2025-02-24T21:50:13.034Z
  */
 export enum AwsThinclientActions {
   /**
@@ -34,11 +34,17 @@ export enum AwsThinclientActions {
    */
   DeregisterDevice = 'thinclient:DeregisterDevice',
   /**
-   * Grants permission to get details of devices
+   * Grants permission to get devices
    *
    * See https://docs.aws.amazon.com/workspaces-thin-client/latest/api/API_GetDevice.html
    */
   GetDevice = 'thinclient:GetDevice',
+  /**
+   * Grants permission to get details of devices
+   *
+   * See ${APIReferenceDocPage}
+   */
+  GetDeviceDetails = 'thinclient:GetDeviceDetails',
   /**
    * Grants permission to get details of environments
    *

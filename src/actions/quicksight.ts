@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonquicksight.html
  *
- * 2024-02-12T09:58:47.972Z
+ * 2025-02-24T21:49:20.439Z
  */
 export enum AwsQuicksightActions {
   /**
@@ -15,6 +15,18 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/user/accessing-data-sources.html
    */
   AccountConfigurations = 'quicksight:AccountConfigurations',
+  /**
+   * Grants permission to create reviewed answers for a topic
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BatchCreateTopicReviewedAnswer.html
+   */
+  BatchCreateTopicReviewedAnswer = 'quicksight:BatchCreateTopicReviewedAnswer',
+  /**
+   * Grants permission to delete reviewed answers for a topic
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BatchDeleteTopicReviewedAnswer.html
+   */
+  BatchDeleteTopicReviewedAnswer = 'quicksight:BatchDeleteTopicReviewedAnswer',
   /**
    * Grants permission to cancel a SPICE ingestions on a dataset
    *
@@ -48,10 +60,15 @@ export enum AwsQuicksightActions {
    */
   CreateAnalysis = 'quicksight:CreateAnalysis',
   /**
-   * Grants permission to create a custom permissions resource for restricting user
-   * access
+   * Grants permission to create an Amazon QuickSight brand
    *
-   * See https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateBrand.html
+   */
+  CreateBrand = 'quicksight:CreateBrand',
+  /**
+   * Grants permission to create a QuickSight custom permissions resource
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateCustomPermissions.html
    */
   CreateCustomPermissions = 'quicksight:CreateCustomPermissions',
   /**
@@ -208,9 +225,21 @@ export enum AwsQuicksightActions {
    */
   DeleteAnalysis = 'quicksight:DeleteAnalysis',
   /**
-   * Grants permission to delete a custom permissions resource
+   * Grants permission to delete an Amazon QuickSight brand
    *
-   * See https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteBrand.html
+   */
+  DeleteBrand = 'quicksight:DeleteBrand',
+  /**
+   * Grants permission to delete a brand assignment
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteBrandAssignment.html
+   */
+  DeleteBrandAssignment = 'quicksight:DeleteBrandAssignment',
+  /**
+   * Grants permission to delete a QuickSight custom permissions resource
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteCustomPermissions.html
    */
   DeleteCustomPermissions = 'quicksight:DeleteCustomPermissions',
   /**
@@ -237,6 +266,12 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteDataSource.html
    */
   DeleteDataSource = 'quicksight:DeleteDataSource',
+  /**
+   * Grants permission to delete linked QBusiness application for QuickSight account
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteDefaultQBusinessApplication.html
+   */
+  DeleteDefaultQBusinessApplication = 'quicksight:DeleteDefaultQBusinessApplication',
   /**
    * Grants permission to delete a QuickSight email customization template
    *
@@ -355,6 +390,12 @@ export enum AwsQuicksightActions {
    */
   DeleteUserByPrincipalId = 'quicksight:DeleteUserByPrincipalId',
   /**
+   * Grants permission to remove the custom permission associated with a user
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteUserCustomPermission.html
+   */
+  DeleteUserCustomPermission = 'quicksight:DeleteUserCustomPermission',
+  /**
    * Grants permission to delete a vpc connection
    *
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteVPCConnection.html
@@ -405,10 +446,28 @@ export enum AwsQuicksightActions {
    */
   DescribeAssetBundleImportJob = 'quicksight:DescribeAssetBundleImportJob',
   /**
+   * Grants permission to describe a brand
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeBrand.html
+   */
+  DescribeBrand = 'quicksight:DescribeBrand',
+  /**
+   * Grants permission to describe a brand assignment
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeBrandAssignment.html
+   */
+  DescribeBrandAssignment = 'quicksight:DescribeBrandAssignment',
+  /**
+   * Grants permission to describes the published version of the brand
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeBrandPublishedVersion.html
+   */
+  DescribeBrandPublishedVersion = 'quicksight:DescribeBrandPublishedVersion',
+  /**
    * Grants permission to describe a custom permissions resource in a QuickSight acc
    * ount
    *
-   * See https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeCustomPermissions.html
    */
   DescribeCustomPermissions = 'quicksight:DescribeCustomPermissions',
   /**
@@ -435,6 +494,12 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDashboardSnapshotJobResult.html
    */
   DescribeDashboardSnapshotJobResult = 'quicksight:DescribeDashboardSnapshotJobResult',
+  /**
+   * Grants permission to describe dashboards qa configuration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDashboardsQAConfiguration.html
+   */
+  DescribeDashboardsQAConfiguration = 'quicksight:DescribeDashboardsQAConfiguration',
   /**
    * Grants permission to describe a dataset
    *
@@ -465,6 +530,13 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDataSourcePermissions.html
    */
   DescribeDataSourcePermissions = 'quicksight:DescribeDataSourcePermissions',
+  /**
+   * Grants permission to describe linked QBusiness application Id for QuickSight ac
+   * count
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDefaultQBusinessApplication.html
+   */
+  DescribeDefaultQBusinessApplication = 'quicksight:DescribeDefaultQBusinessApplication',
   /**
    * Grants permission to describe a QuickSight email customization template
    *
@@ -520,11 +592,29 @@ export enum AwsQuicksightActions {
    */
   DescribeIpRestriction = 'quicksight:DescribeIpRestriction',
   /**
+   * Grants permission to describe QuickSight key registration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeKeyRegistration.html
+   */
+  DescribeKeyRegistration = 'quicksight:DescribeKeyRegistration',
+  /**
    * Grants permission to describe a QuickSight namespace
    *
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeNamespace.html
    */
   DescribeNamespace = 'quicksight:DescribeNamespace',
+  /**
+   * Grants permission to describe a personalization configuration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeQPersonalizationConfiguration.html
+   */
+  DescribeQPersonalizationConfiguration = 'quicksight:DescribeQPersonalizationConfiguration',
+  /**
+   * Grants permission to describe QuickSight Q Search configuration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeQuickSightQSearchConfiguration.html
+   */
+  DescribeQuickSightQSearchConfiguration = 'quicksight:DescribeQuickSightQSearchConfiguration',
   /**
    * Grants permission to describe a refresh schedule for a dataset
    *
@@ -624,6 +714,13 @@ export enum AwsQuicksightActions {
    */
   GenerateEmbedUrlForRegisteredUser = 'quicksight:GenerateEmbedUrlForRegisteredUser',
   /**
+   * Grants permission to generate a URL used to embed a QuickSight Experience for a
+   * user registered with QuickSight using Identity-enhanced role session
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUserWithIdentity.html
+   */
+  GenerateEmbedUrlForRegisteredUserWithIdentity = 'quicksight:GenerateEmbedUrlForRegisteredUserWithIdentity',
+  /**
    * Grants permission to get a URL used to embed a QuickSight Dashboard for a user
    * not registered with QuickSight
    *
@@ -675,9 +772,15 @@ export enum AwsQuicksightActions {
    */
   ListAssetBundleImportJobs = 'quicksight:ListAssetBundleImportJobs',
   /**
+   * Grants permission to lists all brands in an Amazon QuickSight account
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListBrands.html
+   */
+  ListBrands = 'quicksight:ListBrands',
+  /**
    * Grants permission to list custom permissions resources in QuickSight account
    *
-   * See https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListCustomPermissions.html
    */
   ListCustomPermissions = 'quicksight:ListCustomPermissions',
   /**
@@ -722,6 +825,13 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListFolders.html
    */
   ListFolders = 'quicksight:ListFolders',
+  /**
+   * Grants permission to list all Folders in which a QuickSight resource is a membe
+   * r
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListFoldersForResource.html
+   */
+  ListFoldersForResource = 'quicksight:ListFoldersForResource',
   /**
    * Grants permission to list member users in a group
    *
@@ -834,6 +944,12 @@ export enum AwsQuicksightActions {
    */
   ListTopicRefreshSchedules = 'quicksight:ListTopicRefreshSchedules',
   /**
+   * Grants permission to list all reviewed answers for topic
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListTopicReviewedAnswers.html
+   */
+  ListTopicReviewedAnswers = 'quicksight:ListTopicReviewedAnswers',
+  /**
    * Grants permission to list all topics
    *
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListTopics.html
@@ -869,6 +985,12 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/qs-api-overview.html
    */
   PassDataSource = 'quicksight:PassDataSource',
+  /**
+   * Grants permission to predict QA results
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_PredictQAResults.html
+   */
+  PredictQAResults = 'quicksight:PredictQAResults',
   /**
    * Grants permission to put dataset refresh properties for a dataset
    *
@@ -951,6 +1073,12 @@ export enum AwsQuicksightActions {
    */
   SearchGroups = 'quicksight:SearchGroups',
   /**
+   * Grants permission to search for a sub-set of topics
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchTopics.html
+   */
+  SearchTopics = 'quicksight:SearchTopics',
+  /**
    * Grants permission to search the QuickSight users belonging to this account
    *
    * See https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
@@ -982,6 +1110,12 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_StartDashboardSnapshotJob.html
    */
   StartDashboardSnapshotJob = 'quicksight:StartDashboardSnapshotJob',
+  /**
+   * Grants permission to start a dashboard snapshot job schedule
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_StartDashboardSnapshotJobSchedule.html
+   */
+  StartDashboardSnapshotJobSchedule = 'quicksight:StartDashboardSnapshotJobSchedule',
   /**
    * Grants permission to subscribe to Amazon QuickSight, and also to allow the user
    * to upgrade the subscription to Enterprise edition
@@ -1035,9 +1169,34 @@ export enum AwsQuicksightActions {
    */
   UpdateAnalysisPermissions = 'quicksight:UpdateAnalysisPermissions',
   /**
-   * Grants permission to update a custom permissions resource
+   * Grants permission to update QuickSight IAM Identity Center application with Tok
+   * en Exchange grant
    *
-   * See https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateApplicationWithTokenExchangeGrant.html
+   */
+  UpdateApplicationWithTokenExchangeGrant = 'quicksight:UpdateApplicationWithTokenExchangeGrant',
+  /**
+   * Grants permission to update a brand
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateBrand.html
+   */
+  UpdateBrand = 'quicksight:UpdateBrand',
+  /**
+   * Grants permission to update a brand assignment
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateBrandAssignment.html
+   */
+  UpdateBrandAssignment = 'quicksight:UpdateBrandAssignment',
+  /**
+   * Grants permission to update the published version of a brand
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateBrandPublishedVersion.html
+   */
+  UpdateBrandPublishedVersion = 'quicksight:UpdateBrandPublishedVersion',
+  /**
+   * Grants permission to update a QuickSight custom permissions resource
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateCustomPermissions.html
    */
   UpdateCustomPermissions = 'quicksight:UpdateCustomPermissions',
   /**
@@ -1047,7 +1206,7 @@ export enum AwsQuicksightActions {
    */
   UpdateDashboard = 'quicksight:UpdateDashboard',
   /**
-   * Grants permission to update a QuickSight Dashboard’s links
+   * Grants permission to update a QuickSight Dashboard's links
    *
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardLinks.html
    */
@@ -1059,11 +1218,17 @@ export enum AwsQuicksightActions {
    */
   UpdateDashboardPermissions = 'quicksight:UpdateDashboardPermissions',
   /**
-   * Grants permission to update a QuickSight Dashboard’s Published Version
+   * Grants permission to update a QuickSight Dashboard's Published Version
    *
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPublishedVersion.html
    */
   UpdateDashboardPublishedVersion = 'quicksight:UpdateDashboardPublishedVersion',
+  /**
+   * Grants permission to update dashboards qa configuration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardsQAConfiguration.html
+   */
+  UpdateDashboardsQAConfiguration = 'quicksight:UpdateDashboardsQAConfiguration',
   /**
    * Grants permission to update a dataset
    *
@@ -1088,6 +1253,13 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDataSourcePermissions.html
    */
   UpdateDataSourcePermissions = 'quicksight:UpdateDataSourcePermissions',
+  /**
+   * Grants permission to update linked QBusiness application Id for QuickSight acco
+   * unt
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDefaultQBusinessApplication.html
+   */
+  UpdateDefaultQBusinessApplication = 'quicksight:UpdateDefaultQBusinessApplication',
   /**
    * Grants permission to update a QuickSight email customization template
    *
@@ -1132,11 +1304,29 @@ export enum AwsQuicksightActions {
    */
   UpdateIpRestriction = 'quicksight:UpdateIpRestriction',
   /**
+   * Grants permission to update QuickSight key registration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateKeyRegistration.html
+   */
+  UpdateKeyRegistration = 'quicksight:UpdateKeyRegistration',
+  /**
    * Grants permission to enable or disable public sharing on an account
    *
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdatePublicSharingSettings.html
    */
   UpdatePublicSharingSettings = 'quicksight:UpdatePublicSharingSettings',
+  /**
+   * Grants permission to update a personalization configuration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateQPersonalizationConfiguration.html
+   */
+  UpdateQPersonalizationConfiguration = 'quicksight:UpdateQPersonalizationConfiguration',
+  /**
+   * Grants permission to update QuickSight Q Search configuration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateQuickSightQSearchConfiguration.html
+   */
+  UpdateQuickSightQSearchConfiguration = 'quicksight:UpdateQuickSightQSearchConfiguration',
   /**
    * Grants permission to update a refresh schedule for a dataset
    *
@@ -1155,6 +1345,12 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateRoleCustomPermission.html
    */
   UpdateRoleCustomPermission = 'quicksight:UpdateRoleCustomPermission',
+  /**
+   * Grants permission to update QuickSight SPICE capacity configuration
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateSPICECapacityConfiguration.html
+   */
+  UpdateSPICECapacityConfiguration = 'quicksight:UpdateSPICECapacityConfiguration',
   /**
    * Grants permission to update a template
    *
@@ -1215,6 +1411,12 @@ export enum AwsQuicksightActions {
    * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateUser.html
    */
   UpdateUser = 'quicksight:UpdateUser',
+  /**
+   * Grants permission to update the custom permission associated with a user
+   *
+   * See https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateUserCustomPermission.html
+   */
+  UpdateUserCustomPermission = 'quicksight:UpdateUserCustomPermission',
   /**
    * Grants permission to update a vpc connection
    *

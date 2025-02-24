@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonhoneycode.html
  *
- * 2024-02-12T09:57:36.602Z
+ * 2025-02-24T21:48:12.237Z
  */
 export enum AwsHoneycodeActions {
   /**

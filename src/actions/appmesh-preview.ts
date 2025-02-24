@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappmeshpreview.html
  *
- * 2024-02-12T09:55:57.671Z
+ * 2025-02-24T21:46:39.189Z
  */
 export enum AwsAppmeshPreviewActions {
   /**
@@ -64,6 +64,12 @@ export enum AwsAppmeshPreviewActions {
    * See https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteMesh.html
    */
   DeleteMesh = 'appmesh-preview:DeleteMesh',
+  /**
+   * Grants permission to delete the RAM access control policy for a mesh
+   *
+   * See https://docs.aws.amazon.com/app-mesh/latest/userguide/sharing.html
+   */
+  DeleteMeshPolicy = 'appmesh-preview:DeleteMeshPolicy',
   /**
    * Grants permission to delete an existing route
    *
@@ -137,6 +143,12 @@ export enum AwsAppmeshPreviewActions {
    */
   DescribeVirtualService = 'appmesh-preview:DescribeVirtualService',
   /**
+   * Grants permission to read the RAM access control policy for a mesh
+   *
+   * See https://docs.aws.amazon.com/app-mesh/latest/userguide/sharing.html
+   */
+  GetMeshPolicy = 'appmesh-preview:GetMeshPolicy',
+  /**
    * Grants permission to list existing gateway routes in a service mesh
    *
    * See https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListGatewayRoutes.html
@@ -178,6 +190,12 @@ export enum AwsAppmeshPreviewActions {
    * See https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualServices.html
    */
   ListVirtualServices = 'appmesh-preview:ListVirtualServices',
+  /**
+   * Grants permission to define the RAM access control policy for a mesh
+   *
+   * See https://docs.aws.amazon.com/app-mesh/latest/userguide/sharing.html
+   */
+  PutMeshPolicy = 'appmesh-preview:PutMeshPolicy',
   /**
    * Grants permission to receive streamed resources for an App Mesh endpoint (Virtu
    * alNode/VirtualGateway)

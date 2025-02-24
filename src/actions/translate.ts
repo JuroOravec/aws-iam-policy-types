@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazontranslate.html
  *
- * 2024-02-12T09:59:33.444Z
+ * 2025-02-24T21:50:02.334Z
  */
 export enum AwsTranslateActions {
   /**

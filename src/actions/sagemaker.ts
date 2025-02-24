@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemaker.html
  *
- * 2024-02-12T09:59:06.541Z
+ * 2025-02-24T21:49:35.988Z
  */
 export enum AwsSagemakerActions {
   /**
@@ -30,6 +30,12 @@ export enum AwsSagemakerActions {
    */
   AssociateTrialComponent = 'sagemaker:AssociateTrialComponent',
   /**
+   * Grants permission to batch delete SageMaker HyperPod cluster nodes
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchDeleteClusterNodes.html
+   */
+  BatchDeleteClusterNodes = 'sagemaker:BatchDeleteClusterNodes',
+  /**
    * Grants permission to describe one or more ModelPackages
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchDescribeModelPackage.html
@@ -37,8 +43,7 @@ export enum AwsSagemakerActions {
   BatchDescribeModelPackage = 'sagemaker:BatchDescribeModelPackage',
   /**
    * Grants permission to retrieve metrics associated with SageMaker Resources such
-   * as Training Jobs or Trial Components. This API is not publicly exposed at this
-   * point, however admins can control this action
+   * as Training Jobs or Trial Components
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/
    */
@@ -56,6 +61,13 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/
    */
   BatchPutMetrics = 'sagemaker:BatchPutMetrics',
+  /**
+   * Grants permission for Partner App SDK to access the Partner App for reading or
+   * writing data use cases
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps-onboard.html
+   */
+  CallPartnerAppApi = 'sagemaker:CallPartnerAppApi',
   /**
    * Grants permission to create an action
    *
@@ -99,11 +111,17 @@ export enum AwsSagemakerActions {
    */
   CreateAutoMLJobV2 = 'sagemaker:CreateAutoMLJobV2',
   /**
-   * Grants permission to create a cluster
+   * Grants permission to create a SageMaker HyperPod cluster
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html
    */
   CreateCluster = 'sagemaker:CreateCluster',
+  /**
+   * Grants permission to create a cluster scheduler config
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateClusterSchedulerConfig.html
+   */
+  CreateClusterSchedulerConfig = 'sagemaker:CreateClusterSchedulerConfig',
   /**
    * Grants permission to create a CodeRepository
    *
@@ -116,6 +134,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCompilationJob.html
    */
   CreateCompilationJob = 'sagemaker:CreateCompilationJob',
+  /**
+   * Grants permission to create a compute quota
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateComputeQuota.html
+   */
+  CreateComputeQuota = 'sagemaker:CreateComputeQuota',
   /**
    * Grants permission to create a context
    *
@@ -198,6 +222,12 @@ export enum AwsSagemakerActions {
    */
   CreateHub = 'sagemaker:CreateHub',
   /**
+   * Grants permission to create hub content reference
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateHubContentReference.html
+   */
+  CreateHubContentReference = 'sagemaker:CreateHubContentReference',
+  /**
    * Grants permission to define the settings you will use for the human review work
    * flow user interface
    *
@@ -255,6 +285,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html
    */
   CreateLineageGroupPolicy = 'sagemaker:CreateLineageGroupPolicy',
+  /**
+   * Grants permission to create an MLflow tracking server
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateMlflowTrackingServer.html
+   */
+  CreateMlflowTrackingServer = 'sagemaker:CreateMlflowTrackingServer',
   /**
    * Grants permission to create a model in Amazon SageMaker. In the request, you sp
    * ecify a name for the model and describe one or more containers
@@ -325,6 +361,25 @@ export enum AwsSagemakerActions {
    */
   CreateNotebookInstanceLifecycleConfig = 'sagemaker:CreateNotebookInstanceLifecycleConfig',
   /**
+   * Grants permission to create an optimization job
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateOptimizationJob.html
+   */
+  CreateOptimizationJob = 'sagemaker:CreateOptimizationJob',
+  /**
+   * Grants permission to create an Amazon SageMaker Partner AI App
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePartnerApp.html
+   */
+  CreatePartnerApp = 'sagemaker:CreatePartnerApp',
+  /**
+   * Grants permission to return a URL that you can use from your browser to connect
+   * to the Amazon SageMaker Partner AI App
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePartnerAppPresignedUrl.html
+   */
+  CreatePartnerAppPresignedUrl = 'sagemaker:CreatePartnerAppPresignedUrl',
+  /**
    * Grants permission to create a pipeline
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePipeline.html
@@ -337,6 +392,13 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedDomainUrl.html
    */
   CreatePresignedDomainUrl = 'sagemaker:CreatePresignedDomainUrl',
+  /**
+   * Grants permission to return a URL that you can use from your browser to connect
+   * to the MLflow tracking server
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedMlflowTrackingServerUrl.html
+   */
+  CreatePresignedMlflowTrackingServerUrl = 'sagemaker:CreatePresignedMlflowTrackingServerUrl',
   /**
    * Grants permission to create a URL that you can use from your browser to connect
    * to the Notebook Instance
@@ -358,6 +420,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateProject.html
    */
   CreateProject = 'sagemaker:CreateProject',
+  /**
+   * Grants permission to create a reserved capacity
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateReservedCapacity.html
+   */
+  CreateReservedCapacity = 'sagemaker:CreateReservedCapacity',
   /**
    * Grants permission to create a shared model in a SageMaker Studio application
    *
@@ -385,6 +453,13 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html
    */
   CreateTrainingJob = 'sagemaker:CreateTrainingJob',
+  /**
+   * Grants permission to create a training plan that allocates resources for schedu
+   * ling workloads within a specified time range
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingPlan.html
+   */
+  CreateTrainingPlan = 'sagemaker:CreateTrainingPlan',
   /**
    * Grants permission to start a transform job. After the results are obtained, Ama
    * zon SageMaker saves them to an Amazon S3 location that you specify
@@ -460,11 +535,17 @@ export enum AwsSagemakerActions {
    */
   DeleteAssociation = 'sagemaker:DeleteAssociation',
   /**
-   * Grants permission to delete a cluster
+   * Grants permission to delete a SageMaker HyperPod cluster
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteCluster.html
    */
   DeleteCluster = 'sagemaker:DeleteCluster',
+  /**
+   * Grants permission to delete a cluster scheduler config
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteClusterSchedulerConfig.html
+   */
+  DeleteClusterSchedulerConfig = 'sagemaker:DeleteClusterSchedulerConfig',
   /**
    * Grants permission to delete a CodeRepository
    *
@@ -477,6 +558,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteCompilationJob.html
    */
   DeleteCompilationJob = 'sagemaker:DeleteCompilationJob',
+  /**
+   * Grants permission to delete a compute quota
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteComputeQuota.html
+   */
+  DeleteComputeQuota = 'sagemaker:DeleteComputeQuota',
   /**
    * Grants permission to delete a context
    *
@@ -560,6 +647,12 @@ export enum AwsSagemakerActions {
    */
   DeleteHubContent = 'sagemaker:DeleteHubContent',
   /**
+   * Grants permission to delete hub content reference
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteHubContentReference.html
+   */
+  DeleteHubContentReference = 'sagemaker:DeleteHubContentReference',
+  /**
    * Grants permission to delete a specified human loop
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteHumanLoop.html
@@ -609,6 +702,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html
    */
   DeleteLineageGroupPolicy = 'sagemaker:DeleteLineageGroupPolicy',
+  /**
+   * Grants permission to delete an MLflow tracking server
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteMlflowTrackingServer.html
+   */
+  DeleteMlflowTrackingServer = 'sagemaker:DeleteMlflowTrackingServer',
   /**
    * Grants permission to delete a model created using the CreateModel API. The Dele
    * teModel API deletes only the model entry in Amazon SageMaker that you created b
@@ -683,6 +782,18 @@ export enum AwsSagemakerActions {
    */
   DeleteNotebookInstanceLifecycleConfig = 'sagemaker:DeleteNotebookInstanceLifecycleConfig',
   /**
+   * Grants permission to delete an optimization job
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteOptimizationJob.html
+   */
+  DeleteOptimizationJob = 'sagemaker:DeleteOptimizationJob',
+  /**
+   * Grants permission to delete an Amazon SageMaker Partner AI App
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeletePartnerApp.html
+   */
+  DeletePartnerApp = 'sagemaker:DeletePartnerApp',
+  /**
    * Grants permission to delete a pipeline
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeletePipeline.html
@@ -700,6 +811,13 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_DeleteRecord.html
    */
   DeleteRecord = 'sagemaker:DeleteRecord',
+  /**
+   * Grants AWS Resource Access Manager permission to delete a resource policy on a
+   * SageMaker resource that supports cross-account sharing
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteResourcePolicy.html
+   */
+  DeleteResourcePolicy = 'sagemaker:DeleteResourcePolicy',
   /**
    * Grants permission to delete a Space
    *
@@ -749,6 +867,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteWorkteam.html
    */
   DeleteWorkteam = 'sagemaker:DeleteWorkteam',
+  /**
+   * Grants permission to deploy a model in hub to an endpoint
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs-admin-guide.html
+   */
+  DeployHubModel = 'sagemaker:DeployHubModel',
   /**
    * Grants permission to deregister a set of devices
    *
@@ -800,17 +924,23 @@ export enum AwsSagemakerActions {
    */
   DescribeAutoMLJobV2 = 'sagemaker:DescribeAutoMLJobV2',
   /**
-   * Grants permission to return information about a cluster
+   * Grants permission to return information about a SageMaker HyperPod cluster
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCluster.html
    */
   DescribeCluster = 'sagemaker:DescribeCluster',
   /**
-   * Grants permission to return information about a cluster node
+   * Grants permission to return information about a SageMaker HyperPod cluster node
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeClusterNode.html
    */
   DescribeClusterNode = 'sagemaker:DescribeClusterNode',
+  /**
+   * Grants permission to get information about a cluster scheduler config
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeClusterSchedulerConfig.html
+   */
+  DescribeClusterSchedulerConfig = 'sagemaker:DescribeClusterSchedulerConfig',
   /**
    * Grants permission to describe a CodeRepository
    *
@@ -823,6 +953,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCompilationJob.html
    */
   DescribeCompilationJob = 'sagemaker:DescribeCompilationJob',
+  /**
+   * Grants permission to get information about a compute quota
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeComputeQuota.html
+   */
+  DescribeComputeQuota = 'sagemaker:DescribeComputeQuota',
   /**
    * Grants permission to get information about a context
    *
@@ -977,6 +1113,12 @@ export enum AwsSagemakerActions {
    */
   DescribeLineageGroup = 'sagemaker:DescribeLineageGroup',
   /**
+   * Grants permission to get information about an MLflow tracking server
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeMlflowTrackingServer.html
+   */
+  DescribeMlflowTrackingServer = 'sagemaker:DescribeMlflowTrackingServer',
+  /**
    * Grants permission to describe a model that you created using the CreateModel AP
    * I
    *
@@ -1046,6 +1188,18 @@ export enum AwsSagemakerActions {
    */
   DescribeNotebookInstanceLifecycleConfig = 'sagemaker:DescribeNotebookInstanceLifecycleConfig',
   /**
+   * Grants permission to return information about an optimization job
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeOptimizationJob.html
+   */
+  DescribeOptimizationJob = 'sagemaker:DescribeOptimizationJob',
+  /**
+   * Grants permission to describe an Amazon SageMaker Partner AI App
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribePartnerApp.html
+   */
+  DescribePartnerApp = 'sagemaker:DescribePartnerApp',
+  /**
    * Grants permission to get information about a pipeline
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribePipeline.html
@@ -1105,6 +1259,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingJob.html
    */
   DescribeTrainingJob = 'sagemaker:DescribeTrainingJob',
+  /**
+   * Grants permission to return information about a specified training plan
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlan.html
+   */
+  DescribeTrainingPlan = 'sagemaker:DescribeTrainingPlan',
   /**
    * Grants permission to return information about a transform job
    *
@@ -1196,6 +1356,13 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_GetRecord.html
    */
   GetRecord = 'sagemaker:GetRecord',
+  /**
+   * Grants AWS Resource Access Manager permission to retrieve a resource policy on
+   * a SageMaker resource that supports cross-account sharing
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GetResourcePolicy.html
+   */
+  GetResourcePolicy = 'sagemaker:GetResourcePolicy',
   /**
    * Grants permission to get a SageMaker Service Catalog Portfolio
    *
@@ -1298,13 +1465,19 @@ export enum AwsSagemakerActions {
    */
   ListCandidatesForAutoMLJob = 'sagemaker:ListCandidatesForAutoMLJob',
   /**
-   * Grants permission to list nodes within a cluster
+   * Grants permission to list nodes within a SageMaker HyperPod cluster
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusterNodes.html
    */
   ListClusterNodes = 'sagemaker:ListClusterNodes',
   /**
-   * Grants permission to list clusters
+   * Grants permission to list cluster scheduler configs
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusterSchedulerConfigs.html
+   */
+  ListClusterSchedulerConfigs = 'sagemaker:ListClusterSchedulerConfigs',
+  /**
+   * Grants permission to list SageMaker HyperPod clusters
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusters.html
    */
@@ -1321,6 +1494,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCompilationJobs.html
    */
   ListCompilationJobs = 'sagemaker:ListCompilationJobs',
+  /**
+   * Grants permission to list compute quotas
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListComputeQuotas.html
+   */
+  ListComputeQuotas = 'sagemaker:ListComputeQuotas',
   /**
    * Grants permission to list contexts
    *
@@ -1487,6 +1666,12 @@ export enum AwsSagemakerActions {
    */
   ListLineageGroups = 'sagemaker:ListLineageGroups',
   /**
+   * Grants permission to list MLflow tracking servers
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMlflowTrackingServers.html
+   */
+  ListMlflowTrackingServers = 'sagemaker:ListMlflowTrackingServers',
+  /**
    * Grants permission to list model bias job definitions
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListModelBiasJobDefinitions.html
@@ -1584,6 +1769,18 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListNotebookInstances.html
    */
   ListNotebookInstances = 'sagemaker:ListNotebookInstances',
+  /**
+   * Grants permission to list optimization jobs
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListOptimizationJobs.html
+   */
+  ListOptimizationJobs = 'sagemaker:ListOptimizationJobs',
+  /**
+   * Grants permission to list the Amazon SageMaker Partner AI Apps in your account
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListPartnerApps.html
+   */
+  ListPartnerApps = 'sagemaker:ListPartnerApps',
   /**
    * Grants permission to list steps for a pipeline execution
    *
@@ -1688,6 +1885,13 @@ export enum AwsSagemakerActions {
    */
   ListTrainingJobsForHyperParameterTuningJob = 'sagemaker:ListTrainingJobsForHyperParameterTuningJob',
   /**
+   * Grants permission to list all the training plans that have been created in a sp
+   * ecified account
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTrainingPlans.html
+   */
+  ListTrainingPlans = 'sagemaker:ListTrainingPlans',
+  /**
    * Grants permission to list transform jobs
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTransformJobs.html
@@ -1742,6 +1946,13 @@ export enum AwsSagemakerActions {
    */
   PutRecord = 'sagemaker:PutRecord',
   /**
+   * Grants AWS Resource Access Manager permission to create a resource policy on a
+   * SageMaker resource that supports cross-account sharing
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_PutResourcePolicy.html
+   */
+  PutResourcePolicy = 'sagemaker:PutResourcePolicy',
+  /**
    * Grants permission to explore the lineage graph
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_QueryLineage.html
@@ -1771,6 +1982,13 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html
    */
   Search = 'sagemaker:Search',
+  /**
+   * Grants permissions to search for the available training plan offerings that bes
+   * t match specified capacity requirements
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html
+   */
+  SearchTrainingPlanOfferings = 'sagemaker:SearchTrainingPlanOfferings',
   /**
    * Grants permission to publish heartbeat data from devices. After you deploy a mo
    * del onto edge devices this api is used to report device status
@@ -1814,6 +2032,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartInferenceExperiment.html
    */
   StartInferenceExperiment = 'sagemaker:StartInferenceExperiment',
+  /**
+   * Grants permission to start an MLfLow tracking server
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartMlflowTrackingServer.html
+   */
+  StartMlflowTrackingServer = 'sagemaker:StartMlflowTrackingServer',
   /**
    * Grants permission to start a monitoring schedule
    *
@@ -1890,6 +2114,12 @@ export enum AwsSagemakerActions {
    */
   StopLabelingJob = 'sagemaker:StopLabelingJob',
   /**
+   * Grants permission to stop an MLflow tracking server
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopMlflowTrackingServer.html
+   */
+  StopMlflowTrackingServer = 'sagemaker:StopMlflowTrackingServer',
+  /**
    * Grants permission to stop a monitoring schedule
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopMonitoringSchedule.html
@@ -1903,6 +2133,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopNotebookInstance.html
    */
   StopNotebookInstance = 'sagemaker:StopNotebookInstance',
+  /**
+   * Grants permission to stop an optimization job
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopOptimizationJob.html
+   */
+  StopOptimizationJob = 'sagemaker:StopOptimizationJob',
   /**
    * Grants permission to stop a pipeline execution
    *
@@ -1951,17 +2187,35 @@ export enum AwsSagemakerActions {
    */
   UpdateArtifact = 'sagemaker:UpdateArtifact',
   /**
-   * Grants permission to update a cluster
+   * Grants permission to update a SageMaker HyperPod cluster
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html
    */
   UpdateCluster = 'sagemaker:UpdateCluster',
+  /**
+   * Grants permission to update a cluster scheduler config
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSchedulerConfig.html
+   */
+  UpdateClusterSchedulerConfig = 'sagemaker:UpdateClusterSchedulerConfig',
+  /**
+   * Grants permission to update platform software for a SageMaker HyperPod cluster
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSoftware.html
+   */
+  UpdateClusterSoftware = 'sagemaker:UpdateClusterSoftware',
   /**
    * Grants permission to update a CodeRepository
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCodeRepository.html
    */
   UpdateCodeRepository = 'sagemaker:UpdateCodeRepository',
+  /**
+   * Grants permission to update a compute quota
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateComputeQuota.html
+   */
+  UpdateComputeQuota = 'sagemaker:UpdateComputeQuota',
   /**
    * Grants permission to update a context
    *
@@ -2056,6 +2310,12 @@ export enum AwsSagemakerActions {
    */
   UpdateInferenceExperiment = 'sagemaker:UpdateInferenceExperiment',
   /**
+   * Grants permission to update an MLflow tracking server
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateMlflowTrackingServer.html
+   */
+  UpdateMlflowTrackingServer = 'sagemaker:UpdateMlflowTrackingServer',
+  /**
    * Grants permission to update a model card
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateModelCard.html
@@ -2094,6 +2354,12 @@ export enum AwsSagemakerActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateNotebookInstanceLifecycleConfig.html
    */
   UpdateNotebookInstanceLifecycleConfig = 'sagemaker:UpdateNotebookInstanceLifecycleConfig',
+  /**
+   * Grants permission to update an Amazon SageMaker Partner AI App
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdatePartnerApp.html
+   */
+  UpdatePartnerApp = 'sagemaker:UpdatePartnerApp',
   /**
    * Grants permission to update a pipeline
    *

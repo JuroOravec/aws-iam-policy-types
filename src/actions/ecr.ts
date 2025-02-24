@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticcontainerregistry.html
  *
- * 2024-02-12T09:57:07.158Z
+ * 2025-02-24T21:47:45.770Z
  */
 export enum AwsEcrActions {
   /**
@@ -146,9 +146,15 @@ export enum AwsEcrActions {
   /**
    * Grants permission to describe the repository creation template
    *
-   * See https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeRepositoryCreationTemplate.html
+   * See https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeRepositoryCreationTemplates.html
    */
-  DescribeRepositoryCreationTemplate = 'ecr:DescribeRepositoryCreationTemplate',
+  DescribeRepositoryCreationTemplates = 'ecr:DescribeRepositoryCreationTemplates',
+  /**
+   * Grants permission to retrieve account settings
+   *
+   * See https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetAccountSetting.html
+   */
+  GetAccountSetting = 'ecr:GetAccountSetting',
   /**
    * Grants permission to retrieve a token that is valid for a specified registry fo
    * r 12 hours
@@ -211,6 +217,12 @@ export enum AwsEcrActions {
    * See https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListTagsForResource.html
    */
   ListTagsForResource = 'ecr:ListTagsForResource',
+  /**
+   * Grants permission to update account settings
+   *
+   * See https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutAccountSetting.html
+   */
+  PutAccountSetting = 'ecr:PutAccountSetting',
   /**
    * Grants permission to create or update the image manifest associated with an ima
    * ge
@@ -297,6 +309,12 @@ export enum AwsEcrActions {
    * See https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_UpdatePullThroughCacheRule.html
    */
   UpdatePullThroughCacheRule = 'ecr:UpdatePullThroughCacheRule',
+  /**
+   * Grants permission to update the repository creation template
+   *
+   * See https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_UpdateRepositoryCreationTemplate.html
+   */
+  UpdateRepositoryCreationTemplate = 'ecr:UpdateRepositoryCreationTemplate',
   /**
    * Grants permission to upload an image layer part to Amazon ECR
    *

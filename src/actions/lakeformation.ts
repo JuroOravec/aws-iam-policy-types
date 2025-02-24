@@ -6,332 +6,368 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslakeformation.html
  *
- * 2024-02-12T09:58:01.731Z
+ * 2025-02-24T21:48:34.030Z
  */
 export enum AwsLakeformationActions {
   /**
    * Grants permission to attach Lake Formation tags to catalog resources
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-AddLFTagsToResource
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_AddLFTagsToResource.html
    */
   AddLFTagsToResource = 'lakeformation:AddLFTagsToResource',
   /**
    * Grants permission to data lake permissions to one or more principals in a batch
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-BatchGrantPermissions
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_BatchGrantPermissions.html
    */
   BatchGrantPermissions = 'lakeformation:BatchGrantPermissions',
   /**
    * Grants permission to revoke data lake permissions from one or more principals i
    * n a batch
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-BatchRevokePermissions
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_BatchRevokePermissions.html
    */
   BatchRevokePermissions = 'lakeformation:BatchRevokePermissions',
   /**
    * Grants permission to cancel the given transaction
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-transactions-api.html#aws-lake-formation-api-transactions-api-CancelTransaction
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_CancelTransaction.html
    */
   CancelTransaction = 'lakeformation:CancelTransaction',
   /**
    * Grants permission to commit the given transaction
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-transactions-api.html#aws-lake-formation-api-transactions-api-CommitTransaction
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_CommitTransaction.html
    */
   CommitTransaction = 'lakeformation:CommitTransaction',
   /**
    * Grants permission to create a Lake Formation data cell filter
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-data-filter.html#aws-lake-formation-api-data-filter-CreateDataCellsFilter
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_CreateDataCellsFilter.html
    */
   CreateDataCellsFilter = 'lakeformation:CreateDataCellsFilter',
   /**
    * Grants permission to create a Lake Formation tag
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-CreateLFTag
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_CreateLFTag.html
    */
   CreateLFTag = 'lakeformation:CreateLFTag',
+  /**
+   * Grants permission to create a Lake Formation tag expression
+   *
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_CreateLFTagExpression.html
+   */
+  CreateLFTagExpression = 'lakeformation:CreateLFTagExpression',
   /**
    * Grants permission to create an IAM Identity Center connection with Lake Formati
    * on to allow IAM Identity Center users and groups to access Data Catalog resourc
    * es
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-Identity-center-integ.html#API_CreateLakeFormationIdentityCenterConfiguration.html
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_CreateLakeFormationIdentityCenterConfiguration.html
    */
   CreateLakeFormationIdentityCenterConfiguration = 'lakeformation:CreateLakeFormationIdentityCenterConfiguration',
   /**
-   * Enforce Lake Formation permissions for the given databases, tables, and princip
-   * als
+   * Grants permission to enforce Lake Formation permissions for the given databases
+   * , tables, and principals
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-hybrid-access-mode.html#API_CreateLakeFormationOptIn.html
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_CreateLakeFormationOptIn.html
    */
   CreateLakeFormationOptIn = 'lakeformation:CreateLakeFormationOptIn',
   /**
    * Grants permission to delete a Lake Formation data cell filter
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-data-filter.html#aws-lake-formation-api-data-filter-DeleteDataCellsFilter
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DeleteDataCellsFilter.html
    */
   DeleteDataCellsFilter = 'lakeformation:DeleteDataCellsFilter',
   /**
    * Grants permission to delete a Lake Formation tag
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-DeleteLFTag
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DeleteLFTag.html
    */
   DeleteLFTag = 'lakeformation:DeleteLFTag',
+  /**
+   * Grants permission to delete a Lake Formation expression
+   *
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DeleteLFTagExpression.html
+   */
+  DeleteLFTagExpression = 'lakeformation:DeleteLFTagExpression',
   /**
    * Grants permission to delete an IAM Identity Center connection with Lake Formati
    * on
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-Identity-center-integ.html#API_DeleteLakeFormationIdentityCenterConfiguration.html
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DeleteLakeFormationIdentityCenterConfiguration.html
    */
   DeleteLakeFormationIdentityCenterConfiguration = 'lakeformation:DeleteLakeFormationIdentityCenterConfiguration',
   /**
-   * Remove the Lake Formation permissions enforcement of the given databases, table
-   * s, and principals
+   * Grants permission to remove the Lake Formation permissions enforcement of the g
+   * iven databases, tables, and principals
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-hybrid-access-mode.html#API_DeleteLakeFormationOptIn.html
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DeleteLakeFormationOptIn.html
    */
   DeleteLakeFormationOptIn = 'lakeformation:DeleteLakeFormationOptIn',
   /**
    * Grants permission to delete the specified objects if the transaction is cancele
    * d
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-transactions-api.html#aws-lake-formation-api-transactions-api-DeleteObjectsOnCancel
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DeleteObjectsOnCancel.html
    */
   DeleteObjectsOnCancel = 'lakeformation:DeleteObjectsOnCancel',
   /**
    * Grants permission to deregister a registered location
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-DeregisterResource
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DeregisterResource.html
    */
   DeregisterResource = 'lakeformation:DeregisterResource',
   /**
    * Grants permission to describe the IAM Identity Center connection with Lake Form
    * ation
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-Identity-center-integ.html#API_DescribeLakeFormationIdentityCenterConfiguration.html
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DescribeLakeFormationIdentityCenterConfiguration.html
    */
   DescribeLakeFormationIdentityCenterConfiguration = 'lakeformation:DescribeLakeFormationIdentityCenterConfiguration',
   /**
    * Grants permission to describe a registered location
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-DescribeResource
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DescribeResource.html
    */
   DescribeResource = 'lakeformation:DescribeResource',
   /**
    * Grants permission to get status of the given transaction
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-transactions-api.html#aws-lake-formation-api-transactions-api-DescribeTransaction
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_DescribeTransaction.html
    */
   DescribeTransaction = 'lakeformation:DescribeTransaction',
   /**
    * Grants permission to extend the timeout of the given transaction
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-transactions-api.html#aws-lake-formation-api-transactions-api-ExtendTransaction
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ExtendTransaction.html
    */
   ExtendTransaction = 'lakeformation:ExtendTransaction',
   /**
    * Grants permission to virtual data lake access
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-GetDataAccess
+   * See https://docs.aws.amazon.com/lake-formation/latest/dg/access-control-underlying-data.html
    */
   GetDataAccess = 'lakeformation:GetDataAccess',
   /**
    * Grants permission to retrieve a Lake Formation data cell filter
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-data-filter.html#aws-lake-formation-api-data-filter-GetDataCellsFilter
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetDataCellsFilter.html
    */
   GetDataCellsFilter = 'lakeformation:GetDataCellsFilter',
+  /**
+   * Grants permission to retrieve the identity of the invoking principal
+   *
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetDataLakePrincipal.html
+   */
+  GetDataLakePrincipal = 'lakeformation:GetDataLakePrincipal',
   /**
    * Grants permission to retrieve data lake settings such as the list of data lake
    * administrators and database and table default permissions
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-GetDataLakeSettings
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetDataLakeSettings.html
    */
   GetDataLakeSettings = 'lakeformation:GetDataLakeSettings',
   /**
    * Grants permission to retrieve permissions attached to resources in the given pa
    * th
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-GetEffectivePermissionsForPath
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetEffectivePermissionsForPath.html
    */
   GetEffectivePermissionsForPath = 'lakeformation:GetEffectivePermissionsForPath',
   /**
    * Grants permission to retrieve a Lake Formation tag
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-GetLFTag
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetLFTag.html
    */
   GetLFTag = 'lakeformation:GetLFTag',
   /**
+   * Grants permission to retrieve a Lake Formation tag expression
+   *
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetLFTagExpression.html
+   */
+  GetLFTagExpression = 'lakeformation:GetLFTagExpression',
+  /**
    * Grants permission to retrieve the state of the given query
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-querying.html#aws-lake-formation-api-querying-GetQueryState
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetQueryState.html
    */
   GetQueryState = 'lakeformation:GetQueryState',
   /**
    * Grants permission to retrieve the statistics for the given query
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-querying.html#aws-lake-formation-api-querying-GetQueryStatistics
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetQueryStatistics.html
    */
   GetQueryStatistics = 'lakeformation:GetQueryStatistics',
   /**
    * Grants permission to retrieve lakeformation tags on a catalog resource
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-GetResourceLFTags
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetResourceLFTags.html
    */
   GetResourceLFTags = 'lakeformation:GetResourceLFTags',
   /**
    * Grants permission to retrieve objects from a table
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-objects.html#aws-lake-formation-api-objects-GetTableObjects
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetTableObjects.html
    */
   GetTableObjects = 'lakeformation:GetTableObjects',
   /**
    * Grants permission to retrieve the results for the given work units
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-querying.html#aws-lake-formation-api-querying-GetWorkUnitResults
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetWorkUnitResults.html
    */
   GetWorkUnitResults = 'lakeformation:GetWorkUnitResults',
   /**
    * Grants permission to retrieve the work units for the given query
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-querying.html#aws-lake-formation-api-querying-GetWorkUnits
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GetWorkUnits.html
    */
   GetWorkUnits = 'lakeformation:GetWorkUnits',
   /**
    * Grants permission to data lake permissions to a principal
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-GrantPermissions
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_GrantPermissions.html
    */
   GrantPermissions = 'lakeformation:GrantPermissions',
   /**
    * Grants permission to list cell filters
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-data-filter.html#aws-lake-formation-api-data-filter-ListDataCellsFilter
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListDataCellsFilter.html
    */
   ListDataCellsFilter = 'lakeformation:ListDataCellsFilter',
   /**
+   * Grants permission to list Lake Foramtion tag expressions
+   *
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListLFTagExpressions.html
+   */
+  ListLFTagExpressions = 'lakeformation:ListLFTagExpressions',
+  /**
    * Grants permission to list Lake Formation tags
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-ListLFTags
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListLFTags.html
    */
   ListLFTags = 'lakeformation:ListLFTags',
   /**
-   * Retrieve the current list of resources and principals that are opt in to enforc
-   * e Lake Formation permissions
+   * Grants permission to retrieve the current list of resources and principals that
+   * are opt in to enforce Lake Formation permissions
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-hybrid-access-mode.html#API_ListLakeFormationOptIns.html
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListLakeFormationOptIns.html
    */
   ListLakeFormationOptIns = 'lakeformation:ListLakeFormationOptIns',
   /**
    * Grants permission to list permissions filtered by principal or resource
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-ListPermissions
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListPermissions.html
    */
   ListPermissions = 'lakeformation:ListPermissions',
   /**
    * Grants permission to List registered locations
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-ListResources
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListResources.html
    */
   ListResources = 'lakeformation:ListResources',
   /**
    * Grants permission to list all the storage optimizers for the Governed table
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-optimizers.html#aws-lake-formation-api-optimizers-ListTableStorageOptimizers
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListTableStorageOptimizers.html
    */
   ListTableStorageOptimizers = 'lakeformation:ListTableStorageOptimizers',
   /**
    * Grants permission to list all transactions in the system
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-transactions-api.html#aws-lake-formation-api-transactions-api-ListTransactions
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListTransactions.html
    */
   ListTransactions = 'lakeformation:ListTransactions',
   /**
    * Grants permission to overwrite data lake settings such as the list of data lake
    * administrators and database and table default permissions
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-PutDataLakeSettings
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_PutDataLakeSettings.html
    */
   PutDataLakeSettings = 'lakeformation:PutDataLakeSettings',
   /**
    * Grants permission to register a new location to be managed by Lake Formation
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-RegisterResource
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_RegisterResource.html
    */
   RegisterResource = 'lakeformation:RegisterResource',
   /**
    * Grants permission to remove lakeformation tags from catalog resources
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-RemoveLFTagsFromResource
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_RemoveLFTagsFromResource.html
    */
   RemoveLFTagsFromResource = 'lakeformation:RemoveLFTagsFromResource',
   /**
    * Grants permission to revoke data lake permissions from a principal
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-RevokePermissions
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_RevokePermissions.html
    */
   RevokePermissions = 'lakeformation:RevokePermissions',
   /**
    * Grants permission to list catalog databases with Lake Formation tags
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-SearchDatabasesByLFTags
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_SearchTablesByLFTags.html
    */
   SearchDatabasesByLFTags = 'lakeformation:SearchDatabasesByLFTags',
   /**
    * Grants permission to list catalog tables with Lake Formation tags
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-SearchTablesByLFTags
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_SearchTablesByLFTags.html
    */
   SearchTablesByLFTags = 'lakeformation:SearchTablesByLFTags',
   /**
    * Grants permission to initiate the planning of the given query
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-querying.html#aws-lake-formation-api-querying-StartQueryPlanning
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_StartQueryPlanning.html
    */
   StartQueryPlanning = 'lakeformation:StartQueryPlanning',
   /**
    * Grants permission to start a new transaction
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-transactions-api.html#aws-lake-formation-api-transactions-api-StartTransaction
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_StartTransaction.html
    */
   StartTransaction = 'lakeformation:StartTransaction',
   /**
    * Grants permission to update a Lake Formation data cell filter
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-data-filter.html#aws-lake-formation-api-data-filter-UpdateDataCellsFilter
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_UpdateDataCellsFilter.html
    */
   UpdateDataCellsFilter = 'lakeformation:UpdateDataCellsFilter',
   /**
    * Grants permission to update a Lake Formation tag
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-UpdateLFTag
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_UpdateLFTag.html
    */
   UpdateLFTag = 'lakeformation:UpdateLFTag',
   /**
+   * Grants permission to update a Lake Formation expression
+   *
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_UpdateLFTagExpression.html
+   */
+  UpdateLFTagExpression = 'lakeformation:UpdateLFTagExpression',
+  /**
    * Grants permission to update the IAM Identity Center connection parameters
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-Identity-center-integ.html#API_UpdateLakeFormationIdentityCenterConfiguration.html
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_UpdateLakeFormationIdentityCenterConfiguration.html
    */
   UpdateLakeFormationIdentityCenterConfiguration = 'lakeformation:UpdateLakeFormationIdentityCenterConfiguration',
   /**
    * Grants permission to update a registered location
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-UpdateResource
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_UpdateResource.html
    */
   UpdateResource = 'lakeformation:UpdateResource',
   /**
    * Grants permission to add or delete the specified objects to or from a table
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-objects.html#aws-lake-formation-api-objects-UpdateTableObjects
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_UpdateTableObjects.html
    */
   UpdateTableObjects = 'lakeformation:UpdateTableObjects',
   /**
    * Grants permission to update the configuration of the storage optimizer for the
    * Governed table
    *
-   * See https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-optimizers.html#aws-lake-formation-api-optimizers-UpdateTableStorageOptimizer
+   * See https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_UpdateTableStorageOptimizer.html
    */
   UpdateTableStorageOptimizer = 'lakeformation:UpdateTableStorageOptimizer',
 }

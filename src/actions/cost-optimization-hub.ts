@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscostoptimizationhub.html
  *
- * 2024-02-12T09:56:50.222Z
+ * 2025-02-24T21:47:29.314Z
  */
 export enum AwsCostOptimizationHubActions {
   /**
@@ -50,7 +50,7 @@ export enum AwsCostOptimizationHubActions {
   /**
    * Grants permission to update preferences
    *
-   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostOptimizationHub_UpdateEnrollmentStatus.html
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostOptimizationHub_UpdatePreferences.html
    */
   UpdatePreferences = 'cost-optimization-hub:UpdatePreferences',
 }

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscontroltower.html
  *
- * 2024-02-12T09:56:48.712Z
+ * 2025-02-24T21:47:27.879Z
  */
 export enum AwsControltowerActions {
   /**
@@ -92,11 +92,18 @@ export enum AwsControltowerActions {
    */
   DescribeRegisterOrganizationalUnitOperation = 'controltower:DescribeRegisterOrganizationalUnitOperation',
   /**
-   * Grants permission to describe the current AWS Control Tower &SSO; configuration
+   * Grants permission to describe the current AWS Control Tower IAM Identity Center
+   * configuration
    *
    * See https://docs.aws.amazon.com/controltower/latest/userguide/sso.html
    */
   DescribeSingleSignOn = 'controltower:DescribeSingleSignOn',
+  /**
+   * Grants permission to disable a Baseline on a target
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableBaseline.html
+   */
+  DisableBaseline = 'controltower:DisableBaseline',
   /**
    * Grants permission to remove a control from an organizational unit
    *
@@ -109,6 +116,12 @@ export enum AwsControltowerActions {
    * See https://docs.aws.amazon.com/controltower/latest/userguide/enable-controls-on-ou.html
    */
   DisableGuardrail = 'controltower:DisableGuardrail',
+  /**
+   * Grants permission to enable a Baseline on a target
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableBaseline.html
+   */
+  EnableBaseline = 'controltower:EnableBaseline',
   /**
    * Grants permission to activate a control for an organizational unit
    *
@@ -135,12 +148,30 @@ export enum AwsControltowerActions {
    */
   GetAvailableUpdates = 'controltower:GetAvailableUpdates',
   /**
+   * Grants permission to get Baseline details
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetBaseline.html
+   */
+  GetBaseline = 'controltower:GetBaseline',
+  /**
+   * Grants permission to get the current status of a particular Baseline operation
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetBaselineOperation.html
+   */
+  GetBaselineOperation = 'controltower:GetBaselineOperation',
+  /**
    * Grants permission to get the current status of a particular EnabledControl or D
    * isableControl operation
    *
    * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetControlOperation.html
    */
   GetControlOperation = 'controltower:GetControlOperation',
+  /**
+   * Grants permission to get an enabled Baseline
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetEnabledBaseline.html
+   */
+  GetEnabledBaseline = 'controltower:GetEnabledBaseline',
   /**
    * Grants permission to get an enabled control from an organizational unit
    *
@@ -185,7 +216,20 @@ export enum AwsControltowerActions {
    */
   GetLandingZoneStatus = 'controltower:GetLandingZoneStatus',
   /**
-   * Grants permission to list the current directory groups available through &SSO;
+   * Grants permission to list Baselines
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListBaselines.html
+   */
+  ListBaselines = 'controltower:ListBaselines',
+  /**
+   * Grants permission to list all control operations
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListControlOperations.html
+   */
+  ListControlOperations = 'controltower:ListControlOperations',
+  /**
+   * Grants permission to list the current directory groups available through IAM Id
+   * entity Center
    *
    * See https://docs.aws.amazon.com/controltower/latest/userguide/sso.html
    */
@@ -196,6 +240,12 @@ export enum AwsControltowerActions {
    * See https://docs.aws.amazon.com/controltower/latest/userguide/drift.html
    */
   ListDriftDetails = 'controltower:ListDriftDetails',
+  /**
+   * Grants permission to list enabled Baselines
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledBaselines.html
+   */
+  ListEnabledBaselines = 'controltower:ListEnabledBaselines',
   /**
    * Grants permission to list all enabled controls in a specified organizational un
    * it
@@ -240,6 +290,12 @@ export enum AwsControltowerActions {
    * See https://docs.aws.amazon.com/controltower/latest/userguide/controls.html
    */
   ListGuardrailsForTarget = 'controltower:ListGuardrailsForTarget',
+  /**
+   * Grants permission to list all landing zone operations
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListLandingZoneOperations.html
+   */
+  ListLandingZoneOperations = 'controltower:ListLandingZoneOperations',
   /**
    * Grants permission to list all landing zones
    *
@@ -297,6 +353,18 @@ export enum AwsControltowerActions {
    */
   PerformPreLaunchChecks = 'controltower:PerformPreLaunchChecks',
   /**
+   * Grants permission to reset an enabled Baseline
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_ResetEnabledBaseline.html
+   */
+  ResetEnabledBaseline = 'controltower:ResetEnabledBaseline',
+  /**
+   * Grants permission to reset an enabled control for an organizational unit
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_ResetEnabledControl.html
+   */
+  ResetEnabledControl = 'controltower:ResetEnabledControl',
+  /**
    * Grants permission to reset a landing zone
    *
    * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_ResetLandingZone.html
@@ -326,6 +394,12 @@ export enum AwsControltowerActions {
    * See https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html
    */
   UpdateAccountFactoryConfig = 'controltower:UpdateAccountFactoryConfig',
+  /**
+   * Grants permission to update an enabled Baseline
+   *
+   * See https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateEnabledBaseline.html
+   */
+  UpdateEnabledBaseline = 'controltower:UpdateEnabledBaseline',
   /**
    * Grants permission to update an enabled control for an organizational unit
    *

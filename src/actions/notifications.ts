@@ -6,135 +6,237 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsusernotifications.html
  *
- * 2024-02-12T09:59:34.495Z
+ * 2025-02-24T21:50:03.316Z
  */
 export enum AwsNotificationsActions {
   /**
    * Grants permission to associate a new Channel with a particular NotificationConf
    * iguration
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_AssociateChannel.html
    */
   AssociateChannel = 'notifications:AssociateChannel',
+  /**
+   * Grants permission to associate an Account contact to a particular Managed Notif
+   * ication Configuration
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_AssociateManagedNotificationAccountContact.html
+   */
+  AssociateManagedNotificationAccountContact = 'notifications:AssociateManagedNotificationAccountContact',
+  /**
+   * Grants permission to associate a Channel to a particular Managed Notification C
+   * onfiguration
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_AssociateManagedNotificationAdditionalChannel.html
+   */
+  AssociateManagedNotificationAdditionalChannel = 'notifications:AssociateManagedNotificationAdditionalChannel',
   /**
    * Grants permission to create a new EventRule, associating it with a Notification
    * Configuration
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_CreateEventRule.html
    */
   CreateEventRule = 'notifications:CreateEventRule',
   /**
    * Grants permission to create a NotificationConfiguration
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_CreateNotificationConfiguration.html
    */
   CreateNotificationConfiguration = 'notifications:CreateNotificationConfiguration',
   /**
    * Grants permission to delete an EventRule
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_DeleteEventRule.html
    */
   DeleteEventRule = 'notifications:DeleteEventRule',
   /**
    * Grants permission to delete a NotificationConfiguration
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_DeleteNotificationConfiguration.html
    */
   DeleteNotificationConfiguration = 'notifications:DeleteNotificationConfiguration',
   /**
    * Grants permission to deregister a NotificationHub
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_DeregisterNotificationHub.html
    */
   DeregisterNotificationHub = 'notifications:DeregisterNotificationHub',
   /**
+   * Grants permission to disable Service Trust for AWS User Notifications
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_DisableNotificationsAccessForOrganization.html
+   */
+  DisableNotificationsAccessForOrganization = 'notifications:DisableNotificationsAccessForOrganization',
+  /**
    * Grants permission to remove a Channel from a NotificationConfiguration
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_DisassociateChannel.html
    */
   DisassociateChannel = 'notifications:DisassociateChannel',
   /**
+   * Grants permission to remove an Account contact from a Managed Notification Conf
+   * iguration
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_DisassociateManagedNotificationAccountContact.html
+   */
+  DisassociateManagedNotificationAccountContact = 'notifications:DisassociateManagedNotificationAccountContact',
+  /**
+   * Grants permission to remove a Channel from a Managed Notification Configuration
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_DisassociateManagedNotificationAdditionalChannel.html
+   */
+  DisassociateManagedNotificationAdditionalChannel = 'notifications:DisassociateManagedNotificationAdditionalChannel',
+  /**
+   * Grants permission to enable Service Trust for AWS User Notifications
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_EnableNotificationsAccessForOrganization.html
+   */
+  EnableNotificationsAccessForOrganization = 'notifications:EnableNotificationsAccessForOrganization',
+  /**
    * Grants permission to get an EventRule
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_GetEventRule.html
    */
   GetEventRule = 'notifications:GetEventRule',
   /**
+   * Grants permission to read the opt-in status of an AWS User Notification Service
+   * feature
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/userguide/managing-notification-features.html
+   */
+  GetFeatureOptInStatus = 'notifications:GetFeatureOptInStatus',
+  /**
+   * Grants permission to get a Managed Notification Child Event
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_GetManagedNotificationChildEvent.html
+   */
+  GetManagedNotificationChildEvent = 'notifications:GetManagedNotificationChildEvent',
+  /**
+   * Grants permission to get a Managed Notification Configuration
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_GetManagedNotificationConfiguration.html
+   */
+  GetManagedNotificationConfiguration = 'notifications:GetManagedNotificationConfiguration',
+  /**
+   * Grants permission to get a Managed NotificationEvent
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_GetManagedNotificationEvent.html
+   */
+  GetManagedNotificationEvent = 'notifications:GetManagedNotificationEvent',
+  /**
    * Grants permission to get a NotificationConfiguration
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_GetNotificationConfiguration.html
    */
   GetNotificationConfiguration = 'notifications:GetNotificationConfiguration',
   /**
    * Grants permission to get a NotificationEvent
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_GetNotificationEvent.html
    */
   GetNotificationEvent = 'notifications:GetNotificationEvent',
   /**
+   * Grants permission to read Service Trust for AWS User Notifications
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_GetNotificationsAccessForOrganization.html
+   */
+  GetNotificationsAccessForOrganization = 'notifications:GetNotificationsAccessForOrganization',
+  /**
    * Grants permission to list Channels by NotificationConfiguration
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListChannels.html
    */
   ListChannels = 'notifications:ListChannels',
   /**
    * Grants permission to list EventRules
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListEventRules.html
    */
   ListEventRules = 'notifications:ListEventRules',
   /**
+   * Grants permission to list Account contacts and Channels associated with a Manag
+   * ed Notification Configuration
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListManagedNotificationChannelAssociations.html
+   */
+  ListManagedNotificationChannelAssociations = 'notifications:ListManagedNotificationChannelAssociations',
+  /**
+   * Grants permission to list Managed Notification Child Events
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListManagedNotificationChildEvents.html
+   */
+  ListManagedNotificationChildEvents = 'notifications:ListManagedNotificationChildEvents',
+  /**
+   * Grants permission to list Managed Notification Configurations
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListManagedNotificationConfigurations.html
+   */
+  ListManagedNotificationConfigurations = 'notifications:ListManagedNotificationConfigurations',
+  /**
+   * Grants permission to list Managed Notification Events
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListManagedNotificationEvents.html
+   */
+  ListManagedNotificationEvents = 'notifications:ListManagedNotificationEvents',
+  /**
    * Grants permission to list NotificationConfigurations
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListNotificationConfigurations.html
    */
   ListNotificationConfigurations = 'notifications:ListNotificationConfigurations',
   /**
    * Grants permission to list NotificationEvents
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListNotificationEvents.html
    */
   ListNotificationEvents = 'notifications:ListNotificationEvents',
   /**
    * Grants permission to list NotificationHubs
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListNotificationHubs.html
    */
   ListNotificationHubs = 'notifications:ListNotificationHubs',
   /**
    * Grants permission to get tags for a resource
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListTagsForResource.html
    */
   ListTagsForResource = 'notifications:ListTagsForResource',
   /**
+   * Grants permission to update the opt-in status of an AWS User Notification Servi
+   * ce feature
+   *
+   * See https://docs.aws.amazon.com/notifications/latest/userguide/managing-notification-features.html
+   */
+  PutFeatureOptInStatus = 'notifications:PutFeatureOptInStatus',
+  /**
    * Grants permission to register a NotificationHub
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_RegisterNotificationHub.html
    */
   RegisterNotificationHub = 'notifications:RegisterNotificationHub',
   /**
    * Grants permission to tag a resource
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_TagResource.html
    */
   TagResource = 'notifications:TagResource',
   /**
    * Grants permission to remove tags from a resource
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_UntagResource.html
    */
   UntagResource = 'notifications:UntagResource',
   /**
    * Grants permission to update an EventRule
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_UpdateEventRule.html
    */
   UpdateEventRule = 'notifications:UpdateEventRule',
   /**
    * Grants permission to update a NotificationConfiguration
    *
-   * See https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html
+   * See https://docs.aws.amazon.com/notifications/latest/APIReference/API_UpdateNotificationConfiguration.html
    */
   UpdateNotificationConfiguration = 'notifications:UpdateNotificationConfiguration',
 }

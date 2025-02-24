@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemakergeospatialcapabilities.html
  *
- * 2024-02-12T09:59:07.075Z
+ * 2025-02-24T21:49:36.940Z
  */
 export enum AwsSagemakerGeospatialActions {
   /**

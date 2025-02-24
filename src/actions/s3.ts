@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
  *
- * 2024-02-12T09:59:02.972Z
+ * 2025-02-24T21:49:32.599Z
  */
 export enum AwsS3Actions {
   /**
@@ -64,6 +64,13 @@ export enum AwsS3Actions {
    * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html
    */
   CreateBucket = 's3:CreateBucket',
+  /**
+   * Grants permission to create a new S3 Metadata configuration for a specified buc
+   * ket
+   *
+   * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketMetadataTableConfiguration.html
+   */
+  CreateBucketMetadataTableConfiguration = 's3:CreateBucketMetadataTableConfiguration',
   /**
    * Grants permission to create a new Amazon S3 Batch Operations job
    *
@@ -138,6 +145,13 @@ export enum AwsS3Actions {
    * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucket.html
    */
   DeleteBucket = 's3:DeleteBucket',
+  /**
+   * Grants permission to delete the S3 Metadata configuration for a specified bucke
+   * t
+   *
+   * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketMetadataTableConfiguration.html
+   */
+  DeleteBucketMetadataTableConfiguration = 's3:DeleteBucketMetadataTableConfiguration',
   /**
    * Grants permission to delete the policy on a specified bucket
    *
@@ -287,15 +301,15 @@ export enum AwsS3Actions {
    */
   GetAccessPointForObjectLambda = 's3:GetAccessPointForObjectLambda',
   /**
-   * Grants permission to returns the access point policy associated with the specif
-   * ied access point
+   * Grants permission to return the access point policy associated with the specifi
+   * ed access point
    *
    * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessPointPolicy.html
    */
   GetAccessPointPolicy = 's3:GetAccessPointPolicy',
   /**
-   * Grants permission to returns the access point policy associated with the specif
-   * ied object lambda enabled access point
+   * Grants permission to return the access point policy associated with the specifi
+   * ed object lambda enabled access point
    *
    * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessPointPolicyForObjectLambda.html
    */
@@ -355,6 +369,13 @@ export enum AwsS3Actions {
    * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLogging.html
    */
   GetBucketLogging = 's3:GetBucketLogging',
+  /**
+   * Grants permission to return the S3 Metadata configuration for a specified bucke
+   * t
+   *
+   * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataTableConfiguration.html
+   */
+  GetBucketMetadataTableConfiguration = 's3:GetBucketMetadataTableConfiguration',
   /**
    * Grants permission to get the notification configuration of an Amazon S3 bucket
    *
@@ -473,8 +494,8 @@ export enum AwsS3Actions {
    */
   GetMultiRegionAccessPoint = 's3:GetMultiRegionAccessPoint',
   /**
-   * Grants permission to returns the access point policy associated with the specif
-   * ied Multi-Region Access Point
+   * Grants permission to return the access point policy associated with the specifi
+   * ed Multi-Region Access Point
    *
    * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetMultiRegionAccessPointPolicy.html
    */
@@ -672,6 +693,12 @@ export enum AwsS3Actions {
    */
   ListBucketVersions = 's3:ListBucketVersions',
   /**
+   * Grants permission to list caller's Access Grant
+   *
+   * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListCallerAccessGrants.html
+   */
+  ListCallerAccessGrants = 's3:ListCallerAccessGrants',
+  /**
    * Grants permission to list current jobs and jobs that have ended recently
    *
    * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListJobs.html
@@ -714,6 +741,13 @@ export enum AwsS3Actions {
    * See https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-change-owner.html#repl-ownership-add-role-permission
    */
   ObjectOwnerOverrideToBucketOwner = 's3:ObjectOwnerOverrideToBucketOwner',
+  /**
+   * Grants permission to pause S3 Replication from target source buckets to destina
+   * tion buckets
+   *
+   * See https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html#bucket-pause-replication
+   */
+  PauseReplication = 's3:PauseReplication',
   /**
    * Grants permission to use the accelerate subresource to set the Transfer Acceler
    * ation state of an existing S3 bucket

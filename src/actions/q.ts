@@ -6,45 +6,199 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonq.html
  *
- * 2024-02-12T09:58:45.687Z
+ * 2025-02-24T21:49:17.719Z
  */
 export enum AwsQActions {
+  /**
+   * Grants permission to associate an AWS resource with an Amazon Q connector
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  AssociateConnectorResource = 'q:AssociateConnectorResource',
+  /**
+   * Grants permission to create a user or group assignment for an Amazon Q Develope
+   * r Profile
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  CreateAssignment = 'q:CreateAssignment',
+  /**
+   * Grants permission to create OAuth user in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  CreateAuthGrant = 'q:CreateAuthGrant',
+  /**
+   * Grants permission to register an OAuth application in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  CreateOAuthAppConnection = 'q:CreateOAuthAppConnection',
+  /**
+   * Grants permission to create and configure a third party plugin in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  CreatePlugin = 'q:CreatePlugin',
+  /**
+   * Grants permission to delete a user or group assignment for an Amazon Q Develope
+   * r Profile
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  DeleteAssignment = 'q:DeleteAssignment',
+  /**
+   * Grants permission to delete a configured plugin in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  DeletePlugin = 'q:DeletePlugin',
+  /**
+   * Grants permission to generate code from CLI commands in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  GenerateCodeFromCommands = 'q:GenerateCodeFromCommands',
+  /**
+   * Grants permission to view information about a specific Amazon Q connector
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  GetConnector = 'q:GetConnector',
   /**
    * Grants permission to get individual messages associated with a specific convers
    * ation with Amazon Q
    *
-   * See https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/security_iam_manage-access-with-policies.html
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
    */
   GetConversation = 'q:GetConversation',
   /**
+   * Grants permission to Amazon Q to get the identity metadata
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  GetIdentityMetadata = 'q:GetIdentityMetadata',
+  /**
+   * Grants permission to view information about a specific configured Amazon Q plug
+   * in
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  GetPlugin = 'q:GetPlugin',
+  /**
    * Grants permission to get troubleshooting results with Amazon Q
    *
-   * See https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/security_iam_manage-access-with-policies.html
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
    */
   GetTroubleshootingResults = 'q:GetTroubleshootingResults',
   /**
+   * Grants permission to list individual conversations associated with a specific A
+   * mazon Q user
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  ListConversations = 'q:ListConversations',
+  /**
+   * Grants permission to read metrics to populate Amazon Q dashboard
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  ListDashboardMetrics = 'q:ListDashboardMetrics',
+  /**
+   * Grants permission to list available plugins in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  ListPluginProviders = 'q:ListPluginProviders',
+  /**
+   * Grants permission to list configured plugins in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  ListPlugins = 'q:ListPlugins',
+  /**
+   * Grants permission to list all tags associated with an Amazon Q resource
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  ListTagsForResource = 'q:ListTagsForResource',
+  /**
+   * Grants permission to allow Amazon Q to perform actions on your behalf
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  PassRequest = 'q:PassRequest',
+  /**
+   * Grants permission to reject a connection request for an Amazon Q connector
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  RejectConnector = 'q:RejectConnector',
+  /**
+   * Grants permission to trigger asynchronous Amazon Q actions
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  SendEvent = 'q:SendEvent',
+  /**
    * Grants permission to send a message to Amazon Q
    *
-   * See https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/security_iam_manage-access-with-policies.html
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
    */
   SendMessage = 'q:SendMessage',
   /**
    * Grants permission to start a conversation with Amazon Q
    *
-   * See https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/security_iam_manage-access-with-policies.html
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
    */
   StartConversation = 'q:StartConversation',
   /**
    * Grants permission to start a troubleshooting analysis with Amazon Q
    *
-   * See https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/security_iam_manage-access-with-policies.html
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
    */
   StartTroubleshootingAnalysis = 'q:StartTroubleshootingAnalysis',
   /**
    * Grants permission to start a troubleshooting resolution explanation with Amazon
    * Q
    *
-   * See https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/security_iam_manage-access-with-policies.html
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
    */
   StartTroubleshootingResolutionExplanation = 'q:StartTroubleshootingResolutionExplanation',
+  /**
+   * Grants permission to associate tags with an Amazon Q resource
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  TagResource = 'q:TagResource',
+  /**
+   * Grants permission to remove tags associated with an Amazon Q resource
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  UntagResource = 'q:UntagResource',
+  /**
+   * Grants permission to update OAuth user in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  UpdateAuthGrant = 'q:UpdateAuthGrant',
+  /**
+   * Grants permission to update an OAuth application in Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  UpdateOAuthAppConnection = 'q:UpdateOAuthAppConnection',
+  /**
+   * Grants permission to update a troubleshooting command result with Amazon Q
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  UpdateTroubleshootingCommandResult = 'q:UpdateTroubleshootingCommandResult',
+  /**
+   * Grants permission to use Amazon Q plugins
+   *
+   * See https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html
+   */
+  UsePlugin = 'q:UsePlugin',
 }

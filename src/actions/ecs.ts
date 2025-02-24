@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticcontainerservice.html
  *
- * 2024-02-12T09:57:08.294Z
+ * 2025-02-24T21:47:46.802Z
  */
 export enum AwsEcsActions {
   /**
@@ -116,6 +116,18 @@ export enum AwsEcsActions {
    */
   DescribeContainerInstances = 'ecs:DescribeContainerInstances',
   /**
+   * Grants permission to describe one or more of your service deployments
+   *
+   * See https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeServiceDeployments.html
+   */
+  DescribeServiceDeployments = 'ecs:DescribeServiceDeployments',
+  /**
+   * Grants permission to describe one or more of your service revisions
+   *
+   * See https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeServiceRevisions.html
+   */
+  DescribeServiceRevisions = 'ecs:DescribeServiceRevisions',
+  /**
    * Grants permission to describe the specified services running in your cluster
    *
    * See https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeServices.html
@@ -188,6 +200,12 @@ export enum AwsEcsActions {
    */
   ListContainerInstances = 'ecs:ListContainerInstances',
   /**
+   * Grants permission to get a list of service deployments for a specified service
+   *
+   * See https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServiceDeployments.html
+   */
+  ListServiceDeployments = 'ecs:ListServiceDeployments',
+  /**
    * Grants permission to get a list of services that are running in a specified clu
    * ster
    *
@@ -212,7 +230,7 @@ export enum AwsEcsActions {
    * to your account (which may include task definition families that no longer have
    * any ACTIVE task definitions)
    *
-   * See https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServices.html
+   * See https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTaskDefinitionFamilies.html
    */
   ListTaskDefinitionFamilies = 'ecs:ListTaskDefinitionFamilies',
   /**

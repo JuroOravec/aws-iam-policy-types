@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsprivatecertificateauthority.html
  *
- * 2024-02-12T09:58:43.811Z
+ * 2025-02-24T21:49:15.737Z
  */
 export enum AwsAcmPcaActions {
   /**

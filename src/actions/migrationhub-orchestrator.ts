@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationhuborchestrator.html
  *
- * 2024-02-12T09:58:24.533Z
+ * 2025-02-24T21:48:57.307Z
  */
 export enum AwsMigrationhubOrchestratorActions {
+  /**
+   * Grants permission to create a custom template
+   *
+   * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_CreateTemplate.html
+   */
+  CreateTemplate = 'migrationhub-orchestrator:CreateTemplate',
   /**
    * Grants permission to create a workflow based on the selected template
    *
@@ -27,6 +33,12 @@ export enum AwsMigrationhubOrchestratorActions {
    * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_CreateWorkflowStepGroup.html
    */
   CreateWorkflowStepGroup = 'migrationhub-orchestrator:CreateWorkflowStepGroup',
+  /**
+   * Grants permission to delete a custom template
+   *
+   * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_DeleteTemplate.html
+   */
+  DeleteTemplate = 'migrationhub-orchestrator:DeleteTemplate',
   /**
    * Grants permission to a workflow
    *
@@ -110,7 +122,7 @@ export enum AwsMigrationhubOrchestratorActions {
   /**
    * Grants permission to get a list of steps in a step group
    *
-   * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_ListServers.html
+   * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_ListTemplateSteps.html
    */
   ListTemplateSteps = 'migrationhub-orchestrator:ListTemplateSteps',
   /**
@@ -129,7 +141,7 @@ export enum AwsMigrationhubOrchestratorActions {
    * Grants permission to get a list of steps within  step group associated with a w
    * orkflow
    *
-   * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_ListAntiPatterns.html
+   * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_ListWorkflowSteps.html
    */
   ListWorkflowSteps = 'migrationhub-orchestrator:ListWorkflowSteps',
   /**
@@ -181,6 +193,12 @@ export enum AwsMigrationhubOrchestratorActions {
    * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_UntagResource.html
    */
   UntagResource = 'migrationhub-orchestrator:UntagResource',
+  /**
+   * Grants permission to update a custom template
+   *
+   * See https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_UpdateTemplate.html
+   */
+  UpdateTemplate = 'migrationhub-orchestrator:UpdateTemplate',
   /**
    * Grants permission to update the metadata associated with the workflow
    *

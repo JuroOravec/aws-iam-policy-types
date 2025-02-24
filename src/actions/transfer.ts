@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstransferfamily.html
  *
- * 2024-02-12T09:59:32.733Z
+ * 2025-02-24T21:50:01.858Z
  */
 export enum AwsTransferActions {
   /**
@@ -45,6 +45,12 @@ export enum AwsTransferActions {
    * See https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateUser.html
    */
   CreateUser = 'transfer:CreateUser',
+  /**
+   * Grants permission to create a webapp
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateWebApp.html
+   */
+  CreateWebApp = 'transfer:CreateWebApp',
   /**
    * Grants permission to create a workflow
    *
@@ -105,6 +111,18 @@ export enum AwsTransferActions {
    * See https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteUser.html
    */
   DeleteUser = 'transfer:DeleteUser',
+  /**
+   * Grants permission to delete webapp
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteWebApp.html
+   */
+  DeleteWebApp = 'transfer:DeleteWebApp',
+  /**
+   * Grants permission to delete webapp customization
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteWebAppCustomization.html
+   */
+  DeleteWebAppCustomization = 'transfer:DeleteWebAppCustomization',
   /**
    * Grants permission to delete a workflow
    *
@@ -172,6 +190,18 @@ export enum AwsTransferActions {
    */
   DescribeUser = 'transfer:DescribeUser',
   /**
+   * Grants permission to describe a webapp
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeWebApp.html
+   */
+  DescribeWebApp = 'transfer:DescribeWebApp',
+  /**
+   * Grants permission to describe a webapp customization
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeWebAppCustomization.html
+   */
+  DescribeWebAppCustomization = 'transfer:DescribeWebAppCustomization',
+  /**
    * Grants permission to describe a workflow
    *
    * See https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeWorkflow.html
@@ -226,6 +256,12 @@ export enum AwsTransferActions {
    */
   ListExecutions = 'transfer:ListExecutions',
   /**
+   * Grants permission to list file transfer statuses for connectors
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_ListFileTransferResults.html
+   */
+  ListFileTransferResults = 'transfer:ListFileTransferResults',
+  /**
    * Grants permission to list host keys associated with a server
    *
    * See https://docs.aws.amazon.com/transfer/latest/userguide/API_ListHostKeys.html
@@ -262,6 +298,12 @@ export enum AwsTransferActions {
    */
   ListUsers = 'transfer:ListUsers',
   /**
+   * Grants permission to list webapps
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_ListWebApps.html
+   */
+  ListWebApps = 'transfer:ListWebApps',
+  /**
    * Grants permission to list workflows
    *
    * See https://docs.aws.amazon.com/transfer/latest/userguide/API_ListWorkflows.html
@@ -273,6 +315,13 @@ export enum AwsTransferActions {
    * See https://docs.aws.amazon.com/transfer/latest/userguide/API_SendWorkflowStepState.html
    */
   SendWorkflowStepState = 'transfer:SendWorkflowStepState',
+  /**
+   * Grants permission to initiate a list operation on a remote server using a conne
+   * ctor
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_StartDirectoryListing.html
+   */
+  StartDirectoryListing = 'transfer:StartDirectoryListing',
   /**
    * Grants permission to initiate a connector file transfer
    *
@@ -363,4 +412,16 @@ export enum AwsTransferActions {
    * See https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateUser.html
    */
   UpdateUser = 'transfer:UpdateUser',
+  /**
+   * Grants permission to update the configuration of a webapp
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateWebApp.html
+   */
+  UpdateWebApp = 'transfer:UpdateWebApp',
+  /**
+   * Grants permission to update the configuration of a webapp cutomization
+   *
+   * See https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateWebAppCustomization.html
+   */
+  UpdateWebAppCustomization = 'transfer:UpdateWebAppCustomization',
 }

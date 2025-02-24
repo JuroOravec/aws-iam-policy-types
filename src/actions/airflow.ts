@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedworkflowsforapacheairflow.html
  *
- * 2024-02-12T09:58:14.334Z
+ * 2025-02-24T21:48:46.903Z
  */
 export enum AwsAirflowActions {
   /**
@@ -41,6 +41,13 @@ export enum AwsAirflowActions {
    * See https://docs.aws.amazon.com/mwaa/latest/API/API_GetEnvironment.html
    */
   GetEnvironment = 'airflow:GetEnvironment',
+  /**
+   * Grants permission to invoke Airflow REST API via an endpoint on the Apache Airf
+   * low Webserver
+   *
+   * See https://docs.aws.amazon.com/mwaa/latest/API/API_InvokeRestApi.html
+   */
+  InvokeRestApi = 'airflow:InvokeRestApi',
   /**
    * Grants permission to list the Amazon MWAA environments in your account
    *

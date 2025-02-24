@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazontimestream.html
  *
- * 2024-02-12T09:59:30.884Z
+ * 2025-02-24T21:49:59.893Z
  */
 export enum AwsTimestreamActions {
   /**
@@ -57,6 +57,12 @@ export enum AwsTimestreamActions {
    * See https://docs.aws.amazon.com/timestream/latest/developerguide/API_DeleteTable.html
    */
   DeleteTable = 'timestream:DeleteTable',
+  /**
+   * Grants permission to describe your account settings
+   *
+   * See https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_DescribeAccountSettings.html
+   */
+  DescribeAccountSettings = 'timestream:DescribeAccountSettings',
   /**
    * Grants permission to describe a batch load task in your account
    *
@@ -195,6 +201,12 @@ export enum AwsTimestreamActions {
    * See https://docs.aws.amazon.com/timestream/latest/developerguide/API_UntagResource.html
    */
   UntagResource = 'timestream:UntagResource',
+  /**
+   * Grants permission to update your account settings
+   *
+   * See https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_UpdateAccountSettings.html
+   */
+  UpdateAccountSettings = 'timestream:UpdateAccountSettings',
   /**
    * Grants permission to update a database in your account
    *

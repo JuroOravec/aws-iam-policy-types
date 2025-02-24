@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsstoragegateway.html
  *
- * 2024-02-12T09:59:21.806Z
+ * 2025-02-24T21:49:51.330Z
  */
 export enum AwsStoragegatewayActions {
   /**
@@ -76,6 +76,12 @@ export enum AwsStoragegatewayActions {
    * See https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_CancelArchival.html
    */
   CancelArchival = 'storagegateway:CancelArchival',
+  /**
+   * Grants permission to cancel a cache report
+   *
+   * See https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_CancelCacheReport.html
+   */
+  CancelCacheReport = 'storagegateway:CancelCacheReport',
   /**
    * Grants permission to cancel retrieval of a virtual tape from the virtual tape s
    * helf (VTS) to a gateway after the retrieval process is initiated
@@ -154,6 +160,12 @@ export enum AwsStoragegatewayActions {
    */
   DeleteBandwidthRateLimit = 'storagegateway:DeleteBandwidthRateLimit',
   /**
+   * Grants permission to delete the metadata associated with a cache report
+   *
+   * See https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DeleteCacheReport.html
+   */
+  DeleteCacheReport = 'storagegateway:DeleteCacheReport',
+  /**
    * Grants permission to delete Challenge-Handshake Authentication Protocol (CHAP)
    * credentials for a specified iSCSI target and initiator pair
    *
@@ -230,6 +242,12 @@ export enum AwsStoragegatewayActions {
    * See https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeCache.html
    */
   DescribeCache = 'storagegateway:DescribeCache',
+  /**
+   * Grants permission to get a description of a cache report
+   *
+   * See https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeCacheReport.html
+   */
+  DescribeCacheReport = 'storagegateway:DescribeCacheReport',
   /**
    * Grants permission to get a description of the gateway volumes specified in the
    * request. This operation is supported only for the gateway-cached volume archite
@@ -377,6 +395,12 @@ export enum AwsStoragegatewayActions {
    */
   ListAutomaticTapeCreationPolicies = 'storagegateway:ListAutomaticTapeCreationPolicies',
   /**
+   * Grants permission to get a list of the cache reports owned by your AWS account
+   *
+   * See https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_ListCacheReports.html
+   */
+  ListCacheReports = 'storagegateway:ListCacheReports',
+  /**
    * Grants permission to get a list of the file shares for a specific file gateway,
    * or the list of file shares owned by your AWS account
    *
@@ -506,6 +530,12 @@ export enum AwsStoragegatewayActions {
    * See https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_StartAvailabilityMonitorTest.html
    */
   StartAvailabilityMonitorTest = 'storagegateway:StartAvailabilityMonitorTest',
+  /**
+   * Grants permission to start a cache report for an existing file share
+   *
+   * See https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_StartCacheReport.html
+   */
+  StartCacheReport = 'storagegateway:StartCacheReport',
   /**
    * Grants permission to start a gateway that you previously shut down
    *

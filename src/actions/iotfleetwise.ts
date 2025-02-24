@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotfleetwise.html
  *
- * 2024-02-12T09:57:50.288Z
+ * 2025-02-24T21:48:24.956Z
  */
 export enum AwsIotfleetwiseActions {
   /**
@@ -58,6 +58,12 @@ export enum AwsIotfleetwiseActions {
    */
   CreateSignalCatalog = 'iotfleetwise:CreateSignalCatalog',
   /**
+   * Grants permission to create a state template
+   *
+   * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateStateTemplate.html
+   */
+  CreateStateTemplate = 'iotfleetwise:CreateStateTemplate',
+  /**
    * Grants permission to create a vehicle
    *
    * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateVehicle.html
@@ -94,6 +100,12 @@ export enum AwsIotfleetwiseActions {
    */
   DeleteSignalCatalog = 'iotfleetwise:DeleteSignalCatalog',
   /**
+   * Grants permission to delete a state template
+   *
+   * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteStateTemplate.html
+   */
+  DeleteStateTemplate = 'iotfleetwise:DeleteStateTemplate',
+  /**
    * Grants permission to delete a vehicle
    *
    * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteVehicle.html
@@ -105,6 +117,12 @@ export enum AwsIotfleetwiseActions {
    * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DisassociateVehicleFleet.html
    */
   DisassociateVehicleFleet = 'iotfleetwise:DisassociateVehicleFleet',
+  /**
+   * Grants permission to generate the payload for running a command on a vehicle
+   *
+   * See https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/controlling-access.html#generate-command-payload
+   */
+  GenerateCommandPayload = 'iotfleetwise:GenerateCommandPayload',
   /**
    * Grants permission to get summary information for a given campaign
    *
@@ -155,6 +173,12 @@ export enum AwsIotfleetwiseActions {
    * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetSignalCatalog.html
    */
   GetSignalCatalog = 'iotfleetwise:GetSignalCatalog',
+  /**
+   * Grants permission to get summary information for a given state template
+   *
+   * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetStateTemplate.html
+   */
+  GetStateTemplate = 'iotfleetwise:GetStateTemplate',
   /**
    * Grants permission to get summary information for a vehicle
    *
@@ -245,6 +269,12 @@ export enum AwsIotfleetwiseActions {
    */
   ListSignalCatalogs = 'iotfleetwise:ListSignalCatalogs',
   /**
+   * Grants permission to list state templates
+   *
+   * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListStateTemplates.html
+   */
+  ListStateTemplates = 'iotfleetwise:ListStateTemplates',
+  /**
    * Grants permission to list tags for a resource
    *
    * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListTagsForResource.html
@@ -323,6 +353,12 @@ export enum AwsIotfleetwiseActions {
    * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateSignalCatalog.html
    */
   UpdateSignalCatalog = 'iotfleetwise:UpdateSignalCatalog',
+  /**
+   * Grants permission to update the given state template
+   *
+   * See https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateStateTemplate.html
+   */
+  UpdateStateTemplate = 'iotfleetwise:UpdateStateTemplate',
   /**
    * Grants permission to update the vehicle
    *

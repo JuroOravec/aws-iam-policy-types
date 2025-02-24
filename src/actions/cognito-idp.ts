@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncognitouserpools.html
  *
- * 2024-02-12T09:56:41.862Z
+ * 2025-02-24T21:47:20.686Z
  */
 export enum AwsCognitoIdpActions {
   /**
@@ -229,6 +229,13 @@ export enum AwsCognitoIdpActions {
    */
   CreateIdentityProvider = 'cognito-idp:CreateIdentityProvider',
   /**
+   * Grants permission to create a branding settings for managed login and associate
+   * it with an app client
+   *
+   * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateManagedLoginBranding.html
+   */
+  CreateManagedLoginBranding = 'cognito-idp:CreateManagedLoginBranding',
+  /**
    * Grants permission to create and configure scopes for OAuth 2.0 resource servers
    *
    * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateResourceServer.html
@@ -271,6 +278,12 @@ export enum AwsCognitoIdpActions {
    */
   DeleteIdentityProvider = 'cognito-idp:DeleteIdentityProvider',
   /**
+   * Grants permission to delete the managed login branding style for any app client
+   *
+   * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DeleteManagedLoginBranding.html
+   */
+  DeleteManagedLoginBranding = 'cognito-idp:DeleteManagedLoginBranding',
+  /**
    * Grants permission to delete any OAuth 2.0 resource server from user pools
    *
    * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DeleteResourceServer.html
@@ -312,6 +325,20 @@ export enum AwsCognitoIdpActions {
    * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeIdentityProvider.html
    */
   DescribeIdentityProvider = 'cognito-idp:DescribeIdentityProvider',
+  /**
+   * Grants permission to get the detailed information about the branding style of m
+   * anaged login
+   *
+   * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeManagedLoginBranding.html
+   */
+  DescribeManagedLoginBranding = 'cognito-idp:DescribeManagedLoginBranding',
+  /**
+   * Grants permission to get the detailed information about the branding style of m
+   * anaged login associated with an appclient
+   *
+   * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeManagedLoginBrandingByClient.html
+   */
+  DescribeManagedLoginBrandingByClient = 'cognito-idp:DescribeManagedLoginBrandingByClient',
   /**
    * Grants permission to describe any OAuth 2.0 resource server
    *
@@ -631,6 +658,12 @@ export enum AwsCognitoIdpActions {
    * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateIdentityProvider.html
    */
   UpdateIdentityProvider = 'cognito-idp:UpdateIdentityProvider',
+  /**
+   * Grants permission to update the branding settings of a managed login
+   *
+   * See https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateManagedLoginBranding.html
+   */
+  UpdateManagedLoginBranding = 'cognito-idp:UpdateManagedLoginBranding',
   /**
    * Grants permission to update the configuration of any OAuth 2.0 resource server
    *

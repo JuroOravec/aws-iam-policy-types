@@ -6,9 +6,21 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationhub.html
  *
- * 2024-02-12T09:58:24.015Z
+ * 2025-02-24T21:48:56.821Z
  */
 export enum AwsMghActions {
+  /**
+   * Grants permission to accept a connection
+   *
+   * See https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html
+   */
+  AcceptConnection = 'mgh:AcceptConnection',
+  /**
+   * Grants permission to associate an IAM role to an automation unit
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_AssociateAutomationUnitRole.html
+   */
+  AssociateAutomationUnitRole = 'mgh:AssociateAutomationUnitRole',
   /**
    * Grants permission to associate a given AWS artifact to a MigrationTask
    *
@@ -22,6 +34,36 @@ export enum AwsMghActions {
    */
   AssociateDiscoveredResource = 'mgh:AssociateDiscoveredResource',
   /**
+   * Grants permission to associate source resource
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_AssociateSourceResource.html
+   */
+  AssociateSourceResource = 'mgh:AssociateSourceResource',
+  /**
+   * Grants permission to batch-associate IAM roles with a connection
+   *
+   * See https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html
+   */
+  BatchAssociateIamRoleWithConnection = 'mgh:BatchAssociateIamRoleWithConnection',
+  /**
+   * Grants permission to batch-disassociate IAM roles from a connection
+   *
+   * See https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html
+   */
+  BatchDisassociateIamRoleFromConnection = 'mgh:BatchDisassociateIamRoleFromConnection',
+  /**
+   * Grants permission to create an automation unit run
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_CreateAutomationRun.html
+   */
+  CreateAutomationRun = 'mgh:CreateAutomationRun',
+  /**
+   * Grants permission to create an automation unit
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_CreateAutomationUnit.html
+   */
+  CreateAutomationUnit = 'mgh:CreateAutomationUnit',
+  /**
    * Grants permission to create a Migration Hub Home Region Control
    *
    * See https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_CreateHomeRegionControl.html
@@ -33,6 +75,24 @@ export enum AwsMghActions {
    * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_CreateProgressUpdateStream.html
    */
   CreateProgressUpdateStream = 'mgh:CreateProgressUpdateStream',
+  /**
+   * Grants permission to delete an automation unit run
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_DeleteAutomationRun.html
+   */
+  DeleteAutomationRun = 'mgh:DeleteAutomationRun',
+  /**
+   * Grants permission to delete an automation unit
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_DeleteAutomationUnit.html
+   */
+  DeleteAutomationUnit = 'mgh:DeleteAutomationUnit',
+  /**
+   * Grants permission to delete a connection
+   *
+   * See https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html
+   */
+  DeleteConnection = 'mgh:DeleteConnection',
   /**
    * Grants permission to delete a Migration Hub Home Region Control
    *
@@ -52,6 +112,18 @@ export enum AwsMghActions {
    */
   DescribeApplicationState = 'mgh:DescribeApplicationState',
   /**
+   * Grants permission to describe an automation unit run
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeAutomationRun.html
+   */
+  DescribeAutomationRun = 'mgh:DescribeAutomationRun',
+  /**
+   * Grants permission to describe an automation unit
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeAutomationUnit.html
+   */
+  DescribeAutomationUnit = 'mgh:DescribeAutomationUnit',
+  /**
    * Grants permission to list Home Region Controls
    *
    * See https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_DescribeHomeRegionControls.html
@@ -64,6 +136,12 @@ export enum AwsMghActions {
    */
   DescribeMigrationTask = 'mgh:DescribeMigrationTask',
   /**
+   * Grants permission to disassociate an IAM role from an automation unit
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateAutomationUnitRole.html
+   */
+  DisassociateAutomationUnitRole = 'mgh:DisassociateAutomationUnitRole',
+  /**
    * Grants permission to disassociate a given AWS artifact from a MigrationTask
    *
    * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateCreatedArtifact.html
@@ -75,6 +153,18 @@ export enum AwsMghActions {
    * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateDiscoveredResource.html
    */
   DisassociateDiscoveredResource = 'mgh:DisassociateDiscoveredResource',
+  /**
+   * Grants permission to diassociate source resource
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateSourceResource.html
+   */
+  DisassociateSourceResource = 'mgh:DisassociateSourceResource',
+  /**
+   * Grants permission to get a connection
+   *
+   * See https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html
+   */
+  GetConnection = 'mgh:GetConnection',
   /**
    * Grants permission to get the Migration Hub Home Region
    *
@@ -94,6 +184,30 @@ export enum AwsMghActions {
    */
   ListApplicationStates = 'mgh:ListApplicationStates',
   /**
+   * Grants permission to list automation unit runs
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListAutomationRuns.html
+   */
+  ListAutomationRuns = 'mgh:ListAutomationRuns',
+  /**
+   * Grants permission to list automation units
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListAutomationUnits.html
+   */
+  ListAutomationUnits = 'mgh:ListAutomationUnits',
+  /**
+   * Grants permission to list connection roles
+   *
+   * See https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html
+   */
+  ListConnectionRoles = 'mgh:ListConnectionRoles',
+  /**
+   * Grants permission to list connections
+   *
+   * See https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html
+   */
+  ListConnections = 'mgh:ListConnections',
+  /**
    * Grants permission to list associated created artifacts for a MigrationTask
    *
    * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListCreatedArtifacts.html
@@ -106,6 +220,12 @@ export enum AwsMghActions {
    */
   ListDiscoveredResources = 'mgh:ListDiscoveredResources',
   /**
+   * Grants permission to list migration tasks updates
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListMigrationTaskUpdates.html
+   */
+  ListMigrationTaskUpdates = 'mgh:ListMigrationTaskUpdates',
+  /**
    * Grants permission to list MigrationTasks
    *
    * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListMigrationTasks.html
@@ -117,6 +237,18 @@ export enum AwsMghActions {
    * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListProgressUpdateStreams.html
    */
   ListProgressUpdateStreams = 'mgh:ListProgressUpdateStreams',
+  /**
+   * Grants permission to list source resources
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListSourceResources.html
+   */
+  ListSourceResources = 'mgh:ListSourceResources',
+  /**
+   * Grants permission to list tags for a resource
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListTagsForResource.html
+   */
+  ListTagsForResource = 'mgh:ListTagsForResource',
   /**
    * Grants permission to update an Application Discovery Service Application's stat
    * e
@@ -136,4 +268,22 @@ export enum AwsMghActions {
    * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html
    */
   PutResourceAttributes = 'mgh:PutResourceAttributes',
+  /**
+   * Grants permission to reject a connection
+   *
+   * See https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html
+   */
+  RejectConnection = 'mgh:RejectConnection',
+  /**
+   * Grants permission to tag a resource
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_TagResource.html
+   */
+  TagResource = 'mgh:TagResource',
+  /**
+   * Grants permission to untag a resource
+   *
+   * See https://docs.aws.amazon.com/migrationhub/latest/ug/API_UntagResource.html
+   */
+  UntagResource = 'mgh:UntagResource',
 }

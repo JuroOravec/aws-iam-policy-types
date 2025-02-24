@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsamplifyuibuilder.html
  *
- * 2024-02-12T09:55:53.919Z
+ * 2025-02-24T21:46:36.140Z
  */
 export enum AwsAmplifyuibuilderActions {
   /**
@@ -118,6 +118,12 @@ export enum AwsAmplifyuibuilderActions {
    */
   ListForms = 'amplifyuibuilder:ListForms',
   /**
+   * Grants permission to list tags for a specified Amazon Resource Name (ARN)
+   *
+   * See https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ListTagsForResource.html
+   */
+  ListTagsForResource = 'amplifyuibuilder:ListTagsForResource',
+  /**
    * Grants permission to list themes
    *
    * See https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ListThemes.html
@@ -147,6 +153,19 @@ export enum AwsAmplifyuibuilderActions {
    * See https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_StartCodegenJob.html
    */
   StartCodegenJob = 'amplifyuibuilder:StartCodegenJob',
+  /**
+   * Grants permission to tag the resource with a tag key and value
+   *
+   * See https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_TagResource.html
+   */
+  TagResource = 'amplifyuibuilder:TagResource',
+  /**
+   * Grants permission to untag a resource with a specified Amazon Resource Name (AR
+   * N)
+   *
+   * See https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_UntagResource.html
+   */
+  UntagResource = 'amplifyuibuilder:UntagResource',
   /**
    * Grants permission to update a component
    *

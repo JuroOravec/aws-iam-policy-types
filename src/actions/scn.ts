@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
  *
- * 2024-02-12T09:59:22.304Z
+ * 2025-02-24T21:49:51.828Z
  */
 export enum AwsScnActions {
   /**
@@ -24,6 +24,19 @@ export enum AwsScnActions {
    */
   CreateBillOfMaterialsImportJob = 'scn:CreateBillOfMaterialsImportJob',
   /**
+   * Grants permission to create DataIntegrationFlow that can transform from multipl
+   * e sources to one target
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  CreateDataIntegrationFlow = 'scn:CreateDataIntegrationFlow',
+  /**
+   * Grants permission to create the data lake dataset
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  CreateDataLakeDataset = 'scn:CreateDataLakeDataset',
+  /**
    * Grants permission to create a new AWS Supply Chain instance
    *
    * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
@@ -36,6 +49,18 @@ export enum AwsScnActions {
    * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
    */
   CreateSSOApplication = 'scn:CreateSSOApplication',
+  /**
+   * Grants permission to delete the DataIntegrationFlow
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  DeleteDataIntegrationFlow = 'scn:DeleteDataIntegrationFlow',
+  /**
+   * Grants permission to delete the data lake dataset
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  DeleteDataLakeDataset = 'scn:DeleteDataLakeDataset',
   /**
    * Grants permission to delete an AWS Supply Chain instance
    *
@@ -62,11 +87,42 @@ export enum AwsScnActions {
    */
   GetBillOfMaterialsImportJob = 'scn:GetBillOfMaterialsImportJob',
   /**
+   * Grants permission to get the DataIntegrationFlow details
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  GetDataIntegrationFlow = 'scn:GetDataIntegrationFlow',
+  /**
+   * Grants permission to get the dataset details
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  GetDataLakeDataset = 'scn:GetDataLakeDataset',
+  /**
+   * Grants permission to view details of an AWS Supply Chain instance
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  GetInstance = 'scn:GetInstance',
+  /**
    * Grants permission to list AWS Supply Chain administrators of an instance
    *
    * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
    */
   ListAdminUsers = 'scn:ListAdminUsers',
+  /**
+   * Grants permission to list all the DataIntegrationFlows in a paginated way
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  ListDataIntegrationFlows = 'scn:ListDataIntegrationFlows',
+  /**
+   * Grants permission to list the data lake datasets under specific instance and na
+   * mespace
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  ListDataLakeDatasets = 'scn:ListDataLakeDatasets',
   /**
    * Grants permission to view the AWS Supply Chain instances associated with an AWS
    * account
@@ -75,7 +131,7 @@ export enum AwsScnActions {
    */
   ListInstances = 'scn:ListInstances',
   /**
-   * Grants permission to list tags for an AWS Supply Chain instance
+   * Grants permission to list tags for an AWS Supply Chain resource
    *
    * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
    */
@@ -88,17 +144,36 @@ export enum AwsScnActions {
    */
   RemoveAdminPermissionsForUser = 'scn:RemoveAdminPermissionsForUser',
   /**
-   * Grants permission to tag an AWS Supply Chain instance
+   * Grants permission to create a DataIntegrationEvent which will ingest data in re
+   * al-time
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  SendDataIntegrationEvent = 'scn:SendDataIntegrationEvent',
+  /**
+   * Grants permission to tag an AWS Supply Chain resource
    *
    * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
    */
   TagResource = 'scn:TagResource',
   /**
-   * Grants permission to remove tag from an AWS Supply Chain instance
+   * Grants permission to remove tag from an AWS Supply Chain resource
    *
    * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
    */
   UntagResource = 'scn:UntagResource',
+  /**
+   * Grants permission to update the DataIntegrationFlow
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  UpdateDataIntegrationFlow = 'scn:UpdateDataIntegrationFlow',
+  /**
+   * Grants permission to update the data lake dataset
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html
+   */
+  UpdateDataLakeDataset = 'scn:UpdateDataLakeDataset',
   /**
    * Grants permission to update an AWS Supply Chain instance
    *

@@ -6,9 +6,21 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspayments.html
  *
- * 2024-02-12T09:58:37.214Z
+ * 2025-02-24T21:49:10.874Z
  */
 export enum AwsPaymentsActions {
+  /**
+   * Grants permission to accept financing application terms provided by a lender
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  AcceptFinancingApplicationTerms = 'payments:AcceptFinancingApplicationTerms',
+  /**
+   * Grants permission to create a financing application
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  CreateFinancingApplication = 'payments:CreateFinancingApplication',
   /**
    * Grants permission to create a payment instrument
    *
@@ -22,6 +34,30 @@ export enum AwsPaymentsActions {
    */
   DeletePaymentInstrument = 'payments:DeletePaymentInstrument',
   /**
+   * Grants permission to get information about a financing application
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  GetFinancingApplication = 'payments:GetFinancingApplication',
+  /**
+   * Grants permission to get information about a financing line
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  GetFinancingLine = 'payments:GetFinancingLine',
+  /**
+   * Grants permission to get information about a financing line withdrawal
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  GetFinancingLineWithdrawal = 'payments:GetFinancingLineWithdrawal',
+  /**
+   * Grants permission to get information about a financing option
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  GetFinancingOption = 'payments:GetFinancingOption',
+  /**
    * Grants permission to get information about a payment instrument
    *
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
@@ -34,6 +70,30 @@ export enum AwsPaymentsActions {
    */
   GetPaymentStatus = 'payments:GetPaymentStatus',
   /**
+   * Grants permission to list financing application metadata
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  ListFinancingApplications = 'payments:ListFinancingApplications',
+  /**
+   * Grants permission to list financing line withdrawals metadata
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  ListFinancingLineWithdrawals = 'payments:ListFinancingLineWithdrawals',
+  /**
+   * Grants permission to list financing line metadata
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  ListFinancingLines = 'payments:ListFinancingLines',
+  /**
+   * Grants permission to list payment instrument metadata
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+   */
+  ListPaymentInstruments = 'payments:ListPaymentInstruments',
+  /**
    * Grants permission to get payment preferences (preferred payment currency, prefe
    * rred payment method, etc.)
    *
@@ -41,12 +101,55 @@ export enum AwsPaymentsActions {
    */
   ListPaymentPreferences = 'payments:ListPaymentPreferences',
   /**
+   * Grants permission to list information about payment options
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  ListPaymentProgramOptions = 'payments:ListPaymentProgramOptions',
+  /**
+   * Grants permission to list information about payment program eligibility and enr
+   * olment status
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  ListPaymentProgramStatus = 'payments:ListPaymentProgramStatus',
+  /**
+   * Grants permission to list tags on a payment resource
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+   */
+  ListTagsForResource = 'payments:ListTagsForResource',
+  /**
    * Grants permission to make a payment, authenticate a payment, verify a payment m
    * ethod, and generate a funding request document for Advance Pay
    *
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
    */
   MakePayment = 'payments:MakePayment',
+  /**
+   * Grants permission to tag a payment resource
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+   */
+  TagResource = 'payments:TagResource',
+  /**
+   * Grants permission to untag a payment resource
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+   */
+  UntagResource = 'payments:UntagResource',
+  /**
+   * Grants permission to update a financing application
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
+   */
+  UpdateFinancingApplication = 'payments:UpdateFinancingApplication',
+  /**
+   * Grants permission to update a payment instrument
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+   */
+  UpdatePaymentInstrument = 'payments:UpdatePaymentInstrument',
   /**
    * Grants permission to update payment preferences (preferred payment currency, pr
    * eferred payment method, etc.)

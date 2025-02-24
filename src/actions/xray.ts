@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsx-ray.html
  *
- * 2024-02-12T09:59:44.842Z
+ * 2025-02-24T21:50:13.522Z
  */
 export enum AwsXrayActions {
   /**
@@ -23,6 +23,14 @@ export enum AwsXrayActions {
    * See https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html
    */
   BatchGetTraces = 'xray:BatchGetTraces',
+  /**
+   * Grants permission to cancel an ongoing trace retrieval job initiated by StartTr
+   * aceRetrieval using the provided RetrievalToken. A successful cancellation will
+   * return an HTTP 200 response
+   *
+   * See API_CancelTraceRetrieval.html
+   */
+  CancelTraceRetrieval = 'xray:CancelTraceRetrieval',
   /**
    * Grants permission to create a group resource with a name and a filter expressio
    * n
@@ -82,6 +90,14 @@ export enum AwsXrayActions {
    */
   GetGroups = 'xray:GetGroups',
   /**
+   * Grants permission to retrieve all indexing rules. Indexing rules are used to de
+   * termine the server-side sampling rate for spans ingested through the CloudWatch
+   * Logs destination and indexed by X-Ray
+   *
+   * See https://docs.aws.amazon.com/xray/latest/api/API_GetIndexingRules.html
+   */
+  GetIndexingRules = 'xray:GetIndexingRules',
+  /**
    * Grants permission to retrieve the details of a specific insight
    *
    * See https://docs.aws.amazon.com/xray/latest/api/API_GetInsight.html
@@ -107,6 +123,13 @@ export enum AwsXrayActions {
    * See https://docs.aws.amazon.com/xray/latest/api/API_GetInsightSummaries.html
    */
   GetInsightSummaries = 'xray:GetInsightSummaries',
+  /**
+   * Grants permission to retrieve a service graph for traces based on the specified
+   * RetrievalToken from the Transaction Search CloudWatch log group
+   *
+   * See API_GetRetrievedTracesGraph.html
+   */
+  GetRetrievedTracesGraph = 'xray:GetRetrievedTracesGraph',
   /**
    * Grants permission to retrieve all sampling rules
    *
@@ -149,6 +172,13 @@ export enum AwsXrayActions {
    */
   GetTraceGraph = 'xray:GetTraceGraph',
   /**
+   * Grants permission to retrieve the current destination of data sent to PutTraceS
+   * egments and OpenTelemetry API
+   *
+   * See https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSegmentDestination.html
+   */
+  GetTraceSegmentDestination = 'xray:GetTraceSegmentDestination',
+  /**
    * Grants permission to retrieve IDs and metadata for traces available for a speci
    * fied time frame using an optional filter. To get the full traces, pass the trac
    * e IDs to BatchGetTraces
@@ -169,6 +199,13 @@ export enum AwsXrayActions {
    */
   ListResourcePolicies = 'xray:ListResourcePolicies',
   /**
+   * Grants permission to retrieve a list of traces for a given RetrievalToken from
+   * the Transaction Search CloudWatch log group
+   *
+   * See API_ListRetrievedTraces.html
+   */
+  ListRetrievedTraces = 'xray:ListRetrievedTraces',
+  /**
    * Grants permission to list tags for an X-Ray resource
    *
    * See https://docs.aws.amazon.com/xray/latest/api/API_ListTagsForResource.html
@@ -187,6 +224,18 @@ export enum AwsXrayActions {
    */
   PutResourcePolicy = 'xray:PutResourcePolicy',
   /**
+   * Grants permission to upload OpenTelemetry spans to AWS X-Ray
+   *
+   * See https://docs.aws.amazon.com/xray/latest/api/API_PutSpans.html
+   */
+  PutSpans = 'xray:PutSpans',
+  /**
+   * Grants permission to upload spans to AWS X-Ray to be indexed
+   *
+   * See https://docs.aws.amazon.com/xray/latest/devguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-console
+   */
+  PutSpansForIndexing = 'xray:PutSpansForIndexing',
+  /**
    * Grants permission to send AWS X-Ray daemon telemetry to the service
    *
    * See https://docs.aws.amazon.com/xray/latest/api/API_PutTelemetryRecords.html
@@ -200,6 +249,14 @@ export enum AwsXrayActions {
    * See https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html
    */
   PutTraceSegments = 'xray:PutTraceSegments',
+  /**
+   * Grants permission to initiate a trace retrieval process using the specified tim
+   * e range and for the given trace IDs on the Transaction Search CloudWatch log gr
+   * oup
+   *
+   * See API_StartTraceRetrieval
+   */
+  StartTraceRetrieval = 'xray:StartTraceRetrieval',
   /**
    * Grants permission to add tags to an X-Ray resource
    *
@@ -219,9 +276,22 @@ export enum AwsXrayActions {
    */
   UpdateGroup = 'xray:UpdateGroup',
   /**
+   * Grants permission to modify an indexing rule's configuration
+   *
+   * See https://docs.aws.amazon.com/xray/latest/api/API_UpdateIndexingRule.html
+   */
+  UpdateIndexingRule = 'xray:UpdateIndexingRule',
+  /**
    * Grants permission to modify a sampling rule's configuration
    *
    * See https://docs.aws.amazon.com/xray/latest/api/API_UpdateSamplingRule.html
    */
   UpdateSamplingRule = 'xray:UpdateSamplingRule',
+  /**
+   * Grants permission to modify the destination of data sent to PutTraceSegments an
+   * d OpenTelemetry API
+   *
+   * See https://docs.aws.amazon.com/xray/latest/api/API_UpdateTraceSegmentDestination.html
+   */
+  UpdateTraceSegmentDestination = 'xray:UpdateTraceSegmentDestination',
 }

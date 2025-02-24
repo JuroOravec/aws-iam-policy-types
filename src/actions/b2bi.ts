@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsb2bdatainterchange.html
  *
- * 2024-02-12T09:56:08.577Z
+ * 2025-02-24T21:46:50.261Z
  */
 export enum AwsB2biActions {
   /**
@@ -27,6 +27,12 @@ export enum AwsB2biActions {
    * See https://docs.aws.amazon.com/b2bi/latest/APIReference/API_CreateProfile.html
    */
   CreateProfile = 'b2bi:CreateProfile',
+  /**
+   * Grants permission to generate a starter JSONATA/XSLT template
+   *
+   * See https://docs.aws.amazon.com/b2bi/latest/APIReference/API_CreateStarterMappingTemplate.html
+   */
+  CreateStarterMappingTemplate = 'b2bi:CreateStarterMappingTemplate',
   /**
    * Grants permission to create a transformer
    *
@@ -57,6 +63,13 @@ export enum AwsB2biActions {
    * See https://docs.aws.amazon.com/b2bi/latest/APIReference/API_DeleteTransformer.html
    */
   DeleteTransformer = 'b2bi:DeleteTransformer',
+  /**
+   * Grants permission to generate a starter JSONATA/XSLT mapping template from Amaz
+   * on Bedrock
+   *
+   * See https://docs.aws.amazon.com/b2bi/latest/APIReference/API_GenerateMapping.html
+   */
+  GenerateMapping = 'b2bi:GenerateMapping',
   /**
    * Grants permission to get a capability
    *
@@ -129,6 +142,12 @@ export enum AwsB2biActions {
    * See https://docs.aws.amazon.com/b2bi/latest/APIReference/API_TagResource.html
    */
   TagResource = 'b2bi:TagResource',
+  /**
+   * Grants permission to convert a JSON/XML to an edi document
+   *
+   * See https://docs.aws.amazon.com/b2bi/latest/APIReference/API_TestConversion.html
+   */
+  TestConversion = 'b2bi:TestConversion',
   /**
    * Grants permission to map a sample file
    *

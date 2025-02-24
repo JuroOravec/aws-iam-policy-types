@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpersonalize.html
  *
- * 2024-02-12T09:58:38.703Z
+ * 2025-02-24T21:49:11.864Z
  */
 export enum AwsPersonalizeActions {
   /**
@@ -27,6 +27,12 @@ export enum AwsPersonalizeActions {
    * See https://docs.aws.amazon.com/personalize/latest/dg/API_CreateCampaign.html
    */
   CreateCampaign = 'personalize:CreateCampaign',
+  /**
+   * Grants permission to create a data deletion job
+   *
+   * See https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDataDeletionJob.html
+   */
+  CreateDataDeletionJob = 'personalize:CreateDataDeletionJob',
   /**
    * Grants permission to create a data insights job
    *
@@ -178,6 +184,12 @@ export enum AwsPersonalizeActions {
    */
   DescribeCampaign = 'personalize:DescribeCampaign',
   /**
+   * Grants permission to describe a data deletion job
+   *
+   * See https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDataDeletionJob.html
+   */
+  DescribeDataDeletionJob = 'personalize:DescribeDataDeletionJob',
+  /**
    * Grants permission to describe a data insights job
    *
    * See https://docs.aws.amazon.com/personalize/latest/dg/analyzing-data.html
@@ -309,6 +321,12 @@ export enum AwsPersonalizeActions {
    * See https://docs.aws.amazon.com/personalize/latest/dg/API_ListCampaigns.html
    */
   ListCampaigns = 'personalize:ListCampaigns',
+  /**
+   * Grants permission to list data deletion jobs
+   *
+   * See https://docs.aws.amazon.com/personalize/latest/dg/API_ListDataDeletionJobs.html
+   */
+  ListDataDeletionJobs = 'personalize:ListDataDeletionJobs',
   /**
    * Grants permission to list data insights jobs
    *
@@ -483,4 +501,10 @@ export enum AwsPersonalizeActions {
    * See https://docs.aws.amazon.com/personalize/latest/dg/API_UpdateRecommender.html
    */
   UpdateRecommender = 'personalize:UpdateRecommender',
+  /**
+   * Grants permission to update a solution
+   *
+   * See https://docs.aws.amazon.com/personalize/latest/dg/API_UpdateSolution.html
+   */
+  UpdateSolution = 'personalize:UpdateSolution',
 }

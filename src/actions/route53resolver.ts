@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53resolver.html
  *
- * 2024-02-12T09:59:02.096Z
+ * 2025-02-24T21:49:31.875Z
  */
 export enum AwsRoute53resolverActions {
   /**
@@ -286,7 +286,7 @@ export enum AwsRoute53resolverActions {
    */
   ListFirewallDomainLists = 'route53resolver:ListFirewallDomainLists',
   /**
-   * Grants permission to list all the Firewall domain under a speicfied Firewall do
+   * Grants permission to list all the Firewall domain under a specified Firewall do
    * main list
    *
    * See https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListFirewallDomains.html
@@ -307,7 +307,7 @@ export enum AwsRoute53resolverActions {
    */
   ListFirewallRuleGroups = 'route53resolver:ListFirewallRuleGroups',
   /**
-   * Grants permission to list all the Firewall rule under a speicfied Firewall rule
+   * Grants permission to list all the Firewall rule under a specified Firewall rule
    * group
    *
    * See https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListFirewallRules.html

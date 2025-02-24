@@ -6,15 +6,9 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudhsm.html
  *
- * 2024-02-12T09:56:23.287Z
+ * 2025-02-24T21:47:04.107Z
  */
 export enum AwsCloudhsmActions {
-  /**
-   * Adds or overwrites one or more tags for the specified AWS CloudHSM resource
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_AddTagsToResource.html
-   */
-  AddTagsToResource = 'cloudhsm:AddTagsToResource',
   /**
    * Grants permission to create a copy of a backup in the specified region
    *
@@ -28,24 +22,12 @@ export enum AwsCloudhsmActions {
    */
   CreateCluster = 'cloudhsm:CreateCluster',
   /**
-   * Creates a high-availability partition group
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_CreateHapg.html
-   */
-  CreateHapg = 'cloudhsm:CreateHapg',
-  /**
    * Grants permission to create a new hardware security module (HSM) in the specifi
    * ed AWS CloudHSM cluster
    *
    * See https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.html
    */
   CreateHsm = 'cloudhsm:CreateHsm',
-  /**
-   * Creates an HSM client
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_CreateLunaClient.html
-   */
-  CreateLunaClient = 'cloudhsm:CreateLunaClient',
   /**
    * Grants permission to delete the specified CloudHSM backup
    *
@@ -59,23 +41,17 @@ export enum AwsCloudhsmActions {
    */
   DeleteCluster = 'cloudhsm:DeleteCluster',
   /**
-   * Deletes a high-availability partition group
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DeleteHapg.html
-   */
-  DeleteHapg = 'cloudhsm:DeleteHapg',
-  /**
    * Grants permission to delete the specified HSM
    *
    * See https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteHsm.html
    */
   DeleteHsm = 'cloudhsm:DeleteHsm',
   /**
-   * Deletes a client
+   * Grants permission to delete the policy attached to CloudHSM resources
    *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DeleteLunaClient.html
+   * See https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteResourcePolicy.html
    */
-  DeleteLunaClient = 'cloudhsm:DeleteLunaClient',
+  DeleteResourcePolicy = 'cloudhsm:DeleteResourcePolicy',
   /**
    * Grants permission to get information about backups of AWS CloudHSM clusters
    *
@@ -89,31 +65,12 @@ export enum AwsCloudhsmActions {
    */
   DescribeClusters = 'cloudhsm:DescribeClusters',
   /**
-   * Retrieves information about a high-availability partition group
+   * Grants permission to get information about the policy attached to a AWS CloudHS
+   * M resource
    *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DescribeHapg.html
+   * See https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_GetResourcePolicy.html
    */
-  DescribeHapg = 'cloudhsm:DescribeHapg',
-  /**
-   * Retrieves information about an HSM. You can identify the HSM by its ARN or its
-   * serial number
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DescribeHsm.html
-   */
-  DescribeHsm = 'cloudhsm:DescribeHsm',
-  /**
-   * Retrieves information about an HSM client
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DescribeLunaClient.html
-   */
-  DescribeLunaClient = 'cloudhsm:DescribeLunaClient',
-  /**
-   * Gets the configuration files necessary to connect to all high availability part
-   * ition groups the client is associated with
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_GetConfig.html
-   */
-  GetConfig = 'cloudhsm:GetConfig',
+  GetResourcePolicy = 'cloudhsm:GetResourcePolicy',
   /**
    * Grants permission to claim an AWS CloudHSM cluster
    *
@@ -121,42 +78,11 @@ export enum AwsCloudhsmActions {
    */
   InitializeCluster = 'cloudhsm:InitializeCluster',
   /**
-   * Lists the Availability Zones that have available AWS CloudHSM capacity
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListAvailableZones.html
-   */
-  ListAvailableZones = 'cloudhsm:ListAvailableZones',
-  /**
-   * Lists the high-availability partition groups for the account
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListHapgs.html
-   */
-  ListHapgs = 'cloudhsm:ListHapgs',
-  /**
-   * Retrieves the identifiers of all of the HSMs provisioned for the current custom
-   * er
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListHsms.html
-   */
-  ListHsms = 'cloudhsm:ListHsms',
-  /**
-   * Lists all of the clients
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListLunaClients.html
-   */
-  ListLunaClients = 'cloudhsm:ListLunaClients',
-  /**
    * Grants permission to get a list of tags for the specified AWS CloudHSM cluster
    *
    * See https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ListTags.html
    */
   ListTags = 'cloudhsm:ListTags',
-  /**
-   * Returns a list of all tags for the specified AWS CloudHSM resource
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListTagsForResource.html
-   */
-  ListTagsForResource = 'cloudhsm:ListTagsForResource',
   /**
    * Grants permission to modify attributes for an AWS CloudHSM backup
    *
@@ -170,29 +96,11 @@ export enum AwsCloudhsmActions {
    */
   ModifyCluster = 'cloudhsm:ModifyCluster',
   /**
-   * Modifies an existing high-availability partition group
+   * Grants permission to attach a policy to an AWS CloudHSM resource
    *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ModifyHapg.html
+   * See https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_PutResourcePolicy.html
    */
-  ModifyHapg = 'cloudhsm:ModifyHapg',
-  /**
-   * Modifies an HSM
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ModifyHsm.html
-   */
-  ModifyHsm = 'cloudhsm:ModifyHsm',
-  /**
-   * Modifies the certificate used by the client
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ModifyLunaClient.html
-   */
-  ModifyLunaClient = 'cloudhsm:ModifyLunaClient',
-  /**
-   * Removes one or more tags from the specified AWS CloudHSM resource
-   *
-   * See https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_RemoveTagsFromResource.html
-   */
-  RemoveTagsFromResource = 'cloudhsm:RemoveTagsFromResource',
+  PutResourcePolicy = 'cloudhsm:PutResourcePolicy',
   /**
    * Grants permission to restore the specified CloudHSM backup
    *

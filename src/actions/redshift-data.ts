@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonredshiftdataapi.html
  *
- * 2024-02-12T09:58:52.173Z
+ * 2025-02-24T21:49:23.525Z
  */
 export enum AwsRedshiftDataActions {
   /**
@@ -39,6 +39,12 @@ export enum AwsRedshiftDataActions {
    * See https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_ExecuteStatement.html
    */
   ExecuteStatement = 'redshift-data:ExecuteStatement',
+  /**
+   * Grants permission to get staging bucket location for a given managed workgroup
+   *
+   * See https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_GetStagingBucketLocation.html
+   */
+  GetStagingBucketLocation = 'redshift-data:GetStagingBucketLocation',
   /**
    * Grants permission to fetch the result of a query
    *

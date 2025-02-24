@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_apachekafkaapisforamazonmskclusters.html
  *
- * 2024-02-12T09:55:54.758Z
+ * 2025-02-24T21:46:36.626Z
  */
 export enum AwsKafkaClusterActions {
   /**

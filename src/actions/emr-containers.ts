@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonemroneksemrcontainers.html
  *
- * 2024-02-12T09:57:20.908Z
+ * 2025-02-24T21:47:57.270Z
  */
 export enum AwsEmrContainersActions {
   /**
@@ -15,6 +15,12 @@ export enum AwsEmrContainersActions {
    * See https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CancelJobRun.html
    */
   CancelJobRun = 'emr-containers:CancelJobRun',
+  /**
+   * Grants permission to create a certificate
+   *
+   * See https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateCertificate.html
+   */
+  CreateCertificate = 'emr-containers:CreateCertificate',
   /**
    * Grants permission to create a job template
    *
@@ -27,6 +33,12 @@ export enum AwsEmrContainersActions {
    * See https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateManagedEndpoint.html
    */
   CreateManagedEndpoint = 'emr-containers:CreateManagedEndpoint',
+  /**
+   * Grants permission to create a security configuration
+   *
+   * See https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateSecurityConfiguration.html
+   */
+  CreateSecurityConfiguration = 'emr-containers:CreateSecurityConfiguration',
   /**
    * Grants permission to create a virtual cluster
    *
@@ -70,6 +82,12 @@ export enum AwsEmrContainersActions {
    */
   DescribeManagedEndpoint = 'emr-containers:DescribeManagedEndpoint',
   /**
+   * Grants permission to describe a security configuration
+   *
+   * See https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeSecurityConfiguration.html
+   */
+  DescribeSecurityConfiguration = 'emr-containers:DescribeSecurityConfiguration',
+  /**
    * Grants permission to describe a virtual cluster
    *
    * See https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeVirtualCluster.html
@@ -100,6 +118,12 @@ export enum AwsEmrContainersActions {
    * See https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListManagedEndpoints.html
    */
   ListManagedEndpoints = 'emr-containers:ListManagedEndpoints',
+  /**
+   * Grants permission to list security configurations
+   *
+   * See https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListSecurityConfigurations.html
+   */
+  ListSecurityConfigurations = 'emr-containers:ListSecurityConfigurations',
   /**
    * Grants permission to list tags for the specified resource
    *

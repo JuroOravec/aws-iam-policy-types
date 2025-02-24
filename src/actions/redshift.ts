@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonredshift.html
  *
- * 2024-02-12T09:58:51.385Z
+ * 2025-02-24T21:49:23.054Z
  */
 export enum AwsRedshiftActions {
   /**
@@ -49,6 +49,13 @@ export enum AwsRedshiftActions {
    * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_AuthorizeEndpointAccess.html
    */
   AuthorizeEndpointAccess = 'redshift:AuthorizeEndpointAccess',
+  /**
+   * Grants permission to Amazon Redshift to continuously validate that the target d
+   * ata warehouse can receive data replicated from the source ARN
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.setting-up.html
+   */
+  AuthorizeInboundIntegration = 'redshift:AuthorizeInboundIntegration',
   /**
    * Grants permission to the specified AWS account to restore a snapshot
    *
@@ -168,6 +175,25 @@ export enum AwsRedshiftActions {
    */
   CreateHsmConfiguration = 'redshift:CreateHsmConfiguration',
   /**
+   * Grants permission to the source principal to create an inbound integration for
+   * data to be replicated from the source into the target data warehouse
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.setting-up.html
+   */
+  CreateInboundIntegration = 'redshift:CreateInboundIntegration',
+  /**
+   * Grants permission to create an Amazon Redshift zero-ETL integration
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateIntegration.html
+   */
+  CreateIntegration = 'redshift:CreateIntegration',
+  /**
+   * Grants permission to create a qev2 idc application
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html
+   */
+  CreateQev2IdcApplication = 'redshift:CreateQev2IdcApplication',
+  /**
    * Grants permission to create a redshift idc application
    *
    * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateRedshiftIdcApplication.html
@@ -285,11 +311,23 @@ export enum AwsRedshiftActions {
    */
   DeleteHsmConfiguration = 'redshift:DeleteHsmConfiguration',
   /**
+   * Grants permission to delete an Amazon Redshift zero-ETL integration
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteIntegration.html
+   */
+  DeleteIntegration = 'redshift:DeleteIntegration',
+  /**
    * Grants permission to delete a partner integration from a cluster
    *
    * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeletePartner.html
    */
   DeletePartner = 'redshift:DeletePartner',
+  /**
+   * Grants permission to delete a qev2 idc application
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html
+   */
+  DeleteQev2IdcApplication = 'redshift:DeleteQev2IdcApplication',
   /**
    * Grants permission to delete a redshift idc application
    *
@@ -339,6 +377,12 @@ export enum AwsRedshiftActions {
    * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteUsageLimit.html
    */
   DeleteUsageLimit = 'redshift:DeleteUsageLimit',
+  /**
+   * Grants permission to deregister the specified namespace from a consumer
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeregisterNamespace.html
+   */
+  DeregisterNamespace = 'redshift:DeregisterNamespace',
   /**
    * Grants permission to describe attributes attached to the specified AWS account
    *
@@ -492,6 +536,12 @@ export enum AwsRedshiftActions {
    */
   DescribeInboundIntegrations = 'redshift:DescribeInboundIntegrations',
   /**
+   * Grants permission to describe an Amazon Redshift zero-ETL integration
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_DescribeIntegrations.html
+   */
+  DescribeIntegrations = 'redshift:DescribeIntegrations',
+  /**
    * Grants permission to describe whether information, such as queries and connecti
    * on attempts, is being logged for a cluster
    *
@@ -518,6 +568,12 @@ export enum AwsRedshiftActions {
    * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_DescribePartners.html
    */
   DescribePartners = 'redshift:DescribePartners',
+  /**
+   * Grants permission to describe qev2 idc applications
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html
+   */
+  DescribeQev2IdcApplications = 'redshift:DescribeQev2IdcApplications',
   /**
    * Grants permission to describe a query through the Amazon Redshift console
    *
@@ -817,6 +873,18 @@ export enum AwsRedshiftActions {
    */
   ModifyEventSubscription = 'redshift:ModifyEventSubscription',
   /**
+   * Grants permission to modify an Amazon Redshift zero-ETL integration
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyIntegration.html
+   */
+  ModifyIntegration = 'redshift:ModifyIntegration',
+  /**
+   * Grants permission to modify a qev2 idc application
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html
+   */
+  ModifyQev2IdcApplication = 'redshift:ModifyQev2IdcApplication',
+  /**
    * Grants permission to modify a redshift idc application
    *
    * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyRedshiftIdcApplication.html
@@ -878,6 +946,12 @@ export enum AwsRedshiftActions {
    * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_RebootCluster.html
    */
   RebootCluster = 'redshift:RebootCluster',
+  /**
+   * Grants permission to register the specified namespace to a consumer
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/APIReference/API_RegisterNamespace.html
+   */
+  RegisterNamespace = 'redshift:RegisterNamespace',
   /**
    * Grants permission to decline a datashare shared from another account
    *

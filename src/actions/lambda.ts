@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslambda.html
  *
- * 2024-02-12T09:58:02.294Z
+ * 2025-02-24T21:48:34.550Z
  */
 export enum AwsLambdaActions {
   /**
@@ -189,6 +189,12 @@ export enum AwsLambdaActions {
    */
   GetFunctionEventInvokeConfig = 'lambda:GetFunctionEventInvokeConfig',
   /**
+   * Grants permission to view the recursion configuration of an AWS Lambda function
+   *
+   * See https://docs.aws.amazon.com/lambda/latest/dg/API_GetFunctionRecursionConfig.html
+   */
+  GetFunctionRecursionConfig = 'lambda:GetFunctionRecursionConfig',
+  /**
    * Grants permission to read function url configuration for a Lambda function
    *
    * See https://docs.aws.amazon.com/lambda/latest/dg/API_GetFunctionUrlConfig.html
@@ -313,7 +319,8 @@ export enum AwsLambdaActions {
    */
   ListProvisionedConcurrencyConfigs = 'lambda:ListProvisionedConcurrencyConfigs',
   /**
-   * Grants permission to retrieve a list of tags for an AWS Lambda function
+   * Grants permission to retrieve a list of tags for an AWS Lambda function, event
+   * source mapping or code signing configuration resource
    *
    * See https://docs.aws.amazon.com/lambda/latest/dg/API_ListTags.html
    */
@@ -356,6 +363,13 @@ export enum AwsLambdaActions {
    */
   PutFunctionEventInvokeConfig = 'lambda:PutFunctionEventInvokeConfig',
   /**
+   * Grants permission to update the recursion configuration of an AWS Lambda functi
+   * on
+   *
+   * See https://docs.aws.amazon.com/lambda/latest/dg/API_PutFunctionRecursionConfig.html
+   */
+  PutFunctionRecursionConfig = 'lambda:PutFunctionRecursionConfig',
+  /**
    * Grants permission to configure provisioned concurrency for an AWS Lambda functi
    * on's alias or version
    *
@@ -384,13 +398,15 @@ export enum AwsLambdaActions {
    */
   RemovePermission = 'lambda:RemovePermission',
   /**
-   * Grants permission to add tags to an AWS Lambda function
+   * Grants permission to add tags to an AWS Lambda function, event source mapping o
+   * r code signing configuration resource
    *
    * See https://docs.aws.amazon.com/lambda/latest/dg/API_TagResources.html
    */
   TagResource = 'lambda:TagResource',
   /**
-   * Grants permission to remove tags from an AWS Lambda function
+   * Grants permission to remove tags from an AWS Lambda function, event source mapp
+   * ing or code signing configuration resource
    *
    * See https://docs.aws.amazon.com/lambda/latest/dg/API_UntagResource.html
    */

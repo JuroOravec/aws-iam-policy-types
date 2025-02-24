@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssavingsplans.html
  *
- * 2024-02-12T09:59:08.089Z
+ * 2025-02-24T21:49:38.356Z
  */
 export enum AwsSavingsplansActions {
   /**
@@ -54,6 +54,12 @@ export enum AwsSavingsplansActions {
    * See https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_ListTagsForResource.html
    */
   ListTagsForResource = 'savingsplans:ListTagsForResource',
+  /**
+   * Grants permission to return a savings plan
+   *
+   * See https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_ReturnSavingsPlan.html
+   */
+  ReturnSavingsPlan = 'savingsplans:ReturnSavingsPlan',
   /**
    * Grants permission to tag a savings plan
    *

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoninteractivevideoservice.html
  *
- * 2024-02-12T09:57:44.582Z
+ * 2025-02-24T21:48:19.861Z
  */
 export enum AwsIvsActions {
   /**
@@ -40,6 +40,12 @@ export enum AwsIvsActions {
    * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateEncoderConfiguration.html
    */
   CreateEncoderConfiguration = 'ivs:CreateEncoderConfiguration',
+  /**
+   * Grants permission to create a new ingest configuration
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateIngestConfiguration.html
+   */
+  CreateIngestConfiguration = 'ivs:CreateIngestConfiguration',
   /**
    * Grants permission to create a participant token
    *
@@ -89,6 +95,12 @@ export enum AwsIvsActions {
    */
   DeleteEncoderConfiguration = 'ivs:DeleteEncoderConfiguration',
   /**
+   * Grants permission to delete an ingest configuration for the specified ARN
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_DeleteIngestConfiguration.html
+   */
+  DeleteIngestConfiguration = 'ivs:DeleteIngestConfiguration',
+  /**
    * Grants permission to delete the playback key pair for a specified ARN
    *
    * See https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_DeletePlaybackKeyPair.html
@@ -100,6 +112,12 @@ export enum AwsIvsActions {
    * See https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_DeletePlaybackRestrictionPolicy.html
    */
   DeletePlaybackRestrictionPolicy = 'ivs:DeletePlaybackRestrictionPolicy',
+  /**
+   * Grants permission to delete the public key for the specified ARN
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_DeletePublicKey.html
+   */
+  DeletePublicKey = 'ivs:DeletePublicKey',
   /**
    * Grants permission to delete a recording configuration for the specified ARN
    *
@@ -149,6 +167,12 @@ export enum AwsIvsActions {
    */
   GetEncoderConfiguration = 'ivs:GetEncoderConfiguration',
   /**
+   * Grants permission to get the ingest configuration for the specified ARN
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetIngestConfiguration.html
+   */
+  GetIngestConfiguration = 'ivs:GetIngestConfiguration',
+  /**
    * Grants permission to get participant information for a specified stage ARN, ses
    * sion, and participant
    *
@@ -167,6 +191,12 @@ export enum AwsIvsActions {
    * See https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_GetPlaybackRestrictionPolicy.html
    */
   GetPlaybackRestrictionPolicy = 'ivs:GetPlaybackRestrictionPolicy',
+  /**
+   * Grants permission to get the public key for the specified ARN
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetPublicKey.html
+   */
+  GetPublicKey = 'ivs:GetPublicKey',
   /**
    * Grants permission to get the recording configuration for the specified ARN
    *
@@ -219,6 +249,12 @@ export enum AwsIvsActions {
    */
   ImportPlaybackKeyPair = 'ivs:ImportPlaybackKeyPair',
   /**
+   * Grants permission to import a public key
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_ImportPublicKey.html
+   */
+  ImportPublicKey = 'ivs:ImportPublicKey',
+  /**
    * Grants permission to get summary information about channels
    *
    * See https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_ListChannels.html
@@ -227,15 +263,21 @@ export enum AwsIvsActions {
   /**
    * Grants permission to get summary information about compositions
    *
-   * See https://docs.aws.amazon.com/ivs/latest/APIReference/API_ListCompositions.html
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_ListCompositions.html
    */
   ListCompositions = 'ivs:ListCompositions',
   /**
    * Grants permission to get summary information about encoder configurations
    *
-   * See https://docs.aws.amazon.com/ivs/latest/APIReference/API_ListEncoderConfigurations.html
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_ListEncoderConfigurations.html
    */
   ListEncoderConfigurations = 'ivs:ListEncoderConfigurations',
+  /**
+   * Grants permission to get summary information about ingest configurations
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_ListIngestConfigurations.html
+   */
+  ListIngestConfigurations = 'ivs:ListIngestConfigurations',
   /**
    * Grants permission to list participant events for a specified stage ARN, session
    * , and participant
@@ -259,9 +301,15 @@ export enum AwsIvsActions {
    * Grants permission to get summary information about playback restriction policie
    * s
    *
-   * See https://docs.aws.amazon.com/ivs/latest/APIReference/API_ListPlaybackRestrictionPolicies.html
+   * See https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_ListPlaybackRestrictionPolicies.html
    */
   ListPlaybackRestrictionPolicies = 'ivs:ListPlaybackRestrictionPolicies',
+  /**
+   * Grants permission to get summary information about public keys
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_ListPublicKeys.html
+   */
+  ListPublicKeys = 'ivs:ListPublicKeys',
   /**
    * Grants permission to get summary information about recording configurations
    *
@@ -283,7 +331,7 @@ export enum AwsIvsActions {
   /**
    * Grants permission to get summary information about storage configurations
    *
-   * See https://docs.aws.amazon.com/ivs/latest/APIReference/API_ListStorageConfigurations.html
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_ListStorageConfigurations.html
    */
   ListStorageConfigurations = 'ivs:ListStorageConfigurations',
   /**
@@ -361,6 +409,12 @@ export enum AwsIvsActions {
    * See https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_UpdateChannel.html
    */
   UpdateChannel = 'ivs:UpdateChannel',
+  /**
+   * Grants permission to update ingest configuration for a specified ARN
+   *
+   * See https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_UpdateIngestConfiguration.html
+   */
+  UpdateIngestConfiguration = 'ivs:UpdateIngestConfiguration',
   /**
    * Grants permission to update a playback restriction policy for a specified ARN
    *

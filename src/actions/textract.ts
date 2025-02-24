@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazontextract.html
  *
- * 2024-02-12T09:59:30.359Z
+ * 2025-02-24T21:49:59.409Z
  */
 export enum AwsTextractActions {
   /**

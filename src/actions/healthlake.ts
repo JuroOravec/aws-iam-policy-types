@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthlake.html
  *
- * 2024-02-12T09:57:34.993Z
+ * 2025-02-24T21:48:11.240Z
  */
 export enum AwsHealthlakeActions {
+  /**
+   * Grants permission to cancel an on going FHIR Export job with Delete
+   *
+   * See https://docs.aws.amazon.com/healthlake/latest/devguide/export-datastore-rest.html
+   */
+  CancelFHIRExportJobWithDelete = 'healthlake:CancelFHIRExportJobWithDelete',
   /**
    * Grants permission to create a datastore that can ingest and export FHIR data
    *
@@ -49,6 +55,13 @@ export enum AwsHealthlakeActions {
    */
   DescribeFHIRExportJob = 'healthlake:DescribeFHIRExportJob',
   /**
+   * Grants permission to display the properties of a FHIR export job, including the
+   * ID, ARN, name, and the status of the datastore with Get
+   *
+   * See https://docs.aws.amazon.com/healthlake/latest/devguide/export-datastore-rest.html
+   */
+  DescribeFHIRExportJobWithGet = 'healthlake:DescribeFHIRExportJobWithGet',
+  /**
    * Grants permission to display the properties of a FHIR import job, including the
    * ID, ARN, name, and the status of the datastore
    *
@@ -62,7 +75,20 @@ export enum AwsHealthlakeActions {
    */
   GetCapabilities = 'healthlake:GetCapabilities',
   /**
-   * Grants permission to list all FHIR datastores that are in the user’s account, r
+   * Grants permission to access exported files from a FHIR Export job initiated wit
+   * h Get
+   *
+   * See https://docs.aws.amazon.com/healthlake/latest/devguide/export-datastore-rest.html
+   */
+  GetExportedFile = 'healthlake:GetExportedFile',
+  /**
+   * Grants permission to read resource history
+   *
+   * See https://docs.aws.amazon.com/healthlake/latest/devguide/crud-healthlake.html
+   */
+  GetHistoryByResourceId = 'healthlake:GetHistoryByResourceId',
+  /**
+   * Grants permission to list all FHIR datastores that are in the user's account, r
    * egardless of datastore status
    *
    * See https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRDatastores.html
@@ -93,6 +119,12 @@ export enum AwsHealthlakeActions {
    */
   ReadResource = 'healthlake:ReadResource',
   /**
+   * Grants permission to search all resources related to a patient
+   *
+   * See https://docs.aws.amazon.com/healthlake/latest/devguide/search-healthlake.html
+   */
+  SearchEverything = 'healthlake:SearchEverything',
+  /**
    * Grants permission to search resources with GET method
    *
    * See https://docs.aws.amazon.com/healthlake/latest/devguide/search-healthlake.html
@@ -110,6 +142,18 @@ export enum AwsHealthlakeActions {
    * See https://docs.aws.amazon.com/healthlake/latest/APIReference/API_StartFHIRExportJob.html
    */
   StartFHIRExportJob = 'healthlake:StartFHIRExportJob',
+  /**
+   * Grants permission to begin a FHIR Export job with Get
+   *
+   * See https://docs.aws.amazon.com/healthlake/latest/devguide/export-datastore-rest.html
+   */
+  StartFHIRExportJobWithGet = 'healthlake:StartFHIRExportJobWithGet',
+  /**
+   * Grants permission to begin a FHIR Export job with Post
+   *
+   * See https://docs.aws.amazon.com/healthlake/latest/devguide/export-datastore-rest.html
+   */
+  StartFHIRExportJobWithPost = 'healthlake:StartFHIRExportJobWithPost',
   /**
    * Grants permission to begin a FHIR Import job
    *
@@ -134,4 +178,10 @@ export enum AwsHealthlakeActions {
    * See https://docs.aws.amazon.com/healthlake/latest/devguide/crud-healthlake.html
    */
   UpdateResource = 'healthlake:UpdateResource',
+  /**
+   * Grants permission to read version of a resource
+   *
+   * See https://docs.aws.amazon.com/healthlake/latest/devguide/crud-healthlake.html
+   */
+  VersionReadResource = 'healthlake:VersionReadResource',
 }

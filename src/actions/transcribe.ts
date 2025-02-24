@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazontranscribe.html
  *
- * 2024-02-12T09:59:32.185Z
+ * 2025-02-24T21:50:01.337Z
  */
 export enum AwsTranscribeActions {
   /**
@@ -125,6 +125,13 @@ export enum AwsTranscribeActions {
    * See https://docs.aws.amazon.com/transcribe/latest/dg/API_GetMedicalScribeJob.html
    */
   GetMedicalScribeJob = 'transcribe:GetMedicalScribeJob',
+  /**
+   * Grants permission to get information about the specified AWS HealthScribe strea
+   * ming session
+   *
+   * See https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_GetMedicalScribeStream.html
+   */
+  GetMedicalScribeStream = 'transcribe:GetMedicalScribeStream',
   /**
    * Grants permission to return information about a medical transcription job
    *
@@ -249,6 +256,14 @@ export enum AwsTranscribeActions {
    * See https://docs.aws.amazon.com/transcribe/latest/dg/API_StartMedicalScribeJob.html
    */
   StartMedicalScribeJob = 'transcribe:StartMedicalScribeJob',
+  /**
+   * Grants permission to start a bidirectional HTTP2 stream where audio is streamed
+   * to AWS HealthScribe and the transcription results are streamed to your applicat
+   * ion
+   *
+   * See https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalScribeStream.html
+   */
+  StartMedicalScribeStream = 'transcribe:StartMedicalScribeStream',
   /**
    * Grants permission to start a protocol where audio is streamed to Transcribe Med
    * ical and the transcription results are streamed to your application

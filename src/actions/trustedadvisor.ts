@@ -6,9 +6,16 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstrustedadvisor.html
  *
- * 2024-02-12T09:59:33.982Z
+ * 2025-02-24T21:50:02.832Z
  */
 export enum AwsTrustedadvisorActions {
+  /**
+   * Grants permission to update one or more exclusion status for a list of recommen
+   * dation resources
+   *
+   * See https://docs.aws.amazon.com/awssupport/latest/user/get-started-with-aws-trusted-advisor-api.html
+   */
+  BatchUpdateRecommendationResourceExclusion = 'trustedadvisor:BatchUpdateRecommendationResourceExclusion',
   /**
    * Grants permission to create an engagement
    *

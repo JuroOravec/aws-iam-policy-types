@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappconfig.html
  *
- * 2024-02-12T09:55:59.282Z
+ * 2025-02-24T21:46:41.205Z
  */
 export enum AwsAppconfigActions {
   /**
@@ -93,6 +93,12 @@ export enum AwsAppconfigActions {
    * See https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeleteHostedConfigurationVersion.html
    */
   DeleteHostedConfigurationVersion = 'appconfig:DeleteHostedConfigurationVersion',
+  /**
+   * Grants permission to view account-wide AppConfig settings
+   *
+   * See https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetAccountSettings.html
+   */
+  GetAccountSettings = 'appconfig:GetAccountSettings',
   /**
    * Grants permission to view details about an application
    *
@@ -238,6 +244,12 @@ export enum AwsAppconfigActions {
    * See https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UntagResource.html
    */
   UntagResource = 'appconfig:UntagResource',
+  /**
+   * Grants permission to modify account-wide AppConfig settings
+   *
+   * See https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UpdateAccountSettings.html
+   */
+  UpdateAccountSettings = 'appconfig:UpdateAccountSettings',
   /**
    * Grants permission to modify an application
    *

@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalsupportcases.html
  *
- * 2024-02-12T09:57:19.907Z
+ * 2025-02-24T21:47:56.336Z
  */
 export enum AwsElementalSupportCasesActions {
+  /**
+   * Grants permission to add a comment to a support case
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  AddCaseComment = 'elemental-support-cases:AddCaseComment',
   /**
    * Grants permission to verify whether the caller has the permissions to perform s
    * upport case operations
@@ -17,11 +23,30 @@ export enum AwsElementalSupportCasesActions {
    */
   CheckCasePermission = 'elemental-support-cases:CheckCasePermission',
   /**
+   * Grants permission to complete a multipart file upload to a support case
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  CompleteMultipartUpload = 'elemental-support-cases:CompleteMultipartUpload',
+  /**
    * Grants permission to create a support case
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software
    */
   CreateCase = 'elemental-support-cases:CreateCase',
+  /**
+   * Grants permission to create a cli command to allow a file upload to a support c
+   * ase
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  CreateS3CLIUploadCommand = 'elemental-support-cases:CreateS3CLIUploadCommand',
+  /**
+   * Grants permission to download a file from a support case
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  CreateS3DownloadUrl = 'elemental-support-cases:CreateS3DownloadUrl',
   /**
    * Grants permission to describe a support case in your account
    *
@@ -29,15 +54,64 @@ export enum AwsElementalSupportCasesActions {
    */
   GetCase = 'elemental-support-cases:GetCase',
   /**
+   * Grants permission to verify whether the caller has the permissions to perform s
+   * upport case operations
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  GetCasePermission = 'elemental-support-cases:GetCasePermission',
+  /**
    * Grants permission to list the support cases in your account
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software
    */
   GetCases = 'elemental-support-cases:GetCases',
   /**
+   * Grants permission to retrieve cached case user data for use in the Console
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  GetUICache = 'elemental-support-cases:GetUICache',
+  /**
+   * Grants permission to list tags on a support case
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  ListTagsForCase = 'elemental-support-cases:ListTagsForCase',
+  /**
+   * Grants permission to start a multipart file upload to a support case
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  StartMultipartUpload = 'elemental-support-cases:StartMultipartUpload',
+  /**
+   * Grants permission to add a tag on a support case
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  TagCase = 'elemental-support-cases:TagCase',
+  /**
+   * Grants permission to remove a tag on a support case
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  UntagCase = 'elemental-support-cases:UntagCase',
+  /**
    * Grants permission to update a support case
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software
    */
   UpdateCase = 'elemental-support-cases:UpdateCase',
+  /**
+   * Grants permission to update a support case status
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  UpdateCaseStatus = 'elemental-support-cases:UpdateCaseStatus',
+  /**
+   * Grants permission to update a multipart file upload to a support case
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software
+   */
+  UpdateMultipartUpload = 'elemental-support-cases:UpdateMultipartUpload',
 }

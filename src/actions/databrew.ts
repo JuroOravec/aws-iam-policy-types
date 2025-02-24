@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsgluedatabrew.html
  *
- * 2024-02-12T09:57:31.892Z
+ * 2025-02-24T21:48:08.313Z
  */
 export enum AwsDatabrewActions {
   /**

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonclouddirectory.html
  *
- * 2024-02-12T09:56:20.065Z
+ * 2025-02-24T21:47:00.958Z
  */
 export enum AwsClouddirectoryActions {
   /**
@@ -396,8 +396,8 @@ export enum AwsClouddirectoryActions {
    */
   UpdateFacet = 'clouddirectory:UpdateFacet',
   /**
-   * Grants permission to update a given typed link’s attributes. Attributes to be u
-   * pdated must not contribute to the typed link’s identity, as defined by its Iden
+   * Grants permission to update a given typed link's attributes. Attributes to be u
+   * pdated must not contribute to the typed link's identity, as defined by its Iden
    * tityAttributeOrder
    *
    * See https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_UpdateLinkAttributes.html

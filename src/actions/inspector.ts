@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoninspector.html
  *
- * 2024-02-12T09:57:42.998Z
+ * 2025-02-24T21:48:18.383Z
  */
 export enum AwsInspectorActions {
   /**

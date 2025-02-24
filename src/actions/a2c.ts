@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapp2container.html
  *
- * 2024-02-12T09:55:58.715Z
+ * 2025-02-24T21:46:40.679Z
  */
 export enum AwsA2cActions {
   /**

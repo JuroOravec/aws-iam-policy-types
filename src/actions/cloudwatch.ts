@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudwatch.html
  *
- * 2024-02-12T09:56:26.339Z
+ * 2025-02-24T21:47:06.580Z
  */
 export enum AwsCloudwatchActions {
   /**
@@ -215,6 +215,12 @@ export enum AwsCloudwatchActions {
    * See https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListDashboards.html
    */
   ListDashboards = 'cloudwatch:ListDashboards',
+  /**
+   * Grants permission to retrieve all the entities that are emitting a given metric
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html
+   */
+  ListEntitiesForMetric = 'cloudwatch:ListEntitiesForMetric',
   /**
    * Grants permission to list available managed Insight Rules for a given Resource
    * ARN

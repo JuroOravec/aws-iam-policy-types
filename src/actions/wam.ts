@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkspacesapplicationmanager.html
  *
- * 2024-02-12T09:59:43.055Z
+ * 2025-02-24T21:50:12.028Z
  */
 export enum AwsWamActions {
   /**

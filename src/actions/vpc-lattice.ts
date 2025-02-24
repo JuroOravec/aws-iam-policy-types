@@ -6,9 +6,16 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonvpclattice.html
  *
- * 2024-02-12T09:59:36.558Z
+ * 2025-02-24T21:50:05.743Z
  */
 export enum AwsVpcLatticeActions {
+  /**
+   * Grants permission to associate a resource configuration through Amazon EventBri
+   * dge and AWS Step Functions service networks
+   *
+   * See service-network-associations.html#service-network-resource-configuration
+   */
+  AssociateViaAWSServiceEventsAndStates = 'vpc-lattice:AssociateViaAWSService-EventsAndStates',
   /**
    * Grants permission to create an access log subscription
    *
@@ -21,6 +28,18 @@ export enum AwsVpcLatticeActions {
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_CreateListener.html
    */
   CreateListener = 'vpc-lattice:CreateListener',
+  /**
+   * Grants permission to create a resource configuration
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_CreateResourceConfiguration.html
+   */
+  CreateResourceConfiguration = 'vpc-lattice:CreateResourceConfiguration',
+  /**
+   * Grants permission to create a resource gateway
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_CreateResourceGateway.html
+   */
+  CreateResourceGateway = 'vpc-lattice:CreateResourceGateway',
   /**
    * Grants permission to create a rule
    *
@@ -40,6 +59,13 @@ export enum AwsVpcLatticeActions {
    */
   CreateServiceNetwork = 'vpc-lattice:CreateServiceNetwork',
   /**
+   * Grants permission to create an association between a service network and a reso
+   * urce
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_CreateServiceNetworkResourceAssociation.html
+   */
+  CreateServiceNetworkResourceAssociation = 'vpc-lattice:CreateServiceNetworkResourceAssociation',
+  /**
    * Grants permission to create a service network and service association
    *
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_CreateServiceNetworkServiceAssociation.html
@@ -51,6 +77,13 @@ export enum AwsVpcLatticeActions {
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_CreateServiceNetworkVpcAssociation.html
    */
   CreateServiceNetworkVpcAssociation = 'vpc-lattice:CreateServiceNetworkVpcAssociation',
+  /**
+   * Grants permission to create an association between a service network and VPC en
+   * dpoint
+   *
+   * See service-network-associations.html#service-network-vpc-endpoint
+   */
+  CreateServiceNetworkVpcEndpointAssociation = 'vpc-lattice:CreateServiceNetworkVpcEndpointAssociation',
   /**
    * Grants permission to create a target group
    *
@@ -76,6 +109,24 @@ export enum AwsVpcLatticeActions {
    */
   DeleteListener = 'vpc-lattice:DeleteListener',
   /**
+   * Grants permission to delete a resource configuration
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DeleteResourceConfiguration.html
+   */
+  DeleteResourceConfiguration = 'vpc-lattice:DeleteResourceConfiguration',
+  /**
+   * Grants permission to delete a resource endpoint association
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DeleteResourceEndpointAssociation.html
+   */
+  DeleteResourceEndpointAssociation = 'vpc-lattice:DeleteResourceEndpointAssociation',
+  /**
+   * Grants permission to delete a resource gateway
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DeleteResourceGateway.html
+   */
+  DeleteResourceGateway = 'vpc-lattice:DeleteResourceGateway',
+  /**
    * Grants permission to delete a resource policy
    *
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DeleteResourcePolicy.html
@@ -99,6 +150,13 @@ export enum AwsVpcLatticeActions {
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DeleteServiceNetwork.html
    */
   DeleteServiceNetwork = 'vpc-lattice:DeleteServiceNetwork',
+  /**
+   * Grants permission to delete the association between a service network and resou
+   * rce
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DeleteServiceNetworkResourceAssociation.html
+   */
+  DeleteServiceNetworkResourceAssociation = 'vpc-lattice:DeleteServiceNetworkResourceAssociation',
   /**
    * Grants permission to delete a service network service association
    *
@@ -142,6 +200,18 @@ export enum AwsVpcLatticeActions {
    */
   GetListener = 'vpc-lattice:GetListener',
   /**
+   * Grants permission to get information about a resource configuration
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetResourceConfiguration.html
+   */
+  GetResourceConfiguration = 'vpc-lattice:GetResourceConfiguration',
+  /**
+   * Grants permission to get information about a resource gateway
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetResourceGateway.html
+   */
+  GetResourceGateway = 'vpc-lattice:GetResourceGateway',
+  /**
    * Grants permission to get information about a resource policy
    *
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetResourcePolicy.html
@@ -165,6 +235,13 @@ export enum AwsVpcLatticeActions {
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetServiceNetwork.html
    */
   GetServiceNetwork = 'vpc-lattice:GetServiceNetwork',
+  /**
+   * Grants permission to get information about an association between a service net
+   * work and resource configuration
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetServiceNetworkResourceAssociation.html
+   */
+  GetServiceNetworkResourceAssociation = 'vpc-lattice:GetServiceNetworkResourceAssociation',
   /**
    * Grants permission to get information about a service network and service associ
    * ation
@@ -199,11 +276,37 @@ export enum AwsVpcLatticeActions {
    */
   ListListeners = 'vpc-lattice:ListListeners',
   /**
+   * Grants permission to list some or all resource configurations
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListResourceConfigurations.html
+   */
+  ListResourceConfigurations = 'vpc-lattice:ListResourceConfigurations',
+  /**
+   * Grants permission to list some or all associations between a resource configura
+   * tion and VPC endpoint
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListResourceEndpointAssociations.html
+   */
+  ListResourceEndpointAssociations = 'vpc-lattice:ListResourceEndpointAssociations',
+  /**
+   * Grants permission to list some or all resource gateways
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListResourceGateways.html
+   */
+  ListResourceGateways = 'vpc-lattice:ListResourceGateways',
+  /**
    * Grants permission to list some or all rules
    *
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListRules.html
    */
   ListRules = 'vpc-lattice:ListRules',
+  /**
+   * Grants permission to list some or all associations between a service network an
+   * d resource configuration
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListServiceNetworkResourceAssociations.html
+   */
+  ListServiceNetworkResourceAssociations = 'vpc-lattice:ListServiceNetworkResourceAssociations',
   /**
    * Grants permission to list some or all service network and service associations
    *
@@ -216,6 +319,13 @@ export enum AwsVpcLatticeActions {
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListServiceNetworkVpcAssociations.html
    */
   ListServiceNetworkVpcAssociations = 'vpc-lattice:ListServiceNetworkVpcAssociations',
+  /**
+   * Grants permission to list some or all associations between a service network an
+   * d VPC endpoint
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ListServiceNetworkVpcEndpointAssociations.html
+   */
+  ListServiceNetworkVpcEndpointAssociations = 'vpc-lattice:ListServiceNetworkVpcEndpointAssociations',
   /**
    * Grants permission to list the service networks owned by a caller account or sha
    * red with the caller account
@@ -256,8 +366,8 @@ export enum AwsVpcLatticeActions {
    */
   PutAuthPolicy = 'vpc-lattice:PutAuthPolicy',
   /**
-   * Grants permission to create a resource policy for a service network or a servic
-   * e
+   * Grants permission to create a resource policy for a resource configuration, ser
+   * vice, or service network
    *
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_PutResourcePolicy.html
    */
@@ -292,6 +402,18 @@ export enum AwsVpcLatticeActions {
    * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_UpdateListener.html
    */
   UpdateListener = 'vpc-lattice:UpdateListener',
+  /**
+   * Grants permission to update a resource configuration
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_UpdateResourceConfiguration.html
+   */
+  UpdateResourceConfiguration = 'vpc-lattice:UpdateResourceConfiguration',
+  /**
+   * Grants permission to update a resource gateway
+   *
+   * See https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_UpdateResourceGateway.html
+   */
+  UpdateResourceGateway = 'vpc-lattice:UpdateResourceGateway',
   /**
    * Grants permission to update a rule
    *

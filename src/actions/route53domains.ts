@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53domains.html
  *
- * 2024-02-12T09:59:00.022Z
+ * 2025-02-24T21:49:29.452Z
  */
 export enum AwsRoute53domainsActions {
   /**

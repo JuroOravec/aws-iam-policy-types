@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondetective.html
  *
- * 2024-02-12T09:56:56.859Z
+ * 2025-02-24T21:47:35.870Z
  */
 export enum AwsDetectiveActions {
   /**

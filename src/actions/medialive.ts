@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmedialive.html
  *
- * 2024-02-12T09:57:16.827Z
+ * 2025-02-24T21:47:53.446Z
  */
 export enum AwsMedialiveActions {
   /**
@@ -59,6 +59,42 @@ export enum AwsMedialiveActions {
    */
   CreateChannel = 'medialive:CreateChannel',
   /**
+   * Grants permission to create a cluster
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  CreateChannelPlacementGroup = 'medialive:CreateChannelPlacementGroup',
+  /**
+   * Grants permission to create a cloudwatch alarm template
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms-templates-create.html
+   */
+  CreateCloudWatchAlarmTemplate = 'medialive:CreateCloudWatchAlarmTemplate',
+  /**
+   * Grants permission to create a cloudwatch alarm template group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms-templates-create.html
+   */
+  CreateCloudWatchAlarmTemplateGroup = 'medialive:CreateCloudWatchAlarmTemplateGroup',
+  /**
+   * Grants permission to create a cluster
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  CreateCluster = 'medialive:CreateCluster',
+  /**
+   * Grants permission to create a eventbridge rule template
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications-template-create.html
+   */
+  CreateEventBridgeRuleTemplate = 'medialive:CreateEventBridgeRuleTemplate',
+  /**
+   * Grants permission to create a eventbridge rule template group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications-template-create.html
+   */
+  CreateEventBridgeRuleTemplateGroup = 'medialive:CreateEventBridgeRuleTemplateGroup',
+  /**
    * Grants permission to create an input
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/creating-input.html
@@ -83,14 +119,39 @@ export enum AwsMedialiveActions {
    */
   CreateMultiplexProgram = 'medialive:CreateMultiplexProgram',
   /**
+   * Grants permission to create a network
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  CreateNetwork = 'medialive:CreateNetwork',
+  /**
+   * Grants permission to create a node
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  CreateNode = 'medialive:CreateNode',
+  /**
+   * Grants permission to create a node registration script
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  CreateNodeRegistrationScript = 'medialive:CreateNodeRegistrationScript',
+  /**
    * Grants permission to create a partner input
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/input-create-cdi-partners.html
    */
   CreatePartnerInput = 'medialive:CreatePartnerInput',
   /**
+   * Grants permission to create a signal map
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-signal-maps-create.html
+   */
+  CreateSignalMap = 'medialive:CreateSignalMap',
+  /**
    * Grants permission to create tags for channels, inputs, input security groups, m
-   * ultiplexes, and reservations
+   * ultiplexes, reservations, nodes, networks, clusters, channel placement groups,
+   * signal maps, template groups, and templates
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/tagging.html
    */
@@ -101,6 +162,42 @@ export enum AwsMedialiveActions {
    * See https://docs.aws.amazon.com/medialive/latest/ug/editing-deleting-channel.html
    */
   DeleteChannel = 'medialive:DeleteChannel',
+  /**
+   * Grants permission to delete a cluster
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  DeleteChannelPlacementGroup = 'medialive:DeleteChannelPlacementGroup',
+  /**
+   * Grants permission to delete a cloudwatch alarm template
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms.html
+   */
+  DeleteCloudWatchAlarmTemplate = 'medialive:DeleteCloudWatchAlarmTemplate',
+  /**
+   * Grants permission to delete a cloudwatch alarm template group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms.html
+   */
+  DeleteCloudWatchAlarmTemplateGroup = 'medialive:DeleteCloudWatchAlarmTemplateGroup',
+  /**
+   * Grants permission to delete a cluster
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  DeleteCluster = 'medialive:DeleteCluster',
+  /**
+   * Grants permission to delete a eventbridge rule template
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications.html
+   */
+  DeleteEventBridgeRuleTemplate = 'medialive:DeleteEventBridgeRuleTemplate',
+  /**
+   * Grants permission to delete a eventbridge rule template group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications.html
+   */
+  DeleteEventBridgeRuleTemplateGroup = 'medialive:DeleteEventBridgeRuleTemplateGroup',
   /**
    * Grants permission to delete an input
    *
@@ -126,6 +223,18 @@ export enum AwsMedialiveActions {
    */
   DeleteMultiplexProgram = 'medialive:DeleteMultiplexProgram',
   /**
+   * Grants permission to delete a network
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  DeleteNetwork = 'medialive:DeleteNetwork',
+  /**
+   * Grants permission to delete a node
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  DeleteNode = 'medialive:DeleteNode',
+  /**
    * Grants permission to delete an expired reservation
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/deleting-reservations.html
@@ -138,8 +247,15 @@ export enum AwsMedialiveActions {
    */
   DeleteSchedule = 'medialive:DeleteSchedule',
   /**
+   * Grants permission to delete a signal map
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-signal-maps-delete.html
+   */
+  DeleteSignalMap = 'medialive:DeleteSignalMap',
+  /**
    * Grants permission to delete tags from channels, inputs, input security groups,
-   * multiplexes, and reservations
+   * multiplexes, reservations, nodes, clusters, networks, channel placement groups,
+   * signal maps, template groups, and templates
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/tagging.html
    */
@@ -156,6 +272,18 @@ export enum AwsMedialiveActions {
    * See https://docs.aws.amazon.com/medialive/latest/ug/viewing-channel-configuration.html
    */
   DescribeChannel = 'medialive:DescribeChannel',
+  /**
+   * Grants permission to describe a channel placement group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/emla-setup-cl-create.html
+   */
+  DescribeChannelPlacementGroup = 'medialive:DescribeChannelPlacementGroup',
+  /**
+   * Grants permission to describe a cluster
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/emla-setup-cl-create.html
+   */
+  DescribeCluster = 'medialive:DescribeCluster',
   /**
    * Grants permission to describe an input
    *
@@ -193,6 +321,18 @@ export enum AwsMedialiveActions {
    */
   DescribeMultiplexProgram = 'medialive:DescribeMultiplexProgram',
   /**
+   * Grants permission to describe a network
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/emla-setup-cl-networks.html
+   */
+  DescribeNetwork = 'medialive:DescribeNetwork',
+  /**
+   * Grants permission to describe a node
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/emla-setup-cl-nodes-create.html
+   */
+  DescribeNode = 'medialive:DescribeNode',
+  /**
    * Grants permission to get details about a reservation offering
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/purchasing-reservations.html
@@ -217,11 +357,77 @@ export enum AwsMedialiveActions {
    */
   DescribeThumbnails = 'medialive:DescribeThumbnails',
   /**
+   * Grants permission to get a cloudwatch alarm template
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms.html
+   */
+  GetCloudWatchAlarmTemplate = 'medialive:GetCloudWatchAlarmTemplate',
+  /**
+   * Grants permission to get a cloudwatch alarm template group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms.html
+   */
+  GetCloudWatchAlarmTemplateGroup = 'medialive:GetCloudWatchAlarmTemplateGroup',
+  /**
+   * Grants permission to get a eventbridge rule template
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications.html
+   */
+  GetEventBridgeRuleTemplate = 'medialive:GetEventBridgeRuleTemplate',
+  /**
+   * Grants permission to get a eventbridge rule template group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications.html
+   */
+  GetEventBridgeRuleTemplateGroup = 'medialive:GetEventBridgeRuleTemplateGroup',
+  /**
+   * Grants permission to get a signal map
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-signal-maps-view.html
+   */
+  GetSignalMap = 'medialive:GetSignalMap',
+  /**
+   * Grants permission to list channel placement groups
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  ListChannelPlacementGroups = 'medialive:ListChannelPlacementGroups',
+  /**
    * Grants permission to list channels
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/viewing-channel-configuration.html
    */
   ListChannels = 'medialive:ListChannels',
+  /**
+   * Grants permission to list cloudwatch alarm template groups
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms.html
+   */
+  ListCloudWatchAlarmTemplateGroups = 'medialive:ListCloudWatchAlarmTemplateGroups',
+  /**
+   * Grants permission to list cloudwatch alarm templates
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms.html
+   */
+  ListCloudWatchAlarmTemplates = 'medialive:ListCloudWatchAlarmTemplates',
+  /**
+   * Grants permission to list clusters
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  ListClusters = 'medialive:ListClusters',
+  /**
+   * Grants permission to list eventbridge rule template groups
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications.html
+   */
+  ListEventBridgeRuleTemplateGroups = 'medialive:ListEventBridgeRuleTemplateGroups',
+  /**
+   * Grants permission to list eventbridge rule templates
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications.html
+   */
+  ListEventBridgeRuleTemplates = 'medialive:ListEventBridgeRuleTemplates',
   /**
    * Grants permission to list input device transfers
    *
@@ -259,6 +465,18 @@ export enum AwsMedialiveActions {
    */
   ListMultiplexes = 'medialive:ListMultiplexes',
   /**
+   * Grants permission to list networks
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  ListNetworks = 'medialive:ListNetworks',
+  /**
+   * Grants permission to list nodes
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  ListNodes = 'medialive:ListNodes',
+  /**
    * Grants permission to list reservation offerings
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/purchasing-reservations.html
@@ -271,12 +489,31 @@ export enum AwsMedialiveActions {
    */
   ListReservations = 'medialive:ListReservations',
   /**
+   * Grants permission to list signal maps
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-signal-maps-view.html
+   */
+  ListSignalMaps = 'medialive:ListSignalMaps',
+  /**
    * Grants permission to list tags for channels, inputs, input security groups, mul
-   * tiplexes, and reservations
+   * tiplexes, reservations, nodes, clusters, networks, channel placement groups, si
+   * gnal maps, template groups, and templates
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/tagging.html
    */
   ListTagsForResource = 'medialive:ListTagsForResource',
+  /**
+   * Grants permission to list available versions of MediaLive
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/medialive-versions.html
+   */
+  ListVersions = 'medialive:ListVersions',
+  /**
+   * Grants permission to the node to poll the cluster
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/about-emla.html
+   */
+  PollAnywhere = 'medialive:PollAnywhere',
   /**
    * Grants permission to purchase a reservation offering
    *
@@ -296,11 +533,23 @@ export enum AwsMedialiveActions {
    */
   RejectInputDeviceTransfer = 'medialive:RejectInputDeviceTransfer',
   /**
+   * Grants permission to restart pipelines on a running channel
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/maintenance-user-initiated.html
+   */
+  RestartChannelPipelines = 'medialive:RestartChannelPipelines',
+  /**
    * Grants permission to start a channel
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/starting-stopping-deleting-a-channel.html
    */
   StartChannel = 'medialive:StartChannel',
+  /**
+   * Grants permission to start deletion of a signal map's monitor
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-signal-maps-delete.html
+   */
+  StartDeleteMonitorDeployment = 'medialive:StartDeleteMonitorDeployment',
   /**
    * Grants permission to start an input device attached to a MediaConnect flow
    *
@@ -314,11 +563,23 @@ export enum AwsMedialiveActions {
    */
   StartInputDeviceMaintenanceWindow = 'medialive:StartInputDeviceMaintenanceWindow',
   /**
+   * Grants permission to start a signal map monitor deployment
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-deploy.html
+   */
+  StartMonitorDeployment = 'medialive:StartMonitorDeployment',
+  /**
    * Grants permission to start a multiplex
    *
    * See https://docs.aws.amazon.com/medialive/latest/ug/start-multiplex.html
    */
   StartMultiplex = 'medialive:StartMultiplex',
+  /**
+   * Grants permission to start a signal map update
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-signal-maps-update.html
+   */
+  StartUpdateSignalMap = 'medialive:StartUpdateSignalMap',
   /**
    * Grants permission to stop a channel
    *
@@ -337,6 +598,12 @@ export enum AwsMedialiveActions {
    * See https://docs.aws.amazon.com/medialive/latest/ug/stop-multiplex.title.html
    */
   StopMultiplex = 'medialive:StopMultiplex',
+  /**
+   * Grants permission to the node to submit state changes to the cluster
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/about-emla.html
+   */
+  SubmitAnywhereStateChange = 'medialive:SubmitAnywhereStateChange',
   /**
    * Grants permission to transfer an input device
    *
@@ -361,6 +628,42 @@ export enum AwsMedialiveActions {
    * See https://docs.aws.amazon.com/medialive/latest/ug/editing-deleting-channel.html
    */
   UpdateChannelClass = 'medialive:UpdateChannelClass',
+  /**
+   * Grants permission to update a node
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  UpdateChannelPlacementGroup = 'medialive:UpdateChannelPlacementGroup',
+  /**
+   * Grants permission to update a cloudwatch alarm template
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms-templates-create.html
+   */
+  UpdateCloudWatchAlarmTemplate = 'medialive:UpdateCloudWatchAlarmTemplate',
+  /**
+   * Grants permission to update a cloudwatch alarm template group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-alarms-templates-create.html
+   */
+  UpdateCloudWatchAlarmTemplateGroup = 'medialive:UpdateCloudWatchAlarmTemplateGroup',
+  /**
+   * Grants permission to update a cluster
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/emla-setup-cl-create.html
+   */
+  UpdateCluster = 'medialive:UpdateCluster',
+  /**
+   * Grants permission to update a eventbridge rule template
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications-template-create.html
+   */
+  UpdateEventBridgeRuleTemplate = 'medialive:UpdateEventBridgeRuleTemplate',
+  /**
+   * Grants permission to update a eventbridge rule template group
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-notifications-template-create.html
+   */
+  UpdateEventBridgeRuleTemplateGroup = 'medialive:UpdateEventBridgeRuleTemplateGroup',
   /**
    * Grants permission to update an input
    *
@@ -391,6 +694,24 @@ export enum AwsMedialiveActions {
    * See https://docs.aws.amazon.com/medialive/latest/ug/edit-multiplex-program-channel.html
    */
   UpdateMultiplexProgram = 'medialive:UpdateMultiplexProgram',
+  /**
+   * Grants permission to update the state of a node
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/emla-deploy-identify-network-requirements.html
+   */
+  UpdateNetwork = 'medialive:UpdateNetwork',
+  /**
+   * Grants permission to update a node
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/emla-setup-cl-nodes-create.html
+   */
+  UpdateNode = 'medialive:UpdateNode',
+  /**
+   * Grants permission to update the state of a node
+   *
+   * See https://docs.aws.amazon.com/medialive/latest/ug/setup-emla.html
+   */
+  UpdateNodeState = 'medialive:UpdateNodeState',
   /**
    * Grants permission to update a reservation
    *

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonfinspace.html
  *
- * 2024-02-12T09:57:25.419Z
+ * 2025-02-24T21:48:02.494Z
  */
 export enum AwsFinspaceActions {
   /**
@@ -87,6 +87,12 @@ export enum AwsFinspaceActions {
    * See https://docs.aws.amazon.com/finspace/latest/management-api/API_DeleteKxCluster.html
    */
   DeleteKxCluster = 'finspace:DeleteKxCluster',
+  /**
+   * Grants permission to delete a node from a kdb cluster
+   *
+   * See https://docs.aws.amazon.com/finspace/latest/management-api/API_DeleteKxClusterNode.html
+   */
+  DeleteKxClusterNode = 'finspace:DeleteKxClusterNode',
   /**
    * Grants permission to delete a kdb database
    *

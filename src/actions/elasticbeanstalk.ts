@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticbeanstalk.html
  *
- * 2024-02-12T09:57:06.140Z
+ * 2025-02-24T21:47:44.800Z
  */
 export enum AwsElasticbeanstalkActions {
   /**
@@ -317,8 +317,9 @@ export enum AwsElasticbeanstalkActions {
    */
   UpdateEnvironment = 'elasticbeanstalk:UpdateEnvironment',
   /**
-   * Grants permission to add tags to an Elastic Beanstalk resource, remove tags, an
-   * d to update tag values
+   * Doesn't grant permission to update tags. To grant permission to add tags to an
+   * Elastic Beanstalk resource, remove tags, and to update tag values, specify elas
+   * ticbeanstalk:AddTags and elasticbeanstalk:RemoveTags
    *
    * See https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateTagsForResource.html
    */

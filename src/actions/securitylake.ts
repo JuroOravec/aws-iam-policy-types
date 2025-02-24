@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsecuritylake.html
  *
- * 2024-02-12T09:59:10.218Z
+ * 2025-02-24T21:49:40.362Z
  */
 export enum AwsSecuritylakeActions {
   /**
@@ -116,7 +116,7 @@ export enum AwsSecuritylakeActions {
    */
   GetDataLakeExceptionSubscription = 'securitylake:GetDataLakeExceptionSubscription',
   /**
-   * Grants permission to get an organization’s configuration setting for automatica
+   * Grants permission to get an organization's configuration setting for automatica
    * lly enabling Amazon Security Lake access for new organization accounts
    *
    * See https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetDataLakeOrganizationConfiguration.html

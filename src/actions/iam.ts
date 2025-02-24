@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementiam.html
  *
- * 2024-02-12T09:57:39.777Z
+ * 2025-02-24T21:48:15.516Z
  */
 export enum AwsIamActions {
   /**
@@ -317,12 +317,40 @@ export enum AwsIamActions {
    */
   DetachUserPolicy = 'iam:DetachUserPolicy',
   /**
+   * Grants permission to disable the management of member account root user credent
+   * ials for an organization managed under the current account
+   *
+   * See https://docs.aws.amazon.com/IAM/latest/APIReference/API_DisableOrganizationsRootCredentialsManagement.html
+   */
+  DisableOrganizationsRootCredentialsManagement = 'iam:DisableOrganizationsRootCredentialsManagement',
+  /**
+   * Grants permission to disable privileged root actions in member accounts for an
+   * organization managed under the current account
+   *
+   * See https://docs.aws.amazon.com/IAM/latest/APIReference/API_DisableOrganizationsRootSessions.html
+   */
+  DisableOrganizationsRootSessions = 'iam:DisableOrganizationsRootSessions',
+  /**
    * Grants permission to enable an MFA device and associate it with the specified I
    * AM user
    *
    * See https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableMFADevice.html
    */
   EnableMFADevice = 'iam:EnableMFADevice',
+  /**
+   * Grants permission to enable the management of member account root user credenti
+   * als for an organization managed under the current account
+   *
+   * See https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOrganizationsRootCredentialsManagement.html
+   */
+  EnableOrganizationsRootCredentialsManagement = 'iam:EnableOrganizationsRootCredentialsManagement',
+  /**
+   * Grants permission to enable privileged root actions in member accounts for an o
+   * rganization managed under the current account
+   *
+   * See https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOrganizationsRootSessions.html
+   */
+  EnableOrganizationsRootSessions = 'iam:EnableOrganizationsRootSessions',
   /**
    * Grants permission to generate a credential report for the AWS account
    *
@@ -657,6 +685,13 @@ export enum AwsIamActions {
    * See https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListOpenIDConnectProviders.html
    */
   ListOpenIDConnectProviders = 'iam:ListOpenIDConnectProviders',
+  /**
+   * Grants permission to list the centralized root access features enabled for your
+   * organization
+   *
+   * See https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListOrganizationsFeatures.html
+   */
+  ListOrganizationsFeatures = 'iam:ListOrganizationsFeatures',
   /**
    * Grants permission to list all managed policies
    *

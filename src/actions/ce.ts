@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscostexplorerservice.html
  *
- * 2024-02-12T09:56:49.738Z
+ * 2025-02-24T21:47:28.855Z
  */
 export enum AwsCeActions {
   /**
@@ -115,6 +115,12 @@ export enum AwsCeActions {
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
    */
   GetApproximateUsageRecords = 'ce:GetApproximateUsageRecords',
+  /**
+   * Grants permission to retrieve the commitment purchase analysis for your account
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetCommitmentPurchaseAnalysis.html
+   */
+  GetCommitmentPurchaseAnalysis = 'ce:GetCommitmentPurchaseAnalysis',
   /**
    * Grants permission to view whether existing or fine-grained IAM actions are bein
    * g used to control authorization to Billing, Cost Management, and Account consol
@@ -232,6 +238,19 @@ export enum AwsCeActions {
    */
   GetUsageForecast = 'ce:GetUsageForecast',
   /**
+   * Grants permission to retrieve a list of your historical commitment purchase ana
+   * lyses
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ListCommitmentPurchaseAnalyses.html
+   */
+  ListCommitmentPurchaseAnalyses = 'ce:ListCommitmentPurchaseAnalyses',
+  /**
+   * Grants permission to list Cost Allocation Tag backfill history
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ListCostAllocationTagBackfillHistory.html
+   */
+  ListCostAllocationTagBackfillHistory = 'ce:ListCostAllocationTagBackfillHistory',
+  /**
    * Grants permission to list Cost Allocation Tags
    *
    * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ListCostAllocationTags.html
@@ -263,6 +282,18 @@ export enum AwsCeActions {
    * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ProvideAnomalyFeedback.html
    */
   ProvideAnomalyFeedback = 'ce:ProvideAnomalyFeedback',
+  /**
+   * Grants permission to request a commitment purchase analysis
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_StartCommitmentPurchaseAnalysis.html
+   */
+  StartCommitmentPurchaseAnalysis = 'ce:StartCommitmentPurchaseAnalysis',
+  /**
+   * Grants permission to request a Cost Allocation Tag backfill
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_StartCostAllocationTagBackfill.html
+   */
+  StartCostAllocationTagBackfill = 'ce:StartCostAllocationTagBackfill',
   /**
    * Grants permission to request a Savings Plans recommendation generation
    *

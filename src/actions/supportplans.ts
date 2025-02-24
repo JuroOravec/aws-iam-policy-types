@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupportplans.html
  *
- * 2024-02-12T09:59:24.278Z
+ * 2025-02-24T21:49:53.238Z
  */
 export enum AwsSupportplansActions {
   /**
@@ -29,6 +29,13 @@ export enum AwsSupportplansActions {
    * See https://docs.aws.amazon.com/awssupport/latest/user/security-support-plans.html
    */
   GetSupportPlanUpdateStatus = 'supportplans:GetSupportPlanUpdateStatus',
+  /**
+   * Grants permission to view a list of all support plan modifiers for this AWS acc
+   * ount
+   *
+   * See https://docs.aws.amazon.com/awssupport/latest/user/security-support-plans.html
+   */
+  ListSupportPlanModifiers = 'supportplans:ListSupportPlanModifiers',
   /**
    * Grants permission to update the support plan for this AWS account
    *

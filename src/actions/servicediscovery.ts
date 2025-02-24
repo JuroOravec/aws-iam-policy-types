@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudmap.html
  *
- * 2024-02-12T09:56:20.572Z
+ * 2025-02-24T21:47:01.442Z
  */
 export enum AwsServicediscoveryActions {
   /**
@@ -47,6 +47,12 @@ export enum AwsServicediscoveryActions {
    * See https://docs.aws.amazon.com/cloud-map/latest/api/API_DeleteService.html
    */
   DeleteService = 'servicediscovery:DeleteService',
+  /**
+   * Grants permission to delete specified attributes from a service
+   *
+   * See https://docs.aws.amazon.com/cloud-map/latest/api/API_DeleteServiceAttributes.html
+   */
+  DeleteServiceAttributes = 'servicediscovery:DeleteServiceAttributes',
   /**
    * Grants permission to delete the records and the health check, if any, that Amaz
    * on Route 53 created for the specified instance
@@ -99,6 +105,12 @@ export enum AwsServicediscoveryActions {
    * See https://docs.aws.amazon.com/cloud-map/latest/api/API_GetService.html
    */
   GetService = 'servicediscovery:GetService',
+  /**
+   * Grants permission to get the attributes for a specified service
+   *
+   * See https://docs.aws.amazon.com/cloud-map/latest/api/API_GetServiceAttributes.html
+   */
+  GetServiceAttributes = 'servicediscovery:GetServiceAttributes',
   /**
    * Grants permission to get summary information about the instances that were regi
    * stered with a specified service
@@ -181,4 +193,10 @@ export enum AwsServicediscoveryActions {
    * See https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateService.html
    */
   UpdateService = 'servicediscovery:UpdateService',
+  /**
+   * Grants permission to update the attributes in a specified service
+   *
+   * See https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateServiceAttributes.html
+   */
+  UpdateServiceAttributes = 'servicediscovery:UpdateServiceAttributes',
 }

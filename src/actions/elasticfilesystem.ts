@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticfilesystem.html
  *
- * 2024-02-12T09:57:09.461Z
+ * 2025-02-24T21:47:47.826Z
  */
 export enum AwsElasticfilesystemActions {
   /**
@@ -212,6 +212,18 @@ export enum AwsElasticfilesystemActions {
    * See https://docs.aws.amazon.com/efs/latest/ug/API_PutLifecycleConfiguration.html
    */
   PutLifecycleConfiguration = 'elasticfilesystem:PutLifecycleConfiguration',
+  /**
+   * Grants permission to read file system data for replication
+   *
+   * See https://docs.aws.amazon.com/efs/latest/ug/efs-replication.html
+   */
+  ReplicationRead = 'elasticfilesystem:ReplicationRead',
+  /**
+   * Grants permission to replicate data to a file system
+   *
+   * See https://docs.aws.amazon.com/efs/latest/ug/efs-replication.html
+   */
+  ReplicationWrite = 'elasticfilesystem:ReplicationWrite',
   /**
    * Grants permission to start a restore job for a backup of a file system
    *

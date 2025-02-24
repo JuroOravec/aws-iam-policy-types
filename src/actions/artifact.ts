@@ -6,16 +6,23 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsartifact.html
  *
- * 2024-02-12T09:56:06.450Z
+ * 2025-02-24T21:46:47.736Z
  */
 export enum AwsArtifactActions {
   /**
    * Grants permission to accept an AWS agreement that has not yet been accepted by
    * the customer account
    *
-   * See https://docs.aws.amazon.com/artifact/latest/ug/managing-agreements.html
+   * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_AcceptAgreement.html
    */
   AcceptAgreement = 'artifact:AcceptAgreement',
+  /**
+   * Grants permission to accept the terms of an NDA Document for a given agreement
+   * resource
+   *
+   * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_AcceptNdaForAgreement.html
+   */
+  AcceptNdaForAgreement = 'artifact:AcceptNdaForAgreement',
   /**
    * Grants permission to download an AWS agreement that has not yet been accepted o
    * r a customer agreement that has been accepted by the customer account
@@ -36,6 +43,26 @@ export enum AwsArtifactActions {
    */
   GetAccountSettings = 'artifact:GetAccountSettings',
   /**
+   * Grants permission to get an AWS agreement that has not yet been accepted by the
+   * customer account
+   *
+   * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetAgreement.html
+   */
+  GetAgreement = 'artifact:GetAgreement',
+  /**
+   * Grants permission to get an AWS agreement that has been accepted by the custome
+   * r account
+   *
+   * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetCustomerAgreement.html
+   */
+  GetCustomerAgreement = 'artifact:GetCustomerAgreement',
+  /**
+   * Grants permission to retrieve the NDA Document for a given agreement resource
+   *
+   * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetNdaForAgreement.html
+   */
+  GetNdaForAgreement = 'artifact:GetNdaForAgreement',
+  /**
    * Grants permission to download a report
    *
    * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetReport.html
@@ -54,6 +81,19 @@ export enum AwsArtifactActions {
    */
   GetTermForReport = 'artifact:GetTermForReport',
   /**
+   * Grants permission to list AWS agreements
+   *
+   * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListAgreements.html
+   */
+  ListAgreements = 'artifact:ListAgreements',
+  /**
+   * Grants permission to list customer-agreement resources that have been accepted
+   * by the customer account
+   *
+   * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListCustomerAgreements.html
+   */
+  ListCustomerAgreements = 'artifact:ListCustomerAgreements',
+  /**
    * Grants permission to list reports in your account
    *
    * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListReports.html
@@ -69,7 +109,7 @@ export enum AwsArtifactActions {
    * Grants permission to terminate a customer agreement that was previously accepte
    * d by the customer account
    *
-   * See https://docs.aws.amazon.com/artifact/latest/ug/managing-agreements.html
+   * See https://docs.aws.amazon.com/artifact/latest/APIReference/API_TerminateAgreement.html
    */
   TerminateAgreement = 'artifact:TerminateAgreement',
 }

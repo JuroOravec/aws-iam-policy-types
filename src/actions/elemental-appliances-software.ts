@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalappliancesandsoftware.html
  *
- * 2024-02-12T09:57:14.409Z
+ * 2025-02-24T21:47:51.406Z
  */
 export enum AwsElementalAppliancesSoftwareActions {
   /**
@@ -34,13 +34,13 @@ export enum AwsElementalAppliancesSoftwareActions {
    */
   GetAvsCorrectAddress = 'elemental-appliances-software:GetAvsCorrectAddress',
   /**
-   * Grants permission to list the billing addresses in the user account
+   * Grants permission to list the billing addresses in the AWS Account
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software
    */
   GetBillingAddresses = 'elemental-appliances-software:GetBillingAddresses',
   /**
-   * Grants permission to list the delivery addresses in the user account
+   * Grants permission to list the delivery addresses in the AWS Account
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software
    */
@@ -52,7 +52,7 @@ export enum AwsElementalAppliancesSoftwareActions {
    */
   GetOrder = 'elemental-appliances-software:GetOrder',
   /**
-   * Grants permission to list the orders in the user account
+   * Grants permission to list the orders in the AWS Account
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software
    */
@@ -70,18 +70,11 @@ export enum AwsElementalAppliancesSoftwareActions {
    */
   GetTaxes = 'elemental-appliances-software:GetTaxes',
   /**
-   * Grants permission to list the quotes in the user account
+   * Grants permission to list the quotes in the AWS Account
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software
    */
   ListQuotes = 'elemental-appliances-software:ListQuotes',
-  /**
-   * Grants permission to lists tags for an AWS Elemental Appliances and Software re
-   * source
-   *
-   * See https://docs.aws.amazon.com/elemental-appliances-software
-   */
-  ListTagsForResource = 'elemental-appliances-software:ListTagsForResource',
   /**
    * Grants permission to start an upload of an attachment for a quote or order
    *
@@ -94,19 +87,6 @@ export enum AwsElementalAppliancesSoftwareActions {
    * See https://docs.aws.amazon.com/elemental-appliances-software
    */
   SubmitOrderV1 = 'elemental-appliances-software:SubmitOrderV1',
-  /**
-   * Grants permission to tag an AWS Elemental Appliances and Software resource
-   *
-   * See https://docs.aws.amazon.com/elemental-appliances-software
-   */
-  TagResource = 'elemental-appliances-software:TagResource',
-  /**
-   * Grants permission to remove a tag from an AWS Elemental Appliances and Software
-   * resource
-   *
-   * See https://docs.aws.amazon.com/elemental-appliances-software
-   */
-  UntagResource = 'elemental-appliances-software:UntagResource',
   /**
    * Grants permission to modify a quote
    *

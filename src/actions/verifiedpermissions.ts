@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonverifiedpermissions.html
  *
- * 2024-02-12T09:59:35.992Z
+ * 2025-02-24T21:50:05.184Z
  */
 export enum AwsVerifiedpermissionsActions {
   /**

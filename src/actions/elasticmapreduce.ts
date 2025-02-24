@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticmapreduce.html
  *
- * 2024-02-12T09:57:12.650Z
+ * 2025-02-24T21:47:49.888Z
  */
 export enum AwsElasticmapreduceActions {
   /**
@@ -449,6 +449,12 @@ export enum AwsElasticmapreduceActions {
    * See https://docs.aws.amazon.com/emr/latest/APIReference/API_SetTerminationProtection.html
    */
   SetTerminationProtection = 'elasticmapreduce:SetTerminationProtection',
+  /**
+   * Grants permission to enable or disable unhealthy node replacement for a cluster
+   *
+   * See https://docs.aws.amazon.com/emr/latest/APIReference/API_SetUnhealthyNodeReplacement.html
+   */
+  SetUnhealthyNodeReplacement = 'elasticmapreduce:SetUnhealthyNodeReplacement',
   /**
    * Grants permission to set whether all AWS Identity and Access Management (IAM) u
    * sers in the AWS account can view a cluster. This API is deprecated and your clu

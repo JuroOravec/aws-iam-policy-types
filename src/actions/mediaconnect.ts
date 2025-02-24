@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediaconnect.html
  *
- * 2024-02-12T09:57:15.734Z
+ * 2025-02-24T21:47:52.378Z
  */
 export enum AwsMediaconnectActions {
   /**
@@ -108,6 +108,12 @@ export enum AwsMediaconnectActions {
    * See https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-source-metadata.html
    */
   DescribeFlowSourceMetadata = 'mediaconnect:DescribeFlowSourceMetadata',
+  /**
+   * Grants permission to view flow's source thumbnail
+   *
+   * See https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-source-thumbnail.html
+   */
+  DescribeFlowSourceThumbnail = 'mediaconnect:DescribeFlowSourceThumbnail',
   /**
    * Grants permission to display the details of a gateway including the gateway ARN
    * , name, and CIDR blocks, as well as details about the networks

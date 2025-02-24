@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiq.html
  *
- * 2024-02-12T09:57:54.805Z
+ * 2025-02-24T21:48:28.632Z
  */
 export enum AwsIqActions {
   /**

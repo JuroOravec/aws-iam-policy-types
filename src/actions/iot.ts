@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html
  *
- * 2024-02-12T09:57:46.606Z
+ * 2025-02-24T21:48:21.508Z
  */
 export enum AwsIotActions {
   /**
@@ -27,6 +27,12 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToThingGroup.html
    */
   AddThingToThingGroup = 'iot:AddThingToThingGroup',
+  /**
+   * Grants permission to associate SBOM files to a package version
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_AssociateSbomWithPackageVersion.html
+   */
+  AssociateSbomWithPackageVersion = 'iot:AssociateSbomWithPackageVersion',
   /**
    * Grants permission to associate a group with a continuous job
    *
@@ -151,6 +157,13 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateProvider.html
    */
   CreateCertificateProvider = 'iot:CreateCertificateProvider',
+  /**
+   * Grants permission to create a command that can be used to start new executions
+   * against a device
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCommand.html
+   */
+  CreateCommand = 'iot:CreateCommand',
   /**
    * Grants permission to create a custom metric for device side metric reporting an
    * d monitoring
@@ -355,6 +368,18 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCertificateProvider.html
    */
   DeleteCertificateProvider = 'iot:DeleteCertificateProvider',
+  /**
+   * Grants permission to delete a command
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCommand.html
+   */
+  DeleteCommand = 'iot:DeleteCommand',
+  /**
+   * Grants permission to delete a command execution
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCommandExecution.html
+   */
+  DeleteCommandExecution = 'iot:DeleteCommandExecution',
   /**
    * Grants permission to deletes the specified custom metric from your AWS account
    *
@@ -778,6 +803,12 @@ export enum AwsIotActions {
    */
   DisableTopicRule = 'iot:DisableTopicRule',
   /**
+   * Grants permission to disassociate SBOM files from a package version
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_DisassociateSbomFromPackageVersion.html
+   */
+  DisassociateSbomFromPackageVersion = 'iot:DisassociateSbomFromPackageVersion',
+  /**
    * Grants permission to enable the specified rule
    *
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_EnableTopicRule.html
@@ -802,6 +833,18 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_GetCardinality.html
    */
   GetCardinality = 'iot:GetCardinality',
+  /**
+   * Grants permission to get the information about the command
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommand.html
+   */
+  GetCommand = 'iot:GetCommand',
+  /**
+   * Grants permission to get the information of a command execution
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommandExecution.html
+   */
+  GetCommandExecution = 'iot:GetCommandExecution',
   /**
    * Grants permission to get effective policies
    *
@@ -888,6 +931,12 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_GetStatistics.html
    */
   GetStatistics = 'iot:GetStatistics',
+  /**
+   * Grants permission to get the thing's connectivity data
+   *
+   * See API_GetThingConnectivityData.html
+   */
+  GetThingConnectivityData = 'iot:GetThingConnectivityData',
   /**
    * Grants permission to get the thing shadow
    *
@@ -996,6 +1045,18 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_ListCertificatesByCA.html
    */
   ListCertificatesByCA = 'iot:ListCertificatesByCA',
+  /**
+   * Grants permission to list commands executions in the account
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommandExecutions.html
+   */
+  ListCommandExecutions = 'iot:ListCommandExecutions',
+  /**
+   * Grants permission to list commands in the account
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommands.html
+   */
+  ListCommands = 'iot:ListCommands',
   /**
    * Grants permission to list the custom metrics in your AWS account
    *
@@ -1177,6 +1238,12 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_ListRoleAliases.html
    */
   ListRoleAliases = 'iot:ListRoleAliases',
+  /**
+   * Grants permission to list SBOM validation results of a package version
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_ListSbomValidationResults.html
+   */
+  ListSbomValidationResults = 'iot:ListSbomValidationResults',
   /**
    * Grants permission to list all of your scheduled audits
    *
@@ -1438,6 +1505,12 @@ export enum AwsIotActions {
    */
   StartAuditMitigationActionsTask = 'iot:StartAuditMitigationActionsTask',
   /**
+   * Grants permission to start a new command execution
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_StartCommandExecution.html
+   */
+  StartCommandExecution = 'iot:StartCommandExecution',
+  /**
    * Grants permission to start a Device Defender ML Detect mitigation actions task
    *
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_StartDetectMitigationActionsTask.html
@@ -1544,6 +1617,12 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCertificateProvider.html
    */
   UpdateCertificateProvider = 'iot:UpdateCertificateProvider',
+  /**
+   * Grants permission to update a command
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCommand.html
+   */
+  UpdateCommand = 'iot:UpdateCommand',
   /**
    * Grants permission to update the specified custom metric
    *
@@ -1672,6 +1751,13 @@ export enum AwsIotActions {
    * See https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html
    */
   UpdateThingShadow = 'iot:UpdateThingShadow',
+  /**
+   * Grants permission to update information associated with the specified thing typ
+   * e
+   *
+   * See https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThingType.html
+   */
+  UpdateThingType = 'iot:UpdateThingType',
   /**
    * Grants permission to update a TopicRuleDestination
    *

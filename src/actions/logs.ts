@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudwatchlogs.html
  *
- * 2024-02-12T09:56:29.255Z
+ * 2025-02-24T21:47:09.043Z
  */
 export enum AwsLogsActions {
   /**
@@ -61,9 +61,9 @@ export enum AwsLogsActions {
    */
   CreateLogStream = 'logs:CreateLogStream',
   /**
-   * Grants permission to delete a data protection policy attached to an account
+   * Grants permission to delete an account policy
    *
-   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteDataProtectionPolicy.html
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteAccountPolicy.html
    */
   DeleteAccountPolicy = 'logs:DeleteAccountPolicy',
   /**
@@ -105,6 +105,18 @@ export enum AwsLogsActions {
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteDestination.html
    */
   DeleteDestination = 'logs:DeleteDestination',
+  /**
+   * Grants permission to delete an index policy attached to a log group
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteIndexPolicy.html
+   */
+  DeleteIndexPolicy = 'logs:DeleteIndexPolicy',
+  /**
+   * Grants permission to delete the integration
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteIntegration.html
+   */
+  DeleteIntegration = 'logs:DeleteIntegration',
   /**
    * Grants permission to delete a log anomaly detector
    *
@@ -163,11 +175,25 @@ export enum AwsLogsActions {
    */
   DeleteSubscriptionFilter = 'logs:DeleteSubscriptionFilter',
   /**
-   * Grants permission to retrieve a data protection policy attached to an account
+   * Grants permission to delete a transformer associated with the specified log gro
+   * up
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteTransformer.html
+   */
+  DeleteTransformer = 'logs:DeleteTransformer',
+  /**
+   * Grants permission to retrieve account policies
    *
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeAccountPolicies.html
    */
   DescribeAccountPolicies = 'logs:DescribeAccountPolicies',
+  /**
+   * Grants permission to retrieve a list of configuration templates of available lo
+   * g types
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeConfigurationTemplates.html
+   */
+  DescribeConfigurationTemplates = 'logs:DescribeConfigurationTemplates',
   /**
    * Grants permission to retrieve a list of deliveries an account
    *
@@ -200,6 +226,20 @@ export enum AwsLogsActions {
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeExportTasks.html
    */
   DescribeExportTasks = 'logs:DescribeExportTasks',
+  /**
+   * Grants permission to return all the indexing attributes that are attached with
+   * the log groups
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeFieldIndexes.html
+   */
+  DescribeFieldIndexes = 'logs:DescribeFieldIndexes',
+  /**
+   * Grants permission to return all the index policies that are attached with the l
+   * og groups
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeIndexPolicies.html
+   */
+  DescribeIndexPolicies = 'logs:DescribeIndexPolicies',
   /**
    * Grants permission to return all the log groups that are associated with the AWS
    * account making the request
@@ -294,6 +334,12 @@ export enum AwsLogsActions {
    */
   GetDeliverySource = 'logs:GetDeliverySource',
   /**
+   * Grants permission to retrieve a single integration
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetIntegration.html
+   */
+  GetIntegration = 'logs:GetIntegration',
+  /**
    * Grants permission to get a log anomaly detector
    *
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetLogAnomalyDetector.html
@@ -333,6 +379,12 @@ export enum AwsLogsActions {
    */
   GetQueryResults = 'logs:GetQueryResults',
   /**
+   * Grants permission to return transformer associated with the specified log group
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetTransformer.html
+   */
+  GetTransformer = 'logs:GetTransformer',
+  /**
    * Grants permission to share CloudWatch resources with a monitoring account
    *
    * See https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account-Setup.html#CloudWatch-Unified-Cross-Account-Setup-permissions
@@ -345,6 +397,20 @@ export enum AwsLogsActions {
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ListAnomalies.html
    */
   ListAnomalies = 'logs:ListAnomalies',
+  /**
+   * Grants permission to retrieve all the entities that are associated with log gro
+   * up
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/permissions-reference-cwl.html
+   */
+  ListEntitiesForLogGroup = 'logs:ListEntitiesForLogGroup',
+  /**
+   * Grants permission to list all integrations associated with the AWS account maki
+   * ng the request
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ListIntegrations.html
+   */
+  ListIntegrations = 'logs:ListIntegrations',
   /**
    * Grants permission to return all the anomaly detectors that are associated with
    * the AWS account making the request
@@ -360,6 +426,20 @@ export enum AwsLogsActions {
    */
   ListLogDeliveries = 'logs:ListLogDeliveries',
   /**
+   * Grants permission to retrieve all the log groups that are associated with entit
+   * y
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/permissions-reference-cwl.html
+   */
+  ListLogGroupsForEntity = 'logs:ListLogGroupsForEntity',
+  /**
+   * Grants permission to return all the log groups that are associated with the spe
+   * cified query
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ListLogGroupsForQuery.html
+   */
+  ListLogGroupsForQuery = 'logs:ListLogGroupsForQuery',
+  /**
    * Grants permission to list the tags for the specified resource
    *
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ListTagsForResource.html
@@ -372,8 +452,7 @@ export enum AwsLogsActions {
    */
   ListTagsLogGroup = 'logs:ListTagsLogGroup',
   /**
-   * Grants permission to attach a data protection policy at account level to detect
-   * and redact sensitive information from log events
+   * Grants permission to attach an account policy
    *
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutAccountPolicy.html
    */
@@ -418,6 +497,19 @@ export enum AwsLogsActions {
    */
   PutDestinationPolicy = 'logs:PutDestinationPolicy',
   /**
+   * Grants permission to attach an index policy at log group level to optimize sear
+   * ch and query
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutIndexPolicy.html
+   */
+  PutIndexPolicy = 'logs:PutIndexPolicy',
+  /**
+   * Grants permission to create integration between cloudwatch logs and opensearch
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutIntegration.html
+   */
+  PutIntegration = 'logs:PutIntegration',
+  /**
    * Grants permission to upload a batch of log events to the specified log stream
    *
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html
@@ -456,6 +548,13 @@ export enum AwsLogsActions {
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutSubscriptionFilter.html
    */
   PutSubscriptionFilter = 'logs:PutSubscriptionFilter',
+  /**
+   * Grants permission to create or update a transformer and associates it with the
+   * specified log group
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutTransformer.html
+   */
+  PutTransformer = 'logs:PutTransformer',
   /**
    * Grants permission to start a Live Tail session in CloudWatch Logs
    *
@@ -503,6 +602,13 @@ export enum AwsLogsActions {
    */
   TestMetricFilter = 'logs:TestMetricFilter',
   /**
+   * Grants permission to test the transformer against a sample of log event message
+   * s
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TestTransformer.html
+   */
+  TestTransformer = 'logs:TestTransformer',
+  /**
    * Grants permission to fetch unmasked log events that have been redacted with a d
    * ata protection policy
    *
@@ -527,6 +633,12 @@ export enum AwsLogsActions {
    * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_UpdateAnomaly.html
    */
   UpdateAnomaly = 'logs:UpdateAnomaly',
+  /**
+   * Grants permission to update configuration related to a delivery
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_UpdateDeliveryConfiguration.html
+   */
+  UpdateDeliveryConfiguration = 'logs:UpdateDeliveryConfiguration',
   /**
    * Grants permission to update a log anomaly detector
    *

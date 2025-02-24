@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmacie.html
  *
- * 2024-02-12T09:58:09.796Z
+ * 2025-02-24T21:48:42.502Z
  */
 export enum AwsMacie2Actions {
   /**
@@ -22,6 +22,13 @@ export enum AwsMacie2Actions {
    * See https://docs.aws.amazon.com/macie/latest/APIReference/custom-data-identifiers-get.html
    */
   BatchGetCustomDataIdentifiers = 'macie2:BatchGetCustomDataIdentifiers',
+  /**
+   * Grants permission to an Amazon Macie administrator to change the status of auto
+   * mated sensitive data discovery for one or more accounts in their organization
+   *
+   * See https://docs.aws.amazon.com/macie/latest/APIReference/automated-discovery-accounts.html
+   */
+  BatchUpdateAutomatedDiscoveryAccounts = 'macie2:BatchUpdateAutomatedDiscoveryAccounts',
   /**
    * Grants permission to create and define the settings for an allow list
    *
@@ -189,7 +196,8 @@ export enum AwsMacie2Actions {
   GetAllowList = 'macie2:GetAllowList',
   /**
    * Grants permission to retrieve the configuration settings and status of automate
-   * d sensitive data discovery for an account
+   * d sensitive data discovery for an Amazon Macie administrator account, organizat
+   * ion, or standalone account
    *
    * See https://docs.aws.amazon.com/macie/latest/APIReference/automated-discovery-configuration.html
    */
@@ -331,6 +339,13 @@ export enum AwsMacie2Actions {
    */
   ListAllowLists = 'macie2:ListAllowLists',
   /**
+   * Grants permission to retrieve the status of automated sensitive data discovery
+   * for an account
+   *
+   * See https://docs.aws.amazon.com/macie/latest/APIReference/automated-discovery-accounts.html
+   */
+  ListAutomatedDiscoveryAccounts = 'macie2:ListAutomatedDiscoveryAccounts',
+  /**
    * Grants permission to retrieve a subset of information about the status and sett
    * ings for one or more sensitive data discovery jobs
    *
@@ -384,15 +399,15 @@ export enum AwsMacie2Actions {
    */
   ListMembers = 'macie2:ListMembers',
   /**
-   * Grants permission to retrieve information about the delegated, Amazon Macie adm
-   * inistrator account for an AWS organization
+   * Grants permission to retrieve information about the delegated Amazon Macie admi
+   * nistrator account for an AWS organization
    *
    * See https://docs.aws.amazon.com/macie/latest/APIReference/admin.html
    */
   ListOrganizationAdminAccounts = 'macie2:ListOrganizationAdminAccounts',
   /**
-   * Grants permission to retrieve information about objects that were selected from
-   * an S3 bucket for automated sensitive data discovery
+   * Grants permission to retrieve information about objects that Amazon Macie selec
+   * ted from an S3 bucket for automated sensitive data discovery
    *
    * See https://docs.aws.amazon.com/macie/latest/APIReference/resource-profiles-artifacts.html
    */
@@ -463,8 +478,8 @@ export enum AwsMacie2Actions {
    */
   UpdateAllowList = 'macie2:UpdateAllowList',
   /**
-   * Grants permission to enable or disable automated sensitive data discovery for a
-   * n account
+   * Grants permission to change the status of automated sensitive data discovery fo
+   * r an Amazon Macie administrator account, organization, or standalone account
    *
    * See https://docs.aws.amazon.com/macie/latest/APIReference/automated-discovery-configuration.html
    */
@@ -488,8 +503,8 @@ export enum AwsMacie2Actions {
    */
   UpdateFindingsFilter = 'macie2:UpdateFindingsFilter',
   /**
-   * Grants permission to suspend or re-enable an Amazon Macie account, or update th
-   * e configuration settings for a Macie account
+   * Grants permission to an Amazon Macie administrator account to suspend or re-ena
+   * ble Macie for a member account
    *
    * See https://docs.aws.amazon.com/macie/latest/APIReference/macie.html
    */

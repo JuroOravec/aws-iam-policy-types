@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awswafv2.html
  *
- * 2024-02-12T09:59:38.747Z
+ * 2025-02-24T21:50:07.772Z
  */
 export enum AwsWafv2Actions {
   /**
@@ -53,6 +53,12 @@ export enum AwsWafv2Actions {
    * See https://docs.aws.amazon.com/waf/latest/APIReference/API_CreateWebACL.html
    */
   CreateWebACL = 'wafv2:CreateWebACL',
+  /**
+   * Grants permission to delete an API key
+   *
+   * See https://docs.aws.amazon.com/waf/latest/APIReference/API_DeleteAPIKey.html
+   */
+  DeleteAPIKey = 'wafv2:DeleteAPIKey',
   /**
    * Grants permission to delete FirewallManagedRulesGroups from a WebACL if not man
    * aged by Firewall Manager anymore

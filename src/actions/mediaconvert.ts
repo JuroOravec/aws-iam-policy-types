@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediaconvert.html
  *
- * 2024-02-12T09:57:16.255Z
+ * 2025-02-24T21:47:52.872Z
  */
 export enum AwsMediaconvertActions {
   /**
@@ -149,11 +149,23 @@ export enum AwsMediaconvertActions {
    */
   ListTagsForResource = 'mediaconvert:ListTagsForResource',
   /**
+   * Grants permission to list AWS Elemental MediaConvert job engine versions
+   *
+   * See https://docs.aws.amazon.com/mediaconvert/latest/apireference/versions.html
+   */
+  ListVersions = 'mediaconvert:ListVersions',
+  /**
    * Grants permission to put an AWS Elemental MediaConvert policy
    *
    * See https://docs.aws.amazon.com/mediaconvert/latest/apireference/policy.html
    */
   PutPolicy = 'mediaconvert:PutPolicy',
+  /**
+   * Grants permission to search AWS Elemental MediaConvert jobs
+   *
+   * See https://docs.aws.amazon.com/mediaconvert/latest/apireference/search.html
+   */
+  SearchJobs = 'mediaconvert:SearchJobs',
   /**
    * Grants permission to add tags to a MediaConvert queue, preset, or job template
    *

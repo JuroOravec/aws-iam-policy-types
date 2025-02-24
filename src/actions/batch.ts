@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html
  *
- * 2024-02-12T09:56:11.545Z
+ * 2025-02-24T21:46:52.783Z
  */
 export enum AwsBatchActions {
   /**
@@ -90,6 +90,12 @@ export enum AwsBatchActions {
    * See https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeSchedulingPolicies.html
    */
   DescribeSchedulingPolicies = 'batch:DescribeSchedulingPolicies',
+  /**
+   * Grants permission to get a snapshot of an AWS Batch job queue in your account
+   *
+   * See https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueueSnapshot.html
+   */
+  GetJobQueueSnapshot = 'batch:GetJobQueueSnapshot',
   /**
    * Grants permission to list jobs for a specified AWS Batch job queue in your acco
    * unt

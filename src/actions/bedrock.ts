@@ -6,9 +6,28 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html
  *
- * 2024-02-12T09:56:12.137Z
+ * 2025-02-24T21:46:53.387Z
  */
 export enum AwsBedrockActions {
+  /**
+   * Grants permission to configure vended log delivery for a knowledge base
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html
+   */
+  AllowVendedLogDeliveryForResource = 'bedrock:AllowVendedLogDeliveryForResource',
+  /**
+   * Grants permission to apply a guardrail
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html
+   */
+  ApplyGuardrail = 'bedrock:ApplyGuardrail',
+  /**
+   * Grants permission to associate another existing agent as a collaborator to an e
+   * xisting agent
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_AssociateAgentCollaborator.html
+   */
+  AssociateAgentCollaborator = 'bedrock:AssociateAgentCollaborator',
   /**
    * Grants permission to associate a knowledge base with an agent
    *
@@ -21,6 +40,12 @@ export enum AwsBedrockActions {
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html
    */
   AssociateThirdPartyKnowledgeBase = 'bedrock:AssociateThirdPartyKnowledgeBase',
+  /**
+   * Grants permission to batch delete list of bedrock evaluation jobs
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDeleteEvaluationJob.html
+   */
+  BatchDeleteEvaluationJob = 'bedrock:BatchDeleteEvaluationJob',
   /**
    * Grants permission to create a new agent and a test agent alias pointing to the
    * DRAFT agent version
@@ -41,11 +66,54 @@ export enum AwsBedrockActions {
    */
   CreateAgentAlias = 'bedrock:CreateAgentAlias',
   /**
+   * Grants permission to create a blueprint for custom output from data automation
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateBlueprint.html
+   */
+  CreateBlueprint = 'bedrock:CreateBlueprint',
+  /**
+   * Grants permission to create a new version for an existing blueprint
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateBlueprintVersion.html
+   */
+  CreateBlueprintVersion = 'bedrock:CreateBlueprintVersion',
+  /**
+   * Grants permission to create a data automation project
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataAutomationProject.html
+   */
+  CreateDataAutomationProject = 'bedrock:CreateDataAutomationProject',
+  /**
    * Grants permission to create a data source
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html
    */
   CreateDataSource = 'bedrock:CreateDataSource',
+  /**
+   * Grants permission to create a job for evaluation foundation models or custom mo
+   * dels
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateEvaluationJob.html
+   */
+  CreateEvaluationJob = 'bedrock:CreateEvaluationJob',
+  /**
+   * Grants permission to create a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlow.html
+   */
+  CreateFlow = 'bedrock:CreateFlow',
+  /**
+   * Grants permission to create an alias of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlowAlias.html
+   */
+  CreateFlowAlias = 'bedrock:CreateFlowAlias',
+  /**
+   * Grants permission to create an immutable version of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlowVersion.html
+   */
+  CreateFlowVersion = 'bedrock:CreateFlowVersion',
   /**
    * Grants permission to create a new foundation model agreement
    *
@@ -65,11 +133,30 @@ export enum AwsBedrockActions {
    */
   CreateGuardrailVersion = 'bedrock:CreateGuardrailVersion',
   /**
+   * Grants permission to create inference profiles
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateInferenceProfile.html
+   */
+  CreateInferenceProfile = 'bedrock:CreateInferenceProfile',
+  /**
    * Grants permission to create a knowledge base
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html
    */
   CreateKnowledgeBase = 'bedrock:CreateKnowledgeBase',
+  /**
+   * Grants permission to create a marketplace model endpoint
+   *
+   * See API_CreateMarketplaceModelEndpoint
+   */
+  CreateMarketplaceModelEndpoint = 'bedrock:CreateMarketplaceModelEndpoint',
+  /**
+   * Grants permission to create a job for copying a custom model across region or a
+   * cross account
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelCopyJob.html
+   */
+  CreateModelCopyJob = 'bedrock:CreateModelCopyJob',
   /**
    * Grants permission to create a job for customizing the model with your custom tr
    * aining data
@@ -85,11 +172,29 @@ export enum AwsBedrockActions {
    */
   CreateModelEvaluationJob = 'bedrock:CreateModelEvaluationJob',
   /**
+   * Grants permission to create a job for importing model into Bedrock
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelImportJob.html
+   */
+  CreateModelImportJob = 'bedrock:CreateModelImportJob',
+  /**
    * Grants permission to create a new model invocation job
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelInvocationJob.html
    */
   CreateModelInvocationJob = 'bedrock:CreateModelInvocationJob',
+  /**
+   * Grants permission to create a prompt
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreatePrompt.html
+   */
+  CreatePrompt = 'bedrock:CreatePrompt',
+  /**
+   * Grants permission to create a version of a prompt
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreatePromptVersion.html
+   */
+  CreatePromptVersion = 'bedrock:CreatePromptVersion',
   /**
    * Grants permission to create a new provisioned model throughput
    *
@@ -115,11 +220,23 @@ export enum AwsBedrockActions {
    */
   DeleteAgentAlias = 'bedrock:DeleteAgentAlias',
   /**
+   * Grants permission to delete existing memory for an alias
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_DeleteAgentMemory.html
+   */
+  DeleteAgentMemory = 'bedrock:DeleteAgentMemory',
+  /**
    * Grants permission to delete an Agent Version that you created earlier
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteAgentVersion.html
    */
   DeleteAgentVersion = 'bedrock:DeleteAgentVersion',
+  /**
+   * Grants permission to delete a blueprint for data automation
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteBlueprint.html
+   */
+  DeleteBlueprint = 'bedrock:DeleteBlueprint',
   /**
    * Grants permission to delete a custom model that you created earlier
    *
@@ -127,11 +244,35 @@ export enum AwsBedrockActions {
    */
   DeleteCustomModel = 'bedrock:DeleteCustomModel',
   /**
+   * Grants permission to delete a data automation project
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteDataAutomationProject.html
+   */
+  DeleteDataAutomationProject = 'bedrock:DeleteDataAutomationProject',
+  /**
    * Grants permission to delete a data source
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteDataSource.html
    */
   DeleteDataSource = 'bedrock:DeleteDataSource',
+  /**
+   * Grants permission to delete a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlow.html
+   */
+  DeleteFlow = 'bedrock:DeleteFlow',
+  /**
+   * Grants permission to delete an alias of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlowAlias.html
+   */
+  DeleteFlowAlias = 'bedrock:DeleteFlowAlias',
+  /**
+   * Grants permission to delete a version of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlowVersion.html
+   */
+  DeleteFlowVersion = 'bedrock:DeleteFlowVersion',
   /**
    * Grants permission to delete a foundation model agreement that you created earli
    * er
@@ -146,17 +287,54 @@ export enum AwsBedrockActions {
    */
   DeleteGuardrail = 'bedrock:DeleteGuardrail',
   /**
+   * Grants permission to delete previously created Bedrock imported model
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteImportedModel.html
+   */
+  DeleteImportedModel = 'bedrock:DeleteImportedModel',
+  /**
+   * Grants permission to delete inference profiles
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteInferenceProfile.html
+   */
+  DeleteInferenceProfile = 'bedrock:DeleteInferenceProfile',
+  /**
    * Grants permission to delete a knowledge base
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteKnowledgeBase.html
    */
   DeleteKnowledgeBase = 'bedrock:DeleteKnowledgeBase',
   /**
+   * Grants permission to delete documents from a knowledge base
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteKnowledgeBaseDocuments.html
+   */
+  DeleteKnowledgeBaseDocuments = 'bedrock:DeleteKnowledgeBaseDocuments',
+  /**
+   * Grants permission to unsubscribe from a bedrock marketplace enabled AWS marketp
+   * lace model
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html
+   */
+  DeleteMarketplaceModelAgreement = 'bedrock:DeleteMarketplaceModelAgreement',
+  /**
+   * Grants permission to delete a marketplace model endpoint
+   *
+   * See API_DeleteMarketplaceModelEndpoint
+   */
+  DeleteMarketplaceModelEndpoint = 'bedrock:DeleteMarketplaceModelEndpoint',
+  /**
    * Grants permission to delete an existing Invocation logging configuration
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteModelInvocationLoggingConfiguration.html
    */
   DeleteModelInvocationLoggingConfiguration = 'bedrock:DeleteModelInvocationLoggingConfiguration',
+  /**
+   * Grants permission to delete a prompt or its version
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeletePrompt.html
+   */
+  DeletePrompt = 'bedrock:DeletePrompt',
   /**
    * Grants permission to delete a provisioned model throughput that you created ear
    * lier
@@ -165,11 +343,43 @@ export enum AwsBedrockActions {
    */
   DeleteProvisionedModelThroughput = 'bedrock:DeleteProvisionedModelThroughput',
   /**
+   * Deletes a previously created Bedrock resource policy
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteResourcePolicy.html
+   */
+  DeleteResourcePolicy = 'bedrock:DeleteResourcePolicy',
+  /**
+   * Grants permission to deregister a marketplace model endpoint to make it unusabl
+   * e in Bedrock Marketplace
+   *
+   * See API_DeregisterMarketplaceModelEndpoint
+   */
+  DeregisterMarketplaceModelEndpoint = 'bedrock:DeregisterMarketplaceModelEndpoint',
+  /**
+   * Grants permission to detect if the provided content is generated using Amazon B
+   * edrock
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html
+   */
+  DetectGeneratedContent = 'bedrock:DetectGeneratedContent',
+  /**
+   * Grants permission to diassociate a collaborator that you associated earlier
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DisassociateAgentCollaborator.html
+   */
+  DisassociateAgentCollaborator = 'bedrock:DisassociateAgentCollaborator',
+  /**
    * Grants permission to disassociate a knowledge base from the agent
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DisassociateAgentKnowledgeBase.html
    */
   DisassociateAgentKnowledgeBase = 'bedrock:DisassociateAgentKnowledgeBase',
+  /**
+   * Grants permission to generate queries associated with user input
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html
+   */
+  GenerateQuery = 'bedrock:GenerateQuery',
   /**
    * Grants permission to retrieve an existing agent
    *
@@ -189,17 +399,48 @@ export enum AwsBedrockActions {
    */
   GetAgentAlias = 'bedrock:GetAgentAlias',
   /**
+   * Grants permission to retrieve an existing collaborator
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentCollaborator.html
+   */
+  GetAgentCollaborator = 'bedrock:GetAgentCollaborator',
+  /**
    * Grants permission to describe a knowledge base associated with an agent
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentKnowledgeBase.html
    */
   GetAgentKnowledgeBase = 'bedrock:GetAgentKnowledgeBase',
   /**
+   * Grants permission to retrieve existing memory for an alias
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetAgentMemory.html
+   */
+  GetAgentMemory = 'bedrock:GetAgentMemory',
+  /**
    * Grants permission to retrieve an existing version of an agent
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentVersion.html
    */
   GetAgentVersion = 'bedrock:GetAgentVersion',
+  /**
+   * Grants permission to get the properties associated with an asynchronous invocat
+   * ion that you have submitted
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetAsyncInvoke.html
+   */
+  GetAsyncInvoke = 'bedrock:GetAsyncInvoke',
+  /**
+   * Grants permission to retrieve an existing blueprint for data automation
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetBlueprint.html
+   */
+  GetBlueprint = 'bedrock:GetBlueprint',
+  /**
+   * Grants permission to retrieve blueprint recommendation
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetBlueprintRecommendation.html
+   */
+  GetBlueprintRecommendation = 'bedrock:GetBlueprintRecommendation',
   /**
    * Grants permission to get the properties associated with a Bedrock custom model
    * that you have created
@@ -208,11 +449,48 @@ export enum AwsBedrockActions {
    */
   GetCustomModel = 'bedrock:GetCustomModel',
   /**
+   * Grants permission to retrieve an existing data automation project
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetDataAutomationProject.html
+   */
+  GetDataAutomationProject = 'bedrock:GetDataAutomationProject',
+  /**
+   * Grants permission to retrieve the status of a data automation invocation job
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetDataAutomationStatus.html
+   */
+  GetDataAutomationStatus = 'bedrock:GetDataAutomationStatus',
+  /**
    * Grants permission to retrieve an existing data source
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetDataSource.html
    */
   GetDataSource = 'bedrock:GetDataSource',
+  /**
+   * Grants permission to get the properties associated with a evaluation job. Use t
+   * his operation to get the status of a evaluation job
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetEvaluationJob.html
+   */
+  GetEvaluationJob = 'bedrock:GetEvaluationJob',
+  /**
+   * Grants permission to retrieve an existing prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetFlow.html
+   */
+  GetFlow = 'bedrock:GetFlow',
+  /**
+   * Grants permission to retrieve an existing alias of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetFlowAlias.html
+   */
+  GetFlowAlias = 'bedrock:GetFlowAlias',
+  /**
+   * Grants permission to retrieve an existing version of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetFlowVersion.html
+   */
+  GetFlowVersion = 'bedrock:GetFlowVersion',
   /**
    * Grants permission to get the properties associated with a Bedrock foundation mo
    * del
@@ -233,6 +511,18 @@ export enum AwsBedrockActions {
    */
   GetGuardrail = 'bedrock:GetGuardrail',
   /**
+   * Grants permission to get the properties associated with Bedrock imported model
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetImportedModel.html
+   */
+  GetImportedModel = 'bedrock:GetImportedModel',
+  /**
+   * Grants permission to get the properties associated with an inference profile
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetInferenceProfile.html
+   */
+  GetInferenceProfile = 'bedrock:GetInferenceProfile',
+  /**
    * Grants permission to retrieve an existing ingestion job
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetIngestionJob.html
@@ -244,6 +534,25 @@ export enum AwsBedrockActions {
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBase.html
    */
   GetKnowledgeBase = 'bedrock:GetKnowledgeBase',
+  /**
+   * Grants permission to get details for documents in a knowledge base
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBaseDocuments.html
+   */
+  GetKnowledgeBaseDocuments = 'bedrock:GetKnowledgeBaseDocuments',
+  /**
+   * Grants permission to get the properties of a marketplace model endpoint
+   *
+   * See API_GetMarketplaceModelEndpoint
+   */
+  GetMarketplaceModelEndpoint = 'bedrock:GetMarketplaceModelEndpoint',
+  /**
+   * Grants permission to get the properties associated with a model-copy job. Use t
+   * his operation to get the status of a model-copy job
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelCopyJob.html
+   */
+  GetModelCopyJob = 'bedrock:GetModelCopyJob',
   /**
    * Grants permission to get the properties associated with a model-customization j
    * ob. Use this operation to get the status of a model-customization job
@@ -259,6 +568,13 @@ export enum AwsBedrockActions {
    */
   GetModelEvaluationJob = 'bedrock:GetModelEvaluationJob',
   /**
+   * Grants permission to get the properties associated with a model import job and
+   * is used to get the status of a model import job
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelImportJob.html
+   */
+  GetModelImportJob = 'bedrock:GetModelImportJob',
+  /**
    * Grants permission to retrieve a model invocation job
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelInvocationJob.html
@@ -271,11 +587,29 @@ export enum AwsBedrockActions {
    */
   GetModelInvocationLoggingConfiguration = 'bedrock:GetModelInvocationLoggingConfiguration',
   /**
+   * Grants permission to retrieve an existing prompt or its version
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetPrompt.html
+   */
+  GetPrompt = 'bedrock:GetPrompt',
+  /**
+   * Grants permission to get the properties associated with a prompt router
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetPromptRouter.html
+   */
+  GetPromptRouter = 'bedrock:GetPromptRouter',
+  /**
    * Grants permission to retrieve a provisioned model throughput
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetProvisionedModelThroughput.html
    */
   GetProvisionedModelThroughput = 'bedrock:GetProvisionedModelThroughput',
+  /**
+   * Gets the resource policy document for a Bedrock resource
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetResourePolicy.html
+   */
+  GetResourcePolicy = 'bedrock:GetResourcePolicy',
   /**
    * Grants permission to retrieve a use case for model access
    *
@@ -283,12 +617,50 @@ export enum AwsBedrockActions {
    */
   GetUseCaseForModelAccess = 'bedrock:GetUseCaseForModelAccess',
   /**
+   * Grants permission to directly ingest documents into a knowledge base
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_IngestKnowledgeBaseDocuments.html
+   */
+  IngestKnowledgeBaseDocuments = 'bedrock:IngestKnowledgeBaseDocuments',
+  /**
    * Grants permission to send user input (text-only) to the alias of an agent for B
    * edrock
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html
    */
   InvokeAgent = 'bedrock:InvokeAgent',
+  /**
+   * Grants permission to invoke blueprint recommendations asynchronously
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_InvokeBlueprintRecommendationAsync.html
+   */
+  InvokeBlueprintRecommendationAsync = 'bedrock:InvokeBlueprintRecommendationAsync',
+  /**
+   * Grants permission to use the conversational builder which aids in building supp
+   * orted bedrock resources
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create-cb.html
+   */
+  InvokeBuilder = 'bedrock:InvokeBuilder',
+  /**
+   * Grants permission to invoke a Bedrock data automation job
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_InvokeDataAutomationAsync.html
+   */
+  InvokeDataAutomationAsync = 'bedrock:InvokeDataAutomationAsync',
+  /**
+   * Grants permission to invoke a prompt flow with user input
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeFlow.html
+   */
+  InvokeFlow = 'bedrock:InvokeFlow',
+  /**
+   * Grants permission to send user input (text-only) to the inline agent for Bedroc
+   * k
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html
+   */
+  InvokeInlineAgent = 'bedrock:InvokeInlineAgent',
   /**
    * Grants permission to invoke the specified Bedrock model to run inference using
    * the input provided in the request body
@@ -316,6 +688,12 @@ export enum AwsBedrockActions {
    */
   ListAgentAliases = 'bedrock:ListAgentAliases',
   /**
+   * Grants permission to list collaborators for an agent
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentCollaborators.html
+   */
+  ListAgentCollaborators = 'bedrock:ListAgentCollaborators',
+  /**
    * Grants permission to list knowledge bases associated with an agent
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentKnowledgeBases.html
@@ -334,17 +712,60 @@ export enum AwsBedrockActions {
    */
   ListAgents = 'bedrock:ListAgents',
   /**
+   * Grants permission to get a list of asynchronous invocations that you have submi
+   * tted
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListAsyncInvokes.html
+   */
+  ListAsyncInvokes = 'bedrock:ListAsyncInvokes',
+  /**
+   * Grants permission to list existing blueprints for data automation
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListBlueprints.html
+   */
+  ListBlueprints = 'bedrock:ListBlueprints',
+  /**
    * Grants permission to get a list of Bedrock custom models that you have created
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListCustomModels.html
    */
   ListCustomModels = 'bedrock:ListCustomModels',
   /**
+   * Grants permission to list existing data automation projects
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListDataAutomationProjects.html
+   */
+  ListDataAutomationProjects = 'bedrock:ListDataAutomationProjects',
+  /**
    * Grants permission to list existing data sources in an knowledge base
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListDataSources.html
    */
   ListDataSources = 'bedrock:ListDataSources',
+  /**
+   * Grants permission to get the list of evaluation jobs that you have submitted
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListEvaluationJobs.html
+   */
+  ListEvaluationJobs = 'bedrock:ListEvaluationJobs',
+  /**
+   * Grants permission to list existing aliases of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlowAliases.html
+   */
+  ListFlowAliases = 'bedrock:ListFlowAliases',
+  /**
+   * Grants permission to list existing versions of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlowVersions.html
+   */
+  ListFlowVersions = 'bedrock:ListFlowVersions',
+  /**
+   * Grants permission to list existing prompt flows
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlows.html
+   */
+  ListFlows = 'bedrock:ListFlows',
   /**
    * Grants permission to get a list of foundation model agreement offers
    *
@@ -364,17 +785,47 @@ export enum AwsBedrockActions {
    */
   ListGuardrails = 'bedrock:ListGuardrails',
   /**
+   * Grants permission to get list of Bedrock imported models
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListImportedModels.html
+   */
+  ListImportedModels = 'bedrock:ListImportedModels',
+  /**
+   * Grants permission to list inference profiles that you can use
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListInferenceProfiles.html
+   */
+  ListInferenceProfiles = 'bedrock:ListInferenceProfiles',
+  /**
    * Grants permission to list ingestion jobs in a data source
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListIngestionJobs.html
    */
   ListIngestionJobs = 'bedrock:ListIngestionJobs',
   /**
+   * Grants permission to list documents in a knowledge base
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListKnowledgeBaseDocuments.html
+   */
+  ListKnowledgeBaseDocuments = 'bedrock:ListKnowledgeBaseDocuments',
+  /**
    * Grants permission to list existing knowledge bases
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListKnowledgeBases.html
    */
   ListKnowledgeBases = 'bedrock:ListKnowledgeBases',
+  /**
+   * Grants permission to list marketplace model endpoints that you can use
+   *
+   * See API_ListMarketplaceModelEndpoints
+   */
+  ListMarketplaceModelEndpoints = 'bedrock:ListMarketplaceModelEndpoints',
+  /**
+   * Grants permission to get the list of model copy jobs that you have submitted
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelCopyJobs.html
+   */
+  ListModelCopyJobs = 'bedrock:ListModelCopyJobs',
   /**
    * Grants permission to get the list of model customization jobs that you have sub
    * mitted
@@ -390,11 +841,29 @@ export enum AwsBedrockActions {
    */
   ListModelEvaluationJobs = 'bedrock:ListModelEvaluationJobs',
   /**
+   * Grants permission to get list of model import jobs
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelImportJobs.html
+   */
+  ListModelImportJobs = 'bedrock:ListModelImportJobs',
+  /**
    * Grants permission to list model invocation jobs that you created earlier
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelInvocationJobs.html
    */
   ListModelInvocationJobs = 'bedrock:ListModelInvocationJobs',
+  /**
+   * Grants permission to list prompt routers that you can use
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListPromptRouters.html
+   */
+  ListPromptRouters = 'bedrock:ListPromptRouters',
+  /**
+   * Grants permission to list existing prompts
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListPrompts.html
+   */
+  ListPrompts = 'bedrock:ListPrompts',
   /**
    * Grants permission to list provisioned model throughputs that you created earlie
    * r
@@ -409,11 +878,24 @@ export enum AwsBedrockActions {
    */
   ListTagsForResource = 'bedrock:ListTagsForResource',
   /**
+   * Grants permission to optimize a prompt with user input
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OptimizePrompt.html
+   */
+  OptimizePrompt = 'bedrock:OptimizePrompt',
+  /**
    * Grants permission to prepare an existing agent to receive runtime requests
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html
    */
   PrepareAgent = 'bedrock:PrepareAgent',
+  /**
+   * Grants permission to apply the latest changes made to a prompt flow, so that th
+   * ey are reflected at runtime
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareFlow.html
+   */
+  PrepareFlow = 'bedrock:PrepareFlow',
   /**
    * Grants permission to put entitlement to access a foundation model
    *
@@ -427,11 +909,36 @@ export enum AwsBedrockActions {
    */
   PutModelInvocationLoggingConfiguration = 'bedrock:PutModelInvocationLoggingConfiguration',
   /**
+   * Adds a resource policy for a Bedrock resource
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutResourcePolicy.html
+   */
+  PutResourcePolicy = 'bedrock:PutResourcePolicy',
+  /**
    * Grants permission to put a use case for model access
    *
    * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html
    */
   PutUseCaseForModelAccess = 'bedrock:PutUseCaseForModelAccess',
+  /**
+   * Grants permission to register a sagemaker endpoint as a marketplace model endpo
+   * int
+   *
+   * See API_RegisterMarketplaceModelEndpoint
+   */
+  RegisterMarketplaceModelEndpoint = 'bedrock:RegisterMarketplaceModelEndpoint',
+  /**
+   * Grants permission to render an existing prompt or its version
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html
+   */
+  RenderPrompt = 'bedrock:RenderPrompt',
+  /**
+   * Grants permission to rank documents based on user input
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html
+   */
+  Rerank = 'bedrock:Rerank',
   /**
    * Grants permission to retrieve ingested data from a knowledge base
    *
@@ -450,6 +957,18 @@ export enum AwsBedrockActions {
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html
    */
   StartIngestionJob = 'bedrock:StartIngestionJob',
+  /**
+   * Grants permission to stop a evaluation job while in progress
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StopEvaluationJob.html
+   */
+  StopEvaluationJob = 'bedrock:StopEvaluationJob',
+  /**
+   * Grants permission to stop an ingestion job
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StopIngestionJob.html
+   */
+  StopIngestionJob = 'bedrock:StopIngestionJob',
   /**
    * Grants permission to stop a Bedrock model customization job while in progress
    *
@@ -493,17 +1012,47 @@ export enum AwsBedrockActions {
    */
   UpdateAgentAlias = 'bedrock:UpdateAgentAlias',
   /**
+   * Grants permission to update an existing collaborator
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentCollaborator.html
+   */
+  UpdateAgentCollaborator = 'bedrock:UpdateAgentCollaborator',
+  /**
    * Grants permission to update a knowledge base associated with an agent
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentKnowledgeBase.html
    */
   UpdateAgentKnowledgeBase = 'bedrock:UpdateAgentKnowledgeBase',
   /**
+   * Grants permission to update a blueprint for data automation
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateBlueprint.html
+   */
+  UpdateBlueprint = 'bedrock:UpdateBlueprint',
+  /**
+   * Grants permission to update a data automation project
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateDataAutomationProject.html
+   */
+  UpdateDataAutomationProject = 'bedrock:UpdateDataAutomationProject',
+  /**
    * Grants permission to update a data source
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateDataSource.html
    */
   UpdateDataSource = 'bedrock:UpdateDataSource',
+  /**
+   * Grants permission to update a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateFlow.html
+   */
+  UpdateFlow = 'bedrock:UpdateFlow',
+  /**
+   * Grants permission to update the configuration of an alias of a prompt flow
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateFlowAlias.html
+   */
+  UpdateFlowAlias = 'bedrock:UpdateFlowAlias',
   /**
    * Grants permission to update a guardrail
    *
@@ -517,10 +1066,28 @@ export enum AwsBedrockActions {
    */
   UpdateKnowledgeBase = 'bedrock:UpdateKnowledgeBase',
   /**
+   * Grants permission to update a marketplace model endpoint
+   *
+   * See API_UpdateMarketplaceModelEndpoint
+   */
+  UpdateMarketplaceModelEndpoint = 'bedrock:UpdateMarketplaceModelEndpoint',
+  /**
+   * Grants permission to update a prompt
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdatePrompt.html
+   */
+  UpdatePrompt = 'bedrock:UpdatePrompt',
+  /**
    * Grants permission to update a provisioned model throughput that you created ear
    * lier
    *
    * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateProvisionedModelThroughput.html
    */
   UpdateProvisionedModelThroughput = 'bedrock:UpdateProvisionedModelThroughput',
+  /**
+   * Grants permission to validate prompt flow definitions
+   *
+   * See https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ValidateFlowDefinition.html
+   */
+  ValidateFlowDefinition = 'bedrock:ValidateFlowDefinition',
 }

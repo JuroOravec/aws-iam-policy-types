@@ -2,6 +2,7 @@
 
 import type { AwsAccountActions } from '../actions/account';
 import type { AwsActivateActions } from '../actions/activate';
+import type { AwsAiopsActions } from '../actions/aiops';
 import type { AwsA4bActions } from '../actions/a4b';
 import type { AwsMediaimportActions } from '../actions/mediaimport';
 import type { AwsAmplifyActions } from '../actions/amplify';
@@ -13,6 +14,7 @@ import type { AwsApigatewayActions } from '../actions/apigateway';
 import type { AwsAppmeshActions } from '../actions/appmesh';
 import type { AwsAppmeshPreviewActions } from '../actions/appmesh-preview';
 import type { AwsApprunnerActions } from '../actions/apprunner';
+import type { AwsAppstudioActions } from '../actions/appstudio';
 import type { AwsA2cActions } from '../actions/a2c';
 import type { AwsAppconfigActions } from '../actions/appconfig';
 import type { AwsAppfabricActions } from '../actions/appfabric';
@@ -23,21 +25,25 @@ import type { AwsApplicationCostProfilerActions } from '../actions/application-c
 import type { AwsArsenalActions } from '../actions/arsenal';
 import type { AwsDiscoveryActions } from '../actions/discovery';
 import type { AwsMgnActions } from '../actions/mgn';
+import type { AwsArcZonalShiftActions } from '../actions/arc-zonal-shift';
 import type { AwsApplicationTransformationActions } from '../actions/application-transformation';
 import type { AwsAppstreamActions } from '../actions/appstream';
 import type { AwsAppsyncActions } from '../actions/appsync';
 import type { AwsArtifactActions } from '../actions/artifact';
 import type { AwsAthenaActions } from '../actions/athena';
 import type { AwsAuditmanagerActions } from '../actions/auditmanager';
+import type { AwsDsqlActions } from '../actions/dsql';
 import type { AwsAutoscalingPlansActions } from '../actions/autoscaling-plans';
 import type { AwsB2biActions } from '../actions/b2bi';
 import type { AwsBackupActions } from '../actions/backup';
 import type { AwsBackupGatewayActions } from '../actions/backup-gateway';
+import type { AwsBackupSearchActions } from '../actions/backup-search';
 import type { AwsBackupStorageActions } from '../actions/backup-storage';
 import type { AwsBatchActions } from '../actions/batch';
 import type { AwsBedrockActions } from '../actions/bedrock';
 import type { AwsBillingActions } from '../actions/billing';
 import type { AwsBcmDataExportsActions } from '../actions/bcm-data-exports';
+import type { AwsBcmPricingCalculatorActions } from '../actions/bcm-pricing-calculator';
 import type { AwsBillingconductorActions } from '../actions/billingconductor';
 import type { AwsAwsPortalActions } from '../actions/aws-portal';
 import type { AwsBraketActions } from '../actions/braket';
@@ -61,17 +67,20 @@ import type { AwsCloudtrailActions } from '../actions/cloudtrail';
 import type { AwsCloudtrailDataActions } from '../actions/cloudtrail-data';
 import type { AwsCloudwatchActions } from '../actions/cloudwatch';
 import type { AwsApplicationinsightsActions } from '../actions/applicationinsights';
+import type { AwsApplicationSignalsActions } from '../actions/application-signals';
 import type { AwsEvidentlyActions } from '../actions/evidently';
 import type { AwsInternetmonitorActions } from '../actions/internetmonitor';
 import type { AwsLogsActions } from '../actions/logs';
 import type { AwsNetworkmonitorActions } from '../actions/networkmonitor';
 import type { AwsOamActions } from '../actions/oam';
+import type { AwsObservabilityadminActions } from '../actions/observabilityadmin';
 import type { AwsRumActions } from '../actions/rum';
 import type { AwsSyntheticsActions } from '../actions/synthetics';
 import type { AwsCodeartifactActions } from '../actions/codeartifact';
 import type { AwsCodebuildActions } from '../actions/codebuild';
 import type { AwsCodecatalystActions } from '../actions/codecatalyst';
 import type { AwsCodecommitActions } from '../actions/codecommit';
+import type { AwsCodeconnectionsActions } from '../actions/codeconnections';
 import type { AwsCodedeployActions } from '../actions/codedeploy';
 import type { AwsCodedeployCommandsSecureActions } from '../actions/codedeploy-commands-secure';
 import type { AwsCodeguruActions } from '../actions/codeguru';
@@ -93,10 +102,12 @@ import type { AwsConfigActions } from '../actions/config';
 import type { AwsConnectActions } from '../actions/connect';
 import type { AwsCasesActions } from '../actions/cases';
 import type { AwsProfileActions } from '../actions/profile';
+import type { AwsConnectCampaignsActions } from '../actions/connect-campaigns';
 import type { AwsVoiceidActions } from '../actions/voiceid';
 import type { AwsAwsconnectorActions } from '../actions/awsconnector';
 import type { AwsConsoleappActions } from '../actions/consoleapp';
 import type { AwsConsolidatedbillingActions } from '../actions/consolidatedbilling';
+import type { AwsControlcatalogActions } from '../actions/controlcatalog';
 import type { AwsControltowerActions } from '../actions/controltower';
 import type { AwsCurActions } from '../actions/cur';
 import type { AwsCeActions } from '../actions/ce';
@@ -109,6 +120,7 @@ import type { AwsDmsActions } from '../actions/dms';
 import type { AwsDbqmsActions } from '../actions/dbqms';
 import type { AwsDatasyncActions } from '../actions/datasync';
 import type { AwsDatazoneActions } from '../actions/datazone';
+import type { AwsDeadlineActions } from '../actions/deadline';
 import type { AwsDeepcomposerActions } from '../actions/deepcomposer';
 import type { AwsDeeplensActions } from '../actions/deeplens';
 import type { AwsDeepracerActions } from '../actions/deepracer';
@@ -118,6 +130,7 @@ import type { AwsDevopsGuruActions } from '../actions/devops-guru';
 import type { AwsTsActions } from '../actions/ts';
 import type { AwsDirectconnectActions } from '../actions/directconnect';
 import type { AwsDsActions } from '../actions/ds';
+import type { AwsDsDataActions } from '../actions/ds-data';
 import type { AwsDocdbElasticActions } from '../actions/docdb-elastic';
 import type { AwsDynamodbActions } from '../actions/dynamodb';
 import type { AwsDaxActions } from '../actions/dax';
@@ -133,7 +146,6 @@ import type { AwsEcrPublicActions } from '../actions/ecr-public';
 import type { AwsEcsActions } from '../actions/ecs';
 import type { AwsDrsActions } from '../actions/drs';
 import type { AwsElasticfilesystemActions } from '../actions/elasticfilesystem';
-import type { AwsElasticInferenceActions } from '../actions/elastic-inference';
 import type { AwsEksActions } from '../actions/eks';
 import type { AwsElasticloadbalancingActions } from '../actions/elasticloadbalancing';
 import type { AwsElasticmapreduceActions } from '../actions/elasticmapreduce';
@@ -153,6 +165,8 @@ import type { AwsElementalSupportCasesActions } from '../actions/elemental-suppo
 import type { AwsElementalSupportContentActions } from '../actions/elemental-support-content';
 import type { AwsEmrContainersActions } from '../actions/emr-containers';
 import type { AwsEmrServerlessActions } from '../actions/emr-serverless';
+import type { AwsSmsVoiceActions } from '../actions/sms-voice';
+import type { AwsSocialMessagingActions } from '../actions/social-messaging';
 import type { AwsEntityresolutionActions } from '../actions/entityresolution';
 import type { AwsEventsActions } from '../actions/events';
 import type { AwsPipesActions } from '../actions/pipes';
@@ -178,7 +192,6 @@ import type { AwsHealthActions } from '../actions/health';
 import type { AwsMedicalImagingActions } from '../actions/medical-imaging';
 import type { AwsHealthlakeActions } from '../actions/healthlake';
 import type { AwsOmicsActions } from '../actions/omics';
-import type { AwsConnectCampaignsActions } from '../actions/connect-campaigns';
 import type { AwsHoneycodeActions } from '../actions/honeycode';
 import type { AwsAccessAnalyzerActions } from '../actions/access-analyzer';
 import type { AwsSsoActions } from '../actions/sso';
@@ -197,7 +210,6 @@ import type { AwsIvsActions } from '../actions/ivs';
 import type { AwsIvschatActions } from '../actions/ivschat';
 import type { AwsInvoicingActions } from '../actions/invoicing';
 import type { AwsIotActions } from '../actions/iot';
-import type { AwsIot1clickActions } from '../actions/iot1click';
 import type { AwsIotanalyticsActions } from '../actions/iotanalytics';
 import type { AwsIotdeviceadvisorActions } from '../actions/iotdeviceadvisor';
 import type { AwsIotDeviceTesterActions } from '../actions/iot-device-tester';
@@ -206,7 +218,6 @@ import type { AwsIotfleethubActions } from '../actions/iotfleethub';
 import type { AwsIotfleetwiseActions } from '../actions/iotfleetwise';
 import type { AwsGreengrassActions } from '../actions/greengrass';
 import type { AwsIotjobsdataActions } from '../actions/iotjobsdata';
-import type { AwsIotroborunnerActions } from '../actions/iotroborunner';
 import type { AwsIotsitewiseActions } from '../actions/iotsitewise';
 import type { AwsIottwinmakerActions } from '../actions/iottwinmaker';
 import type { AwsIotwirelessActions } from '../actions/iotwireless';
@@ -229,11 +240,15 @@ import type { AwsLicenseManagerLinuxSubscriptionsActions } from '../actions/lice
 import type { AwsLicenseManagerUserSubscriptionsActions } from '../actions/license-manager-user-subscriptions';
 import type { AwsLightsailActions } from '../actions/lightsail';
 import type { AwsGeoActions } from '../actions/geo';
+import type { AwsGeoMapsActions } from '../actions/geo-maps';
+import type { AwsGeoPlacesActions } from '../actions/geo-places';
+import type { AwsGeoRoutesActions } from '../actions/geo-routes';
 import type { AwsLookoutequipmentActions } from '../actions/lookoutequipment';
 import type { AwsLookoutmetricsActions } from '../actions/lookoutmetrics';
 import type { AwsLookoutvisionActions } from '../actions/lookoutvision';
 import type { AwsMachinelearningActions } from '../actions/machinelearning';
 import type { AwsMacie2Actions } from '../actions/macie2';
+import type { AwsApptestActions } from '../actions/apptest';
 import type { AwsM2Actions } from '../actions/m2';
 import type { AwsManagedblockchainActions } from '../actions/managedblockchain';
 import type { AwsManagedblockchainQueryActions } from '../actions/managedblockchain-query';
@@ -249,6 +264,7 @@ import type { AwsVendorInsightsActions } from '../actions/vendor-insights';
 import type { AwsMechanicalturkActions } from '../actions/mechanicalturk';
 import type { AwsMemorydbActions } from '../actions/memorydb';
 import type { AwsEc2messagesActions } from '../actions/ec2messages';
+import type { AwsSsmmessagesActions } from '../actions/ssmmessages';
 import type { AwsServiceextractActions } from '../actions/serviceextract';
 import type { AwsMapcreditsActions } from '../actions/mapcredits';
 import type { AwsMghActions } from '../actions/mgh';
@@ -261,10 +277,12 @@ import type { AwsMqActions } from '../actions/mq';
 import type { AwsNeptuneDbActions } from '../actions/neptune-db';
 import type { AwsNeptuneGraphActions } from '../actions/neptune-graph';
 import type { AwsNetworkFirewallActions } from '../actions/network-firewall';
+import type { AwsNetworkflowmonitorActions } from '../actions/networkflowmonitor';
 import type { AwsNetworkmanagerActions } from '../actions/networkmanager';
 import type { AwsNetworkmanagerChatActions } from '../actions/networkmanager-chat';
 import type { AwsNimbleActions } from '../actions/nimble';
 import type { AwsOneActions } from '../actions/one';
+import type { AwsOpensearchActions } from '../actions/opensearch';
 import type { AwsOsisActions } from '../actions/osis';
 import type { AwsAossActions } from '../actions/aoss';
 import type { AwsEsActions } from '../actions/es';
@@ -273,34 +291,38 @@ import type { AwsOpsworksCmActions } from '../actions/opsworks-cm';
 import type { AwsOrganizationsActions } from '../actions/organizations';
 import type { AwsOutpostsActions } from '../actions/outposts';
 import type { AwsPanoramaActions } from '../actions/panorama';
+import type { AwsPcsActions } from '../actions/pcs';
 import type { AwsPartnercentralAccountManagementActions } from '../actions/partnercentral-account-management';
+import type { AwsPartnercentralActions } from '../actions/partnercentral';
 import type { AwsPaymentCryptographyActions } from '../actions/payment-cryptography';
 import type { AwsPaymentsActions } from '../actions/payments';
 import type { AwsPiActions } from '../actions/pi';
 import type { AwsPersonalizeActions } from '../actions/personalize';
 import type { AwsMobiletargetingActions } from '../actions/mobiletargeting';
 import type { AwsSesActions } from '../actions/ses';
-import type { AwsSmsVoiceActions } from '../actions/sms-voice';
 import type { AwsPollyActions } from '../actions/polly';
 import type { AwsPricingActions } from '../actions/pricing';
 import type { AwsPcaConnectorAdActions } from '../actions/pca-connector-ad';
+import type { AwsPcaConnectorScepActions } from '../actions/pca-connector-scep';
 import type { AwsAcmPcaActions } from '../actions/acm-pca';
+import type { AwsVpceActions } from '../actions/vpce';
 import type { AwsProtonActions } from '../actions/proton';
 import type { AwsPurchaseOrdersActions } from '../actions/purchase-orders';
 import type { AwsQActions } from '../actions/q';
 import type { AwsQbusinessActions } from '../actions/qbusiness';
+import type { AwsQappsActions } from '../actions/qapps';
 import type { AwsWisdomActions } from '../actions/wisdom';
 import type { AwsQldbActions } from '../actions/qldb';
 import type { AwsQuicksightActions } from '../actions/quicksight';
 import type { AwsRdsActions } from '../actions/rds';
 import type { AwsRdsDataActions } from '../actions/rds-data';
 import type { AwsRdsDbActions } from '../actions/rds-db';
-import type { AwsRepostspaceActions } from '../actions/repostspace';
 import type { AwsRbinActions } from '../actions/rbin';
 import type { AwsRedshiftActions } from '../actions/redshift';
 import type { AwsRedshiftDataActions } from '../actions/redshift-data';
 import type { AwsRedshiftServerlessActions } from '../actions/redshift-serverless';
 import type { AwsRekognitionActions } from '../actions/rekognition';
+import type { AwsRepostspaceActions } from '../actions/repostspace';
 import type { AwsResiliencehubActions } from '../actions/resiliencehub';
 import type { AwsRamActions } from '../actions/ram';
 import type { AwsResourceExplorer2Actions } from '../actions/resource-explorer-2';
@@ -309,8 +331,8 @@ import type { AwsResourceGroupsActions } from '../actions/resource-groups';
 import type { AwsRhelkbActions } from '../actions/rhelkb';
 import type { AwsRobomakerActions } from '../actions/robomaker';
 import type { AwsRoute53Actions } from '../actions/route53';
-import type { AwsArcZonalShiftActions } from '../actions/arc-zonal-shift';
 import type { AwsRoute53domainsActions } from '../actions/route53domains';
+import type { AwsRoute53profilesActions } from '../actions/route53profiles';
 import type { AwsRoute53RecoveryClusterActions } from '../actions/route53-recovery-cluster';
 import type { AwsRoute53RecoveryControlConfigActions } from '../actions/route53-recovery-control-config';
 import type { AwsRoute53RecoveryReadinessActions } from '../actions/route53-recovery-readiness';
@@ -320,12 +342,16 @@ import type { AwsS3expressActions } from '../actions/s3express';
 import type { AwsGlacierActions } from '../actions/glacier';
 import type { AwsS3ObjectLambdaActions } from '../actions/s3-object-lambda';
 import type { AwsS3OutpostsActions } from '../actions/s3-outposts';
+import type { AwsS3tablesActions } from '../actions/s3tables';
 import type { AwsSagemakerActions } from '../actions/sagemaker';
+import type { AwsSagemakerDataScienceAssistantActions } from '../actions/sagemaker-data-science-assistant';
 import type { AwsSagemakerGeospatialActions } from '../actions/sagemaker-geospatial';
 import type { AwsSagemakerGroundtruthSyntheticActions } from '../actions/sagemaker-groundtruth-synthetic';
+import type { AwsSagemakerMlflowActions } from '../actions/sagemaker-mlflow';
 import type { AwsSavingsplansActions } from '../actions/savingsplans';
 import type { AwsSecretsmanagerActions } from '../actions/secretsmanager';
 import type { AwsSecurityhubActions } from '../actions/securityhub';
+import type { AwsSecurityIrActions } from '../actions/security-ir';
 import type { AwsSecuritylakeActions } from '../actions/securitylake';
 import type { AwsStsActions } from '../actions/sts';
 import type { AwsSmsActions } from '../actions/sms';
@@ -333,9 +359,9 @@ import type { AwsServerlessrepoActions } from '../actions/serverlessrepo';
 import type { AwsServicecatalogActions } from '../actions/servicecatalog';
 import type { AwsPrivateNetworksActions } from '../actions/private-networks';
 import type { AwsServicequotasActions } from '../actions/servicequotas';
-import type { AwsSsmmessagesActions } from '../actions/ssmmessages';
 import type { AwsShieldActions } from '../actions/shield';
 import type { AwsSignerActions } from '../actions/signer';
+import type { AwsSigninActions } from '../actions/signin';
 import type { AwsSwfActions } from '../actions/swf';
 import type { AwsSdbActions } from '../actions/sdb';
 import type { AwsSimspaceweaverActions } from '../actions/simspaceweaver';
@@ -350,17 +376,20 @@ import type { AwsScnActions } from '../actions/scn';
 import type { AwsSupportActions } from '../actions/support';
 import type { AwsSupportappActions } from '../actions/supportapp';
 import type { AwsSupportplansActions } from '../actions/supportplans';
+import type { AwsSupportrecommendationsActions } from '../actions/supportrecommendations';
 import type { AwsSustainabilityActions } from '../actions/sustainability';
 import type { AwsSsmActions } from '../actions/ssm';
 import type { AwsSsmSapActions } from '../actions/ssm-sap';
 import type { AwsSsmGuiconnectActions } from '../actions/ssm-guiconnect';
 import type { AwsSsmIncidentsActions } from '../actions/ssm-incidents';
 import type { AwsSsmContactsActions } from '../actions/ssm-contacts';
+import type { AwsSsmQuicksetupActions } from '../actions/ssm-quicksetup';
 import type { AwsResourceExplorerActions } from '../actions/resource-explorer';
 import type { AwsTaxActions } from '../actions/tax';
 import type { AwsTnbActions } from '../actions/tnb';
 import type { AwsTextractActions } from '../actions/textract';
 import type { AwsTimestreamActions } from '../actions/timestream';
+import type { AwsTimestreamInfluxdbActions } from '../actions/timestream-influxdb';
 import type { AwsTirosActions } from '../actions/tiros';
 import type { AwsTranscribeActions } from '../actions/transcribe';
 import type { AwsTransferActions } from '../actions/transfer';
@@ -368,6 +397,7 @@ import type { AwsTranslateActions } from '../actions/translate';
 import type { AwsTrustedadvisorActions } from '../actions/trustedadvisor';
 import type { AwsNotificationsActions } from '../actions/notifications';
 import type { AwsNotificationsContactsActions } from '../actions/notifications-contacts';
+import type { AwsUserSubscriptionsActions } from '../actions/user-subscriptions';
 import type { AwsVerifiedAccessActions } from '../actions/verified-access';
 import type { AwsVerifiedpermissionsActions } from '../actions/verifiedpermissions';
 import type { AwsVpcLatticeActions } from '../actions/vpc-lattice';
@@ -383,13 +413,14 @@ import type { AwsWorkmailActions } from '../actions/workmail';
 import type { AwsWorkmailmessageflowActions } from '../actions/workmailmessageflow';
 import type { AwsWorkspacesActions } from '../actions/workspaces';
 import type { AwsWamActions } from '../actions/wam';
-import type { AwsThinclientActions } from '../actions/thinclient';
 import type { AwsWorkspacesWebActions } from '../actions/workspaces-web';
+import type { AwsThinclientActions } from '../actions/thinclient';
 import type { AwsXrayActions } from '../actions/xray';
 
 export type AwsPolicyAction =
   | AwsAccountActions
   | AwsActivateActions
+  | AwsAiopsActions
   | AwsA4bActions
   | AwsMediaimportActions
   | AwsAmplifyActions
@@ -401,6 +432,7 @@ export type AwsPolicyAction =
   | AwsAppmeshActions
   | AwsAppmeshPreviewActions
   | AwsApprunnerActions
+  | AwsAppstudioActions
   | AwsA2cActions
   | AwsAppconfigActions
   | AwsAppfabricActions
@@ -411,21 +443,25 @@ export type AwsPolicyAction =
   | AwsArsenalActions
   | AwsDiscoveryActions
   | AwsMgnActions
+  | AwsArcZonalShiftActions
   | AwsApplicationTransformationActions
   | AwsAppstreamActions
   | AwsAppsyncActions
   | AwsArtifactActions
   | AwsAthenaActions
   | AwsAuditmanagerActions
+  | AwsDsqlActions
   | AwsAutoscalingPlansActions
   | AwsB2biActions
   | AwsBackupActions
   | AwsBackupGatewayActions
+  | AwsBackupSearchActions
   | AwsBackupStorageActions
   | AwsBatchActions
   | AwsBedrockActions
   | AwsBillingActions
   | AwsBcmDataExportsActions
+  | AwsBcmPricingCalculatorActions
   | AwsBillingconductorActions
   | AwsAwsPortalActions
   | AwsBraketActions
@@ -449,17 +485,20 @@ export type AwsPolicyAction =
   | AwsCloudtrailDataActions
   | AwsCloudwatchActions
   | AwsApplicationinsightsActions
+  | AwsApplicationSignalsActions
   | AwsEvidentlyActions
   | AwsInternetmonitorActions
   | AwsLogsActions
   | AwsNetworkmonitorActions
   | AwsOamActions
+  | AwsObservabilityadminActions
   | AwsRumActions
   | AwsSyntheticsActions
   | AwsCodeartifactActions
   | AwsCodebuildActions
   | AwsCodecatalystActions
   | AwsCodecommitActions
+  | AwsCodeconnectionsActions
   | AwsCodedeployActions
   | AwsCodedeployCommandsSecureActions
   | AwsCodeguruActions
@@ -481,10 +520,12 @@ export type AwsPolicyAction =
   | AwsConnectActions
   | AwsCasesActions
   | AwsProfileActions
+  | AwsConnectCampaignsActions
   | AwsVoiceidActions
   | AwsAwsconnectorActions
   | AwsConsoleappActions
   | AwsConsolidatedbillingActions
+  | AwsControlcatalogActions
   | AwsControltowerActions
   | AwsCurActions
   | AwsCeActions
@@ -497,6 +538,7 @@ export type AwsPolicyAction =
   | AwsDbqmsActions
   | AwsDatasyncActions
   | AwsDatazoneActions
+  | AwsDeadlineActions
   | AwsDeepcomposerActions
   | AwsDeeplensActions
   | AwsDeepracerActions
@@ -506,6 +548,7 @@ export type AwsPolicyAction =
   | AwsTsActions
   | AwsDirectconnectActions
   | AwsDsActions
+  | AwsDsDataActions
   | AwsDocdbElasticActions
   | AwsDynamodbActions
   | AwsDaxActions
@@ -521,7 +564,6 @@ export type AwsPolicyAction =
   | AwsEcsActions
   | AwsDrsActions
   | AwsElasticfilesystemActions
-  | AwsElasticInferenceActions
   | AwsEksActions
   | AwsElasticloadbalancingActions
   | AwsElasticmapreduceActions
@@ -541,6 +583,8 @@ export type AwsPolicyAction =
   | AwsElementalSupportContentActions
   | AwsEmrContainersActions
   | AwsEmrServerlessActions
+  | AwsSmsVoiceActions
+  | AwsSocialMessagingActions
   | AwsEntityresolutionActions
   | AwsEventsActions
   | AwsPipesActions
@@ -566,7 +610,6 @@ export type AwsPolicyAction =
   | AwsMedicalImagingActions
   | AwsHealthlakeActions
   | AwsOmicsActions
-  | AwsConnectCampaignsActions
   | AwsHoneycodeActions
   | AwsAccessAnalyzerActions
   | AwsSsoActions
@@ -585,7 +628,6 @@ export type AwsPolicyAction =
   | AwsIvschatActions
   | AwsInvoicingActions
   | AwsIotActions
-  | AwsIot1clickActions
   | AwsIotanalyticsActions
   | AwsIotdeviceadvisorActions
   | AwsIotDeviceTesterActions
@@ -594,7 +636,6 @@ export type AwsPolicyAction =
   | AwsIotfleetwiseActions
   | AwsGreengrassActions
   | AwsIotjobsdataActions
-  | AwsIotroborunnerActions
   | AwsIotsitewiseActions
   | AwsIottwinmakerActions
   | AwsIotwirelessActions
@@ -617,11 +658,15 @@ export type AwsPolicyAction =
   | AwsLicenseManagerUserSubscriptionsActions
   | AwsLightsailActions
   | AwsGeoActions
+  | AwsGeoMapsActions
+  | AwsGeoPlacesActions
+  | AwsGeoRoutesActions
   | AwsLookoutequipmentActions
   | AwsLookoutmetricsActions
   | AwsLookoutvisionActions
   | AwsMachinelearningActions
   | AwsMacie2Actions
+  | AwsApptestActions
   | AwsM2Actions
   | AwsManagedblockchainActions
   | AwsManagedblockchainQueryActions
@@ -637,6 +682,7 @@ export type AwsPolicyAction =
   | AwsMechanicalturkActions
   | AwsMemorydbActions
   | AwsEc2messagesActions
+  | AwsSsmmessagesActions
   | AwsServiceextractActions
   | AwsMapcreditsActions
   | AwsMghActions
@@ -649,10 +695,12 @@ export type AwsPolicyAction =
   | AwsNeptuneDbActions
   | AwsNeptuneGraphActions
   | AwsNetworkFirewallActions
+  | AwsNetworkflowmonitorActions
   | AwsNetworkmanagerActions
   | AwsNetworkmanagerChatActions
   | AwsNimbleActions
   | AwsOneActions
+  | AwsOpensearchActions
   | AwsOsisActions
   | AwsAossActions
   | AwsEsActions
@@ -661,34 +709,38 @@ export type AwsPolicyAction =
   | AwsOrganizationsActions
   | AwsOutpostsActions
   | AwsPanoramaActions
+  | AwsPcsActions
   | AwsPartnercentralAccountManagementActions
+  | AwsPartnercentralActions
   | AwsPaymentCryptographyActions
   | AwsPaymentsActions
   | AwsPiActions
   | AwsPersonalizeActions
   | AwsMobiletargetingActions
   | AwsSesActions
-  | AwsSmsVoiceActions
   | AwsPollyActions
   | AwsPricingActions
   | AwsPcaConnectorAdActions
+  | AwsPcaConnectorScepActions
   | AwsAcmPcaActions
+  | AwsVpceActions
   | AwsProtonActions
   | AwsPurchaseOrdersActions
   | AwsQActions
   | AwsQbusinessActions
+  | AwsQappsActions
   | AwsWisdomActions
   | AwsQldbActions
   | AwsQuicksightActions
   | AwsRdsActions
   | AwsRdsDataActions
   | AwsRdsDbActions
-  | AwsRepostspaceActions
   | AwsRbinActions
   | AwsRedshiftActions
   | AwsRedshiftDataActions
   | AwsRedshiftServerlessActions
   | AwsRekognitionActions
+  | AwsRepostspaceActions
   | AwsResiliencehubActions
   | AwsRamActions
   | AwsResourceExplorer2Actions
@@ -697,8 +749,8 @@ export type AwsPolicyAction =
   | AwsRhelkbActions
   | AwsRobomakerActions
   | AwsRoute53Actions
-  | AwsArcZonalShiftActions
   | AwsRoute53domainsActions
+  | AwsRoute53profilesActions
   | AwsRoute53RecoveryClusterActions
   | AwsRoute53RecoveryControlConfigActions
   | AwsRoute53RecoveryReadinessActions
@@ -708,12 +760,16 @@ export type AwsPolicyAction =
   | AwsGlacierActions
   | AwsS3ObjectLambdaActions
   | AwsS3OutpostsActions
+  | AwsS3tablesActions
   | AwsSagemakerActions
+  | AwsSagemakerDataScienceAssistantActions
   | AwsSagemakerGeospatialActions
   | AwsSagemakerGroundtruthSyntheticActions
+  | AwsSagemakerMlflowActions
   | AwsSavingsplansActions
   | AwsSecretsmanagerActions
   | AwsSecurityhubActions
+  | AwsSecurityIrActions
   | AwsSecuritylakeActions
   | AwsStsActions
   | AwsSmsActions
@@ -721,9 +777,9 @@ export type AwsPolicyAction =
   | AwsServicecatalogActions
   | AwsPrivateNetworksActions
   | AwsServicequotasActions
-  | AwsSsmmessagesActions
   | AwsShieldActions
   | AwsSignerActions
+  | AwsSigninActions
   | AwsSwfActions
   | AwsSdbActions
   | AwsSimspaceweaverActions
@@ -738,17 +794,20 @@ export type AwsPolicyAction =
   | AwsSupportActions
   | AwsSupportappActions
   | AwsSupportplansActions
+  | AwsSupportrecommendationsActions
   | AwsSustainabilityActions
   | AwsSsmActions
   | AwsSsmSapActions
   | AwsSsmGuiconnectActions
   | AwsSsmIncidentsActions
   | AwsSsmContactsActions
+  | AwsSsmQuicksetupActions
   | AwsResourceExplorerActions
   | AwsTaxActions
   | AwsTnbActions
   | AwsTextractActions
   | AwsTimestreamActions
+  | AwsTimestreamInfluxdbActions
   | AwsTirosActions
   | AwsTranscribeActions
   | AwsTransferActions
@@ -756,6 +815,7 @@ export type AwsPolicyAction =
   | AwsTrustedadvisorActions
   | AwsNotificationsActions
   | AwsNotificationsContactsActions
+  | AwsUserSubscriptionsActions
   | AwsVerifiedAccessActions
   | AwsVerifiedpermissionsActions
   | AwsVpcLatticeActions
@@ -771,6 +831,6 @@ export type AwsPolicyAction =
   | AwsWorkmailmessageflowActions
   | AwsWorkspacesActions
   | AwsWamActions
-  | AwsThinclientActions
   | AwsWorkspacesWebActions
+  | AwsThinclientActions
   | AwsXrayActions;

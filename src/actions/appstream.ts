@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonappstream2.0.html
  *
- * 2024-02-12T09:56:05.404Z
+ * 2025-02-24T21:46:46.712Z
  */
 export enum AwsAppstreamActions {
   /**
@@ -139,6 +139,13 @@ export enum AwsAppstreamActions {
    */
   CreateStreamingURL = 'appstream:CreateStreamingURL',
   /**
+   * Grants permission to create a custom branding theme, which might includes a cus
+   * tom logo, website links, and other branding to display to your users
+   *
+   * See https://docs.aws.amazon.com/appstream2/latest/APIReference/API_CreateThemeForStack.html
+   */
+  CreateThemeForStack = 'appstream:CreateThemeForStack',
+  /**
    * Grants permission to update an existing image within customer account
    *
    * See https://docs.aws.amazon.com/appstream2/latest/APIReference/API_CreateUpdatedImage.html
@@ -224,6 +231,13 @@ export enum AwsAppstreamActions {
    * See https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DeleteStack.html
    */
   DeleteStack = 'appstream:DeleteStack',
+  /**
+   * Grants permission to delete a custom branding theme, which might includes a cus
+   * tom logo, website links, and other branding to display to your users
+   *
+   * See https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DeleteThemeForStack.html
+   */
+  DeleteThemeForStack = 'appstream:DeleteThemeForStack',
   /**
    * Grants permission to disable usage report generation
    *
@@ -337,6 +351,13 @@ export enum AwsAppstreamActions {
    * See https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DescribeStacks.html
    */
   DescribeStacks = 'appstream:DescribeStacks',
+  /**
+   * Grants permission to get the custom branding theme information, which might inc
+   * ludes a custom logo, website links, and other branding to display to your users
+   *
+   * See https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DescribeThemeForStack.html
+   */
+  DescribeThemeForStack = 'appstream:DescribeThemeForStack',
   /**
    * Grants permission to retrieve a list that describes one or more usage report su
    * bscriptions
@@ -536,4 +557,12 @@ export enum AwsAppstreamActions {
    * See https://docs.aws.amazon.com/appstream2/latest/APIReference/API_UpdateStack.html
    */
   UpdateStack = 'appstream:UpdateStack',
+  /**
+   * Grants permission to update the custom branding theme information, which might
+   * includes a custom logo, website links, and other branding to display to your us
+   * ers
+   *
+   * See https://docs.aws.amazon.com/appstream2/latest/APIReference/API_UpdateThemeForStack.html
+   */
+  UpdateThemeForStack = 'appstream:UpdateThemeForStack',
 }

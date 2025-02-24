@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslicensemanager.html
  *
- * 2024-02-12T09:58:04.692Z
+ * 2025-02-24T21:48:36.578Z
  */
 export enum AwsLicenseManagerActions {
   /**

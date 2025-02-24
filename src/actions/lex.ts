@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlexv2.html
  *
- * 2024-02-12T09:58:04.166Z
+ * 2025-02-24T21:48:36.075Z
  */
 export enum AwsLexActions {
   /**
@@ -58,6 +58,12 @@ export enum AwsLexActions {
    * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateBotLocale.html
    */
   CreateBotLocale = 'lex:CreateBotLocale',
+  /**
+   * Grants permission to create bot replica for a bot
+   *
+   * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateBotReplica.html
+   */
+  CreateBotReplica = 'lex:CreateBotReplica',
   /**
    * Grants permission to create a new version of an existing bot
    *
@@ -142,6 +148,12 @@ export enum AwsLexActions {
    * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteBotLocale.html
    */
   DeleteBotLocale = 'lex:DeleteBotLocale',
+  /**
+   * Grants permission to delete an existing bot replica
+   *
+   * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteBotReplica.html
+   */
+  DeleteBotReplica = 'lex:DeleteBotReplica',
   /**
    * Grants permission to delete an existing bot version
    *
@@ -238,6 +250,12 @@ export enum AwsLexActions {
    * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBotRecommendation.html
    */
   DescribeBotRecommendation = 'lex:DescribeBotRecommendation',
+  /**
+   * Grants permission to retrieve an existing bot replica
+   *
+   * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBotReplica.html
+   */
+  DescribeBotReplica = 'lex:DescribeBotReplica',
   /**
    * Grants permission to retrieve metadata information for a bot resource generatio
    * n
@@ -348,6 +366,12 @@ export enum AwsLexActions {
    */
   ListAggregatedUtterances = 'lex:ListAggregatedUtterances',
   /**
+   * Grants permission to list alias replicas in a bot replica
+   *
+   * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotAliasReplicas.html
+   */
+  ListBotAliasReplicas = 'lex:ListBotAliasReplicas',
+  /**
    * Grants permission to list bot aliases in an bot
    *
    * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotAliases.html
@@ -373,11 +397,23 @@ export enum AwsLexActions {
    */
   ListBotRecommendations = 'lex:ListBotRecommendations',
   /**
+   * Grants permission to list replicas of a bot
+   *
+   * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotReplicas.html
+   */
+  ListBotReplicas = 'lex:ListBotReplicas',
+  /**
    * Grants permission to list the resource generations for a bot
    *
    * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotResourceGenerations.html
    */
   ListBotResourceGenerations = 'lex:ListBotResourceGenerations',
+  /**
+   * Grants permission to list version replicas in a bot replica
+   *
+   * See https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotVersionReplicas.html
+   */
+  ListBotVersionReplicas = 'lex:ListBotVersionReplicas',
   /**
    * Grants permission to list existing bot versions
    *

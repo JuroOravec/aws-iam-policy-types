@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonathena.html
  *
- * 2024-02-12T09:56:07.026Z
+ * 2025-02-24T21:46:48.281Z
  */
 export enum AwsAthenaActions {
   /**
@@ -249,7 +249,7 @@ export enum AwsAthenaActions {
   /**
    * Grants permission to get the query results stream
    *
-   * See https://docs.aws.amazon.com/athena/latest/ug/connect-with-previous-jdbc.html#jdbc-prev-version-policies
+   * See https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver.html#jdbc-v3-driver-download
    */
   GetQueryResultsStream = 'athena:GetQueryResultsStream',
   /**

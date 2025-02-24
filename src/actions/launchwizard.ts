@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslaunchwizard.html
  *
- * 2024-02-12T09:58:02.804Z
+ * 2025-02-24T21:48:35.030Z
  */
 export enum AwsLaunchwizardActions {
   /**
@@ -18,7 +18,7 @@ export enum AwsLaunchwizardActions {
   /**
    * Grants permission to create a deployment
    *
-   * See https://docs.aws.amazon.com/launchwizard/
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_CreateDeployment.html
    */
   CreateDeployment = 'launchwizard:CreateDeployment',
   /**
@@ -42,7 +42,7 @@ export enum AwsLaunchwizardActions {
   /**
    * Grants permission to delete a deployment
    *
-   * See https://docs.aws.amazon.com/launchwizard/
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_DeleteDeployment.html
    */
   DeleteDeployment = 'launchwizard:DeleteDeployment',
   /**
@@ -78,7 +78,7 @@ export enum AwsLaunchwizardActions {
   /**
    * Grants permission to get a deployment
    *
-   * See https://docs.aws.amazon.com/launchwizard/
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetDeployment.html
    */
   GetDeployment = 'launchwizard:GetDeployment',
   /**
@@ -114,7 +114,7 @@ export enum AwsLaunchwizardActions {
   /**
    * Grants permission to get a workload
    *
-   * See https://docs.aws.amazon.com/launchwizard/
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkload.html
    */
   GetWorkload = 'launchwizard:GetWorkload',
   /**
@@ -130,6 +130,12 @@ export enum AwsLaunchwizardActions {
    */
   GetWorkloadAssets = 'launchwizard:GetWorkloadAssets',
   /**
+   * Grants permission to get a deployment pattern
+   *
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_GetWorkloadDeploymentPattern.html
+   */
+  GetWorkloadDeploymentPattern = 'launchwizard:GetWorkloadDeploymentPattern',
+  /**
    * Grants permission to list additional nodes
    *
    * See https://docs.aws.amazon.com/launchwizard/
@@ -144,13 +150,13 @@ export enum AwsLaunchwizardActions {
   /**
    * Grants permission to list the events that occured during a deployment
    *
-   * See https://docs.aws.amazon.com/launchwizard/
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListDeploymentEvents.html
    */
   ListDeploymentEvents = 'launchwizard:ListDeploymentEvents',
   /**
    * Grants permission to list deployments
    *
-   * See https://docs.aws.amazon.com/launchwizard/
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListDeployments.html
    */
   ListDeployments = 'launchwizard:ListDeployments',
   /**
@@ -172,6 +178,12 @@ export enum AwsLaunchwizardActions {
    */
   ListSettingsSets = 'launchwizard:ListSettingsSets',
   /**
+   * Grants permission to list tags for a LaunchWizard resource.
+   *
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListTagsForResource.html
+   */
+  ListTagsForResource = 'launchwizard:ListTagsForResource',
+  /**
    * Grants permission to list deployment options of a given workload
    *
    * See https://docs.aws.amazon.com/launchwizard/
@@ -180,13 +192,13 @@ export enum AwsLaunchwizardActions {
   /**
    * Grants permission to list the deployment patterns of a workload
    *
-   * See https://docs.aws.amazon.com/launchwizard/
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloadDeploymentPatterns.html
    */
   ListWorkloadDeploymentPatterns = 'launchwizard:ListWorkloadDeploymentPatterns',
   /**
    * Grants permission to list workloads
    *
-   * See https://docs.aws.amazon.com/launchwizard/
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html
    */
   ListWorkloads = 'launchwizard:ListWorkloads',
   /**
@@ -201,6 +213,18 @@ export enum AwsLaunchwizardActions {
    * See https://docs.aws.amazon.com/launchwizard/
    */
   StartProvisioning = 'launchwizard:StartProvisioning',
+  /**
+   * Grants permission to tag a LaunchWizard resource.
+   *
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_TagResource.html
+   */
+  TagResource = 'launchwizard:TagResource',
+  /**
+   * Grants permission to untag a LaunchWizard resource.
+   *
+   * See https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_UntagResource.html
+   */
+  UntagResource = 'launchwizard:UntagResource',
   /**
    * Grants permission to update an application settings set
    *

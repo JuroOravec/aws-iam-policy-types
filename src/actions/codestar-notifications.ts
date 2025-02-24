@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodestarnotifications.html
  *
- * 2024-02-12T09:56:39.771Z
+ * 2025-02-24T21:47:18.721Z
  */
 export enum AwsCodestarNotificationsActions {
   /**

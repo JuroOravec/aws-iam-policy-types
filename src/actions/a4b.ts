@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_alexaforbusiness.html
  *
- * 2024-02-12T09:55:51.419Z
+ * 2025-02-24T21:46:34.116Z
  */
 export enum AwsA4bActions {
   /**

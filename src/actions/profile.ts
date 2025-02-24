@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnectcustomerprofiles.html
  *
- * 2024-02-12T09:56:46.215Z
+ * 2025-02-24T21:47:24.528Z
  */
 export enum AwsProfileActions {
   /**
@@ -15,6 +15,19 @@ export enum AwsProfileActions {
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_AddProfileKey.html
    */
   AddProfileKey = 'profile:AddProfileKey',
+  /**
+   * Grants permission to retrieve a calculated attribute for the specific profiles
+   * in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_BatchGetCalculatedAttributeForProfile.html
+   */
+  BatchGetCalculatedAttributeForProfile = 'profile:BatchGetCalculatedAttributeForProfile',
+  /**
+   * Grants permission to get profiles in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_BatchGetProfile.html
+   */
+  BatchGetProfile = 'profile:BatchGetProfile',
   /**
    * Grants permission to create a calculated attribute definition in the domain
    *
@@ -34,6 +47,12 @@ export enum AwsProfileActions {
    */
   CreateEventStream = 'profile:CreateEventStream',
   /**
+   * Grants permission to create an event trigger in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateEventTrigger.html
+   */
+  CreateEventTrigger = 'profile:CreateEventTrigger',
+  /**
    * Grants permission to create an integration workflow in a domain
    *
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateIntegrationWorkflow.html
@@ -45,6 +64,30 @@ export enum AwsProfileActions {
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateProfile.html
    */
   CreateProfile = 'profile:CreateProfile',
+  /**
+   * Grants permission to create a segment definition in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateSegmentDefinition.html
+   */
+  CreateSegmentDefinition = 'profile:CreateSegmentDefinition',
+  /**
+   * Grants permission to create a segment estimate in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateSegmentEstimate.html
+   */
+  CreateSegmentEstimate = 'profile:CreateSegmentEstimate',
+  /**
+   * Grants permission to create a segment snapshot in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateSegmentSnapshot.html
+   */
+  CreateSegmentSnapshot = 'profile:CreateSegmentSnapshot',
+  /**
+   * Grants permission to create a snapshot in the domain
+   *
+   * See ${UserGuideDocPage}set-up-bulk-export.html
+   */
+  CreateSnapshot = 'profile:CreateSnapshot',
   /**
    * Grants permission to delete a calculated attribute definition in the domain
    *
@@ -63,6 +106,12 @@ export enum AwsProfileActions {
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteEventStream.html
    */
   DeleteEventStream = 'profile:DeleteEventStream',
+  /**
+   * Grants permission to delete an event trigger in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteEventTrigger.html
+   */
+  DeleteEventTrigger = 'profile:DeleteEventTrigger',
   /**
    * Grants permission to delete a integration in a domain
    *
@@ -93,6 +142,12 @@ export enum AwsProfileActions {
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteProfileObjectType.html
    */
   DeleteProfileObjectType = 'profile:DeleteProfileObjectType',
+  /**
+   * Grants permission to delete a segment definition in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteSegmentDefinition.html
+   */
+  DeleteSegmentDefinition = 'profile:DeleteSegmentDefinition',
   /**
    * Grants permission to delete a workflow in a domain
    *
@@ -137,6 +192,12 @@ export enum AwsProfileActions {
    */
   GetEventStream = 'profile:GetEventStream',
   /**
+   * Grants permission to get an event trigger in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetEventTrigger.html
+   */
+  GetEventTrigger = 'profile:GetEventTrigger',
+  /**
    * Grants permission to get an identity resolution job in a domain
    *
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetIdentityResolutionJob.html
@@ -167,11 +228,42 @@ export enum AwsProfileActions {
    */
   GetProfileObjectTypeTemplate = 'profile:GetProfileObjectTypeTemplate',
   /**
+   * Grants permission to get a segment definition in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSegmentDefinition.html
+   */
+  GetSegmentDefinition = 'profile:GetSegmentDefinition',
+  /**
+   * Grants permission to get a segment estimate in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSegmentEstimate.html
+   */
+  GetSegmentEstimate = 'profile:GetSegmentEstimate',
+  /**
+   * Grants permission to determine if the given profiles are part of a segment in t
+   * he domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSegmentMembership.html
+   */
+  GetSegmentMembership = 'profile:GetSegmentMembership',
+  /**
+   * Grants permission to get a segment snapshot in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSegmentSnapshot.html
+   */
+  GetSegmentSnapshot = 'profile:GetSegmentSnapshot',
+  /**
    * Grants permission to get all the similar profiles in the domain
    *
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSimilarProfiles.html
    */
   GetSimilarProfiles = 'profile:GetSimilarProfiles',
+  /**
+   * Grants permission to get a snapshot in the domain
+   *
+   * See ${UserGuideDocPage}set-up-bulk-export.html
+   */
+  GetSnapshot = 'profile:GetSnapshot',
   /**
    * Grants permission to get workflow details in a domain
    *
@@ -217,6 +309,12 @@ export enum AwsProfileActions {
    */
   ListEventStreams = 'profile:ListEventStreams',
   /**
+   * Grants permission to list all the event triggers in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListEventTriggers.html
+   */
+  ListEventTriggers = 'profile:ListEventTriggers',
+  /**
    * Grants permission to list identity resolution jobs in a domain
    *
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListIdentityResolutionJobs.html
@@ -228,6 +326,19 @@ export enum AwsProfileActions {
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListIntegrations.html
    */
   ListIntegrations = 'profile:ListIntegrations',
+  /**
+   * Grants permission to list all the attributes of a specific object type in the d
+   * omain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListObjectTypeAttributes.html
+   */
+  ListObjectTypeAttributes = 'profile:ListObjectTypeAttributes',
+  /**
+   * Grants permission to list all the values of a profile attribute in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListProfileAttributeValues.html
+   */
+  ListProfileAttributeValues = 'profile:ListProfileAttributeValues',
   /**
    * Grants permission to list all the profile object type templates in the account
    *
@@ -252,6 +363,12 @@ export enum AwsProfileActions {
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListRuleBasedMatches.html
    */
   ListRuleBasedMatches = 'profile:ListRuleBasedMatches',
+  /**
+   * Grants permission to list all the segment definitions in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListSegmentDefinitions.html
+   */
+  ListSegmentDefinitions = 'profile:ListSegmentDefinitions',
   /**
    * Grants permission to list tags for a resource
    *
@@ -318,6 +435,12 @@ export enum AwsProfileActions {
    * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateDomain.html
    */
   UpdateDomain = 'profile:UpdateDomain',
+  /**
+   * Grants permission to update an event trigger in the domain
+   *
+   * See https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateEventTrigger.html
+   */
+  UpdateEventTrigger = 'profile:UpdateEventTrigger',
   /**
    * Grants permission to update a profile in the domain
    *

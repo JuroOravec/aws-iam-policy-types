@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbackup.html
  *
- * 2024-02-12T09:56:09.568Z
+ * 2025-02-24T21:46:50.847Z
  */
 export enum AwsBackupActions {
   /**
@@ -287,6 +287,12 @@ export enum AwsBackupActions {
    */
   GetLegalHold = 'backup:GetLegalHold',
   /**
+   * Grants permission to get indexing details for a recovery point
+   *
+   * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointIndexDetails.html
+   */
+  GetRecoveryPointIndexDetails = 'backup:GetRecoveryPointIndexDetails',
+  /**
    * Grants permission to get recovery point restore metadata
    *
    * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointRestoreMetadata.html
@@ -382,6 +388,18 @@ export enum AwsBackupActions {
    * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListFrameworks.html
    */
   ListFrameworks = 'backup:ListFrameworks',
+  /**
+   * Grants permission to get list indexed recovery points
+   *
+   * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListIndexedRecoveryPoints.html
+   */
+  ListIndexedRecoveryPoints = 'backup:ListIndexedRecoveryPoints',
+  /**
+   * Grants permission to list indexed recovery points to search
+   *
+   * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListIndexedRecoveryPointsForSearch.html
+   */
+  ListIndexedRecoveryPointsForSearch = 'backup:ListIndexedRecoveryPointsForSearch',
   /**
    * Grants permission to list legal holds
    *
@@ -498,6 +516,12 @@ export enum AwsBackupActions {
    */
   PutRestoreValidationResult = 'backup:PutRestoreValidationResult',
   /**
+   * Grants permission to search a recovery point
+   *
+   * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_SearchRecoveryPoint.html
+   */
+  SearchRecoveryPoint = 'backup:SearchRecoveryPoint',
+  /**
    * Grants permission to start a new backup job
    *
    * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartBackupJob.html
@@ -558,6 +582,12 @@ export enum AwsBackupActions {
    * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateGlobalSettings.html
    */
   UpdateGlobalSettings = 'backup:UpdateGlobalSettings',
+  /**
+   * Grants permission to update recovery point index settings
+   *
+   * See https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRecoveryPointIndexSettings.html
+   */
+  UpdateRecoveryPointIndexSettings = 'backup:UpdateRecoveryPointIndexSettings',
   /**
    * Grants permission to update the lifecycle of the recovery point
    *

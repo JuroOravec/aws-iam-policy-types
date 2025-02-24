@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediapackagev2.html
  *
- * 2024-02-12T09:57:17.849Z
+ * 2025-02-24T21:47:54.415Z
  */
 export enum AwsMediapackagev2Actions {
+  /**
+   * Grants permission to cancel a harvest job
+   *
+   * See https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_CancelHarvestJob.html
+   */
+  CancelHarvestJob = 'mediapackagev2:CancelHarvestJob',
   /**
    * Grants permission to create a channel in a channel group
    *
@@ -21,6 +27,12 @@ export enum AwsMediapackagev2Actions {
    * See https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_CreateChannelGroup.html
    */
   CreateChannelGroup = 'mediapackagev2:CreateChannelGroup',
+  /**
+   * Grants permission to create a harvest job
+   *
+   * See https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_CreateHarvestJob.html
+   */
+  CreateHarvestJob = 'mediapackagev2:CreateHarvestJob',
   /**
    * Grants permission to create an origin endpoint for a channel
    *
@@ -76,6 +88,12 @@ export enum AwsMediapackagev2Actions {
    */
   GetChannelPolicy = 'mediapackagev2:GetChannelPolicy',
   /**
+   * Grants permission to retrieve details of an harvest job
+   *
+   * See https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_GetHarvestJob.html
+   */
+  GetHarvestJob = 'mediapackagev2:GetHarvestJob',
+  /**
    * Grants permission to make GetHeadObject requests to MediaPackage
    *
    * See https://docs.aws.amazon.com/mediapackage/latest/userguide/dataplane-apis.html
@@ -101,6 +119,12 @@ export enum AwsMediapackagev2Actions {
    */
   GetOriginEndpointPolicy = 'mediapackagev2:GetOriginEndpointPolicy',
   /**
+   * Grants permission to make HarvestObject requests to MediaPackage
+   *
+   * See https://docs.aws.amazon.com/mediapackage/latest/userguide/dataplane-apis.html
+   */
+  HarvestObject = 'mediapackagev2:HarvestObject',
+  /**
    * Grants permission to list all channel groups for an aws account
    *
    * See https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_ListChannelGroups.html
@@ -112,6 +136,13 @@ export enum AwsMediapackagev2Actions {
    * See https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_ListChannels.html
    */
   ListChannels = 'mediapackagev2:ListChannels',
+  /**
+   * Grants permission to list all harvest jobs in a channel group, channel, origin
+   * endpoint
+   *
+   * See https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_ListHarvestJobs.html
+   */
+  ListHarvestJobs = 'mediapackagev2:ListHarvestJobs',
   /**
    * Grants permission to list all origin endpoints of a channel
    *

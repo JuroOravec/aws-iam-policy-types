@@ -6,9 +6,16 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsglue.html
  *
- * 2024-02-12T09:57:31.364Z
+ * 2025-02-24T21:48:07.779Z
  */
 export enum AwsGlueActions {
+  /**
+   * Grants permission to Glue to continuously validate that the target Arn can rece
+   * ive data replicated from the source ARN
+   *
+   * See aws-glue-api-integrations.html
+   */
+  AuthorizeInboundIntegration = 'glue:AuthorizeInboundIntegration',
   /**
    * Grants permission to create one or more partitions
    *
@@ -75,6 +82,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-partitions.html#aws-glue-api-catalog-partitions-BatchGetPartition
    */
   BatchGetPartition = 'glue:BatchGetPartition',
+  /**
+   * Grants permission to batch get stage files for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  BatchGetStageFiles = 'glue:BatchGetStageFiles',
   /**
    * Grants permission to return the configuration for the specified table optimizer
    * s
@@ -143,11 +156,23 @@ export enum AwsGlueActions {
    */
   CreateBlueprint = 'glue:CreateBlueprint',
   /**
+   * Grants permission to create a catalog
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html
+   */
+  CreateCatalog = 'glue:CreateCatalog',
+  /**
    * Grants permission to create a classifier
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-classifiers.html#aws-glue-api-crawler-classifiers-CreateClassifier
    */
   CreateClassifier = 'glue:CreateClassifier',
+  /**
+   * Grants permission to create settings for a column statistics task
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-CreateColumnStatisticsTaskSettings
+   */
+  CreateColumnStatisticsTaskSettings = 'glue:CreateColumnStatisticsTaskSettings',
   /**
    * Grants permission to create a connection
    *
@@ -184,6 +209,31 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-dev-endpoint.html#aws-glue-api-dev-endpoint-CreateDevEndpoint
    */
   CreateDevEndpoint = 'glue:CreateDevEndpoint',
+  /**
+   * Grants permission to the source principal to create an inbound integration for
+   * data to be replicated from the source into the target
+   *
+   * See aws-glue-api-integrations.html
+   */
+  CreateInboundIntegration = 'glue:CreateInboundIntegration',
+  /**
+   * Grants permission to create an integration
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-CreateIntegration
+   */
+  CreateIntegration = 'glue:CreateIntegration',
+  /**
+   * Grants permission to create integration resource property
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-CreateIntegrationResourceProperty
+   */
+  CreateIntegrationResourceProperty = 'glue:CreateIntegrationResourceProperty',
+  /**
+   * Grants permission to create integration table properties
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-CreateIntegrationTableProperties
+   */
+  CreateIntegrationTableProperties = 'glue:CreateIntegrationTableProperties',
   /**
    * Grants permission to create a job
    *
@@ -258,6 +308,12 @@ export enum AwsGlueActions {
    */
   CreateTrigger = 'glue:CreateTrigger',
   /**
+   * Grants permission to create a usage profile
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-usage-profiles.html#aws-glue-api-usage-profiles-CreateUsageProfile
+   */
+  CreateUsageProfile = 'glue:CreateUsageProfile',
+  /**
    * Grants permission to create a function definition
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-functions.html#aws-glue-api-catalog-functions-CreateUserDefinedFunction
@@ -276,6 +332,12 @@ export enum AwsGlueActions {
    */
   DeleteBlueprint = 'glue:DeleteBlueprint',
   /**
+   * Grants permission to delete a catalog
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html
+   */
+  DeleteCatalog = 'glue:DeleteCatalog',
+  /**
    * Grants permission to delete a classifier
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-classifiers.html#aws-glue-api-crawler-classifiers-DeleteClassifier
@@ -293,6 +355,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-DeleteColumnStatisticsForTable
    */
   DeleteColumnStatisticsForTable = 'glue:DeleteColumnStatisticsForTable',
+  /**
+   * Grants permission to delete settings for a column statistics task
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-DeleteColumnStatisticsTaskSettings
+   */
+  DeleteColumnStatisticsTaskSettings = 'glue:DeleteColumnStatisticsTaskSettings',
   /**
    * Grants permission to delete a connection
    *
@@ -329,6 +397,18 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-dev-endpoint.html#aws-glue-api-dev-endpoint-DeleteDevEndpoint
    */
   DeleteDevEndpoint = 'glue:DeleteDevEndpoint',
+  /**
+   * Grants permission to delete an integration
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-DeleteIntegration
+   */
+  DeleteIntegration = 'glue:DeleteIntegration',
+  /**
+   * Grants permission to delete integration table properties
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-DeleteIntegrationTableProperties
+   */
+  DeleteIntegrationTableProperties = 'glue:DeleteIntegrationTableProperties',
   /**
    * Grants permission to delete a job
    *
@@ -416,6 +496,12 @@ export enum AwsGlueActions {
    */
   DeleteTrigger = 'glue:DeleteTrigger',
   /**
+   * Grants permission to delete a usage profile
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-usage-profiles.html#aws-glue-api-usage-profiles-DeleteUsageProfile
+   */
+  DeleteUsageProfile = 'glue:DeleteUsageProfile',
+  /**
    * Grants permission to delete a function definition
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-functions.html#aws-glue-api-catalog-functions-DeleteUserDefinedFunction
@@ -433,6 +519,30 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/ug/notebook-getting-started.html#create-notebook-permissions-operations
    */
   DeregisterDataPreview = 'glue:DeregisterDataPreview',
+  /**
+   * Grants permission to describe connection type in glue studio
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/glue-connections.html#connection-type-permissions-operations
+   */
+  DescribeConnectionType = 'glue:DescribeConnectionType',
+  /**
+   * Grants permission to describe entity in glue studio
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/glue-connections.html#connection-type-permissions-operations
+   */
+  DescribeEntity = 'glue:DescribeEntity',
+  /**
+   * Grants permission to list the inbound integrations
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-DescribeInboundIntegrations
+   */
+  DescribeInboundIntegrations = 'glue:DescribeInboundIntegrations',
+  /**
+   * Grants permission to describe zero-ETL integrations
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-DescribeIntegrations
+   */
+  DescribeIntegrations = 'glue:DescribeIntegrations',
   /**
    * Grants permission to retrieve a blueprint
    *
@@ -452,11 +562,23 @@ export enum AwsGlueActions {
    */
   GetBlueprintRuns = 'glue:GetBlueprintRuns',
   /**
+   * Grants permission to retrieve a catalog
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html
+   */
+  GetCatalog = 'glue:GetCatalog',
+  /**
    * Grants permission to retrieve the catalog import status
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-migration.html#aws-glue-api-catalog-migration-GetCatalogImportStatus
    */
   GetCatalogImportStatus = 'glue:GetCatalogImportStatus',
+  /**
+   * Grants permission to retrieve all catalogs
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html
+   */
+  GetCatalogs = 'glue:GetCatalogs',
   /**
    * Grants permission to retrieve a classifier
    *
@@ -495,6 +617,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-GetColumnStatisticsTaskRuns
    */
   GetColumnStatisticsTaskRuns = 'glue:GetColumnStatisticsTaskRuns',
+  /**
+   * Grants permission to retrieve settings for a column statistics task
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-GetColumnStatisticsTaskSettings
+   */
+  GetColumnStatisticsTaskSettings = 'glue:GetColumnStatisticsTaskSettings',
   /**
    * Grants permission to get generated response for a completion request in Glue fr
    * om AWS Q
@@ -539,6 +667,12 @@ export enum AwsGlueActions {
    */
   GetCustomEntityType = 'glue:GetCustomEntityType',
   /**
+   * Grants permission to generate presigned url for accessing spark live UI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-interactive-sessions.html
+   */
+  GetDashboardUrl = 'glue:GetDashboardUrl',
+  /**
    * Grants permission to retrieve catalog encryption settings
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-security.html#aws-glue-api-jobs-security-GetDataCatalogEncryptionSettings
@@ -550,6 +684,20 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/ug/notebook-getting-started.html#create-notebook-permissions-operations
    */
   GetDataPreviewStatement = 'glue:GetDataPreviewStatement',
+  /**
+   * Grants permission to retrieve the training status of the prediction model for a
+   * statistic
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-GetDataQualityModel
+   */
+  GetDataQualityModel = 'glue:GetDataQualityModel',
+  /**
+   * Grants permission to retrieve the predictions for a statistic from the latest m
+   * odel
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-GetDataQualityModelResult
+   */
+  GetDataQualityModelResult = 'glue:GetDataQualityModelResult',
   /**
    * Grants permission to retrieve a Data Quality result
    *
@@ -605,6 +753,48 @@ export enum AwsGlueActions {
    */
   GetDevEndpoints = 'glue:GetDevEndpoints',
   /**
+   * Grants permission to preview entity records in glue
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/glue-connections.html#connection-type-permissions-operations
+   */
+  GetEntityRecords = 'glue:GetEntityRecords',
+  /**
+   * Grants permission to get environment details for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetEnvironment = 'glue:GetEnvironment',
+  /**
+   * Grants permission to get executors for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetExecutors = 'glue:GetExecutors',
+  /**
+   * Grants permission to get executor threads for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetExecutorsThreads = 'glue:GetExecutorsThreads',
+  /**
+   * Transforms a directed acyclic graph (DAG) into code
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-etl-script-generation.html#aws-glue-api-etl-script-generation-GetGeneratedCode
+   */
+  GetGeneratedCode = 'glue:GetGeneratedCode',
+  /**
+   * Grants permission to retrieve the integration resource property
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-GetIntegrationResourceProperty
+   */
+  GetIntegrationResourceProperty = 'glue:GetIntegrationResourceProperty',
+  /**
+   * Grants permission to retrieve the integration table properties
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-GetIntegrationTableProperties
+   */
+  GetIntegrationTableProperties = 'glue:GetIntegrationTableProperties',
+  /**
    * Grants permission to retrieve a job
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-GetJob
@@ -629,11 +819,23 @@ export enum AwsGlueActions {
    */
   GetJobRuns = 'glue:GetJobRuns',
   /**
+   * Grants permission to retrieve an upgrade analysis for a job
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-upgrade-analysis.html#aws-glue-api-upgrade-analysis-GetJobUpgradeAnalysis
+   */
+  GetJobUpgradeAnalysis = 'glue:GetJobUpgradeAnalysis',
+  /**
    * Grants permission to retrieve all current jobs
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-GetJobs
    */
   GetJobs = 'glue:GetJobs',
+  /**
+   * Grants permission to get log parsing status for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetLogParsingStatus = 'glue:GetLogParsingStatus',
   /**
    * Grants permission to retrieve an ML Task Run
    *
@@ -695,6 +897,24 @@ export enum AwsGlueActions {
    */
   GetPlan = 'glue:GetPlan',
   /**
+   * Grants permission to get queries for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetQueries = 'glue:GetQueries',
+  /**
+   * Grants permission to get a specific query for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetQuery = 'glue:GetQuery',
+  /**
+   * Grants permission to get the result of a Data Preparation Recipe statement
+   *
+   * See https://docs.aws.amazon.com/glue/latest/ug/setting-up.html#getting-started-min-privs
+   */
+  GetRecipeAction = 'glue:GetRecipeAction',
+  /**
    * Grants permission to retrieve a schema registry
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-schema-registry-api.html#aws-glue-api-schema-registry-api-GetRegistry
@@ -755,12 +975,60 @@ export enum AwsGlueActions {
    */
   GetSession = 'glue:GetSession',
   /**
+   * Grants permission to get a stage for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetStage = 'glue:GetStage',
+  /**
+   * Grants permission to get a stage attempt for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetStageAttempt = 'glue:GetStageAttempt',
+  /**
+   * Grants permission to get the task list for a stage attempt for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetStageAttemptTaskList = 'glue:GetStageAttemptTaskList',
+  /**
+   * Grants permission to get the task summary for a stage attempt for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetStageAttemptTaskSummary = 'glue:GetStageAttemptTaskSummary',
+  /**
+   * Grants permission to get stage files for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetStageFiles = 'glue:GetStageFiles',
+  /**
+   * Grants permission to get stages for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetStages = 'glue:GetStages',
+  /**
    * Grants permission to retrieve result and information about a statement in an in
    * teractive session
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-interactive-sessions.html#aws-glue-interactive-sessions-GetStatement
    */
   GetStatement = 'glue:GetStatement',
+  /**
+   * Grants permission to get storage details for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetStorage = 'glue:GetStorage',
+  /**
+   * Grants permission to get storage unit details for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  GetStorageUnit = 'glue:GetStorageUnit',
   /**
    * Grants permission to retrieve a table
    *
@@ -810,6 +1078,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-trigger.html#aws-glue-api-jobs-trigger-GetTriggers
    */
   GetTriggers = 'glue:GetTriggers',
+  /**
+   * Grants permission to retrieve a usage profile
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-usage-profiles.html#aws-glue-api-usage-profiles-GetUsageProfile
+   */
+  GetUsageProfile = 'glue:GetUsageProfile',
   /**
    * Grants permission to retrieve a function definition
    *
@@ -878,6 +1152,12 @@ export enum AwsGlueActions {
    */
   ListColumnStatisticsTaskRuns = 'glue:ListColumnStatisticsTaskRuns',
   /**
+   * Grants permission to list connection types in glue studio
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/glue-connections.html#connection-type-permissions-operations
+   */
+  ListConnectionTypes = 'glue:ListConnectionTypes',
+  /**
    * Grants permission to retrieve all crawlers
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-crawling.html#aws-glue-api-crawler-crawling-ListCrawlers
@@ -925,6 +1205,18 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-dev-endpoint.html#aws-glue-api-dev-endpoint-ListDevEndpoints
    */
   ListDevEndpoints = 'glue:ListDevEndpoints',
+  /**
+   * Grants permission to list entities in glue studio
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/glue-connections.html#connection-type-permissions-operations
+   */
+  ListEntities = 'glue:ListEntities',
+  /**
+   * Grants permission to list upgrade analyses for a job
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-upgrade-analysis.html#aws-glue-api-upgrade-analysis-ListJobUpgradeAnalyses
+   */
+  ListJobUpgradeAnalyses = 'glue:ListJobUpgradeAnalyses',
   /**
    * Grants permission to retrieve all current jobs
    *
@@ -981,11 +1273,23 @@ export enum AwsGlueActions {
    */
   ListTriggers = 'glue:ListTriggers',
   /**
+   * Grants permission to retrieve a list of usage profiles
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-usage-profiles.html#aws-glue-api-usage-profiles-ListUsageProfiles
+   */
+  ListUsageProfiles = 'glue:ListUsageProfiles',
+  /**
    * Grants permission to retrieve all workflows
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-workflow.html#aws-glue-api-workflow-ListWorkflows
    */
   ListWorkflows = 'glue:ListWorkflows',
+  /**
+   * Grants permission to modify a zero-ETL integration
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-ModifyIntegration
+   */
+  ModifyIntegration = 'glue:ModifyIntegration',
   /**
    * Grants permission to notify an event to the event-driven workflow
    *
@@ -1012,6 +1316,19 @@ export enum AwsGlueActions {
    */
   PutDataCatalogEncryptionSettings = 'glue:PutDataCatalogEncryptionSettings',
   /**
+   * Grants permission to annotate all datapoints for a profile
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-PutDataQualityProfileAnnotation
+   */
+  PutDataQualityProfileAnnotation = 'glue:PutDataQualityProfileAnnotation',
+  /**
+   * Grants permission to annotate datapoints over time for a specific data quality
+   * statistic
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-BatchPutDataQualityStatisticAnnotation
+   */
+  PutDataQualityStatisticAnnotation = 'glue:PutDataQualityStatisticAnnotation',
+  /**
    * Grants permission to update a resource policy
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-security.html#aws-glue-api-jobs-security-PutResourcePolicy
@@ -1036,6 +1353,13 @@ export enum AwsGlueActions {
    */
   QuerySchemaVersionMetadata = 'glue:QuerySchemaVersionMetadata',
   /**
+   * Grants permission to refresh the oauth2 tokens for connection during job execut
+   * ion
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/glue-connections.html#connection-type-permissions-operations
+   */
+  RefreshOAuth2Tokens = 'glue:RefreshOAuth2Tokens',
+  /**
    * Grants permission to create a new schema version
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-schema-registry-api.html#aws-glue-api-schema-registry-api-RegisterSchemaVersion
@@ -1047,6 +1371,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-schema-registry-api.html#aws-glue-api-schema-registry-api-RemoveSchemaVersionMetadata
    */
   RemoveSchemaVersionMetadata = 'glue:RemoveSchemaVersionMetadata',
+  /**
+   * Grants permission to request log parsing for SparkUI
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui.html
+   */
+  RequestLogParsing = 'glue:RequestLogParsing',
   /**
    * Grants permission to reset a job bookmark
    *
@@ -1085,6 +1415,13 @@ export enum AwsGlueActions {
    */
   SendFeedback = 'glue:SendFeedback',
   /**
+   * Grants permission to execute a Data Preparation Recipe statement in data previe
+   * w
+   *
+   * See https://docs.aws.amazon.com/glue/latest/ug/setting-up.html#getting-started-min-privs
+   */
+  SendRecipeAction = 'glue:SendRecipeAction',
+  /**
    * Grants permission to start running a blueprint
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-workflow.html#aws-glue-api-workflow-StartBlueprintRun
@@ -1096,6 +1433,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-StartColumnStatisticsTaskRun
    */
   StartColumnStatisticsTaskRun = 'glue:StartColumnStatisticsTaskRun',
+  /**
+   * Grants permission to start a column statistics task run schedule
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-StartColumnStatisticsTaskRunSchedule
+   */
+  StartColumnStatisticsTaskRunSchedule = 'glue:StartColumnStatisticsTaskRunSchedule',
   /**
    * Grants permission to create a completion request in Glue for AWS Q experience
    *
@@ -1145,6 +1488,12 @@ export enum AwsGlueActions {
    */
   StartJobRun = 'glue:StartJobRun',
   /**
+   * Grants permission to start running upgrade analysis for a job
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-upgrade-analysis.html#aws-glue-api-upgrade-analysis-StartJobUpgradeAnalysis
+   */
+  StartJobUpgradeAnalysis = 'glue:StartJobUpgradeAnalysis',
+  /**
    * Grants permission to start an Evaluation ML Task Run
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-machine-learning-api.html#aws-glue-api-machine-learning-api-StartMLEvaluationTaskRun
@@ -1181,6 +1530,12 @@ export enum AwsGlueActions {
    */
   StopColumnStatisticsTaskRun = 'glue:StopColumnStatisticsTaskRun',
   /**
+   * Grants permission to stop a column statistics task run schedule
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-StopColumnStatisticsTaskRunSchedule
+   */
+  StopColumnStatisticsTaskRunSchedule = 'glue:StopColumnStatisticsTaskRunSchedule',
+  /**
    * Grants permission to stop a running crawler
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-crawling.html#aws-glue-api-crawler-crawling-StopCrawler
@@ -1192,6 +1547,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-scheduler.html#aws-glue-api-crawler-scheduler-StopCrawlerSchedule
    */
   StopCrawlerSchedule = 'glue:StopCrawlerSchedule',
+  /**
+   * Grants permission to stop an on-going upgrade analysis for a job
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-upgrade-analysis.html#aws-glue-api-upgrade-analysis-StopJobUpgradeAnalysis
+   */
+  StopJobUpgradeAnalysis = 'glue:StopJobUpgradeAnalysis',
   /**
    * Grants permission to stop an interactive session
    *
@@ -1241,6 +1602,12 @@ export enum AwsGlueActions {
    */
   UpdateBlueprint = 'glue:UpdateBlueprint',
   /**
+   * Grants permission to update a catalog
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html
+   */
+  UpdateCatalog = 'glue:UpdateCatalog',
+  /**
    * Grants permission to update a classifier
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-classifiers.html#aws-glue-api-crawler-classifiers-UpdateClassifier
@@ -1258,6 +1625,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-UpdateColumnStatisticsForTable
    */
   UpdateColumnStatisticsForTable = 'glue:UpdateColumnStatisticsForTable',
+  /**
+   * Grants permission to update settings for a column statistics task
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-UpdateColumnStatisticsTaskSettings
+   */
+  UpdateColumnStatisticsTaskSettings = 'glue:UpdateColumnStatisticsTaskSettings',
   /**
    * Grants permission to update a connection
    *
@@ -1294,6 +1667,18 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-dev-endpoint.html#aws-glue-api-dev-endpoint-UpdateDevEndpoint
    */
   UpdateDevEndpoint = 'glue:UpdateDevEndpoint',
+  /**
+   * Grants permission to update the integration resource property
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-UpdateIntegrationResourceProperty
+   */
+  UpdateIntegrationResourceProperty = 'glue:UpdateIntegrationResourceProperty',
+  /**
+   * Grants permission to update the integration table properties
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-UpdateIntegrationTableProperties
+   */
+  UpdateIntegrationTableProperties = 'glue:UpdateIntegrationTableProperties',
   /**
    * Grants permission to update a job
    *
@@ -1355,6 +1740,12 @@ export enum AwsGlueActions {
    */
   UpdateTrigger = 'glue:UpdateTrigger',
   /**
+   * Grants permission to update a usage profile
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-usage-profiles.html#aws-glue-api-usage-profiles-UpdateUsageProfile
+   */
+  UpdateUsageProfile = 'glue:UpdateUsageProfile',
+  /**
    * Grants permission to update a function definition
    *
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-functions.html#aws-glue-api-catalog-functions-UpdateUserDefinedFunction
@@ -1366,6 +1757,12 @@ export enum AwsGlueActions {
    * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-workflow.html#aws-glue-api-workflow-UpdateWorkflow
    */
   UpdateWorkflow = 'glue:UpdateWorkflow',
+  /**
+   * Grants permission to upgrade a job to the latest version
+   *
+   * See https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-upgrade-analysis.html#aws-glue-api-upgrade-analysis-UpgradeJob
+   */
+  UpgradeJob = 'glue:UpgradeJob',
   /**
    * Grants permission to use Glue Studio and access its internal APIs
    *

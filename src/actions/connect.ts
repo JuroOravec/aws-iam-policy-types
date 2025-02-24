@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnect.html
  *
- * 2024-02-12T09:56:44.937Z
+ * 2025-02-24T21:47:23.480Z
  */
 export enum AwsConnectActions {
   /**
@@ -17,6 +17,20 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_ActivateEvaluationForm.html
    */
   ActivateEvaluationForm = 'connect:ActivateEvaluationForm',
+  /**
+   * Grants permission to federate into an Amazon Connect instance (Log in for emerg
+   * ency access functionality in the Amazon Connect console)
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_GetFederationToken.html
+   */
+  AdminGetEmergencyAccessToken = 'connect:AdminGetEmergencyAccessToken',
+  /**
+   * Grants permission to grant access and to associate a dataset with the specified
+   * AWS account
+   *
+   * See API_AssociateAnalyticsDataSet.html
+   */
+  AssociateAnalyticsDataSet = 'connect:AssociateAnalyticsDataSet',
   /**
    * Grants permission to associate approved origin for an existing Amazon Connect i
    * nstance
@@ -118,16 +132,23 @@ export enum AwsConnectActions {
    * Grants permission to grant access and to associate the datasets with the specif
    * ied AWS account
    *
-   * See https://docs.aws.amazon.com/connect/latest/adminguide/optimization-apis.html
+   * See API_BatchAssociateAnalyticsDataSet.html
    */
   BatchAssociateAnalyticsDataSet = 'connect:BatchAssociateAnalyticsDataSet',
   /**
    * Grants permission to revoke access and to disassociate the datasets with the sp
    * ecified AWS account
    *
-   * See https://docs.aws.amazon.com/connect/latest/adminguide/optimization-apis.html
+   * See API_BatchDisassociateAnalyticsDataSet.html
    */
   BatchDisassociateAnalyticsDataSet = 'connect:BatchDisassociateAnalyticsDataSet',
+  /**
+   * Grants permission to get metadata for multiple attached files from an Amazon Co
+   * nnect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchGetAttachedFileMetadata.html
+   */
+  BatchGetAttachedFileMetadata = 'connect:BatchGetAttachedFileMetadata',
   /**
    * Grants permission to get summary information about the flow associations for th
    * e specified Amazon Connect instance
@@ -149,11 +170,31 @@ export enum AwsConnectActions {
    */
   ClaimPhoneNumber = 'connect:ClaimPhoneNumber',
   /**
+   * Grants permission to complete an attached file upload in an Amazon Connect inst
+   * ance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CompleteAttachedFileUpload.html
+   */
+  CompleteAttachedFileUpload = 'connect:CompleteAttachedFileUpload',
+  /**
    * Grants permission to create agent status in an Amazon Connect instance
    *
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateAgentStatus.html
    */
   CreateAgentStatus = 'connect:CreateAgentStatus',
+  /**
+   * Grants permission to create authentication profile resources in an Amazon Conne
+   * ct instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateAuthenticationProfile.html
+   */
+  CreateAuthenticationProfile = 'connect:CreateAuthenticationProfile',
+  /**
+   * Grants permission to create a new contact using the Amazon Connect API
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContact.html
+   */
+  CreateContact = 'connect:CreateContact',
   /**
    * Grants permission to create a contact flow in an Amazon Connect instance
    *
@@ -166,6 +207,19 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContactFlowModule.html
    */
   CreateContactFlowModule = 'connect:CreateContactFlowModule',
+  /**
+   * Grants permission to create a version a flow in an Amazon Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContactFlowVersion.html
+   */
+  CreateContactFlowVersion = 'connect:CreateContactFlowVersion',
+  /**
+   * Grants permission to create an email address resource in an Amazon Connect inst
+   * ance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateEmailAddress.html
+   */
+  CreateEmailAddress = 'connect:CreateEmailAddress',
   /**
    * Grants permission to create an evaluation form in the specified Amazon Connect
    * instance. The form can be used to define questions related to agent performance
@@ -181,6 +235,13 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateHoursOfOperation.html
    */
   CreateHoursOfOperation = 'connect:CreateHoursOfOperation',
+  /**
+   * Grants permission to create an hours of operation override in an Amazon Connect
+   * instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateHoursOfOperationOverride.html
+   */
+  CreateHoursOfOperationOverride = 'connect:CreateHoursOfOperationOverride',
   /**
    * Grants permission to create a new Amazon Connect instance
    *
@@ -219,6 +280,13 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePrompt.html
    */
   CreatePrompt = 'connect:CreatePrompt',
+  /**
+   * Grants permission to create a push notification registration for an Amazon Conn
+   * ect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePushNotificationRegistration.html
+   */
+  CreatePushNotificationRegistration = 'connect:CreatePushNotificationRegistration',
   /**
    * Grants permission to create a queue in an Amazon Connect instance
    *
@@ -308,6 +376,12 @@ export enum AwsConnectActions {
    */
   DeactivateEvaluationForm = 'connect:DeactivateEvaluationForm',
   /**
+   * Grants permission to delete an attached file from an Amazon Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteAttachedFile.html
+   */
+  DeleteAttachedFile = 'connect:DeleteAttachedFile',
+  /**
    * Grants permission to delete a contact evaluation in the specified Amazon Connec
    * t instance
    *
@@ -327,6 +401,19 @@ export enum AwsConnectActions {
    */
   DeleteContactFlowModule = 'connect:DeleteContactFlowModule',
   /**
+   * Grants permission to delete a version of a flow in an Amazon Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteContactFlowVersion.html
+   */
+  DeleteContactFlowVersion = 'connect:DeleteContactFlowVersion',
+  /**
+   * Grants permission to delete an email address resource in an Amazon Connect inst
+   * ance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteEmailAddress.html
+   */
+  DeleteEmailAddress = 'connect:DeleteEmailAddress',
+  /**
    * Grants permission to delete an evaluation form in the specified Amazon Connect
    * instance. If the version property is provided, only the specified version of th
    * e evaluation form is deleted
@@ -340,6 +427,13 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteHoursOfOperation.html
    */
   DeleteHoursOfOperation = 'connect:DeleteHoursOfOperation',
+  /**
+   * Grants permission to delete an hours of operation override in an Amazon Connect
+   * instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteHoursOfOperationOverride.html
+   */
+  DeleteHoursOfOperationOverride = 'connect:DeleteHoursOfOperationOverride',
   /**
    * Grants permission to delete an Amazon Connect instance. When you remove an inst
    * ance, the link to an existing AWS directory is also removed
@@ -367,6 +461,13 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DeletePrompt.html
    */
   DeletePrompt = 'connect:DeletePrompt',
+  /**
+   * Grants permission to delete a push notification registration for an Amazon Conn
+   * ect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DeletePushNotificationRegistration.html
+   */
+  DeletePushNotificationRegistration = 'connect:DeletePushNotificationRegistration',
   /**
    * Grants permission to delete a queue in an Amazon Connect instance
    *
@@ -453,6 +554,13 @@ export enum AwsConnectActions {
    */
   DescribeAgentStatus = 'connect:DescribeAgentStatus',
   /**
+   * Grants permission to describe authentication profile resources in an Amazon Con
+   * nect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeAuthenticationProfile.html
+   */
+  DescribeAuthenticationProfile = 'connect:DescribeAuthenticationProfile',
+  /**
    * Grants permission to describe a contact in an Amazon Connect instance
    *
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html
@@ -479,6 +587,13 @@ export enum AwsConnectActions {
    */
   DescribeContactFlowModule = 'connect:DescribeContactFlowModule',
   /**
+   * Grants permission to describe an email address resource in an Amazon Connect in
+   * stance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeEmailAddress.html
+   */
+  DescribeEmailAddress = 'connect:DescribeEmailAddress',
+  /**
    * Grants permission to describe an evaluation form in the specified Amazon Connec
    * t instance. If the version property is not provided, the latest version of the
    * evaluation form is described
@@ -499,6 +614,13 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeHoursOfOperation.html
    */
   DescribeHoursOfOperation = 'connect:DescribeHoursOfOperation',
+  /**
+   * Grants permission to describe an hours of operation override in an Amazon Conne
+   * ct instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeHoursOfOperationOverride.html
+   */
+  DescribeHoursOfOperationOverride = 'connect:DescribeHoursOfOperationOverride',
   /**
    * Grants permission to view details of an Amazon Connect instance and is also req
    * uired to create an instance
@@ -608,6 +730,13 @@ export enum AwsConnectActions {
    */
   DescribeVocabulary = 'connect:DescribeVocabulary',
   /**
+   * Grants permission to revoke access and to disassociate a dataset with the speci
+   * fied AWS account
+   *
+   * See API_DisassociateAnalyticsDataSet.html
+   */
+  DisassociateAnalyticsDataSet = 'connect:DisassociateAnalyticsDataSet',
+  /**
    * Grants permission to disassociate approved origin for an existing Amazon Connec
    * t instance
    *
@@ -705,6 +834,12 @@ export enum AwsConnectActions {
    */
   DismissUserContact = 'connect:DismissUserContact',
   /**
+   * Grants permission to get an attached file from an Amazon Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_GetAttachedFile.html
+   */
+  GetAttachedFile = 'connect:GetAttachedFile',
+  /**
    * Grants permission to retrieve the contact attributes for the specified contact
    *
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_GetContactAttributes.html
@@ -724,19 +859,19 @@ export enum AwsConnectActions {
    */
   GetCurrentUserData = 'connect:GetCurrentUserData',
   /**
+   * Grants permission to get effective hours of operation resources in an Amazon Co
+   * nnect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_GetEffectiveHoursOfOperations.html
+   */
+  GetEffectiveHoursOfOperations = 'connect:GetEffectiveHoursOfOperations',
+  /**
    * Grants permission to federate into an Amazon Connect instance when using SAML-b
    * ased authentication for identity management
    *
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_GetFederationToken.html
    */
   GetFederationToken = 'connect:GetFederationToken',
-  /**
-   * Grants permission to federate into an Amazon Connect instance (Log in for emerg
-   * ency access functionality in the Amazon Connect console)
-   *
-   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_GetFederationToken.html
-   */
-  GetFederationTokens = 'connect:GetFederationTokens',
   /**
    * Grants permission to get information about the flow associations for the specif
    * ied Amazon Connect instance
@@ -791,12 +926,33 @@ export enum AwsConnectActions {
    */
   ListAgentStatuses = 'connect:ListAgentStatuses',
   /**
+   * Grants permission to list the association status of a dataset for a given Amazo
+   * n Connect instance
+   *
+   * See API_ListAnalyticsDataAssociations.html
+   */
+  ListAnalyticsDataAssociations = 'connect:ListAnalyticsDataAssociations',
+  /**
    * Grants permission to view approved origins of an existing Amazon Connect instan
    * ce
    *
    * See https://docs.aws.amazon.com/console/connect/amazon-connect-console/grant-instance-permissions
    */
   ListApprovedOrigins = 'connect:ListApprovedOrigins',
+  /**
+   * Grants permission to list the contacts associated with an email address in an A
+   * mazon Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_ListAssociatedContacts.html
+   */
+  ListAssociatedContacts = 'connect:ListAssociatedContacts',
+  /**
+   * Grants permission to list authentication profile resources in an Amazon Connect
+   * instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_ListAuthenticationProfiles.html
+   */
+  ListAuthenticationProfiles = 'connect:ListAuthenticationProfiles',
   /**
    * Grants permission to view the Lex bots of an existing Amazon Connect instance
    *
@@ -817,6 +973,12 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_ListContactFlowModules.html
    */
   ListContactFlowModules = 'connect:ListContactFlowModules',
+  /**
+   * Grants permission to list all the versions a flow in an Amazon Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_ListContactFlowVersions.html
+   */
+  ListContactFlowVersions = 'connect:ListContactFlowVersions',
   /**
    * Grants permission to list contact flow resources in an Amazon Connect instance
    *
@@ -858,6 +1020,13 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_ListFlowAssociations.html
    */
   ListFlowAssociations = 'connect:ListFlowAssociations',
+  /**
+   * Grants permission to list hours of operation override resources in an Amazon Co
+   * nnect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_ListHoursOfOperationOverrides.html
+   */
+  ListHoursOfOperationOverrides = 'connect:ListHoursOfOperationOverrides',
   /**
    * Grants permission to list hours of operation resources in an Amazon Connect ins
    * tance
@@ -1117,6 +1286,13 @@ export enum AwsConnectActions {
    */
   ResumeContactRecording = 'connect:ResumeContactRecording',
   /**
+   * Grants permission to search agent status resources in an Amazon Connect instanc
+   * e
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchAgentStatuses.html
+   */
+  SearchAgentStatuses = 'connect:SearchAgentStatuses',
+  /**
    * Grants permission to search phone number resources in an Amazon Connect instanc
    * e or traffic distribution group
    *
@@ -1124,11 +1300,39 @@ export enum AwsConnectActions {
    */
   SearchAvailablePhoneNumbers = 'connect:SearchAvailablePhoneNumbers',
   /**
+   * Grants permission to search contact flow module resources in an Amazon Connect
+   * instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContactFlowModules.html
+   */
+  SearchContactFlowModules = 'connect:SearchContactFlowModules',
+  /**
+   * Grants permission to search contact flow resources in an Amazon Connect instanc
+   * e
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContactFlows.html
+   */
+  SearchContactFlows = 'connect:SearchContactFlows',
+  /**
    * Grants permission to search contacts in an Amazon Connect instance
    *
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContacts.html
    */
   SearchContacts = 'connect:SearchContacts',
+  /**
+   * Grants permission to search email address resources in an Amazon Connect instan
+   * ce
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchEmailAddresses.html
+   */
+  SearchEmailAddresses = 'connect:SearchEmailAddresses',
+  /**
+   * Grants permission to search hours of operation override resources in an Amazon
+   * Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchHoursOfOperationOverrides.html
+   */
+  SearchHoursOfOperationOverrides = 'connect:SearchHoursOfOperationOverrides',
   /**
    * Grants permission to search hours of operation resources in an Amazon Connect i
    * nstance
@@ -1182,6 +1386,13 @@ export enum AwsConnectActions {
    */
   SearchSecurityProfiles = 'connect:SearchSecurityProfiles',
   /**
+   * Grants permission to search user hierarchy group resources in an Amazon Connect
+   * instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchUserHierarchyGroups.html
+   */
+  SearchUserHierarchyGroups = 'connect:SearchUserHierarchyGroups',
+  /**
    * Grants permission to search user resources in an Amazon Connect instance
    *
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchUsers.html
@@ -1199,6 +1410,25 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SendChatIntegrationEvent.html
    */
   SendChatIntegrationEvent = 'connect:SendChatIntegrationEvent',
+  /**
+   * Grants permission to send integration events using the Amazon Connect API
+   *
+   * See https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integration.html
+   */
+  SendIntegrationEvent = 'connect:SendIntegrationEvent',
+  /**
+   * Grants permission to send outbound email using the Amazon Connect API
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_SendOutboundEmail.html
+   */
+  SendOutboundEmail = 'connect:SendOutboundEmail',
+  /**
+   * Grants permission to start an attached file upload in an Amazon Connect instanc
+   * e
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_StartAttachedFileUpload.html
+   */
+  StartAttachedFileUpload = 'connect:StartAttachedFileUpload',
   /**
    * Grants permission to initiate a chat using the Amazon Connect API
    *
@@ -1228,6 +1458,12 @@ export enum AwsConnectActions {
    */
   StartContactStreaming = 'connect:StartContactStreaming',
   /**
+   * Grants permission to initiate an inbound email using the Amazon Connect API
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEmailContact.html
+   */
+  StartEmailContact = 'connect:StartEmailContact',
+  /**
    * Grants permission to enable forecasting, planning, and scheduling integration o
    * n an Amazon Connect instance
    *
@@ -1235,11 +1471,29 @@ export enum AwsConnectActions {
    */
   StartForecastingPlanningSchedulingIntegration = 'connect:StartForecastingPlanningSchedulingIntegration',
   /**
+   * Grants permission to initiate an outbound chat using the Amazon Connect API
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOutboundChatContact.html
+   */
+  StartOutboundChatContact = 'connect:StartOutboundChatContact',
+  /**
+   * Grants permission to initiate an outbound email using the Amazon Connect API
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOutboundEmailContact.html
+   */
+  StartOutboundEmailContact = 'connect:StartOutboundEmailContact',
+  /**
    * Grants permission to initiate outbound calls using the Amazon Connect API
    *
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOutboundVoiceContact.html
    */
   StartOutboundVoiceContact = 'connect:StartOutboundVoiceContact',
+  /**
+   * Grants permission to start screen sharing for contact
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_StartScreenSharing.html
+   */
+  StartScreenSharing = 'connect:StartScreenSharing',
   /**
    * Grants permission to initiate a task using the Amazon Connect API
    *
@@ -1332,6 +1586,13 @@ export enum AwsConnectActions {
    */
   UpdateAgentStatus = 'connect:UpdateAgentStatus',
   /**
+   * Grants permission to update authentication profile resources in an Amazon Conne
+   * ct instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateAuthenticationProfile.html
+   */
+  UpdateAuthenticationProfile = 'connect:UpdateAuthenticationProfile',
+  /**
    * Grants permission to update a contact in an Amazon Connect instance
    *
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContact.html
@@ -1403,6 +1664,13 @@ export enum AwsConnectActions {
    */
   UpdateContactSchedule = 'connect:UpdateContactSchedule',
   /**
+   * Grants permission to update the metadata of an email address resource in an Ama
+   * zon Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateEmailAddressMetadata.html
+   */
+  UpdateEmailAddressMetadata = 'connect:UpdateEmailAddressMetadata',
+  /**
    * Grants permission to update details about a specific evaluation form version in
    * the specified Amazon Connect instance. Question and section identifiers cannot
    * be duplicated within the same evaluation form
@@ -1417,6 +1685,13 @@ export enum AwsConnectActions {
    */
   UpdateHoursOfOperation = 'connect:UpdateHoursOfOperation',
   /**
+   * Grants permission to update an hours of operation override in an Amazon Connect
+   * instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateHoursOfOperationOverride.html
+   */
+  UpdateHoursOfOperationOverride = 'connect:UpdateHoursOfOperationOverride',
+  /**
    * Grants permission to update the attribute for an existing Amazon Connect instan
    * ce
    *
@@ -1430,6 +1705,12 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/console/connect/amazon-connect-console/grant-instance-permissions
    */
   UpdateInstanceStorageConfig = 'connect:UpdateInstanceStorageConfig',
+  /**
+   * Grants permission to update and continue authentication for a specific contact
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateParticipantAuthentication.html
+   */
+  UpdateParticipantAuthentication = 'connect:UpdateParticipantAuthentication',
   /**
    * Grants permission to update participant role configurations associated with a c
    * ontact
@@ -1492,6 +1773,13 @@ export enum AwsConnectActions {
    * See https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQueueOutboundCallerConfig.html
    */
   UpdateQueueOutboundCallerConfig = 'connect:UpdateQueueOutboundCallerConfig',
+  /**
+   * Grants permission to update the outbound email configuration for a queue in an
+   * Amazon Connect instance
+   *
+   * See https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQueueOutboundEmailConfig.html
+   */
+  UpdateQueueOutboundEmailConfig = 'connect:UpdateQueueOutboundEmailConfig',
   /**
    * Grants permission to update queue status in an Amazon Connect instance
    *

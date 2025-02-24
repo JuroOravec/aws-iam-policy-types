@@ -6,15 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkmail.html
  *
- * 2024-02-12T09:59:41.481Z
+ * 2025-02-24T21:50:10.572Z
  */
 export enum AwsWorkmailActions {
   /**
-   * Grants permission to add a list of members (users or groups) to a group
+   * Grants permission to configure vended log delivery for WorkMail audit logs
    *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html
+   * See https://docs.aws.amazon.com/workmail/latest/adminguide/audit-logging.html
    */
-  AddMembersToGroup = 'workmail:AddMembersToGroup',
+  AllowVendedLogDeliveryForResource = 'workmail:AllowVendedLogDeliveryForResource',
   /**
    * Grants permission to add a member (user or group) to the resource's set of dele
    * gates
@@ -63,6 +63,12 @@ export enum AwsWorkmailActions {
    */
   CreateGroup = 'workmail:CreateGroup',
   /**
+   * Grants permission to create an Identity Center application for WorkMail
+   *
+   * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateIdentityCenterApplication.html
+   */
+  CreateIdentityCenterApplication = 'workmail:CreateIdentityCenterApplication',
+  /**
    * Grants permission to create an impersonation role for the given Amazon WorkMail
    * organization
    *
@@ -82,12 +88,6 @@ export enum AwsWorkmailActions {
    * See https://docs.aws.amazon.com/workmail/latest/adminguide/add_domain.html
    */
   CreateMailDomain = 'workmail:CreateMailDomain',
-  /**
-   * Grants permission to create a user in the directory
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html
-   */
-  CreateMailUser = 'workmail:CreateMailUser',
   /**
    * Grants permission to create a new mobile device access rule
    *
@@ -160,6 +160,19 @@ export enum AwsWorkmailActions {
    */
   DeleteGroup = 'workmail:DeleteGroup',
   /**
+   * Grants permission to delete an Identity Center application for WorkMail
+   *
+   * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteIdentityCenterApplication.html
+   */
+  DeleteIdentityCenterApplication = 'workmail:DeleteIdentityCenterApplication',
+  /**
+   * Grants permission to delete the identity provider configuration for the organiz
+   * ation
+   *
+   * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteIdentityProviderConfiguration.html
+   */
+  DeleteIdentityProviderConfiguration = 'workmail:DeleteIdentityProviderConfiguration',
+  /**
    * Grants permission to delete an impersonation role for the given Amazon WorkMail
    * organization
    *
@@ -218,6 +231,12 @@ export enum AwsWorkmailActions {
    */
   DeleteOutboundMailFlowRule = 'workmail:DeleteOutboundMailFlowRule',
   /**
+   * Grants permission to delete a personal access token
+   *
+   * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeletePersonalAccessToken.html
+   */
+  DeletePersonalAccessToken = 'workmail:DeletePersonalAccessToken',
+  /**
    * Grants permission to delete the specified resource
    *
    * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteResource.html
@@ -243,6 +262,13 @@ export enum AwsWorkmailActions {
    */
   DeleteUser = 'workmail:DeleteUser',
   /**
+   * Grants permission to deliver emails to a WorkMail organization via the SES Mail
+   * Manager DeliverToMailbox action
+   *
+   * See https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_DeliverToMailboxAction.html
+   */
+  DeliverToMailbox = 'workmail:DeliverToMailbox',
+  /**
    * Grants permission to mark a user, group, or resource as no longer used in WorkM
    * ail
    *
@@ -255,13 +281,6 @@ export enum AwsWorkmailActions {
    * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeregisterMailDomain.html
    */
   DeregisterMailDomain = 'workmail:DeregisterMailDomain',
-  /**
-   * Grants permission to show a list of directories available for use in creating a
-   * n organization
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/add_new_organization.html
-   */
-  DescribeDirectories = 'workmail:DescribeDirectories',
   /**
    * Grants permission to retrieve the email monitoring configuration for an organiz
    * ation
@@ -282,6 +301,13 @@ export enum AwsWorkmailActions {
    */
   DescribeGroup = 'workmail:DescribeGroup',
   /**
+   * Grants permission to read the identity provider configuration for the organizat
+   * ion
+   *
+   * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeIdentityProviderConfiguration.html
+   */
+  DescribeIdentityProviderConfiguration = 'workmail:DescribeIdentityProviderConfiguration',
+  /**
    * Grants permission to read the settings in a DMARC policy for a specified organi
    * zation
    *
@@ -296,33 +322,12 @@ export enum AwsWorkmailActions {
    */
   DescribeInboundMailFlowRule = 'workmail:DescribeInboundMailFlowRule',
   /**
-   * Grants permission to show a list of KMS Keys available for use in creating an o
-   * rganization
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/add_new_organization.html
-   */
-  DescribeKmsKeys = 'workmail:DescribeKmsKeys',
-  /**
    * Grants permission to show the details of all mail domains associated with the o
    * rganization
    *
    * See https://docs.aws.amazon.com/workmail/latest/adminguide/domains_overview.html
    */
   DescribeMailDomains = 'workmail:DescribeMailDomains',
-  /**
-   * Grants permission to show the details of all groups associated with the organiz
-   * ation
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html
-   */
-  DescribeMailGroups = 'workmail:DescribeMailGroups',
-  /**
-   * Grants permission to show the details of all users associated with the organiza
-   * tion
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html
-   */
-  DescribeMailUsers = 'workmail:DescribeMailUsers',
   /**
    * Grants permission to retrieve details of a mailbox export job
    *
@@ -335,13 +340,6 @@ export enum AwsWorkmailActions {
    * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeOrganization.html
    */
   DescribeOrganization = 'workmail:DescribeOrganization',
-  /**
-   * Grants permission to show a summary of all organizations associated with the ac
-   * count
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/organizations_overview.html
-   */
-  DescribeOrganizations = 'workmail:DescribeOrganizations',
   /**
    * Grants permission to read the details of an outbound mail flow rule configured
    * for an organization
@@ -369,20 +367,6 @@ export enum AwsWorkmailActions {
    */
   DescribeUser = 'workmail:DescribeUser',
   /**
-   * Grants permission to disable a mail group when it is not being used, in order t
-   * o allow it to be deleted
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/remove_group.html
-   */
-  DisableMailGroups = 'workmail:DisableMailGroups',
-  /**
-   * Grants permission to disable a user mailbox when it is no longer being used, in
-   * order to allow it to be deleted
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/manage-mailboxes.html#delete_user_mailbox
-   */
-  DisableMailUsers = 'workmail:DisableMailUsers',
-  /**
    * Grants permission to remove a member from the resource's set of delegates
    *
    * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_DisassociateDelegateFromResource.html
@@ -400,20 +384,6 @@ export enum AwsWorkmailActions {
    * See https://docs.aws.amazon.com/workmail/latest/adminguide/add_domain.html
    */
   EnableMailDomain = 'workmail:EnableMailDomain',
-  /**
-   * Grants permission to enable a mail group after it has been created to allow it
-   * to receive mail
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/enable_existing_group.html
-   */
-  EnableMailGroups = 'workmail:EnableMailGroups',
-  /**
-   * Grants permission to enable a user's mailbox after it has been created to allow
-   * it to receive mail
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html#enable_existing_user
-   */
-  EnableMailUsers = 'workmail:EnableMailUsers',
   /**
    * Grants permission to get the effects of access control rules as they apply to a
    * specified IPv4 address, access protocol action, or user ID
@@ -462,18 +432,6 @@ export enum AwsWorkmailActions {
    */
   GetMailDomainDetails = 'workmail:GetMailDomainDetails',
   /**
-   * Grants permission to get the details of the mail group
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html
-   */
-  GetMailGroupDetails = 'workmail:GetMailGroupDetails',
-  /**
-   * Grants permission to get the details of the user's mailbox and account
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html
-   */
-  GetMailUserDetails = 'workmail:GetMailUserDetails',
-  /**
    * Grants permission to read the details of the user's mailbox
    *
    * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetMailboxDetails.html
@@ -511,6 +469,12 @@ export enum AwsWorkmailActions {
    * See https://docs.aws.amazon.com/workmail/latest/adminguide/edit_organization_mobile_policy.html
    */
   GetMobilePolicyDetails = 'workmail:GetMobilePolicyDetails',
+  /**
+   * Grants permission to read metadata for a personal access token
+   *
+   * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetPersonalAccessTokenMetadata.html
+   */
+  GetPersonalAccessTokenMetadata = 'workmail:GetPersonalAccessTokenMetadata',
   /**
    * Grants permission to list the access control rules
    *
@@ -583,12 +547,6 @@ export enum AwsWorkmailActions {
    */
   ListMailboxPermissions = 'workmail:ListMailboxPermissions',
   /**
-   * Grants permission to get a list of all the members in a mail group
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html
-   */
-  ListMembersInMailGroup = 'workmail:ListMembersInMailGroup',
-  /**
    * Grants permission to list the mobile device access overrides
    *
    * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListMobileDeviceAccessOverrides.html
@@ -613,6 +571,12 @@ export enum AwsWorkmailActions {
    * See https://docs.aws.amazon.com/workmail/latest/adminguide/email-flows.html#email-flows-rule-outbound
    */
   ListOutboundMailFlowRules = 'workmail:ListOutboundMailFlowRules',
+  /**
+   * Grants permission to list metadata for personal access tokens
+   *
+   * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListPersonalAccessTokens.html
+   */
+  ListPersonalAccessTokens = 'workmail:ListPersonalAccessTokens',
   /**
    * Grants permission to list the delegates associated with a resource
    *
@@ -658,6 +622,13 @@ export enum AwsWorkmailActions {
    */
   PutEmailMonitoringConfiguration = 'workmail:PutEmailMonitoringConfiguration',
   /**
+   * Grants permission to add or update the identity provider configuration for the
+   * organization
+   *
+   * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_PutIdentityProviderConfiguration.html
+   */
+  PutIdentityProviderConfiguration = 'workmail:PutIdentityProviderConfiguration',
+  /**
    * Grants permission to enable or disable a DMARC policy for a given organization
    *
    * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_PutInboundDmarcSettings.html
@@ -696,23 +667,11 @@ export enum AwsWorkmailActions {
    */
   RegisterToWorkMail = 'workmail:RegisterToWorkMail',
   /**
-   * Grants permission to remove members from a mail group
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html
-   */
-  RemoveMembersFromGroup = 'workmail:RemoveMembersFromGroup',
-  /**
    * Grants permission to allow the administrator to reset the password for a user
    *
    * See https://docs.aws.amazon.com/workmail/latest/APIReference/API_ResetPassword.html
    */
   ResetPassword = 'workmail:ResetPassword',
-  /**
-   * Grants permission to reset the password for a user's account
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html#reset_user_password
-   */
-  ResetUserPassword = 'workmail:ResetUserPassword',
   /**
    * Grants permission to perform a prefix search to find a specific user in a mail
    * group
@@ -720,12 +679,6 @@ export enum AwsWorkmailActions {
    * See https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html
    */
   SearchMembers = 'workmail:SearchMembers',
-  /**
-   * Grants permission to mark a user as being an administrator
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html
-   */
-  SetAdmin = 'workmail:SetAdmin',
   /**
    * Grants permission to set the default mail domain for the organization
    *
@@ -739,20 +692,6 @@ export enum AwsWorkmailActions {
    * See https://docs.aws.amazon.com/workmail/latest/adminguide/journaling_overview.html
    */
   SetJournalingRules = 'workmail:SetJournalingRules',
-  /**
-   * Grants permission to set the details of the mail group which has just been crea
-   * ted
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/add_new_group.html
-   */
-  SetMailGroupDetails = 'workmail:SetMailGroupDetails',
-  /**
-   * Grants permission to set the details for the user account which has just been c
-   * reated
-   *
-   * See https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html
-   */
-  SetMailUserDetails = 'workmail:SetMailUserDetails',
   /**
    * Grants permission to set the details of a mobile policy associated with the org
    * anization

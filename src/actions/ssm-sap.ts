@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerforsap.html
  *
- * 2024-02-12T09:59:26.029Z
+ * 2025-02-24T21:49:55.261Z
  */
 export enum AwsSsmSapActions {
   /**
@@ -85,6 +85,13 @@ export enum AwsSsmSapActions {
    */
   ListDatabases = 'ssm-sap:ListDatabases',
   /**
+   * Grants permission to retrieve a list of all operation events in a specified ope
+   * ration
+   *
+   * See https://docs.aws.amazon.com/systems-manager/index.html
+   */
+  ListOperationEvents = 'ssm-sap:ListOperationEvents',
+  /**
    * Grants permission to retrieve a list of all operations in the account of custom
    * er, additional filters can be applied
    *
@@ -117,12 +124,24 @@ export enum AwsSsmSapActions {
    */
   RestoreDatabase = 'ssm-sap:RestoreDatabase',
   /**
+   * Grants permission to start a registered SSM for SAP application
+   *
+   * See https://docs.aws.amazon.com/systems-manager/index.html
+   */
+  StartApplication = 'ssm-sap:StartApplication',
+  /**
    * Grants permission to start an on-demand discovery of a registered SSM for SAP a
    * pplication
    *
    * See https://docs.aws.amazon.com/systems-manager/index.html
    */
   StartApplicationRefresh = 'ssm-sap:StartApplicationRefresh',
+  /**
+   * Grants permission to stop a registered SSM for SAP application
+   *
+   * See https://docs.aws.amazon.com/systems-manager/index.html
+   */
+  StopApplication = 'ssm-sap:StopApplication',
   /**
    * Grants permission to tag a specified resource ARN
    *

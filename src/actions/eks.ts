@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastickubernetesservice.html
  *
- * 2024-02-12T09:57:10.757Z
+ * 2025-02-24T21:47:48.345Z
  */
 export enum AwsEksActions {
   /**
@@ -157,6 +157,13 @@ export enum AwsEksActions {
    * See https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCluster.html
    */
   DescribeCluster = 'eks:DescribeCluster',
+  /**
+   * Grants permission to retrieve descriptive information about Kubernetes versions
+   * that Amazon EKS clusters support
+   *
+   * See https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeClusterVersions.html
+   */
+  DescribeClusterVersions = 'eks:DescribeClusterVersions',
   /**
    * Grants permission to describe an EKS Anywhere subscription
    *

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53recoverycontrols.html
  *
- * 2024-02-12T09:59:01.014Z
+ * 2025-02-24T21:49:30.871Z
  */
 export enum AwsRoute53RecoveryControlConfigActions {
   /**

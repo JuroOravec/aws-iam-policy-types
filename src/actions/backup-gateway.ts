@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbackupgateway.html
  *
- * 2024-02-12T09:56:10.521Z
+ * 2025-02-24T21:46:51.331Z
  */
 export enum AwsBackupGatewayActions {
   /**

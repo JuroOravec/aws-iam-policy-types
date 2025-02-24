@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapplicationautoscaling.html
  *
- * 2024-02-12T09:56:01.651Z
+ * 2025-02-24T21:46:43.214Z
  */
 export enum AwsApplicationAutoscalingActions {
   /**
@@ -55,6 +55,12 @@ export enum AwsApplicationAutoscalingActions {
    * See https://docs.aws.amazon.com/autoscaling/application/APIReference/API_DescribeScheduledActions.html
    */
   DescribeScheduledActions = 'application-autoscaling:DescribeScheduledActions',
+  /**
+   * Grants permission to retrieve the forecast data for a predictive scaling policy
+   *
+   * See https://docs.aws.amazon.com/autoscaling/application/APIReference/API_GetPredictiveScalingForecast.html
+   */
+  GetPredictiveScalingForecast = 'application-autoscaling:GetPredictiveScalingForecast',
   /**
    * Grants permission to list tags for a scalable target
    *

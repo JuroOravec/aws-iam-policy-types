@@ -207,7 +207,7 @@ export const extract = async () => {
 
       // Allow to import the file from the package
       importPaths.push({ name, path: `./actions/${servicePrefix}` });
-    } catch (e) {
+    } catch (e: any) {
       console.error('skipping', service, 'due to', e.message);
     }
 

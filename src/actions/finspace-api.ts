@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonfinspaceapi.html
  *
- * 2024-02-12T09:57:25.916Z
+ * 2025-02-24T21:48:03.003Z
  */
 export enum AwsFinspaceApiActions {
   /**

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodestarconnections.html
  *
- * 2024-02-12T09:56:39.109Z
+ * 2025-02-24T21:47:18.249Z
  */
 export enum AwsCodestarConnectionsActions {
   /**
@@ -63,6 +63,12 @@ export enum AwsCodestarConnectionsActions {
    * See https://docs.aws.amazon.com/codestar-connections/latest/APIReference/API_GetConnection.html
    */
   GetConnection = 'codestar-connections:GetConnection',
+  /**
+   * Grants permission to get a Connection token to call provider actions
+   *
+   * See https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-getconnectiontoken
+   */
+  GetConnectionToken = 'codestar-connections:GetConnectionToken',
   /**
    * Grants permission to get details about a host resource
    *

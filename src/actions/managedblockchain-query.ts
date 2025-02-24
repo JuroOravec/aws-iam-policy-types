@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedblockchainquery.html
  *
- * 2024-02-12T09:58:11.353Z
+ * 2025-02-24T21:48:44.459Z
  */
 export enum AwsManagedblockchainQueryActions {
   /**
@@ -40,6 +40,12 @@ export enum AwsManagedblockchainQueryActions {
    * See ${APIReferenceDocPage}API_ListAssetContracts.html
    */
   ListAssetContracts = 'managedblockchain-query:ListAssetContracts',
+  /**
+   * Grants permission to retrieve events on the blockchain with additional filters
+   *
+   * See ${APIReferenceDocPage}API_ListFilteredTransactionEvents.html
+   */
+  ListFilteredTransactionEvents = 'managedblockchain-query:ListFilteredTransactionEvents',
   /**
    * Grants permission to retrieve multiple balances on the blockchain
    *

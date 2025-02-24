@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsnetworkmanager.html
  *
- * 2024-02-12T09:58:29.599Z
+ * 2025-02-24T21:49:02.579Z
  */
 export enum AwsNetworkmanagerActions {
   /**
@@ -70,6 +70,12 @@ export enum AwsNetworkmanagerActions {
    * See https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_CreateDevice.html
    */
   CreateDevice = 'networkmanager:CreateDevice',
+  /**
+   * Grants permission to create a Direct Connect gateway attachment
+   *
+   * See https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_CreateDirectConnectGatewayAttachment.html
+   */
+  CreateDirectConnectGatewayAttachment = 'networkmanager:CreateDirectConnectGatewayAttachment',
   /**
    * Grants permission to create a new global network
    *
@@ -280,6 +286,12 @@ export enum AwsNetworkmanagerActions {
    * See https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_GetDevices.html
    */
   GetDevices = 'networkmanager:GetDevices',
+  /**
+   * Grants permission to retrieve a Direct Connect gateway attachment
+   *
+   * See https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_GetDirectConnectGatewayAttachment.html
+   */
+  GetDirectConnectGatewayAttachment = 'networkmanager:GetDirectConnectGatewayAttachment',
   /**
    * Grants permission to describe link associations
    *
@@ -493,6 +505,12 @@ export enum AwsNetworkmanagerActions {
    * See https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_UpdateDevice.html
    */
   UpdateDevice = 'networkmanager:UpdateDevice',
+  /**
+   * Grants permission to update a Direct Connect gateway attachment
+   *
+   * See https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_UpdateDirectConnectGatewayAttachment.html
+   */
+  UpdateDirectConnectGatewayAttachment = 'networkmanager:UpdateDirectConnectGatewayAttachment',
   /**
    * Grants permission to update a global network
    *

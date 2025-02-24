@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonopensearchservice.html
  *
- * 2024-02-12T09:58:32.751Z
+ * 2025-02-24T21:49:06.013Z
  */
 export enum AwsEsActions {
   /**
@@ -31,7 +31,14 @@ export enum AwsEsActions {
    */
   AddDataSource = 'es:AddDataSource',
   /**
-   * Grants permission to attach resource tags to an OpenSearch Service domain
+   * Grants permission to add the data source for the provided OpenSearch arns
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_AddDirectQueryDataSource.html
+   */
+  AddDirectQueryDataSource = 'es:AddDirectQueryDataSource',
+  /**
+   * Grants permission to attach resource tags to an OpenSearch Service domain, data
+   * source, or application
    *
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_AddTags.html
    */
@@ -42,6 +49,13 @@ export enum AwsEsActions {
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_AssociatePackage.html
    */
   AssociatePackage = 'es:AssociatePackage',
+  /**
+   * Grants permission to associate multiple packages with an OpenSearch Service dom
+   * ain
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_AssociatePackages.html
+   */
+  AssociatePackages = 'es:AssociatePackages',
   /**
    * Grants permission to provide access to an Amazon OpenSearch Service domain thro
    * ugh the use of an interface VPC endpoint
@@ -68,6 +82,12 @@ export enum AwsEsActions {
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_CancelServiceSoftwareUpdate.html
    */
   CancelServiceSoftwareUpdate = 'es:CancelServiceSoftwareUpdate',
+  /**
+   * Grants permission to create an OpenSearch Application
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_CreateApplication.html
+   */
+  CreateApplication = 'es:CreateApplication',
   /**
    * Grants permission to create an Amazon OpenSearch Service domain
    *
@@ -124,11 +144,23 @@ export enum AwsEsActions {
    */
   CreateVpcEndpoint = 'es:CreateVpcEndpoint',
   /**
+   * Grants permission to delete an OpenSearch Application
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DeleteApplication.html
+   */
+  DeleteApplication = 'es:DeleteApplication',
+  /**
    * Grants permission to delete the data source for the OpenSearch Service domain
    *
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DeleteDataSource.html
    */
   DeleteDataSource = 'es:DeleteDataSource',
+  /**
+   * Grants permission to delete the data source for the provided OpenSearch arns
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DeleteDirectQueryDataSource.html
+   */
+  DeleteDirectQueryDataSource = 'es:DeleteDirectQueryDataSource',
   /**
    * Grants permission to delete an Amazon OpenSearch Service domain and all of its
    * data
@@ -374,6 +406,13 @@ export enum AwsEsActions {
    */
   DissociatePackage = 'es:DissociatePackage',
   /**
+   * Grants permission to disassociate multiple packages from the specified OpenSear
+   * ch Service domain
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DissociatePackages.html
+   */
+  DissociatePackages = 'es:DissociatePackages',
+  /**
    * Grants permission to send cross-cluster requests to a destination domain
    *
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/Welcome.html
@@ -416,6 +455,12 @@ export enum AwsEsActions {
    */
   ESHttpPut = 'es:ESHttpPut',
   /**
+   * Grants permission to get information about an OpenSearch Application
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_GetApplication.html
+   */
+  GetApplication = 'es:GetApplication',
+  /**
    * Grants permission to fetch a list of compatible OpenSearch and Elasticsearch ve
    * rsions to which an OpenSearch Service domain can be upgraded. This permission i
    * s deprecated. Use GetCompatibleVersions instead
@@ -436,6 +481,12 @@ export enum AwsEsActions {
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_GetDataSource.html
    */
   GetDataSource = 'es:GetDataSource',
+  /**
+   * Grants permission to get the data source for the provided OpenSearch arns
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_GetDirectQueryDataSource.html
+   */
+  GetDirectQueryDataSource = 'es:GetDirectQueryDataSource',
   /**
    * Grants permission to retrieve the status of maintenance action for the node
    *
@@ -463,12 +514,25 @@ export enum AwsEsActions {
    */
   GetUpgradeStatus = 'es:GetUpgradeStatus',
   /**
+   * Grants permission to list OpenSearch Applications
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListApplications.html
+   */
+  ListApplications = 'es:ListApplications',
+  /**
    * Grants permission to retrieve a list of data source for the OpenSearch Service
    * domain
    *
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListDataSources.html
    */
   ListDataSources = 'es:ListDataSources',
+  /**
+   * Grants permission to retrieve a list of data source for the provided OpenSearch
+   * arns
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListDirectQueryDataSources.html
+   */
+  ListDirectQueryDataSources = 'es:ListDirectQueryDataSources',
   /**
    * Grants permission to retrieve a list of maintenance actions for the OpenSearch
    * Service domain
@@ -535,6 +599,7 @@ export enum AwsEsActions {
   ListScheduledActions = 'es:ListScheduledActions',
   /**
    * Grants permission to display all resource tags for an OpenSearch Service domain
+   * , data source, or application
    *
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListTags.html
    */
@@ -597,7 +662,8 @@ export enum AwsEsActions {
    */
   RejectInboundCrossClusterSearchConnection = 'es:RejectInboundCrossClusterSearchConnection',
   /**
-   * Grants permission to remove resource tags from an OpenSearch Service domain
+   * Grants permission to remove resource tags from an OpenSearch Service domain, da
+   * ta source, or application
    *
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_RemoveTags.html
    */
@@ -629,11 +695,23 @@ export enum AwsEsActions {
    */
   StartServiceSoftwareUpdate = 'es:StartServiceSoftwareUpdate',
   /**
+   * Grants permission to update an OpenSearch Application
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateApplication.html
+   */
+  UpdateApplication = 'es:UpdateApplication',
+  /**
    * Grants permission to update the data source for the OpenSearch Service domain
    *
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateDataSource.html
    */
   UpdateDataSource = 'es:UpdateDataSource',
+  /**
+   * Grants permission to update the data source for the provided OpenSearch arns
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateDirectQueryDataSource.html
+   */
+  UpdateDirectQueryDataSource = 'es:UpdateDirectQueryDataSource',
   /**
    * Grants permission to modify the configuration of an OpenSearch Service domain,
    * such as the instance type or number of instances
@@ -655,6 +733,12 @@ export enum AwsEsActions {
    * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdatePackage.html
    */
   UpdatePackage = 'es:UpdatePackage',
+  /**
+   * Grants permission to update scope a package
+   *
+   * See https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdatePackageScope.html
+   */
+  UpdatePackageScope = 'es:UpdatePackageScope',
   /**
    * Grants permission to reschedule a planned OpenSearch Service domain configurati
    * on change for a later time

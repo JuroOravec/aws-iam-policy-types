@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationaccelerationprogramcredits.html
  *
- * 2024-02-12T09:58:23.512Z
+ * 2025-02-24T21:48:56.319Z
  */
 export enum AwsMapcreditsActions {
   /**

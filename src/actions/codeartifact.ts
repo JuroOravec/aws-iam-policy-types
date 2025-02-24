@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodeartifact.html
  *
- * 2024-02-12T09:56:32.156Z
+ * 2025-02-24T21:47:11.932Z
  */
 export enum AwsCodeartifactActions {
   /**
@@ -36,6 +36,12 @@ export enum AwsCodeartifactActions {
    */
   CreateDomain = 'codeartifact:CreateDomain',
   /**
+   * Grants permission to create a package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_CreatePackageGroup.html
+   */
+  CreatePackageGroup = 'codeartifact:CreatePackageGroup',
+  /**
    * Grants permission to create a new repository
    *
    * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_CreateRepository.html
@@ -59,6 +65,12 @@ export enum AwsCodeartifactActions {
    * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DeletePackage.html
    */
   DeletePackage = 'codeartifact:DeletePackage',
+  /**
+   * Grants permission to delete a package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DeletePackageGroup.html
+   */
+  DeletePackageGroup = 'codeartifact:DeletePackageGroup',
   /**
    * Grants permission to delete package versions
    *
@@ -90,6 +102,12 @@ export enum AwsCodeartifactActions {
    */
   DescribePackage = 'codeartifact:DescribePackage',
   /**
+   * Grants permission to return detailed information about a package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DescribePackageGroup.html
+   */
+  DescribePackageGroup = 'codeartifact:DescribePackageGroup',
+  /**
    * Grants permission to return information about a package version
    *
    * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DescribePackageVersion.html
@@ -114,6 +132,12 @@ export enum AwsCodeartifactActions {
    * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DisposePackageVersions.html
    */
   DisposePackageVersions = 'codeartifact:DisposePackageVersions',
+  /**
+   * Grants permission to return a package's associated package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_GetAssociatedPackageGroup.html
+   */
+  GetAssociatedPackageGroup = 'codeartifact:GetAssociatedPackageGroup',
   /**
    * Grants permission to generate a temporary authentication token for accessing re
    * positories in a domain
@@ -153,11 +177,29 @@ export enum AwsCodeartifactActions {
    */
   GetRepositoryPermissionsPolicy = 'codeartifact:GetRepositoryPermissionsPolicy',
   /**
+   * Grants permission to list the allowed repositories for a package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListRepositoriesInDomain.html
+   */
+  ListAllowedRepositoriesForGroup = 'codeartifact:ListAllowedRepositoriesForGroup',
+  /**
+   * Grants permission to list the packages associated to a package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListAssociatedPackages.html
+   */
+  ListAssociatedPackages = 'codeartifact:ListAssociatedPackages',
+  /**
    * Grants permission to list the domains in the current user's AWS account
    *
    * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListDomains.html
    */
   ListDomains = 'codeartifact:ListDomains',
+  /**
+   * Grants permission to list the package groups in a domain
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListPackageGroups.html
+   */
+  ListPackageGroups = 'codeartifact:ListPackageGroups',
   /**
    * Grants permission to list a package version's assets
    *
@@ -194,6 +236,12 @@ export enum AwsCodeartifactActions {
    * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListRepositoriesInDomain.html
    */
   ListRepositoriesInDomain = 'codeartifact:ListRepositoriesInDomain',
+  /**
+   * Grants permission to list the sub package groups for a parent package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListSubPackageGroups.html
+   */
+  ListSubPackageGroups = 'codeartifact:ListSubPackageGroups',
   /**
    * Grants permission to list tags for a CodeArtifact resource
    *
@@ -250,6 +298,18 @@ export enum AwsCodeartifactActions {
    * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_UntagResource.html
    */
   UntagResource = 'codeartifact:UntagResource',
+  /**
+   * Grants permission to modify the properties of a package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_UpdatePackageGroup.html
+   */
+  UpdatePackageGroup = 'codeartifact:UpdatePackageGroup',
+  /**
+   * Grants permission to modify the package origin configuration of a package group
+   *
+   * See https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_UpdatePackageGroupOriginConfiguration.html
+   */
+  UpdatePackageGroupOriginConfiguration = 'codeartifact:UpdatePackageGroupOriginConfiguration',
   /**
    * Grants permission to modify the status of one or more versions of a package
    *

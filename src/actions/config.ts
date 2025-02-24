@@ -6,9 +6,16 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsconfig.html
  *
- * 2024-02-12T09:56:44.056Z
+ * 2025-02-24T21:47:22.703Z
  */
 export enum AwsConfigActions {
+  /**
+   * Grants permission to add all specified resource types to the RecordingGroup of
+   * configuration recorder and includes those resource types when recording
+   *
+   * See https://docs.aws.amazon.com/config/latest/APIReference/API_AssociateResourceTypes.html
+   */
+  AssociateResourceTypes = 'config:AssociateResourceTypes',
   /**
    * Grants permission to return the current configuration items for resources that
    * are present in your AWS Config aggregator
@@ -45,7 +52,7 @@ export enum AwsConfigActions {
    */
   DeleteConfigurationAggregator = 'config:DeleteConfigurationAggregator',
   /**
-   * Grants permission to delete the configuration recorder
+   * Grants permission to delete the customer managed configuration recorder
    *
    * See https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteConfigurationRecorder.html
    */
@@ -117,6 +124,12 @@ export enum AwsConfigActions {
    * See https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteRetentionConfiguration.html
    */
   DeleteRetentionConfiguration = 'config:DeleteRetentionConfiguration',
+  /**
+   * Grants permission to delete the service-linked configuration recorder
+   *
+   * See https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteServiceLinkedConfigurationRecorder.html
+   */
+  DeleteServiceLinkedConfigurationRecorder = 'config:DeleteServiceLinkedConfigurationRecorder',
   /**
    * Grants permission to delete the stored query for an AWS account in an AWS Regio
    * n
@@ -298,6 +311,13 @@ export enum AwsConfigActions {
    */
   DescribeRetentionConfigurations = 'config:DescribeRetentionConfigurations',
   /**
+   * Grants permission to remove all specified resource types from the RecordingGrou
+   * p of configuration recorder and excludes these resource types when recording
+   *
+   * See https://docs.aws.amazon.com/config/latest/APIReference/API_DisassociateResourceTypes.html
+   */
+  DisassociateResourceTypes = 'config:DisassociateResourceTypes',
+  /**
    * Grants permission to return the evaluation results for the specified AWS Config
    * rule for a specific resource in a rule
    *
@@ -439,6 +459,13 @@ export enum AwsConfigActions {
    */
   ListAggregateDiscoveredResources = 'config:ListAggregateDiscoveredResources',
   /**
+   * Grants permission to list the configuration recorder summaries for an AWS accou
+   * nt in an AWS Region
+   *
+   * See https://docs.aws.amazon.com/config/latest/APIReference/API_ListConfigurationRecorders.html
+   */
+  ListConfigurationRecorders = 'config:ListConfigurationRecorders',
+  /**
    * Grants permission to return the percentage of compliant rule-resource combinati
    * ons in a conformance pack compared to the number of total possible rule-resourc
    * e combinations
@@ -495,8 +522,8 @@ export enum AwsConfigActions {
    */
   PutConfigurationAggregator = 'config:PutConfigurationAggregator',
   /**
-   * Grants permission to create a new configuration recorder to record the selected
-   * resource configurations
+   * Grants permission to create or update a customer managed configuration recorder
+   * to record the selected resource configurations
    *
    * See https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfigurationRecorder.html
    */
@@ -573,6 +600,13 @@ export enum AwsConfigActions {
    */
   PutRetentionConfiguration = 'config:PutRetentionConfiguration',
   /**
+   * Grants permission to create a new service-linked configuration recorder to reco
+   * rd the resource configurations in scope for the linked service
+   *
+   * See https://docs.aws.amazon.com/config/latest/APIReference/API_PutServiceLinkedConfigurationRecorder.html
+   */
+  PutServiceLinkedConfigurationRecorder = 'config:PutServiceLinkedConfigurationRecorder',
+  /**
    * Grants permission to save a new query or updates an existing saved query
    *
    * See https://docs.aws.amazon.com/config/latest/APIReference/API_PutStoredQuery.html
@@ -602,8 +636,9 @@ export enum AwsConfigActions {
    */
   StartConfigRulesEvaluation = 'config:StartConfigRulesEvaluation',
   /**
-   * Grants permission to start recording configurations of the AWS resources you ha
-   * ve selected to record in your AWS account
+   * Grants permission to the customer managed configuration recorder to start recor
+   * ding configurations of the AWS resources you have selected to record in your AW
+   * S account
    *
    * See https://docs.aws.amazon.com/config/latest/APIReference/API_StartConfigurationRecorder.html
    */
@@ -623,8 +658,9 @@ export enum AwsConfigActions {
    */
   StartResourceEvaluation = 'config:StartResourceEvaluation',
   /**
-   * Grants permission to stop recording configurations of the AWS resources you hav
-   * e selected to record in your AWS account
+   * Grants permission to the customer managed configuration recorder to stop record
+   * ing configurations of the AWS resources you have selected to record in your AWS
+   * account
    *
    * See https://docs.aws.amazon.com/config/latest/APIReference/API_StopConfigurationRecorder.html
    */

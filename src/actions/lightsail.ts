@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlightsail.html
  *
- * 2024-02-12T09:58:06.307Z
+ * 2025-02-24T21:48:38.117Z
  */
 export enum AwsLightsailActions {
   /**
@@ -811,6 +811,13 @@ export enum AwsLightsailActions {
    */
   GetRelationalDatabases = 'lightsail:GetRelationalDatabases',
   /**
+   * Grants permission to get detailed information for setup requests that were run
+   * on the specified resource
+   *
+   * See https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_GetSetupHistory.html
+   */
+  GetSetupHistory = 'lightsail:GetSetupHistory',
+  /**
    * Grants permission to get information about a static IP
    *
    * See https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_GetStaticIp.html
@@ -914,6 +921,13 @@ export enum AwsLightsailActions {
    * See https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_SetResourceAccessForBucket.html
    */
   SetResourceAccessForBucket = 'lightsail:SetResourceAccessForBucket',
+  /**
+   * Grants permission to create an SSL/TLS certificate and install it on a specifie
+   * d instance
+   *
+   * See https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_SetupInstanceHttps.html
+   */
+  SetupInstanceHttps = 'lightsail:SetupInstanceHttps',
   /**
    * Grants permission to initiate a graphical user interface (GUI) session used to
    * access an instance's operating system or application

@@ -6,20 +6,20 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbraket.html
  *
- * 2024-02-12T09:56:14.655Z
+ * 2025-02-24T21:46:56.283Z
  */
 export enum AwsBraketActions {
   /**
    * Grants permission to accept the Amazon Braket user agreement
    *
-   * See https://docs.aws.amazon.com/braket/latest/APIReference/API_AcceptUserAgreement.html
+   * See ${UserGuideDocPage}
    */
   AcceptUserAgreement = 'braket:AcceptUserAgreement',
   /**
    * Grants permission to check if an Amazon Braket feature is enabled for an accoun
    * t. Customers need this permission to use all features available in the console
    *
-   * See https://docs.aws.amazon.com/braket/latest/APIReference/API_AccessBraketFeature.html
+   * See ${UserGuideDocPage}
    */
   AccessBraketFeature = 'braket:AccessBraketFeature',
   /**
@@ -56,7 +56,7 @@ export enum AwsBraketActions {
   /**
    * Grants permission to retrieve jobs
    *
-   * See https://docs.aws.amazon.com/braket/latest/APIReference/API_Job.html
+   * See https://docs.aws.amazon.com/braket/latest/APIReference/API_GetJob.html
    */
   GetJob = 'braket:GetJob',
   /**
@@ -69,14 +69,14 @@ export enum AwsBraketActions {
    * Grants permission to check if the Amazon Braket service linked role has been cr
    * eated
    *
-   * See https://docs.aws.amazon.com/braket/latest/APIReference/API_GetServiceLinkedRoleStatus.html
+   * See ${UserGuideDocPage}
    */
   GetServiceLinkedRoleStatus = 'braket:GetServiceLinkedRoleStatus',
   /**
    * Grants permission to check if the account has accepted the Amazon Braket user a
    * greement
    *
-   * See https://docs.aws.amazon.com/braket/latest/APIReference/API_GetUserAgreementStatus.html
+   * See ${UserGuideDocPage}
    */
   GetUserAgreementStatus = 'braket:GetUserAgreementStatus',
   /**
@@ -95,7 +95,7 @@ export enum AwsBraketActions {
   /**
    * Grants permission to search for jobs
    *
-   * See https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchJob.html
+   * See https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchJobs.html
    */
   SearchJobs = 'braket:SearchJobs',
   /**

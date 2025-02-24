@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmemorydb.html
  *
- * 2024-02-12T09:58:22.061Z
+ * 2025-02-24T21:48:54.435Z
  */
 export enum AwsMemorydbActions {
   /**
@@ -40,6 +40,12 @@ export enum AwsMemorydbActions {
    * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateCluster.html
    */
   CreateCluster = 'memorydb:CreateCluster',
+  /**
+   * Grants permissions to create a Multi-Region cluster
+   *
+   * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateMultiRegionCluster.html
+   */
+  CreateMultiRegionCluster = 'memorydb:CreateMultiRegionCluster',
   /**
    * Grants permissions to create a new parameter group
    *
@@ -76,6 +82,12 @@ export enum AwsMemorydbActions {
    * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteCluster.html
    */
   DeleteCluster = 'memorydb:DeleteCluster',
+  /**
+   * Grants permissions to delete a Multi-Region cluster
+   *
+   * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteMultiRegionCluster.html
+   */
+  DeleteMultiRegionCluster = 'memorydb:DeleteMultiRegionCluster',
   /**
    * Grants permissions to delete a parameter group
    *
@@ -127,6 +139,27 @@ export enum AwsMemorydbActions {
    * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeEvents.html
    */
   DescribeEvents = 'memorydb:DescribeEvents',
+  /**
+   * Grants permissions to retrieve information about all Multi-Region clusters if n
+   * o cluster identifier is specified, or about a specific Multi-Region cluster if
+   * a cluster identifier is supplied
+   *
+   * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeMultiRegionClusters.html
+   */
+  DescribeMultiRegionClusters = 'memorydb:DescribeMultiRegionClusters',
+  /**
+   * Grants permissions to retrieve information about Multi-Region parameter groups
+   *
+   * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeMultiRegionParameterGroups.html
+   */
+  DescribeMultiRegionParameterGroups = 'memorydb:DescribeMultiRegionParameterGroups',
+  /**
+   * Grants permissions to retrieve a detailed parameter list for a particular Multi
+   * -Region parameter group
+   *
+   * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeMultiRegionParameters.html
+   */
+  DescribeMultiRegionParameters = 'memorydb:DescribeMultiRegionParameters',
   /**
    * Grants permissions to retrieve information about parameter groups
    *
@@ -183,6 +216,12 @@ export enum AwsMemorydbActions {
    */
   FailoverShard = 'memorydb:FailoverShard',
   /**
+   * Grants permissions to list available Multi-Region cluster updates
+   *
+   * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ListAllowedMultiRegionClusterUpdates.html
+   */
+  ListAllowedMultiRegionClusterUpdates = 'memorydb:ListAllowedMultiRegionClusterUpdates',
+  /**
    * Grants permissions to list available node type updates
    *
    * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ListAllowedNodeTypeUpdates.html
@@ -232,6 +271,12 @@ export enum AwsMemorydbActions {
    * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateCluster.html
    */
   UpdateCluster = 'memorydb:UpdateCluster',
+  /**
+   * Grants permissions to update the settings for a Multi-Region cluster
+   *
+   * See https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateMultiRegionCluster.html
+   */
+  UpdateMultiRegionCluster = 'memorydb:UpdateMultiRegionCluster',
   /**
    * Grants permissions to update parameters in a parameter group
    *

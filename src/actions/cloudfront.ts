@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudfront.html
  *
- * 2024-02-12T09:56:22.265Z
+ * 2025-02-24T21:47:03.032Z
  */
 export enum AwsCloudfrontActions {
+  /**
+   * Grants permission to configure vended log delivery for a distribution
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-V2-service-specific
+   */
+  AllowVendedLogDeliveryForResource = 'cloudfront:AllowVendedLogDeliveryForResource',
   /**
    * Grants permission to associate an alias to a CloudFront distribution
    *
@@ -22,6 +28,12 @@ export enum AwsCloudfrontActions {
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CopyDistribution.html
    */
   CopyDistribution = 'cloudfront:CopyDistribution',
+  /**
+   * Grants permission to create an Anycast static IP list
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateAnycastIpList.html
+   */
+  CreateAnycastIpList = 'cloudfront:CreateAnycastIpList',
   /**
    * Grants permission to add a new cache policy to CloudFront
    *
@@ -138,6 +150,18 @@ export enum AwsCloudfrontActions {
    */
   CreateStreamingDistributionWithTags = 'cloudfront:CreateStreamingDistributionWithTags',
   /**
+   * Grants permission to create a VPC origin
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateVpcOrigin.html
+   */
+  CreateVpcOrigin = 'cloudfront:CreateVpcOrigin',
+  /**
+   * Grants permission to delete an Anycast static IP list
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteAnycastIpList.html
+   */
+  DeleteAnycastIpList = 'cloudfront:DeleteAnycastIpList',
+  /**
    * Grants permission to delete a cache policy
    *
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteCachePolicy.html
@@ -235,6 +259,12 @@ export enum AwsCloudfrontActions {
    */
   DeleteStreamingDistribution = 'cloudfront:DeleteStreamingDistribution',
   /**
+   * Grants permission to delete a VPC origin
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteVpcOrigin.html
+   */
+  DeleteVpcOrigin = 'cloudfront:DeleteVpcOrigin',
+  /**
    * Grants permission to get a CloudFront function summary
    *
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DescribeFunction.html
@@ -246,6 +276,12 @@ export enum AwsCloudfrontActions {
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DescribeKeyValueStore.html
    */
   DescribeKeyValueStore = 'cloudfront:DescribeKeyValueStore',
+  /**
+   * Grants permission to get an Anycast static IP list
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetAnycastIpList.html
+   */
+  GetAnycastIpList = 'cloudfront:GetAnycastIpList',
   /**
    * Grants permission to get the cache policy
    *
@@ -426,6 +462,18 @@ export enum AwsCloudfrontActions {
    */
   GetStreamingDistributionConfig = 'cloudfront:GetStreamingDistributionConfig',
   /**
+   * Grants permission to get the information about a VPC origin
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetVpcOrigin.html
+   */
+  GetVpcOrigin = 'cloudfront:GetVpcOrigin',
+  /**
+   * Grants permission to list your Anycast static IP lists
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListAnycastIpLists.html
+   */
+  ListAnycastIpLists = 'cloudfront:ListAnycastIpLists',
+  /**
    * Grants permission to list all cache policies that have been created in CloudFro
    * nt for this account
    *
@@ -458,6 +506,13 @@ export enum AwsCloudfrontActions {
    */
   ListDistributions = 'cloudfront:ListDistributions',
   /**
+   * Grants permission to list the distributions in your account that are associated
+   * with the specified AnycastIpListId
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByAnycastIpListId.html
+   */
+  ListDistributionsByAnycastIpListId = 'cloudfront:ListDistributionsByAnycastIpListId',
+  /**
    * Grants permission to list distribution IDs for distributions that have a cache
    * behavior that's associated with the specified cache policy
    *
@@ -486,7 +541,7 @@ export enum AwsCloudfrontActions {
   ListDistributionsByOriginRequestPolicyId = 'cloudfront:ListDistributionsByOriginRequestPolicyId',
   /**
    * Grants permission to get a list of distributions that have a cache behavior tha
-   * t’s associated with the specified real-time log configuration
+   * t's associated with the specified real-time log configuration
    *
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByRealtimeLogConfig.html
    */
@@ -498,6 +553,13 @@ export enum AwsCloudfrontActions {
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByResponseHeadersPolicyId.html
    */
   ListDistributionsByResponseHeadersPolicyId = 'cloudfront:ListDistributionsByResponseHeadersPolicyId',
+  /**
+   * Grants permission to list IDs for distributions associated with the specified V
+   * PC origin
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByVpcOriginId.html
+   */
+  ListDistributionsByVpcOriginId = 'cloudfront:ListDistributionsByVpcOriginId',
   /**
    * Grants permission to list the distributions associated with your AWS account wi
    * th given AWS WAF web ACL
@@ -608,6 +670,12 @@ export enum AwsCloudfrontActions {
    */
   ListUsages = 'cloudfront:ListUsages',
   /**
+   * Grants permission to list VPC origins
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListVpcOrigins.html
+   */
+  ListVpcOrigins = 'cloudfront:ListVpcOrigins',
+  /**
    * Grants permission to publish a CloudFront function
    *
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_PublishFunction.html
@@ -656,6 +724,13 @@ export enum AwsCloudfrontActions {
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateDistribution.html
    */
   UpdateDistribution = 'cloudfront:UpdateDistribution',
+  /**
+   * Grants permission to copy the configuration from a staging web distribution to
+   * its corresponding primary web distribution
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateDistributionWithStagingConfig.html
+   */
+  UpdateDistributionWithStagingConfig = 'cloudfront:UpdateDistributionWithStagingConfig',
   /**
    * Grants permission to update a field-level encryption configuration
    *
@@ -728,4 +803,10 @@ export enum AwsCloudfrontActions {
    * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateStreamingDistribution.html
    */
   UpdateStreamingDistribution = 'cloudfront:UpdateStreamingDistribution',
+  /**
+   * Grants permission to update a VPC origin
+   *
+   * See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateVpcOrigin.html
+   */
+  UpdateVpcOrigin = 'cloudfront:UpdateVpcOrigin',
 }

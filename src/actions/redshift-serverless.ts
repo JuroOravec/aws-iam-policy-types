@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonredshiftserverless.html
  *
- * 2024-02-12T09:58:52.720Z
+ * 2025-02-24T21:49:24.025Z
  */
 export enum AwsRedshiftServerlessActions {
   /**
@@ -149,6 +149,13 @@ export enum AwsRedshiftServerlessActions {
    */
   GetEndpointAccess = 'redshift-serverless:GetEndpointAccess',
   /**
+   * Grants permission to create a Amazon Redshift Managed Serverless workgroup with
+   * the specified configuration settings
+   *
+   * See https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetManagedWorkgroup.html
+   */
+  GetManagedWorkgroup = 'redshift-serverless:GetManagedWorkgroup',
+  /**
    * Grants permission to get information about a namespace in Amazon Redshift Serve
    * rless
    *
@@ -211,6 +218,12 @@ export enum AwsRedshiftServerlessActions {
    * See https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListEndpointAccess.html
    */
   ListEndpointAccess = 'redshift-serverless:ListEndpointAccess',
+  /**
+   * Grants permission to list managed workgroups in Amazon Redshift Serverless
+   *
+   * See https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListManagedWorkgroups.html
+   */
+  ListManagedWorkgroups = 'redshift-serverless:ListManagedWorkgroups',
   /**
    * Grants permission to list namespaces in Amazon Redshift Serverless
    *

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdirectoryservice.html
  *
- * 2024-02-12T09:56:59.781Z
+ * 2025-02-24T21:47:38.408Z
  */
 export enum AwsDsActions {
   /**
@@ -16,6 +16,12 @@ export enum AwsDsActions {
    * See https://docs.aws.amazon.com/directoryservice/latest/devguide/API_AcceptSharedDirectory.html
    */
   AcceptSharedDirectory = 'ds:AcceptSharedDirectory',
+  /**
+   * Grants permission to access directory data using the Directory Service Data API
+   *
+   * See https://docs.aws.amazon.com/directoryservice/latest/admin-guide/UsingWithDS_IAM_ResourcePermissions.html
+   */
+  AccessDSData = 'ds:AccessDSData',
   /**
    * Grants permission to add a CIDR address block to correctly route traffic to and
    * from your Microsoft AD on Amazon Web Services
@@ -201,6 +207,13 @@ export enum AwsDsActions {
    */
   DescribeDirectories = 'ds:DescribeDirectories',
   /**
+   * Grants permission to describe the Directory Service Data API status for the spe
+   * cified directory
+   *
+   * See https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DescribeDirectoryDataAccess.html
+   */
+  DescribeDirectoryDataAccess = 'ds:DescribeDirectoryDataAccess',
+  /**
    * Grants permission to provide information about any domain controllers in your d
    * irectory
    *
@@ -270,6 +283,13 @@ export enum AwsDsActions {
    */
   DisableClientAuthentication = 'ds:DisableClientAuthentication',
   /**
+   * Grants permission to disable the Directory Service Data API for the specified d
+   * irectory
+   *
+   * See https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DisableDirectoryDataAccess.html
+   */
+  DisableDirectoryDataAccess = 'ds:DisableDirectoryDataAccess',
+  /**
    * Grants permission to deactivate LDAP secure calls for the specified directory
    *
    * See https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DisableLDAPS.html
@@ -303,6 +323,13 @@ export enum AwsDsActions {
    * See https://docs.aws.amazon.com/directoryservice/latest/devguide/API_EnableClientAuthentication.html
    */
   EnableClientAuthentication = 'ds:EnableClientAuthentication',
+  /**
+   * Grants permission to enable the Directory Service Data API for the specified di
+   * rectory
+   *
+   * See https://docs.aws.amazon.com/directoryservice/latest/devguide/API_EnableDirectoryDataAccess.html
+   */
+  EnableDirectoryDataAccess = 'ds:EnableDirectoryDataAccess',
   /**
    * Grants permission to activate the switch for the specific directory to always u
    * se LDAP secure calls

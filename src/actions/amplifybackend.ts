@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsamplifyadmin.html
  *
- * 2024-02-12T09:55:53.381Z
+ * 2025-02-24T21:46:35.592Z
  */
 export enum AwsAmplifybackendActions {
   /**

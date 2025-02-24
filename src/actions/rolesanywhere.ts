@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementrolesanywhere.html
  *
- * 2024-02-12T09:57:40.298Z
+ * 2025-02-24T21:48:15.999Z
  */
 export enum AwsRolesanywhereActions {
   /**
@@ -21,6 +21,12 @@ export enum AwsRolesanywhereActions {
    * See https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_CreateTrustAnchor.html
    */
   CreateTrustAnchor = 'rolesanywhere:CreateTrustAnchor',
+  /**
+   * Grants permission to delete a mapping rule from a profile
+   *
+   * See https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_DeleteAttributeMapping.html
+   */
+  DeleteAttributeMapping = 'rolesanywhere:DeleteAttributeMapping',
   /**
    * Grants permission to delete a certificate revocation list (crl)
    *
@@ -135,6 +141,12 @@ export enum AwsRolesanywhereActions {
    * See https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListTrustAnchors.html
    */
   ListTrustAnchors = 'rolesanywhere:ListTrustAnchors',
+  /**
+   * Grants permission to put a mapping rule into a profile
+   *
+   * See https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_PutAttributeMapping.html
+   */
+  PutAttributeMapping = 'rolesanywhere:PutAttributeMapping',
   /**
    * Grants permission to attach notification settings to a trust anchor
    *

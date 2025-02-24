@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmainframemodernizationservice.html
  *
- * 2024-02-12T09:58:10.313Z
+ * 2025-02-24T21:48:43.498Z
  */
 export enum AwsM2Actions {
   /**
@@ -129,6 +129,12 @@ export enum AwsM2Actions {
    * See https://docs.aws.amazon.com/m2/latest/APIReference/API_ListBatchJobExecutions.html
    */
   ListBatchJobExecutions = 'm2:ListBatchJobExecutions',
+  /**
+   * Grants permission to retrieve a batch job execution
+   *
+   * See https://docs.aws.amazon.com/m2/latest/APIReference/API_ListBatchJobRestartPoints.html
+   */
+  ListBatchJobRestartPoints = 'm2:ListBatchJobRestartPoints',
   /**
    * Grants permission to list data set import history
    *

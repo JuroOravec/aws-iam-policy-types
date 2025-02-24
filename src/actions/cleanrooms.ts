@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
  *
- * 2024-02-12T09:56:18.230Z
+ * 2025-02-24T21:46:59.445Z
  */
 export enum AwsCleanroomsActions {
   /**
@@ -22,6 +22,12 @@ export enum AwsCleanroomsActions {
    * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_BatchGetSchema.html
    */
   BatchGetSchema = 'cleanrooms:BatchGetSchema',
+  /**
+   * Grants permission to view analysis rules associated with schemas
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_BatchGetSchemaAnalysisRule.html
+   */
+  BatchGetSchemaAnalysisRule = 'cleanrooms:BatchGetSchemaAnalysisRule',
   /**
    * Grants permission to create a new analysis template
    *
@@ -61,6 +67,26 @@ export enum AwsCleanroomsActions {
    * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_CreateConfiguredTableAssociation.html
    */
   CreateConfiguredTableAssociation = 'cleanrooms:CreateConfiguredTableAssociation',
+  /**
+   * Grants permission to create an analysis rule for a configured table association
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_CreateConfiguredTableAssociationAnalysisRule.html
+   */
+  CreateConfiguredTableAssociationAnalysisRule = 'cleanrooms:CreateConfiguredTableAssociationAnalysisRule',
+  /**
+   * Grants permission to link an id mapping workflow with a collaboration by creati
+   * ng a new id mapping table
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_CreateIdMappingTable.html
+   */
+  CreateIdMappingTable = 'cleanrooms:CreateIdMappingTable',
+  /**
+   * Grants permission to link an AWS Entity Resolution Id Namespace with a collabor
+   * ation by creating a new association
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_CreateIdNamespaceAssociation.html
+   */
+  CreateIdNamespaceAssociation = 'cleanrooms:CreateIdNamespaceAssociation',
   /**
    * Grants permission to join collaborations by creating a membership
    *
@@ -110,6 +136,25 @@ export enum AwsCleanroomsActions {
    */
   DeleteConfiguredTableAssociation = 'cleanrooms:DeleteConfiguredTableAssociation',
   /**
+   * Grants permission to delete an existing configured table association analysis r
+   * ule
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_DeleteConfiguredTableAssociationAnalysisRule.html
+   */
+  DeleteConfiguredTableAssociationAnalysisRule = 'cleanrooms:DeleteConfiguredTableAssociationAnalysisRule',
+  /**
+   * Grants permission to remove an id mapping table from a collaboration
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_DeleteIdMappingTable.html
+   */
+  DeleteIdMappingTable = 'cleanrooms:DeleteIdMappingTable',
+  /**
+   * Grants permission to remove an Id Namespace Association from a collaboration
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_DeleteIdNamespaceAssociation.html
+   */
+  DeleteIdNamespaceAssociation = 'cleanrooms:DeleteIdNamespaceAssociation',
+  /**
    * Grants permission to delete members from a collaboration
    *
    * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_DeleteMember.html
@@ -154,6 +199,12 @@ export enum AwsCleanroomsActions {
    */
   GetCollaborationConfiguredAudienceModelAssociation = 'cleanrooms:GetCollaborationConfiguredAudienceModelAssociation',
   /**
+   * Grants permission to get id namespace association within a collaboration
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetCollaborationIdNamespaceAssociation.html
+   */
+  GetCollaborationIdNamespaceAssociation = 'cleanrooms:GetCollaborationIdNamespaceAssociation',
+  /**
    * Grants permission to view details for a privacy budget template within a collab
    * oration
    *
@@ -184,6 +235,24 @@ export enum AwsCleanroomsActions {
    * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetConfiguredTableAssociation.html
    */
   GetConfiguredTableAssociation = 'cleanrooms:GetConfiguredTableAssociation',
+  /**
+   * Grants permission to view analysis rules for a configured table association
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetConfiguredTableAssociationAnalysisRule.html
+   */
+  GetConfiguredTableAssociationAnalysisRule = 'cleanrooms:GetConfiguredTableAssociationAnalysisRule',
+  /**
+   * Grants permission to view details of an id mapping table
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetIdMappingTable.html
+   */
+  GetIdMappingTable = 'cleanrooms:GetIdMappingTable',
+  /**
+   * Grants permission to view details of an id namespace association
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetIdNamespaceAssociation.html
+   */
+  GetIdNamespaceAssociation = 'cleanrooms:GetIdNamespaceAssociation',
   /**
    * Grants permission to view details about a membership
    *
@@ -234,6 +303,12 @@ export enum AwsCleanroomsActions {
    */
   ListCollaborationConfiguredAudienceModelAssociations = 'cleanrooms:ListCollaborationConfiguredAudienceModelAssociations',
   /**
+   * Grants permission to list id namespace within a collaboration
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_ListCollaborationIdNamespaceAssociations.html
+   */
+  ListCollaborationIdNamespaceAssociations = 'cleanrooms:ListCollaborationIdNamespaceAssociations',
+  /**
    * Grants permission to list available privacy budget templates within a collabora
    * tion
    *
@@ -272,6 +347,18 @@ export enum AwsCleanroomsActions {
    * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_ListConfiguredTables.html
    */
   ListConfiguredTables = 'cleanrooms:ListConfiguredTables',
+  /**
+   * Grants permission to list available id mapping tables for a membership
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_ListIdMappingTables.html
+   */
+  ListIdMappingTables = 'cleanrooms:ListIdMappingTables',
+  /**
+   * Grants permission to list entity resolution data associations for a membership
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_ListIdNamespaceAssociations.html
+   */
+  ListIdNamespaceAssociations = 'cleanrooms:ListIdNamespaceAssociations',
   /**
    * Grants permission to list the members of a collaboration
    *
@@ -314,6 +401,27 @@ export enum AwsCleanroomsActions {
    * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_ListTagsForResource.html
    */
   ListTagsForResource = 'cleanrooms:ListTagsForResource',
+  /**
+   * Grants permission to access a collaboration in the context of Clean Rooms ML cu
+   * stom models
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-behaviors-byom.html#ml-behaviors-byom-membership-collaboration-access
+   */
+  PassCollaboration = 'cleanrooms:PassCollaboration',
+  /**
+   * Grants permission to access a membership in the context of Clean Rooms ML custo
+   * m models
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-behaviors-byom.html#ml-behaviors-byom-membership-collaboration-access
+   */
+  PassMembership = 'cleanrooms:PassMembership',
+  /**
+   * Grants permission to start an Id Mapping Job in AWS Entity Resolution to genera
+   * te id mapping results in cleanrooms collaboration.
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_PopulateIdMappingTable.html
+   */
+  PopulateIdMappingTable = 'cleanrooms:PopulateIdMappingTable',
   /**
    * Grants permission to preview privacy budget template settings
    *
@@ -374,6 +482,24 @@ export enum AwsCleanroomsActions {
    * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_UpdateConfiguredTableAssociation.html
    */
   UpdateConfiguredTableAssociation = 'cleanrooms:UpdateConfiguredTableAssociation',
+  /**
+   * Grants permission to update analysis rules for a configured table association
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_UpdateConfiguredTableAssociationAnalysisRule.html
+   */
+  UpdateConfiguredTableAssociationAnalysisRule = 'cleanrooms:UpdateConfiguredTableAssociationAnalysisRule',
+  /**
+   * Grants permission to update an id mapping table
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_UpdateIdMappingTable.html
+   */
+  UpdateIdMappingTable = 'cleanrooms:UpdateIdMappingTable',
+  /**
+   * Grants permission to update a entity resolution input association
+   *
+   * See https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_UpdateIdNamespaceAssociation.html
+   */
+  UpdateIdNamespaceAssociation = 'cleanrooms:UpdateIdNamespaceAssociation',
   /**
    * Grants permission to update details of a membership
    *

@@ -6,9 +6,22 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondocumentdbelasticclusters.html
  *
- * 2024-02-12T09:57:00.292Z
+ * 2025-02-24T21:47:39.399Z
  */
 export enum AwsDocdbElasticActions {
+  /**
+   * Grants permission to apply pending maintenance actions on Amazon DocDB-Elastic
+   * cluster
+   *
+   * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_ApplyPendingMaintenanceAction.html
+   */
+  ApplyPendingMaintenanceAction = 'docdb-elastic:ApplyPendingMaintenanceAction',
+  /**
+   * Grants permission to copy a new Amazon DocDB-Elastic cluster snapshot
+   *
+   * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_CopyClusterSnapshot.html
+   */
+  CopyClusterSnapshot = 'docdb-elastic:CopyClusterSnapshot',
   /**
    * Grants permission to create a new Amazon DocDB-Elastic cluster
    *
@@ -46,6 +59,13 @@ export enum AwsDocdbElasticActions {
    */
   GetClusterSnapshot = 'docdb-elastic:GetClusterSnapshot',
   /**
+   * Grants permission to view details about pending maintenance actions on Amazon D
+   * ocDB-Elastic cluster
+   *
+   * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_GetPendingMaintenanceAction.html
+   */
+  GetPendingMaintenanceAction = 'docdb-elastic:GetPendingMaintenanceAction',
+  /**
    * Grants permission to list the cluster snapshots in your account
    *
    * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_ListClusterSnapshots.html
@@ -57,6 +77,13 @@ export enum AwsDocdbElasticActions {
    * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_ListClusters.html
    */
   ListClusters = 'docdb-elastic:ListClusters',
+  /**
+   * Grants permission to list details about pending maintenance actions on any Amaz
+   * on DocDB-Elastic cluster
+   *
+   * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_ListPendingMaintenanceActions.html
+   */
+  ListPendingMaintenanceActions = 'docdb-elastic:ListPendingMaintenanceActions',
   /**
    * Grants permission to lists tag for an DocumentDB Elastic resource
    *
@@ -70,6 +97,18 @@ export enum AwsDocdbElasticActions {
    * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_RestoreClusterFromSnapshot.html
    */
   RestoreClusterFromSnapshot = 'docdb-elastic:RestoreClusterFromSnapshot',
+  /**
+   * Grants permission to start a stopped Amazon DocDB-Elastic cluster
+   *
+   * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_StartCluster.html
+   */
+  StartCluster = 'docdb-elastic:StartCluster',
+  /**
+   * Grants permission to stop an existing Amazon DocDB-Elastic cluster
+   *
+   * See https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_StopCluster.html
+   */
+  StopCluster = 'docdb-elastic:StopCluster',
   /**
    * Grants permission to tag an DocumentDB Elastic resource
    *

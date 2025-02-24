@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsamplify.html
  *
- * 2024-02-12T09:55:52.835Z
+ * 2025-02-24T21:46:35.080Z
  */
 export enum AwsAmplifyActions {
+  /**
+   * Grants permission to associate a WebACL to a Resource
+   *
+   * See https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
+   */
+  AssociateWebACL = 'amplify:AssociateWebACL',
   /**
    * Grants permission to create a new Amplify App
    *
@@ -83,6 +89,12 @@ export enum AwsAmplifyActions {
    */
   DeleteWebHook = 'amplify:DeleteWebHook',
   /**
+   * Grants permission to disassociate a WebACL from a Resource
+   *
+   * See https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
+   */
+  DisassociateWebACL = 'amplify:DisassociateWebACL',
+  /**
    * Grants permission to generate website access logs for a specific time range via
    * a pre-signed URL
    *
@@ -127,6 +139,12 @@ export enum AwsAmplifyActions {
    */
   GetJob = 'amplify:GetJob',
   /**
+   * Grants permission to retrieve the WebACL associated with a Resource
+   *
+   * See https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
+   */
+  GetWebACLForResource = 'amplify:GetWebACLForResource',
+  /**
    * Grants permission to retrieve webhook info that corresponds to a webhookId
    *
    * See https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
@@ -169,6 +187,12 @@ export enum AwsAmplifyActions {
    * See https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
    */
   ListJobs = 'amplify:ListJobs',
+  /**
+   * Grants permission to list the Resources associated with a WebACL
+   *
+   * See https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
+   */
+  ListResourcesForWebACL = 'amplify:ListResourcesForWebACL',
   /**
    * Grants permission to list tags for an AWS Amplify Console resource
    *

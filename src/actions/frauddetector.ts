@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonfrauddetector.html
  *
- * 2024-02-12T09:57:27.815Z
+ * 2025-02-24T21:48:04.554Z
  */
 export enum AwsFrauddetectorActions {
   /**
@@ -277,7 +277,7 @@ export enum AwsFrauddetectorActions {
   GetEvent = 'frauddetector:GetEvent',
   /**
    * Grants permission to evaluate an event against a detector version. If a version
-   * ID is not provided, the detector’s (ACTIVE) version is used
+   * ID is not provided, the detector's (ACTIVE) version is used
    *
    * See https://docs.aws.amazon.com/frauddetector/latest/api/API_GetEventPrediction.html
    */
@@ -493,7 +493,7 @@ export enum AwsFrauddetectorActions {
    */
   UpdateDetectorVersionMetadata = 'frauddetector:UpdateDetectorVersionMetadata',
   /**
-   * Grants permission to update the detector version’s status. You can perform the
+   * Grants permission to update the detector version's status. You can perform the
    * following promotions or demotions using UpdateDetectorVersionStatus: DRAFT to A
    * CTIVE, ACTIVE to INACTIVE, and INACTIVE to ACTIVE
    *

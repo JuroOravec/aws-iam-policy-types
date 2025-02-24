@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptune.html
  *
- * 2024-02-12T09:58:27.839Z
+ * 2025-02-24T21:49:00.511Z
  */
 export enum AwsNeptuneDbActions {
   /**

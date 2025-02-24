@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsnetworkfirewall.html
  *
- * 2024-02-12T09:58:29.001Z
+ * 2025-02-24T21:49:01.529Z
  */
 export enum AwsNetworkFirewallActions {
   /**
@@ -129,6 +129,18 @@ export enum AwsNetworkFirewallActions {
    */
   DisassociateSubnets = 'network-firewall:DisassociateSubnets',
   /**
+   * Grants permission to retrieve analysis report results of a firewall
+   *
+   * See https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_GetAnalysisReportResults.html
+   */
+  GetAnalysisReportResults = 'network-firewall:GetAnalysisReportResults',
+  /**
+   * Grants permission to list firewall analysis reports
+   *
+   * See https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_ListAnalysisReports.html
+   */
+  ListAnalysisReports = 'network-firewall:ListAnalysisReports',
+  /**
    * Grants permission to retrieve the metadata for firewall policies
    *
    * See https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_ListFirewallPolicies.html
@@ -165,6 +177,12 @@ export enum AwsNetworkFirewallActions {
    */
   PutResourcePolicy = 'network-firewall:PutResourcePolicy',
   /**
+   * Grants permission to start an analysis report on a firewall
+   *
+   * See https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_GetAnalysisReportResults.html
+   */
+  StartAnalysisReport = 'network-firewall:StartAnalysisReport',
+  /**
    * Grants permission to attach tags to a resource
    *
    * See https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_TagResource.html
@@ -176,6 +194,12 @@ export enum AwsNetworkFirewallActions {
    * See https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_UntagResource.html
    */
   UntagResource = 'network-firewall:UntagResource',
+  /**
+   * Grants permission to modify firewall analysis settings of a firewall
+   *
+   * See https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_UpdateFirewallAnalysisSettings.html
+   */
+  UpdateFirewallAnalysisSettings = 'network-firewall:UpdateFirewallAnalysisSettings',
   /**
    * Grants permission to add or remove delete protection for a firewall
    *

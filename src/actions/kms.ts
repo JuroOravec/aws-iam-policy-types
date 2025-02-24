@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html
  *
- * 2024-02-12T09:57:57.163Z
+ * 2025-02-24T21:48:30.666Z
  */
 export enum AwsKmsActions {
   /**
@@ -77,6 +77,12 @@ export enum AwsKmsActions {
    * See https://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteImportedKeyMaterial.html
    */
   DeleteImportedKeyMaterial = 'kms:DeleteImportedKeyMaterial',
+  /**
+   * Controls permission to use the specified AWS KMS key to derive shared secrets
+   *
+   * See https://docs.aws.amazon.com/kms/latest/APIReference/API_DeriveSharedSecret.html
+   */
+  DeriveSharedSecret = 'kms:DeriveSharedSecret',
   /**
    * Controls permission to view detailed information about custom key stores in the
    * account and region
@@ -182,8 +188,7 @@ export enum AwsKmsActions {
    */
   GetKeyPolicy = 'kms:GetKeyPolicy',
   /**
-   * Controls permission to determine whether automatic key rotation is enabled on t
-   * he AWS KMS key
+   * Controls permission to view the key rotation status for an AWS KMS key
    *
    * See https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyRotationStatus.html
    */
@@ -226,6 +231,13 @@ export enum AwsKmsActions {
    * See https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyPolicies.html
    */
   ListKeyPolicies = 'kms:ListKeyPolicies',
+  /**
+   * Controls permission to view the list of completed key rotations for an AWS KMS
+   * key
+   *
+   * See https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyRotations.html
+   */
+  ListKeyRotations = 'kms:ListKeyRotations',
   /**
    * Controls permission to view the key ID and Amazon Resource Name (ARN) of all AW
    * S KMS keys in the account
@@ -288,6 +300,13 @@ export enum AwsKmsActions {
    * See https://docs.aws.amazon.com/kms/latest/APIReference/API_RevokeGrant.html
    */
   RevokeGrant = 'kms:RevokeGrant',
+  /**
+   * Controls permission to invoke on-demand rotation of the cryptographic material
+   * in an AWS KMS key
+   *
+   * See https://docs.aws.amazon.com/kms/latest/APIReference/API_RotateKeyOnDemand.html
+   */
+  RotateKeyOnDemand = 'kms:RotateKeyOnDemand',
   /**
    * Controls permission to schedule deletion of an AWS KMS key
    *

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotwireless.html
  *
- * 2024-02-12T09:57:54.255Z
+ * 2025-02-24T21:48:28.117Z
  */
 export enum AwsIotwirelessActions {
   /**
@@ -271,6 +271,18 @@ export enum AwsIotwirelessActions {
    * See https://docs.aws.amazon.com/iot-wireless/2020-11-22/apireference/API_GetLogLevelsByResourceTypes.html
    */
   GetLogLevelsByResourceTypes = 'iotwireless:GetLogLevelsByResourceTypes',
+  /**
+   * Grants permission to get metric configuration
+   *
+   * See https://docs.aws.amazon.com/iot-wireless/2020-11-22/apireference/API_GetMetricConfiguration.html
+   */
+  GetMetricConfiguration = 'iotwireless:GetMetricConfiguration',
+  /**
+   * Grants permission to get metrics
+   *
+   * See https://docs.aws.amazon.com/iot-wireless/2020-11-22/apireference/API_GetMetrics.html
+   */
+  GetMetrics = 'iotwireless:GetMetrics',
   /**
    * Grants permission to get the MulticastGroup
    *
@@ -639,6 +651,12 @@ export enum AwsIotwirelessActions {
    * See https://docs.aws.amazon.com/iot-wireless/2020-11-22/apireference/API_UpdateLogLevelsByResourceTypes.html
    */
   UpdateLogLevelsByResourceTypes = 'iotwireless:UpdateLogLevelsByResourceTypes',
+  /**
+   * Grants permission to update metric configuration
+   *
+   * See https://docs.aws.amazon.com/iot-wireless/2020-11-22/apireference/API_UpdateMetricConfiguration.html
+   */
+  UpdateMetricConfiguration = 'iotwireless:UpdateMetricConfiguration',
   /**
    * Grants permission to update the MulticastGroup
    *

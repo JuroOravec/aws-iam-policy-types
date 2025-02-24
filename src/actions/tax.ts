@@ -6,15 +6,27 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstaxsettings.html
  *
- * 2024-02-12T09:59:29.025Z
+ * 2025-02-24T21:49:58.397Z
  */
 export enum AwsTaxActions {
+  /**
+   * Grants permission to batch delete tax registration data
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+   */
+  BatchDeleteTaxRegistration = 'tax:BatchDeleteTaxRegistration',
   /**
    * Grants permission to batch update tax registrations
    *
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
    */
   BatchPutTaxRegistration = 'tax:BatchPutTaxRegistration',
+  /**
+   * Grants permission to delete supplemental tax registration data
+   *
+   * See https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html
+   */
+  DeleteSupplementalTaxRegistration = 'tax:DeleteSupplementalTaxRegistration',
   /**
    * Grants permission to delete tax registration data
    *
@@ -58,11 +70,23 @@ export enum AwsTaxActions {
    */
   GetTaxRegistrationDocument = 'tax:GetTaxRegistrationDocument',
   /**
+   * Grants permission to view supplemental tax registrations
+   *
+   * See https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html
+   */
+  ListSupplementalTaxRegistrations = 'tax:ListSupplementalTaxRegistrations',
+  /**
    * Grants permission to view tax registrations
    *
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
    */
   ListTaxRegistrations = 'tax:ListTaxRegistrations',
+  /**
+   * Grants permission to update supplemental tax registrations data
+   *
+   * See https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html
+   */
+  PutSupplementalTaxRegistration = 'tax:PutSupplementalTaxRegistration',
   /**
    * Grants permission to set tax inheritance
    *

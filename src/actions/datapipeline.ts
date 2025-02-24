@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdatapipeline.html
  *
- * 2024-02-12T09:56:52.291Z
+ * 2025-02-24T21:47:31.226Z
  */
 export enum AwsDatapipelineActions {
   /**

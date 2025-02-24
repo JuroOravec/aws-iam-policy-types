@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotgreengrassv2.html
  *
- * 2024-02-12T09:57:51.470Z
+ * 2025-02-24T21:48:26.008Z
  */
 export enum AwsGreengrassActions {
   /**

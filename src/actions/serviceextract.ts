@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmicroserviceextractorfor.net.html
  *
- * 2024-02-12T09:58:23.026Z
+ * 2025-02-24T21:48:55.857Z
  */
 export enum AwsServiceextractActions {
   /**

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappsync.html
  *
- * 2024-02-12T09:56:05.951Z
+ * 2025-02-24T21:46:47.256Z
  */
 export enum AwsAppsyncActions {
   /**
@@ -28,6 +28,12 @@ export enum AwsAppsyncActions {
    */
   AssociateSourceGraphqlApi = 'appsync:AssociateSourceGraphqlApi',
   /**
+   * Grants permission to create an API
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateApi.html
+   */
+  CreateApi = 'appsync:CreateApi',
+  /**
    * Grants permission to create an API cache in AppSync
    *
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateApiCache.html
@@ -40,6 +46,12 @@ export enum AwsAppsyncActions {
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateApiKey.html
    */
   CreateApiKey = 'appsync:CreateApiKey',
+  /**
+   * Grants permission to create a channel namespace
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateChannelNamespace.html
+   */
+  CreateChannelNamespace = 'appsync:CreateChannelNamespace',
   /**
    * Grants permission to create a data source
    *
@@ -80,6 +92,13 @@ export enum AwsAppsyncActions {
    */
   CreateType = 'appsync:CreateType',
   /**
+   * Grants permission to delete a API. This will also clean up every AppSync resour
+   * ce below that API
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteApi.html
+   */
+  DeleteApi = 'appsync:DeleteApi',
+  /**
    * Grants permission to delete an API cache in AppSync
    *
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteApiCache.html
@@ -91,6 +110,12 @@ export enum AwsAppsyncActions {
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteApiKey.html
    */
   DeleteApiKey = 'appsync:DeleteApiKey',
+  /**
+   * Grants permission to delete a channel namespace
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteChannelNamespace.html
+   */
+  DeleteChannelNamespace = 'appsync:DeleteChannelNamespace',
   /**
    * Grants permission to delete a data source
    *
@@ -167,11 +192,35 @@ export enum AwsAppsyncActions {
    */
   EvaluateMappingTemplate = 'appsync:EvaluateMappingTemplate',
   /**
+   * Grants permission to connect to an Event API
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/devguide/using-your-event-api.html
+   */
+  EventConnect = 'appsync:EventConnect',
+  /**
+   * Grants permission to publish events to a channel namespace
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/devguide/using-your-event-api.html
+   */
+  EventPublish = 'appsync:EventPublish',
+  /**
+   * Grants permission to subscribe to a channel namespace
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/devguide/using-your-event-api.html
+   */
+  EventSubscribe = 'appsync:EventSubscribe',
+  /**
    * Grants permission to flush an API cache in AppSync
    *
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_FlushApiCache.html
    */
   FlushApiCache = 'appsync:FlushApiCache',
+  /**
+   * Grants permission to retrieve an API
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetApi.html
+   */
+  GetApi = 'appsync:GetApi',
   /**
    * Grants permission to read custom domain name - GraphQL API association details
    * in AppSync
@@ -185,6 +234,12 @@ export enum AwsAppsyncActions {
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetApiCache.html
    */
   GetApiCache = 'appsync:GetApiCache',
+  /**
+   * Grants permission to retrieve a channel namespace
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetChannelNamespace.html
+   */
+  GetChannelNamespace = 'appsync:GetChannelNamespace',
   /**
    * Grants permission to retrieve a data source
    *
@@ -260,7 +315,7 @@ export enum AwsAppsyncActions {
   /**
    * Grants permission to send a GraphQL query to a GraphQL API
    *
-   * See https://docs.aws.amazon.com/appsync/latest/devguide/using-your-api.html
+   * See https://docs.aws.amazon.com/appsync/latest/devguide/security-authz.html#aws-iam-authorization
    */
   GraphQL = 'appsync:GraphQL',
   /**
@@ -269,6 +324,18 @@ export enum AwsAppsyncActions {
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListApiKeys.html
    */
   ListApiKeys = 'appsync:ListApiKeys',
+  /**
+   * Grants permission to list APIs
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListApis.html
+   */
+  ListApis = 'appsync:ListApis',
+  /**
+   * Grants permission to list channel namespace
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListChannelNamespaces.html
+   */
+  ListChannelNamespaces = 'appsync:ListChannelNamespaces',
   /**
    * Grants permission to list the data sources for a given API
    *
@@ -346,7 +413,7 @@ export enum AwsAppsyncActions {
   /**
    * Grants permission to set a web ACL
    *
-   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_SetWebACL.html
+   * See https://docs.aws.amazon.com/appsync/latest/devguide/WAF-Integration.html
    */
   SetWebACL = 'appsync:SetWebACL',
   /**
@@ -388,6 +455,12 @@ export enum AwsAppsyncActions {
    */
   UntagResource = 'appsync:UntagResource',
   /**
+   * Grants permission to update an API
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateApi.html
+   */
+  UpdateApi = 'appsync:UpdateApi',
+  /**
    * Grants permission to update an API cache in AppSync
    *
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateApiCache.html
@@ -399,6 +472,12 @@ export enum AwsAppsyncActions {
    * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateApiKey.html
    */
   UpdateApiKey = 'appsync:UpdateApiKey',
+  /**
+   * Grants permission to update a channel namespace
+   *
+   * See https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateChannelNamespace.html
+   */
+  UpdateChannelNamespace = 'appsync:UpdateChannelNamespace',
   /**
    * Grants permission to update a data source
    *

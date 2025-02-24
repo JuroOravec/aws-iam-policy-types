@@ -6,32 +6,87 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsinvoicingservice.html
  *
- * 2024-02-12T09:57:45.571Z
+ * 2025-02-24T21:48:20.799Z
  */
 export enum AwsInvoicingActions {
   /**
+   * Grants permission to get invoice profile details for an account in your organiz
+   * ation
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_BatchGetInvoiceProfile.html
+   */
+  BatchGetInvoiceProfile = 'invoicing:BatchGetInvoiceProfile',
+  /**
+   * Grants permission to create an invoice unit for your organization
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_CreateInvoiceUnit.html
+   */
+  CreateInvoiceUnit = 'invoicing:CreateInvoiceUnit',
+  /**
+   * Grants permission to update an invoice unit for your organization
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_DeleteInvoiceUnit.html
+   */
+  DeleteInvoiceUnit = 'invoicing:DeleteInvoiceUnit',
+  /**
    * Grants permission to get Invoice Email Delivery Preferences
    *
-   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
    */
   GetInvoiceEmailDeliveryPreferences = 'invoicing:GetInvoiceEmailDeliveryPreferences',
   /**
    * Grants permission to get Invoice PDF
    *
-   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
    */
   GetInvoicePDF = 'invoicing:GetInvoicePDF',
+  /**
+   * Grants permission to get invoice units for your organization
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_GetInvoiceUnit.html
+   */
+  GetInvoiceUnit = 'invoicing:GetInvoiceUnit',
   /**
    * Grants permission to get Invoice summary information for your account or linked
    * account
    *
-   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
    */
   ListInvoiceSummaries = 'invoicing:ListInvoiceSummaries',
   /**
+   * Grants permission to list invoice units for your organization
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_ListInvoiceUnits.html
+   */
+  ListInvoiceUnits = 'invoicing:ListInvoiceUnits',
+  /**
+   * Grants permission to list tags for a resource
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_ListTagsForResource.html
+   */
+  ListTagsForResource = 'invoicing:ListTagsForResource',
+  /**
    * Grants permission to put Invoice Email Delivery Preferences
    *
-   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref
    */
   PutInvoiceEmailDeliveryPreferences = 'invoicing:PutInvoiceEmailDeliveryPreferences',
+  /**
+   * Grants permission to tag a resource
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_TagResource.html
+   */
+  TagResource = 'invoicing:TagResource',
+  /**
+   * Grants permission to untag a resource
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_UntagResource.html
+   */
+  UntagResource = 'invoicing:UntagResource',
+  /**
+   * Grants permission to update an invoice unit for your organization
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_UpdateInvoiceUnit.html
+   */
+  UpdateInvoiceUnit = 'invoicing:UpdateInvoiceUnit',
 }

@@ -6,9 +6,57 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqinconnect.html
  *
- * 2024-02-12T09:58:46.768Z
+ * 2025-02-24T21:49:19.288Z
  */
 export enum AwsWisdomActions {
+  /**
+   * Grants permission to activate a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ActivateMessageTemplate.html
+   */
+  ActivateMessageTemplate = 'wisdom:ActivateMessageTemplate',
+  /**
+   * Grants permission to configure vended log delivery for an assistant
+   *
+   * See ${UserGuideDocPage}
+   */
+  AllowVendedLogDeliveryForResource = 'wisdom:AllowVendedLogDeliveryForResource',
+  /**
+   * Grants permission to create an ai agent
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateAIAgent.html
+   */
+  CreateAIAgent = 'wisdom:CreateAIAgent',
+  /**
+   * Grants permission to create an ai agent version
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateAIAgentVersion.html
+   */
+  CreateAIAgentVersion = 'wisdom:CreateAIAgentVersion',
+  /**
+   * Grants permission to create an ai guardrail
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateAIGuardrail.html
+   */
+  CreateAIGuardrail = 'wisdom:CreateAIGuardrail',
+  /**
+   * Grants permission to create an ai guardrail version
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateAIGuardrailVersion.html
+   */
+  CreateAIGuardrailVersion = 'wisdom:CreateAIGuardrailVersion',
+  /**
+   * Grants permission to create an ai prompt
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateAIPrompt.html
+   */
+  CreateAIPrompt = 'wisdom:CreateAIPrompt',
+  /**
+   * Grants permission to create an ai prompt version
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateAIPromptVersion.html
+   */
+  CreateAIPromptVersion = 'wisdom:CreateAIPromptVersion',
   /**
    * Grants permission to create an assistant
    *
@@ -29,11 +77,35 @@ export enum AwsWisdomActions {
    */
   CreateContent = 'wisdom:CreateContent',
   /**
+   * Grants permission to create a content association
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateContentAssociation.html
+   */
+  CreateContentAssociation = 'wisdom:CreateContentAssociation',
+  /**
    * Grants permission to create a knowledge base
    *
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateKnowledgeBase.html
    */
   CreateKnowledgeBase = 'wisdom:CreateKnowledgeBase',
+  /**
+   * Grants permission to create a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateMessageTemplate.html
+   */
+  CreateMessageTemplate = 'wisdom:CreateMessageTemplate',
+  /**
+   * Grants permission to create an attachment to a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateMessageTemplateAttachment.html
+   */
+  CreateMessageTemplateAttachment = 'wisdom:CreateMessageTemplateAttachment',
+  /**
+   * Grants permission to create a version of a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateMessageTemplateVersion.html
+   */
+  CreateMessageTemplateVersion = 'wisdom:CreateMessageTemplateVersion',
   /**
    * Grants permission to create quick response
    *
@@ -46,6 +118,48 @@ export enum AwsWisdomActions {
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateSession.html
    */
   CreateSession = 'wisdom:CreateSession',
+  /**
+   * Grants permission to deactivate a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeactivateMessageTemplate.html
+   */
+  DeactivateMessageTemplate = 'wisdom:DeactivateMessageTemplate',
+  /**
+   * Grants permission to delete an ai agent
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteAIAgent.html
+   */
+  DeleteAIAgent = 'wisdom:DeleteAIAgent',
+  /**
+   * Grants permission to delete an ai agent version
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteAIAgentVersion.html
+   */
+  DeleteAIAgentVersion = 'wisdom:DeleteAIAgentVersion',
+  /**
+   * Grants permission to delete an ai guardrail
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteAIGuardrail.html
+   */
+  DeleteAIGuardrail = 'wisdom:DeleteAIGuardrail',
+  /**
+   * Grants permission to delete an ai guardrail version
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteAIGuardrailVersion.html
+   */
+  DeleteAIGuardrailVersion = 'wisdom:DeleteAIGuardrailVersion',
+  /**
+   * Grants permission to delete an ai prompt
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteAIPrompt.html
+   */
+  DeleteAIPrompt = 'wisdom:DeleteAIPrompt',
+  /**
+   * Grants permission to delete an ai prompt version
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteAIPromptVersion.html
+   */
+  DeleteAIPromptVersion = 'wisdom:DeleteAIPromptVersion',
   /**
    * Grants permission to delete an assistant
    *
@@ -65,6 +179,12 @@ export enum AwsWisdomActions {
    */
   DeleteContent = 'wisdom:DeleteContent',
   /**
+   * Grants permission to delete a content association
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteContentAssociation.html
+   */
+  DeleteContentAssociation = 'wisdom:DeleteContentAssociation',
+  /**
    * Grants permission to delete a import job of a knowledge base
    *
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteImportJob.html
@@ -77,11 +197,41 @@ export enum AwsWisdomActions {
    */
   DeleteKnowledgeBase = 'wisdom:DeleteKnowledgeBase',
   /**
+   * Grants permission to delete a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteMessageTemplate.html
+   */
+  DeleteMessageTemplate = 'wisdom:DeleteMessageTemplate',
+  /**
+   * Grants permission to delete an attachment from a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteMessageTemplateAttachment.html
+   */
+  DeleteMessageTemplateAttachment = 'wisdom:DeleteMessageTemplateAttachment',
+  /**
    * Grants permission to delete quick response
    *
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteQuickResponse.html
    */
   DeleteQuickResponse = 'wisdom:DeleteQuickResponse',
+  /**
+   * Grants permission to retrieve information about an ai agent
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetAIAgent.html
+   */
+  GetAIAgent = 'wisdom:GetAIAgent',
+  /**
+   * Grants permission to retrieve information about an ai guardrail
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetAIGuardrail.html
+   */
+  GetAIGuardrail = 'wisdom:GetAIGuardrail',
+  /**
+   * Grants permission to retrieve information about an ai prompt
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetAIPrompt.html
+   */
+  GetAIPrompt = 'wisdom:GetAIPrompt',
   /**
    * Grants permission to retrieve information about an assistant
    *
@@ -102,6 +252,12 @@ export enum AwsWisdomActions {
    */
   GetContent = 'wisdom:GetContent',
   /**
+   * Grants permission to retrieve information about a content association
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetContentAssociation.html
+   */
+  GetContentAssociation = 'wisdom:GetContentAssociation',
+  /**
    * Grants permission to retrieve summary information about the content
    *
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetContentSummary.html
@@ -119,6 +275,18 @@ export enum AwsWisdomActions {
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetKnowledgeBase.html
    */
   GetKnowledgeBase = 'wisdom:GetKnowledgeBase',
+  /**
+   * Grants permission to retrieve a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetMessageTemplate.html
+   */
+  GetMessageTemplate = 'wisdom:GetMessageTemplate',
+  /**
+   * Grants permission to retrieve for next message in a session
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetNextMessage.html
+   */
+  GetNextMessage = 'wisdom:GetNextMessage',
   /**
    * Grants permission to retrieve content
    *
@@ -138,6 +306,42 @@ export enum AwsWisdomActions {
    */
   GetSession = 'wisdom:GetSession',
   /**
+   * Grants permission to list information about ai agent versions
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAIAgentVersions.html
+   */
+  ListAIAgentVersions = 'wisdom:ListAIAgentVersions',
+  /**
+   * Grants permission to list information about ai agents
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAIAgents.html
+   */
+  ListAIAgents = 'wisdom:ListAIAgents',
+  /**
+   * Grants permission to list information about ai guardrail versions
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAIGuardrailVersions.html
+   */
+  ListAIGuardrailVersions = 'wisdom:ListAIGuardrailVersions',
+  /**
+   * Grants permission to list information about ai guardrails
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAIGuardrails.html
+   */
+  ListAIGuardrails = 'wisdom:ListAIGuardrails',
+  /**
+   * Grants permission to list information about ai prompt versions
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAIPromptVersions.html
+   */
+  ListAIPromptVersions = 'wisdom:ListAIPromptVersions',
+  /**
+   * Grants permission to list information about ai prompts
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAIPrompts.html
+   */
+  ListAIPrompts = 'wisdom:ListAIPrompts',
+  /**
    * Grants permission to list information about assistant associations
    *
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAssistantAssociations.html
@@ -149,6 +353,12 @@ export enum AwsWisdomActions {
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAssistants.html
    */
   ListAssistants = 'wisdom:ListAssistants',
+  /**
+   * Grants permission to list information about content associations
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListContentAssociations.html
+   */
+  ListContentAssociations = 'wisdom:ListContentAssociations',
   /**
    * Grants permission to list the content with a knowledge base
    *
@@ -167,6 +377,25 @@ export enum AwsWisdomActions {
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListKnowledgeBases.html
    */
   ListKnowledgeBases = 'wisdom:ListKnowledgeBases',
+  /**
+   * Grants permission to list message template versions for the specified message t
+   * emplate
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListMessageTemplateVersions.html
+   */
+  ListMessageTemplateVersions = 'wisdom:ListMessageTemplateVersions',
+  /**
+   * Grants permission to list the message templates for a knowledge base
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListMessageTemplates.html
+   */
+  ListMessageTemplates = 'wisdom:ListMessageTemplates',
+  /**
+   * Grants permission to list messages in a session
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListMessages.html
+   */
+  ListMessages = 'wisdom:ListMessages',
   /**
    * Grants permission to list the quick response with a knowledge base
    *
@@ -199,11 +428,23 @@ export enum AwsWisdomActions {
    */
   QueryAssistant = 'wisdom:QueryAssistant',
   /**
+   * Grants permission to remove an ai agent from an assistant
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_RemoveAssistantAIAgent.html
+   */
+  RemoveAssistantAIAgent = 'wisdom:RemoveAssistantAIAgent',
+  /**
    * Grants permission to remove a URI template from a knowledge base
    *
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_RemoveKnowledgeBaseTemplateUri.html
    */
   RemoveKnowledgeBaseTemplateUri = 'wisdom:RemoveKnowledgeBaseTemplateUri',
+  /**
+   * Grants permission to render a message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_RenderMessageTemplate.html
+   */
+  RenderMessageTemplate = 'wisdom:RenderMessageTemplate',
   /**
    * Grants permission to search for content referencing a specified knowledge base.
    * Can be used to get a specific content resource by its name
@@ -211,6 +452,13 @@ export enum AwsWisdomActions {
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_SearchContent.html
    */
   SearchContent = 'wisdom:SearchContent',
+  /**
+   * Grants permission to search for message templates referencing a specified knowl
+   * edge base
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_SearchMessageTemplates.html
+   */
+  SearchMessageTemplates = 'wisdom:SearchMessageTemplates',
   /**
    * Grants permission to search for quick response referencing a specified knowledg
    * e base
@@ -225,6 +473,12 @@ export enum AwsWisdomActions {
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_SearchSessions.html
    */
   SearchSessions = 'wisdom:SearchSessions',
+  /**
+   * Grants permission to send a message
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_SendMessage.html
+   */
+  SendMessage = 'wisdom:SendMessage',
   /**
    * Grants permission to get a URL to upload content to a knowledge base
    *
@@ -250,6 +504,30 @@ export enum AwsWisdomActions {
    */
   UntagResource = 'wisdom:UntagResource',
   /**
+   * Grants permission to update information about an ai agent
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateAIAgent.html
+   */
+  UpdateAIAgent = 'wisdom:UpdateAIAgent',
+  /**
+   * Grants permission to update information about an ai guardrail
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateAIGuardrail.html
+   */
+  UpdateAIGuardrail = 'wisdom:UpdateAIGuardrail',
+  /**
+   * Grants permission to update information about an ai prompt
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateAIPrompt.html
+   */
+  UpdateAIPrompt = 'wisdom:UpdateAIPrompt',
+  /**
+   * Grants permission to update assistant information about an ai agent
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateAssistantAIAgent.html
+   */
+  UpdateAssistantAIAgent = 'wisdom:UpdateAssistantAIAgent',
+  /**
    * Grants permission to update information about the content
    *
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateContent.html
@@ -262,9 +540,33 @@ export enum AwsWisdomActions {
    */
   UpdateKnowledgeBaseTemplateUri = 'wisdom:UpdateKnowledgeBaseTemplateUri',
   /**
+   * Grants permission to update content of the message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateMessageTemplate.html
+   */
+  UpdateMessageTemplate = 'wisdom:UpdateMessageTemplate',
+  /**
+   * Grants permission to update metadata of the message template
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateMessageTemplateMetadata.html
+   */
+  UpdateMessageTemplateMetadata = 'wisdom:UpdateMessageTemplateMetadata',
+  /**
    * Grants permission to update information or content of the quick response
    *
    * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateQuickResponse.html
    */
   UpdateQuickResponse = 'wisdom:UpdateQuickResponse',
+  /**
+   * Grants permission to update a session
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateSession.html
+   */
+  UpdateSession = 'wisdom:UpdateSession',
+  /**
+   * Grants permission to update data stored in a session
+   *
+   * See https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateSessionData.html
+   */
+  UpdateSessionData = 'wisdom:UpdateSessionData',
 }

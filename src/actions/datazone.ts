@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondatazone.html
  *
- * 2024-02-12T09:56:54.736Z
+ * 2025-02-24T21:47:33.368Z
  */
 export enum AwsDatazoneActions {
   /**
@@ -22,6 +22,43 @@ export enum AwsDatazoneActions {
    */
   AcceptSubscriptionRequest = 'datazone:AcceptSubscriptionRequest',
   /**
+   * Grants permission to add an owner to an entity like domain unit
+   *
+   * See ${APIReferenceDocPage}API_AddEntityOwner.html
+   */
+  AddEntityOwner = 'datazone:AddEntityOwner',
+  /**
+   * Grants permission to add a policy grant
+   *
+   * See ${APIReferenceDocPage}API_AddPolicyGrant.html
+   */
+  AddPolicyGrant = 'datazone:AddPolicyGrant',
+  /**
+   * Grants permission to associate a role in a default service blueprint environmen
+   * t
+   *
+   * See ${APIReferenceDocPage}API_AssociateEnvironmentRole.html
+   */
+  AssociateEnvironmentRole = 'datazone:AssociateEnvironmentRole',
+  /**
+   * Grants permission to remove linked type items from an Amazon DataZone Domain
+   *
+   * See ${APIReferenceDocPage}API_BatchDeleteLinkedTypes.html
+   */
+  BatchDeleteLinkedTypes = 'datazone:BatchDeleteLinkedTypes',
+  /**
+   * Grants permission to put linked type items to an Amazon DataZone Domain
+   *
+   * See ${APIReferenceDocPage}API_BatchPutLinkedTypes.html
+   */
+  BatchPutLinkedTypes = 'datazone:BatchPutLinkedTypes',
+  /**
+   * Grants permission to cancel metadata generation run
+   *
+   * See ${APIReferenceDocPage}API_CancelMetadataGenerationRun.html
+   */
+  CancelMetadataGenerationRun = 'datazone:CancelMetadataGenerationRun',
+  /**
    * Grants permission to revoke or unsubscribe an approved subscription to Data Ass
    * et
    *
@@ -35,6 +72,12 @@ export enum AwsDatazoneActions {
    */
   CreateAsset = 'datazone:CreateAsset',
   /**
+   * Grants permission to create asset filter
+   *
+   * See ${APIReferenceDocPage}API_CreateAssetFilter.html
+   */
+  CreateAssetFilter = 'datazone:CreateAssetFilter',
+  /**
    * Grants permission to create new revision of an asset
    *
    * See ${APIReferenceDocPage}API_CreateAssetRevision.html
@@ -46,6 +89,24 @@ export enum AwsDatazoneActions {
    * See ${APIReferenceDocPage}API_CreateAssetType.html
    */
   CreateAssetType = 'datazone:CreateAssetType',
+  /**
+   * Grants permission to create connections
+   *
+   * See ${APIReferenceDocPage}API_CreateConnection.html
+   */
+  CreateConnection = 'datazone:CreateConnection',
+  /**
+   * Grants permission to create data product
+   *
+   * See ${APIReferenceDocPage}API_CreateDataProduct.html
+   */
+  CreateDataProduct = 'datazone:CreateDataProduct',
+  /**
+   * Grants permission to create data product revision
+   *
+   * See ${APIReferenceDocPage}API_CreateDataProductRevision.html
+   */
+  CreateDataProductRevision = 'datazone:CreateDataProductRevision',
   /**
    * Grants permission to create a new DataSource
    *
@@ -60,12 +121,25 @@ export enum AwsDatazoneActions {
    */
   CreateDomain = 'datazone:CreateDomain',
   /**
+   * Grants permission to create a domain unit
+   *
+   * See ${APIReferenceDocPage}API_CreateDomainUnit.html
+   */
+  CreateDomainUnit = 'datazone:CreateDomainUnit',
+  /**
    * Grants permission to create a collection of configurated resources used to publ
    * ish and subscribe to data
    *
    * See ${APIReferenceDocPage}API_CreateEnvironment.html
    */
   CreateEnvironment = 'datazone:CreateEnvironment',
+  /**
+   * Grants permission to create an environment action in a default service blueprin
+   * t environment
+   *
+   * See ${APIReferenceDocPage}API_CreateEnvironmentAction.html
+   */
+  CreateEnvironmentAction = 'datazone:CreateEnvironmentAction',
   /**
    * Grants permission to create a custom Environment Blueprint that allow user to a
    * dd Environments to their Project
@@ -125,6 +199,18 @@ export enum AwsDatazoneActions {
    */
   CreateProjectMembership = 'datazone:CreateProjectMembership',
   /**
+   * Grants permission to create a project profile
+   *
+   * See ${APIReferenceDocPage}API_CreateProjectProfile.html
+   */
+  CreateProjectProfile = 'datazone:CreateProjectProfile',
+  /**
+   * Grants permission to create rule
+   *
+   * See ${APIReferenceDocPage}API_CreateRule.html
+   */
+  CreateRule = 'datazone:CreateRule',
+  /**
    * Grants permission to create a grant for an approved subscription on a subscript
    * ion target
    *
@@ -158,11 +244,29 @@ export enum AwsDatazoneActions {
    */
   DeleteAsset = 'datazone:DeleteAsset',
   /**
+   * Grants permission to delete asset filter
+   *
+   * See ${APIReferenceDocPage}API_DeleteAssetFilter.html
+   */
+  DeleteAssetFilter = 'datazone:DeleteAssetFilter',
+  /**
    * Grants permission to delete an asset type
    *
    * See ${APIReferenceDocPage}API_DeleteAssetType.html
    */
   DeleteAssetType = 'datazone:DeleteAssetType',
+  /**
+   * Grants permission to delete connections
+   *
+   * See ${APIReferenceDocPage}API_DeleteConnection.html
+   */
+  DeleteConnection = 'datazone:DeleteConnection',
+  /**
+   * Grants permission to delete data product
+   *
+   * See ${APIReferenceDocPage}API_DeleteDataProduct.html
+   */
+  DeleteDataProduct = 'datazone:DeleteDataProduct',
   /**
    * Grants permission to update existing DataSource
    *
@@ -182,11 +286,24 @@ export enum AwsDatazoneActions {
    */
   DeleteDomainSharingPolicy = 'datazone:DeleteDomainSharingPolicy',
   /**
+   * Grants permission to delete an existing domain unit
+   *
+   * See ${APIReferenceDocPage}API_DeleteDomainUnit.html
+   */
+  DeleteDomainUnit = 'datazone:DeleteDomainUnit',
+  /**
    * Grants permission to Delete Environment
    *
    * See ${APIReferenceDocPage}API_DeleteEnvironment.html
    */
   DeleteEnvironment = 'datazone:DeleteEnvironment',
+  /**
+   * Grants permission to delete an environment action in a default service blueprin
+   * t environment
+   *
+   * See ${APIReferenceDocPage}API_DeleteEnvironmentAction.html
+   */
+  DeleteEnvironmentAction = 'datazone:DeleteEnvironmentAction',
   /**
    * Grants permission to delete Environment Blueprint
    *
@@ -243,6 +360,18 @@ export enum AwsDatazoneActions {
    */
   DeleteProjectMembership = 'datazone:DeleteProjectMembership',
   /**
+   * Grants permission to delete a project profile
+   *
+   * See ${APIReferenceDocPage}API_DeleteProjectProfile.html
+   */
+  DeleteProjectProfile = 'datazone:DeleteProjectProfile',
+  /**
+   * Grants permission to delete rule
+   *
+   * See ${APIReferenceDocPage}API_DeleteRule.html
+   */
+  DeleteRule = 'datazone:DeleteRule',
+  /**
    * Grants permission to delete a subscription grant from a subscription target
    *
    * See ${APIReferenceDocPage}API_DeleteSubscriptionGrant.html
@@ -262,17 +391,48 @@ export enum AwsDatazoneActions {
    */
   DeleteSubscriptionTarget = 'datazone:DeleteSubscriptionTarget',
   /**
+   * Grants permission to delete existing TimeSeriesDataPoints
+   *
+   * See ${APIReferenceDocPage}API_DeleteTimeSeriesDataPoints.html
+   */
+  DeleteTimeSeriesDataPoints = 'datazone:DeleteTimeSeriesDataPoints',
+  /**
+   * Grants permission to disassociate a role in a default service blueprint environ
+   * ment
+   *
+   * See ${APIReferenceDocPage}API_AssociateEnvironmentRole.html
+   */
+  DisassociateEnvironmentRole = 'datazone:DisassociateEnvironmentRole',
+  /**
    * Grants permission to retrieve an asset
    *
    * See ${APIReferenceDocPage}API_GetAsset.html
    */
   GetAsset = 'datazone:GetAsset',
   /**
+   * Grants permission to get asset filter
+   *
+   * See ${APIReferenceDocPage}API_GetAssetFilter.html
+   */
+  GetAssetFilter = 'datazone:GetAssetFilter',
+  /**
    * Grants permission to get an asset type
    *
    * See ${APIReferenceDocPage}API_GetAssetType.html
    */
   GetAssetType = 'datazone:GetAssetType',
+  /**
+   * Grants permission to get connections
+   *
+   * See ${APIReferenceDocPage}API_GetConnection.html
+   */
+  GetConnection = 'datazone:GetConnection',
+  /**
+   * Grants permission to get data product
+   *
+   * See ${APIReferenceDocPage}API_GetDataProduct.html
+   */
+  GetDataProduct = 'datazone:GetDataProduct',
   /**
    * Grants permission to Get a existing DataSource in Amazon DataZone using its ide
    * ntifier
@@ -294,17 +454,37 @@ export enum AwsDatazoneActions {
    */
   GetDomain = 'datazone:GetDomain',
   /**
+   * Grants permission to use features that require access to domain execution role
+   * credentials
+   *
+   * See ${APIReferenceDocPage}API_GetDomainExecutionRoleCredentials.html
+   */
+  GetDomainExecutionRoleCredentials = 'datazone:GetDomainExecutionRoleCredentials',
+  /**
    * Grants permission to retrieve a resource policy for a DataZone Domain
    *
    * See ${APIReferenceDocPage}API_GetDomainSharingPolicy.html
    */
   GetDomainSharingPolicy = 'datazone:GetDomainSharingPolicy',
   /**
+   * Grants permission to get an existing domain unit
+   *
+   * See ${APIReferenceDocPage}API_GetDomainUnit.html
+   */
+  GetDomainUnit = 'datazone:GetDomainUnit',
+  /**
    * Grants permission to get Environment details
    *
    * See ${APIReferenceDocPage}API_GetEnvironment.html
    */
   GetEnvironment = 'datazone:GetEnvironment',
+  /**
+   * Grants permission to get an environment action in a default service blueprint e
+   * nvironment
+   *
+   * See ${APIReferenceDocPage}API_GetEnvironmentAction.html
+   */
+  GetEnvironmentAction = 'datazone:GetEnvironmentAction',
   /**
    * Grants permission to get environment action link
    *
@@ -367,6 +547,24 @@ export enum AwsDatazoneActions {
    */
   GetIamPortalLoginUrl = 'datazone:GetIamPortalLoginUrl',
   /**
+   * Grants permission to get job runs
+   *
+   * See ${APIReferenceDocPage}API_GetJobRun.html
+   */
+  GetJobRun = 'datazone:GetJobRun',
+  /**
+   * Grants permission to get lineage events
+   *
+   * See ${APIReferenceDocPage}API_GetLineageEvent.html
+   */
+  GetLineageEvent = 'datazone:GetLineageEvent',
+  /**
+   * Grants permission to get the lineage node
+   *
+   * See ${APIReferenceDocPage}API_GetLineageNode.html
+   */
+  GetLineageNode = 'datazone:GetLineageNode',
+  /**
    * Grants permission to get listing
    *
    * See ${APIReferenceDocPage}API_GetListing.html
@@ -384,6 +582,18 @@ export enum AwsDatazoneActions {
    * See ${APIReferenceDocPage}API_GetProject.html
    */
   GetProject = 'datazone:GetProject',
+  /**
+   * Grants permission to get project profile details
+   *
+   * See ${APIReferenceDocPage}API_GetProjectProfile.html
+   */
+  GetProjectProfile = 'datazone:GetProjectProfile',
+  /**
+   * Grants permission to get rule
+   *
+   * See ${APIReferenceDocPage}API_GetRule.html
+   */
+  GetRule = 'datazone:GetRule',
   /**
    * Grants permission to retrieve a subscription
    *
@@ -415,6 +625,13 @@ export enum AwsDatazoneActions {
    */
   GetSubscriptionTarget = 'datazone:GetSubscriptionTarget',
   /**
+   * Grants permission to get an existing TimeSeriesDataPoints in Amazon DataZone us
+   * ing its identifier
+   *
+   * See ${APIReferenceDocPage}API_GetTimeSeriesDataPoint.html
+   */
+  GetTimeSeriesDataPoint = 'datazone:GetTimeSeriesDataPoint',
+  /**
    * Grants permission to retrieve a user profile for an existing user in the DataZo
    * ne Domain
    *
@@ -428,11 +645,29 @@ export enum AwsDatazoneActions {
    */
   ListAccountEnvironments = 'datazone:ListAccountEnvironments',
   /**
+   * Grants permission to list asset filters
+   *
+   * See ${APIReferenceDocPage}API_ListAssetFilters.html
+   */
+  ListAssetFilters = 'datazone:ListAssetFilters',
+  /**
    * Grants permission to list revisions of an asset
    *
    * See ${APIReferenceDocPage}API_ListAssetRevisions.html
    */
   ListAssetRevisions = 'datazone:ListAssetRevisions',
+  /**
+   * Grants permission to list connections
+   *
+   * See ${APIReferenceDocPage}API_ListConnections.html
+   */
+  ListConnections = 'datazone:ListConnections',
+  /**
+   * Grants permission to list data product revisions
+   *
+   * See ${APIReferenceDocPage}API_ListDataProductRevisions.html
+   */
+  ListDataProductRevisions = 'datazone:ListDataProductRevisions',
   /**
    * Grants permission to list DataSource runs job's activities on Asset
    *
@@ -452,11 +687,30 @@ export enum AwsDatazoneActions {
    */
   ListDataSources = 'datazone:ListDataSources',
   /**
+   * Grants permission to list child domain units for a given parent domain unit
+   *
+   * See ${APIReferenceDocPage}API_ListDomainUnitsForParent.html
+   */
+  ListDomainUnitsForParent = 'datazone:ListDomainUnitsForParent',
+  /**
    * Grants permission to retrieve all domains
    *
    * See ${APIReferenceDocPage}API_ListDomains.html
    */
   ListDomains = 'datazone:ListDomains',
+  /**
+   * Grants permission to list owners of an entity like domain unit
+   *
+   * See ${APIReferenceDocPage}API_ListEntityOwners.html
+   */
+  ListEntityOwners = 'datazone:ListEntityOwners',
+  /**
+   * Grants permission to list environment actions in a default service blueprint en
+   * vironment
+   *
+   * See ${APIReferenceDocPage}API_ListEnvironmentActions.html
+   */
+  ListEnvironmentActions = 'datazone:ListEnvironmentActions',
   /**
    * Grants permission to list environment blueprint configuration summaries
    *
@@ -495,6 +749,30 @@ export enum AwsDatazoneActions {
    */
   ListGroupsForUser = 'datazone:ListGroupsForUser',
   /**
+   * Grants permission to list job runs
+   *
+   * See ${APIReferenceDocPage}API_ListJobRuns.html
+   */
+  ListJobRuns = 'datazone:ListJobRuns',
+  /**
+   * Grants permission to list lineage events
+   *
+   * See ${APIReferenceDocPage}API_ListLineageEvents.html
+   */
+  ListLineageEvents = 'datazone:ListLineageEvents',
+  /**
+   * Grants permission to list historical versions of lineage node
+   *
+   * See ${APIReferenceDocPage}API_ListLineageNodeHistory.html
+   */
+  ListLineageNodeHistory = 'datazone:ListLineageNodeHistory',
+  /**
+   * Grants permission to list linked type items linked to an Amazon DataZone Domain
+   *
+   * See ${APIReferenceDocPage}API_ListLinkedTypes.html
+   */
+  ListLinkedTypes = 'datazone:ListLinkedTypes',
+  /**
    * Grants permission to list metadata generation runs
    *
    * See ${APIReferenceDocPage}API_ListMetadataGenerationRuns.html
@@ -507,17 +785,35 @@ export enum AwsDatazoneActions {
    */
   ListNotifications = 'datazone:ListNotifications',
   /**
+   * Grants permission to list policy grants
+   *
+   * See ${APIReferenceDocPage}API_ListPolicyGrants.html
+   */
+  ListPolicyGrants = 'datazone:ListPolicyGrants',
+  /**
    * Grants permission to list Project Members
    *
    * See ${APIReferenceDocPage}API_ListProjectMemberships.html
    */
   ListProjectMemberships = 'datazone:ListProjectMemberships',
   /**
+   * Grants permission to list project profiles
+   *
+   * See ${APIReferenceDocPage}API_ListProjectProfiles.html
+   */
+  ListProjectProfiles = 'datazone:ListProjectProfiles',
+  /**
    * Grants permission to list Projects
    *
    * See ${APIReferenceDocPage}API_ListProjects.html
    */
   ListProjects = 'datazone:ListProjects',
+  /**
+   * Grants permission to list rules
+   *
+   * See ${APIReferenceDocPage}API_ListRules.html
+   */
+  ListRules = 'datazone:ListRules',
   /**
    * Grants permission to List subscription grants for a subscribed principal
    *
@@ -549,11 +845,29 @@ export enum AwsDatazoneActions {
    */
   ListTagsForResource = 'datazone:ListTagsForResource',
   /**
+   * Grants permission to list existing TimeSeriesDataPoints
+   *
+   * See ${APIReferenceDocPage}API_ListTimeSeriesDataPoints.html
+   */
+  ListTimeSeriesDataPoints = 'datazone:ListTimeSeriesDataPoints',
+  /**
    * Grants permission to list available Manager Secrets
    *
    * See ${APIReferenceDocPage}API_ListWarehouseMetadata.html
    */
   ListWarehouseMetadata = 'datazone:ListWarehouseMetadata',
+  /**
+   * Grants permission to post lineage events
+   *
+   * See ${APIReferenceDocPage}API_PostLineageEvent.html
+   */
+  PostLineageEvent = 'datazone:PostLineageEvent',
+  /**
+   * Grants permission to post a new TimeSeriesDataPoints
+   *
+   * See ${APIReferenceDocPage}API_PostTimeSeriesDataPoints.html
+   */
+  PostTimeSeriesDataPoints = 'datazone:PostTimeSeriesDataPoints',
   /**
    * Grants permission to provision domain with default project setup
    *
@@ -591,6 +905,18 @@ export enum AwsDatazoneActions {
    */
   RejectSubscriptionRequest = 'datazone:RejectSubscriptionRequest',
   /**
+   * Grants permission to remove an existing owner of an entity like domain unit
+   *
+   * See ${APIReferenceDocPage}API_RemoveEntityOwner.html
+   */
+  RemoveEntityOwner = 'datazone:RemoveEntityOwner',
+  /**
+   * Grants permission to remove a policy grant
+   *
+   * See ${APIReferenceDocPage}API_RemovePolicyGrant.html
+   */
+  RemovePolicyGrant = 'datazone:RemovePolicyGrant',
+  /**
    * Grants permission to revoke a subscription
    *
    * See ${APIReferenceDocPage}API_RevokeSubscription.html
@@ -615,6 +941,12 @@ export enum AwsDatazoneActions {
    * See ${APIReferenceDocPage}API_SearchListings.html
    */
   SearchListings = 'datazone:SearchListings',
+  /**
+   * Grants permission to search rules
+   *
+   * See ${APIReferenceDocPage}API_SearchRules.html
+   */
+  SearchRules = 'datazone:SearchRules',
   /**
    * Grants permission to search types such asset types and form types in a domain
    *
@@ -671,11 +1003,29 @@ export enum AwsDatazoneActions {
    */
   UntagResource = 'datazone:UntagResource',
   /**
+   * Grants permission to update asset filter
+   *
+   * See ${APIReferenceDocPage}API_UpdateAssetFilter.html
+   */
+  UpdateAssetFilter = 'datazone:UpdateAssetFilter',
+  /**
+   * Grants permission to update connections
+   *
+   * See ${APIReferenceDocPage}API_UpdateConnection.html
+   */
+  UpdateConnection = 'datazone:UpdateConnection',
+  /**
    * Grants permission to update existing DataSource
    *
    * See ${APIReferenceDocPage}API_UpdateDataSource.html
    */
   UpdateDataSource = 'datazone:UpdateDataSource',
+  /**
+   * Grants permission to update data source run activities
+   *
+   * See ${APIReferenceDocPage}API_UpdateDataSourceRunActivities.html
+   */
+  UpdateDataSourceRunActivities = 'datazone:UpdateDataSourceRunActivities',
   /**
    * Grants permission to update information for a domain
    *
@@ -683,11 +1033,24 @@ export enum AwsDatazoneActions {
    */
   UpdateDomain = 'datazone:UpdateDomain',
   /**
+   * Grants permission to update an existing domain unit
+   *
+   * See ${APIReferenceDocPage}API_UpdateDomainUnit.html
+   */
+  UpdateDomainUnit = 'datazone:UpdateDomainUnit',
+  /**
    * Grants permission to update Environment settings
    *
    * See ${APIReferenceDocPage}API_UpdateEnvironment.html
    */
   UpdateEnvironment = 'datazone:UpdateEnvironment',
+  /**
+   * Grants permission to update an environment action in a default service blueprin
+   * t environment
+   *
+   * See ${APIReferenceDocPage}API_UpdateEnvironmentAction.html
+   */
+  UpdateEnvironmentAction = 'datazone:UpdateEnvironmentAction',
   /**
    * Grants permission to update Environment Blueprint settings
    *
@@ -737,6 +1100,18 @@ export enum AwsDatazoneActions {
    * See ${APIReferenceDocPage}API_UpdateProject.html
    */
   UpdateProject = 'datazone:UpdateProject',
+  /**
+   * Grants permission to update a project profile
+   *
+   * See ${APIReferenceDocPage}API_UpdateProjectProfile.html
+   */
+  UpdateProjectProfile = 'datazone:UpdateProjectProfile',
+  /**
+   * Grants permission to update rule
+   *
+   * See ${APIReferenceDocPage}API_UpdateRule.html
+   */
+  UpdateRule = 'datazone:UpdateRule',
   /**
    * Grants permission to update a subscription grant status for custom grants
    *

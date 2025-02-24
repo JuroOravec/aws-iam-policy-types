@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdatabasemigrationservice.html
  *
- * 2024-02-12T09:56:52.945Z
+ * 2025-02-24T21:47:31.832Z
  */
 export enum AwsDmsActions {
   /**
@@ -130,30 +130,6 @@ export enum AwsDmsActions {
    */
   CreateReplicationTask = 'dms:CreateReplicationTask',
   /**
-   * Grants permission to create a test using the provided settings
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateTest.html
-   */
-  CreateTest = 'dms:CreateTest',
-  /**
-   * Grants permission to create a test environment using the provided settings
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateTestEnvironments.html
-   */
-  CreateTestEnvironments = 'dms:CreateTestEnvironments',
-  /**
-   * Grants permission to create a test plan using the provided settings
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateTestPlan.html
-   */
-  CreateTestPlan = 'dms:CreateTestPlan',
-  /**
-   * Grants permission to create a test run using the provided settings
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateTestRun.html
-   */
-  CreateTestRun = 'dms:CreateTestRun',
-  /**
    * Grants permission to delete the specified certificate
    *
    * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteCertificate.html
@@ -244,18 +220,6 @@ export enum AwsDmsActions {
    * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplicationTaskAssessmentRun.html
    */
   DeleteReplicationTaskAssessmentRun = 'dms:DeleteReplicationTaskAssessmentRun',
-  /**
-   * Grants permission to delete the specified test
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteTest.html
-   */
-  DeleteTest = 'dms:DeleteTest',
-  /**
-   * Grants permission to delete the specified test plan
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteTestPlan.html
-   */
-  DeleteTestPlan = 'dms:DeleteTestPlan',
   /**
    * Grants permission to list all of the AWS DMS attributes for a customer account
    *
@@ -561,42 +525,6 @@ export enum AwsDmsActions {
    */
   DescribeTableStatistics = 'dms:DescribeTableStatistics',
   /**
-   * Grants permission to list a test environment for a migration project
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeTestEnvironments.html
-   */
-  DescribeTestEnvironments = 'dms:DescribeTestEnvironments',
-  /**
-   * Grants permission to list statuses of test generations for a migration project
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeTestGenerationStatus.html
-   */
-  DescribeTestGenerationStatus = 'dms:DescribeTestGenerationStatus',
-  /**
-   * Grants permission to list all the test plans for a migration project
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeTestPlans.html
-   */
-  DescribeTestPlans = 'dms:DescribeTestPlans',
-  /**
-   * Grants permission to view the summary of a specific test run
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeTestRunResultsSummaries.html
-   */
-  DescribeTestRunResultsSummaries = 'dms:DescribeTestRunResultsSummaries',
-  /**
-   * Grants permission to list all the test runs for a migration project
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeTestRuns.html
-   */
-  DescribeTestRuns = 'dms:DescribeTestRuns',
-  /**
-   * Grants permission to list all the tests for a test plan
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeTests.html
-   */
-  DescribeTests = 'dms:DescribeTests',
-  /**
    * Grants permission to disassociate a extension pack
    *
    * See https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html
@@ -772,18 +700,6 @@ export enum AwsDmsActions {
    */
   ModifyReplicationTask = 'dms:ModifyReplicationTask',
   /**
-   * Grants permission to modify the specified test
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyTest.html
-   */
-  ModifyTest = 'dms:ModifyTest',
-  /**
-   * Grants permission to modify the specified test plan
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyTestPlan.html
-   */
-  ModifyTestPlan = 'dms:ModifyTestPlan',
-  /**
    * Grants permission to move the specified replication task to a different replica
    * tion instance
    *
@@ -843,12 +759,6 @@ export enum AwsDmsActions {
    * See https://docs.aws.amazon.com/dms/latest/APIReference/API_StartExtensionPackAssociation.html
    */
   StartExtensionPackAssociation = 'dms:StartExtensionPackAssociation',
-  /**
-   * Grants permission to start test generation for the specified test plan
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_StartGenerateTests.html
-   */
-  StartGenerateTests = 'dms:StartGenerateTests',
   /**
    * Grants permission to start a new assessment of metadata model
    *
@@ -927,12 +837,6 @@ export enum AwsDmsActions {
    */
   StopDataMigration = 'dms:StopDataMigration',
   /**
-   * Grants permission to stop test generation for the specified test plan
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_StopGenerateTests.html
-   */
-  StopGenerateTests = 'dms:StopGenerateTests',
-  /**
    * Grants permission to stop a replication
    *
    * See https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html
@@ -944,12 +848,6 @@ export enum AwsDmsActions {
    * See https://docs.aws.amazon.com/dms/latest/APIReference/API_StopReplicationTask.html
    */
   StopReplicationTask = 'dms:StopReplicationTask',
-  /**
-   * Grants permission to stop a test run
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_StopTestRun.html
-   */
-  StopTestRun = 'dms:StopTestRun',
   /**
    * Grants permission to test the connection between the replication instance and t
    * he endpoint
@@ -993,10 +891,4 @@ export enum AwsDmsActions {
    * See https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html
    */
   UploadFileMetadataList = 'dms:UploadFileMetadataList',
-  /**
-   * Grants permission to view the details of a specific test in a test run
-   *
-   * See https://docs.aws.amazon.com/dms/latest/APIReference/API_ViewTestRunResults.html
-   */
-  ViewTestRunResults = 'dms:ViewTestRunResults',
 }

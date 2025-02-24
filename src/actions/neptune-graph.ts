@@ -6,194 +6,224 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptuneanalytics.html
  *
- * 2024-02-12T09:58:28.392Z
+ * 2025-02-24T21:49:01.007Z
  */
 export enum AwsNeptuneGraphActions {
   /**
+   * Grants permission to cancel an ongoing export task
+   *
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CancelExportTask.html
+   */
+  CancelExportTask = 'neptune-graph:CancelExportTask',
+  /**
    * Grants permission to cancel an ongoing import task
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#CancelImportTask
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CancelImportTask.html
    */
   CancelImportTask = 'neptune-graph:CancelImportTask',
   /**
    * Grants permission to cancel a query
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#CancelQuery
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CancelQuery.html
    */
   CancelQuery = 'neptune-graph:CancelQuery',
   /**
    * Grants permission to create a new graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#CreateGraph
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraph.html
    */
   CreateGraph = 'neptune-graph:CreateGraph',
   /**
    * Grants permission to create a new snapshot from an existing graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#CreateGraphSnapshot
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraphSnapshot.html
    */
   CreateGraphSnapshot = 'neptune-graph:CreateGraphSnapshot',
   /**
    * Grants permission to create a new graph while importing data into the new graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#CreateGraphUsingImportTask
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraphUsingImportTask.html
    */
   CreateGraphUsingImportTask = 'neptune-graph:CreateGraphUsingImportTask',
   /**
    * Grants permission to create a new private graph endpoint to access the graph fr
    * om within a vpc
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#CreatePrivateGraphEndpoint
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreatePrivateGraphEndpoint.html
    */
   CreatePrivateGraphEndpoint = 'neptune-graph:CreatePrivateGraphEndpoint',
   /**
    * Grants permission to delete data via query APIs on the graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#DeleteDataViaQuery
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ExecuteQuery.html
    */
   DeleteDataViaQuery = 'neptune-graph:DeleteDataViaQuery',
   /**
    * Grants permission to delete a graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#DeleteGraph
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_DeleteGraph.html
    */
   DeleteGraph = 'neptune-graph:DeleteGraph',
   /**
    * Grants permission to delete a snapshot
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#DeleteGraphSnapshot
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_DeleteGraphSnapshot.html
    */
   DeleteGraphSnapshot = 'neptune-graph:DeleteGraphSnapshot',
   /**
    * Grants permission to delete a private graph endpoint of a graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#DeletePrivateGraphEndpoint
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_DeletePrivateGraphEndpoint.html
    */
   DeletePrivateGraphEndpoint = 'neptune-graph:DeletePrivateGraphEndpoint',
   /**
    * Grants permission to get the engine status of the graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#GetEngineStatus
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/#GetEngineStatus
    */
   GetEngineStatus = 'neptune-graph:GetEngineStatus',
   /**
+   * Grants permission to get details about an export task
+   *
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetExportTask.html
+   */
+  GetExportTask = 'neptune-graph:GetExportTask',
+  /**
    * Grants permission to get details about a graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#GetGraph
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetGraph.html
    */
   GetGraph = 'neptune-graph:GetGraph',
   /**
    * Grants permission to get details about a snapshot
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#GetGraphSnapshot
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetGraphSnapshot.html
    */
   GetGraphSnapshot = 'neptune-graph:GetGraphSnapshot',
   /**
    * Grants permission to get the summary for the data in the graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#GetGraphSummary
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetGraphSummary.html
    */
   GetGraphSummary = 'neptune-graph:GetGraphSummary',
   /**
    * Grants permission to get details about an import task
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#GetImportTask
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetImportTask.html
    */
   GetImportTask = 'neptune-graph:GetImportTask',
   /**
    * Grants permission to get details about a private graph endpoint of a graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#GetPrivateGraphEndpoint
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetPrivateGraphEndpoint.html
    */
   GetPrivateGraphEndpoint = 'neptune-graph:GetPrivateGraphEndpoint',
   /**
    * Grants permission to check the status of a given query
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#GetQueryStatus
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetQuery.html
    */
   GetQueryStatus = 'neptune-graph:GetQueryStatus',
   /**
    * Grants permission to get the statistics for the data in the graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#GetStatisticsStatus
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/#GetStatisticsStatus
    */
   GetStatisticsStatus = 'neptune-graph:GetStatisticsStatus',
   /**
+   * Grants permission to list the export tasks in your account
+   *
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListExportTasks.html
+   */
+  ListExportTasks = 'neptune-graph:ListExportTasks',
+  /**
    * Grants permission to list the snapshots in your account
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#ListGraphSnapshots
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListGraphSnapshots.html
    */
   ListGraphSnapshots = 'neptune-graph:ListGraphSnapshots',
   /**
    * Grants permission to list the graphs in your account
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#ListGraphs
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListGraphs.html
    */
   ListGraphs = 'neptune-graph:ListGraphs',
   /**
    * Grants permission to list the import tasks in your account
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#ListImportTasks
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListImportTasks.html
    */
   ListImportTasks = 'neptune-graph:ListImportTasks',
   /**
    * Grants permission to list the private graph endpoints for a given graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#ListPrivateGraphEndpoints
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListPrivateGraphEndpoints.html
    */
   ListPrivateGraphEndpoints = 'neptune-graph:ListPrivateGraphEndpoints',
   /**
    * Grants permission to check the status of all active queries
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#ListQueries
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListQueries.html
    */
   ListQueries = 'neptune-graph:ListQueries',
   /**
    * Grants permission to lists tag for a Neptune Analytics resource
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#ListTagsForResource
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListTagsForResource.html
    */
   ListTagsForResource = 'neptune-graph:ListTagsForResource',
   /**
    * Grants permission to read data via query APIs on the graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#ReadDataViaQuery
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ExecuteQuery.html
    */
   ReadDataViaQuery = 'neptune-graph:ReadDataViaQuery',
   /**
    * Grants permission to reset a graph which deletes all data within the graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#ResetGraph
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ResetGraph.html
    */
   ResetGraph = 'neptune-graph:ResetGraph',
   /**
    * Grants permission to create a new graph from an existing snapshot
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#RestoreGraphFromSnapshot
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_RestoreGraphFromSnapshot.html
    */
   RestoreGraphFromSnapshot = 'neptune-graph:RestoreGraphFromSnapshot',
   /**
+   * Grants permission to export data from an existing graph
+   *
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_StartExportTask.html
+   */
+  StartExportTask = 'neptune-graph:StartExportTask',
+  /**
+   * Grants permission to import data into an existing graph
+   *
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_StartImportTask.html
+   */
+  StartImportTask = 'neptune-graph:StartImportTask',
+  /**
    * Grants permission to tag a Neptune Analytics resource
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#TagResource
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_TagResource.html
    */
   TagResource = 'neptune-graph:TagResource',
   /**
    * Grants permission to untag a Neptune Analytics resource
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#UntagResource
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_UntagResource.html
    */
   UntagResource = 'neptune-graph:UntagResource',
   /**
    * Grants permission to modify a graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#UpdateGraph
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_UpdateGraph.html
    */
   UpdateGraph = 'neptune-graph:UpdateGraph',
   /**
    * Grants permission to write data via query APIs on the graph
    *
-   * See https://docs.aws.amazon.com/neptune-analytics/latest/userguide/iam-actions.html#WriteDataViaQuery
+   * See https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ExecuteQuery.html
    */
   WriteDataViaQuery = 'neptune-graph:WriteDataViaQuery',
 }

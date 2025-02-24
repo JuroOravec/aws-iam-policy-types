@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlocation.html
  *
- * 2024-02-12T09:58:07.156Z
+ * 2025-02-24T21:48:38.634Z
  */
 export enum AwsGeoActions {
   /**
@@ -184,6 +184,13 @@ export enum AwsGeoActions {
    * See https://docs.aws.amazon.com/location/latest/APIReference/API_DisassociateTrackerConsumer.html
    */
   DisassociateTrackerConsumer = 'geo:DisassociateTrackerConsumer',
+  /**
+   * Grants permission to forecast events for geofences stored in a given geofence c
+   * ollection
+   *
+   * See https://docs.aws.amazon.com/location/latest/APIReference/API_ForecastGeofenceEvents.html
+   */
+  ForecastGeofenceEvents = 'geo:ForecastGeofenceEvents',
   /**
    * Grants permission to retrieve the latest device position
    *
@@ -371,4 +378,10 @@ export enum AwsGeoActions {
    * See https://docs.aws.amazon.com/location/latest/APIReference/API_UpdateTracker.html
    */
   UpdateTracker = 'geo:UpdateTracker',
+  /**
+   * Grants permission to verify a device position
+   *
+   * See https://docs.aws.amazon.com/location/latest/APIReference/API_VerifyDevicePosition.html
+   */
+  VerifyDevicePosition = 'geo:VerifyDevicePosition',
 }

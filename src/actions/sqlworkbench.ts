@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssqlworkbench.html
  *
- * 2024-02-12T09:59:20.188Z
+ * 2025-02-24T21:49:49.790Z
  */
 export enum AwsSqlworkbenchActions {
   /**
@@ -131,11 +131,23 @@ export enum AwsSqlworkbenchActions {
    */
   DeleteNotebookVersion = 'sqlworkbench:DeleteNotebookVersion',
   /**
+   * Grants permission to delete account-wide custom context
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  DeleteQCustomContext = 'sqlworkbench:DeleteQCustomContext',
+  /**
    * Grants permission to remove saved queries on your account
    *
    * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
    */
   DeleteSavedQuery = 'sqlworkbench:DeleteSavedQuery',
+  /**
+   * Grants permission to delete sql generation context
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  DeleteSqlGenerationContext = 'sqlworkbench:DeleteSqlGenerationContext',
   /**
    * Grants permission to remove a tab on your account
    *
@@ -216,6 +228,18 @@ export enum AwsSqlworkbenchActions {
    */
   GetNotebookVersion = 'sqlworkbench:GetNotebookVersion',
   /**
+   * Grants permission to get account-wide custom context
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  GetQCustomContext = 'sqlworkbench:GetQCustomContext',
+  /**
+   * Grants permission to get Q generative SQL maximum prompt quotas
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  GetQSqlPromptQuotas = 'sqlworkbench:GetQSqlPromptQuotas',
+  /**
    * Grants permission to get text to SQL recommendations
    *
    * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
@@ -239,6 +263,18 @@ export enum AwsSqlworkbenchActions {
    * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
    */
   GetSchemaInference = 'sqlworkbench:GetSchemaInference',
+  /**
+   * Grants permission to get sql generation context
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  GetSqlGenerationContext = 'sqlworkbench:GetSqlGenerationContext',
+  /**
+   * Grants permission to get text to SQL recommendations
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  GetSqlRecommendations = 'sqlworkbench:GetSqlRecommendations',
   /**
    * Grants permission to get user info
    *
@@ -329,6 +365,24 @@ export enum AwsSqlworkbenchActions {
    * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
    */
   ListTagsForResource = 'sqlworkbench:ListTagsForResource',
+  /**
+   * Grants permission to provide account settings with the request
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  PassAccountSettings = 'sqlworkbench:PassAccountSettings',
+  /**
+   * Grants permission to update account-wide custom context
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  PutQCustomContext = 'sqlworkbench:PutQCustomContext',
+  /**
+   * Grants permission to update sql generation context
+   *
+   * See https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html
+   */
+  PutSqlGenerationContext = 'sqlworkbench:PutSqlGenerationContext',
   /**
    * Grants permission to create or update a tab on your account
    *

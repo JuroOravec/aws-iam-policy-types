@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonguardduty.html
  *
- * 2024-02-12T09:57:33.453Z
+ * 2025-02-24T21:48:09.797Z
  */
 export enum AwsGuarddutyActions {
   /**
@@ -46,6 +46,12 @@ export enum AwsGuarddutyActions {
    * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateIPSet.html
    */
   CreateIPSet = 'guardduty:CreateIPSet',
+  /**
+   * Grants permission to create a new Malware Protection plan
+   *
+   * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateMalwareProtectionPlan.html
+   */
+  CreateMalwareProtectionPlan = 'guardduty:CreateMalwareProtectionPlan',
   /**
    * Grants permission to create GuardDuty member accounts, where the account used t
    * o create a member becomes the GuardDuty administrator account
@@ -102,6 +108,12 @@ export enum AwsGuarddutyActions {
    * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteInvitations.html
    */
   DeleteInvitations = 'guardduty:DeleteInvitations',
+  /**
+   * Grants permission to delete a Malware Protection plan
+   *
+   * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteMalwareProtectionPlan.html
+   */
+  DeleteMalwareProtectionPlan = 'guardduty:DeleteMalwareProtectionPlan',
   /**
    * Grants permission to delete GuardDuty member accounts
    *
@@ -226,6 +238,12 @@ export enum AwsGuarddutyActions {
    */
   GetInvitationsCount = 'guardduty:GetInvitationsCount',
   /**
+   * Grants permission to retrieve a Malware Protection plan details
+   *
+   * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMalwareProtectionPlan.html
+   */
+  GetMalwareProtectionPlan = 'guardduty:GetMalwareProtectionPlan',
+  /**
    * Grants permission to retrieve the malware scan settings
    *
    * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMalwareScanSettings.html
@@ -324,6 +342,12 @@ export enum AwsGuarddutyActions {
    * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListInvitations.html
    */
   ListInvitations = 'guardduty:ListInvitations',
+  /**
+   * Grants permission to retrieve a list of Malware Protection plans
+   *
+   * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMalwareProtectionPlans.html
+   */
+  ListMalwareProtectionPlans = 'guardduty:ListMalwareProtectionPlans',
   /**
    * Grants permission to retrieve a list of GuardDuty member accounts associated wi
    * th an administrator account
@@ -426,6 +450,12 @@ export enum AwsGuarddutyActions {
    * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateIPSet.html
    */
   UpdateIPSet = 'guardduty:UpdateIPSet',
+  /**
+   * Grants permission to update the Malware Protection plan
+   *
+   * See https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMalwareProtectionPlan.html
+   */
+  UpdateMalwareProtectionPlan = 'guardduty:UpdateMalwareProtectionPlan',
   /**
    * Grants permission to update the malware scan settings
    *

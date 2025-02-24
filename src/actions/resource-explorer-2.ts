@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsresourceexplorer.html
  *
- * 2024-02-12T09:58:55.683Z
+ * 2025-02-24T21:49:26.519Z
  */
 export enum AwsResourceExplorer2Actions {
   /**
@@ -31,6 +31,12 @@ export enum AwsResourceExplorer2Actions {
    */
   CreateIndex = 'resource-explorer-2:CreateIndex',
   /**
+   * Grants permission to create managed view
+   *
+   * See https://docs.aws.amazon.com/resource-explorer/latest/userguide/API_ManagedView.html
+   */
+  CreateManagedView = 'resource-explorer-2:CreateManagedView',
+  /**
    * Grants permission to create a view that users can query
    *
    * See https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_CreateView.html
@@ -43,6 +49,12 @@ export enum AwsResourceExplorer2Actions {
    * See https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_DeleteIndex.html
    */
   DeleteIndex = 'resource-explorer-2:DeleteIndex',
+  /**
+   * Grants permission to delete the specified view's resource policy
+   *
+   * See https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-share.html
+   */
+  DeleteResourcePolicy = 'resource-explorer-2:DeleteResourcePolicy',
   /**
    * Grants permission to delete a view
    *
@@ -78,6 +90,19 @@ export enum AwsResourceExplorer2Actions {
    */
   GetIndex = 'resource-explorer-2:GetIndex',
   /**
+   * Grants permission to get managed view
+   *
+   * See https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_GetManagedView.html
+   */
+  GetManagedView = 'resource-explorer-2:GetManagedView',
+  /**
+   * Grants permission to retrieve information about the specified view's resource p
+   * olicy
+   *
+   * See https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-share.html
+   */
+  GetResourcePolicy = 'resource-explorer-2:GetResourcePolicy',
+  /**
    * Grants permission to retrieve information about the specified view
    *
    * See https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_GetView.html
@@ -96,6 +121,12 @@ export enum AwsResourceExplorer2Actions {
    * See https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_ListIndexesForMembers.html
    */
   ListIndexesForMembers = 'resource-explorer-2:ListIndexesForMembers',
+  /**
+   * Grants permission to list managed views
+   *
+   * See https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_ListManagedViews.html
+   */
+  ListManagedViews = 'resource-explorer-2:ListManagedViews',
   /**
    * Grants permission to retrieve a list of all resource types currently supported
    * by Resource Explorer
@@ -116,6 +147,12 @@ export enum AwsResourceExplorer2Actions {
    * See https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_ListViews.html
    */
   ListViews = 'resource-explorer-2:ListViews',
+  /**
+   * Grants permission to update the specified view's resource policy
+   *
+   * See https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-share.html
+   */
+  PutResourcePolicy = 'resource-explorer-2:PutResourcePolicy',
   /**
    * Grants permission to search for resources and display details about all resourc
    * es that match the specified criteria

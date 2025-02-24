@@ -6,14 +6,14 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycentersuccessortoawssinglesign-ondirectory.html
  *
- * 2024-02-12T09:57:38.455Z
+ * 2025-02-24T21:48:14.055Z
  */
 export enum AwsSsoDirectoryActions {
   /**
    * Grants permission to add a member to a group in the directory that AWS IAM Iden
    * tity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroupMembership.html
    */
   AddMemberToGroup = 'sso-directory:AddMemberToGroup',
   /**
@@ -52,7 +52,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to create a group in the directory that AWS IAM Identity Cent
    * er provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroup.html
    */
   CreateGroup = 'sso-directory:CreateGroup',
   /**
@@ -65,7 +65,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to create a user in the directory that AWS IAM Identity Cente
    * r provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html
    */
   CreateUser = 'sso-directory:CreateUser',
   /**
@@ -91,7 +91,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to delete a group from the directory that AWS IAM Identity Ce
    * nter provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroup.html
    */
   DeleteGroup = 'sso-directory:DeleteGroup',
   /**
@@ -110,7 +110,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to delete a user from the directory that AWS IAM Identity Cen
    * ter provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteUser.html
    */
   DeleteUser = 'sso-directory:DeleteUser',
   /**
@@ -123,14 +123,14 @@ export enum AwsSsoDirectoryActions {
   /**
    * Grants permission to query the group data, not including user and group members
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeGroup.html
    */
   DescribeGroup = 'sso-directory:DescribeGroup',
   /**
    * Grants permission to retrieve information about groups from the directory that
    * AWS IAM Identity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeGroup.html
    */
   DescribeGroups = 'sso-directory:DescribeGroups',
   /**
@@ -143,7 +143,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to retrieve information about a user from the directory that
    * AWS IAM Identity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html
    */
   DescribeUser = 'sso-directory:DescribeUser',
   /**
@@ -157,7 +157,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to retrieve information about user from the directory that AW
    * S IAM Identity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DescribeUser.html
    */
   DescribeUsers = 'sso-directory:DescribeUsers',
   /**
@@ -196,6 +196,20 @@ export enum AwsSsoDirectoryActions {
    */
   GetAWSSPConfigurationForDirectory = 'sso-directory:GetAWSSPConfigurationForDirectory',
   /**
+   * Grants permission to retrieve ID information about group from the directory tha
+   * t AWS IAM Identity Center provides by default
+   *
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetGroupId.html
+   */
+  GetGroupId = 'sso-directory:GetGroupId',
+  /**
+   * Grants permission to retrieve ID information about user from the directory that
+   * AWS IAM Identity Center provides by default
+   *
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_GetUserId.html
+   */
+  GetUserId = 'sso-directory:GetUserId',
+  /**
    * (Deprecated) Grants permission to get UserPool Info
    *
    * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
@@ -212,7 +226,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to check if a member is a part of the group in the directory
    * that AWS IAM Identity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_IsMemberInGroups.html
    */
   IsMemberInGroup = 'sso-directory:IsMemberInGroup',
   /**
@@ -236,23 +250,30 @@ export enum AwsSsoDirectoryActions {
    */
   ListExternalIdPConfigurationsForDirectory = 'sso-directory:ListExternalIdPConfigurationsForDirectory',
   /**
+   * Grants permission to list groups from the directory that AWS IAM Identity Cente
+   * r provides by default
+   *
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroups.html
+   */
+  ListGroups = 'sso-directory:ListGroups',
+  /**
    * Grants permission to list groups of the target member
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMembershipsForMember.html
    */
   ListGroupsForMember = 'sso-directory:ListGroupsForMember',
   /**
    * Grants permission to list groups for a user from the directory that AWS IAM Ide
    * ntity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMembershipsForMember.html
    */
   ListGroupsForUser = 'sso-directory:ListGroupsForUser',
   /**
    * Grants permission to retrieve all members that are part of a group in the direc
    * tory that AWS IAM Identity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListGroupMemberships.html
    */
   ListMembersInGroup = 'sso-directory:ListMembersInGroup',
   /**
@@ -269,10 +290,17 @@ export enum AwsSsoDirectoryActions {
    */
   ListProvisioningTenants = 'sso-directory:ListProvisioningTenants',
   /**
+   * Grants permission to list users from the directory that AWS IAM Identity Center
+   * provides by default
+   *
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_ListUsers.html
+   */
+  ListUsers = 'sso-directory:ListUsers',
+  /**
    * Grants permission to remove a member that is part of a group in the directory t
    * hat AWS IAM Identity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_DeleteGroupMembership.html
    */
   RemoveMemberFromGroup = 'sso-directory:RemoveMemberFromGroup',
   /**
@@ -310,7 +338,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to update information about a group in the directory that AWS
    * IAM Identity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateGroup.html
    */
   UpdateGroup = 'sso-directory:UpdateGroup',
   /**
@@ -338,7 +366,7 @@ export enum AwsSsoDirectoryActions {
    * Grants permission to update user information in the directory that AWS IAM Iden
    * tity Center provides by default
    *
-   * See https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
+   * See https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateUser.html
    */
   UpdateUser = 'sso-directory:UpdateUser',
   /**

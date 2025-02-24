@@ -6,34 +6,77 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslicensemanagerlinuxsubscriptionsmanager.html
  *
- * 2024-02-12T09:58:05.172Z
+ * 2025-02-24T21:48:37.059Z
  */
 export enum AwsLicenseManagerLinuxSubscriptionsActions {
+  /**
+   * Grants permission to permanently delete a subscription provider in AWS License
+   * Manager
+   *
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_DeregisterSubscriptionProvider.html
+   */
+  DeregisterSubscriptionProvider = 'license-manager-linux-subscriptions:DeregisterSubscriptionProvider',
+  /**
+   * Grants permission to get a subscription provider in AWS License Manager
+   *
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_GetRegisteredSubscriptionProvider.html
+   */
+  GetRegisteredSubscriptionProvider = 'license-manager-linux-subscriptions:GetRegisteredSubscriptionProvider',
   /**
    * Grants permission to get the service settings for Linux subscriptions in AWS Li
    * cense Manager
    *
-   * See https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetServiceSettings.html
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_GetServiceSettings.html
    */
   GetServiceSettings = 'license-manager-linux-subscriptions:GetServiceSettings',
   /**
    * Grants permission to list all instances with Linux subscriptions in AWS License
    * Manager
    *
-   * See https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListLinuxSubscriptionInstances.html
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_ListLinuxSubscriptionInstances.html
    */
   ListLinuxSubscriptionInstances = 'license-manager-linux-subscriptions:ListLinuxSubscriptionInstances',
   /**
    * Grants permission to list all Linux subscriptions in AWS License Manager
    *
-   * See https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListLinuxSubscriptions.html
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_ListLinuxSubscriptions.html
    */
   ListLinuxSubscriptions = 'license-manager-linux-subscriptions:ListLinuxSubscriptions',
+  /**
+   * Grants permission to list subscription providers in AWS License Manager
+   *
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_ListRegisteredSubscriptionProviders.html
+   */
+  ListRegisteredSubscriptionProviders = 'license-manager-linux-subscriptions:ListRegisteredSubscriptionProviders',
+  /**
+   * Grants permission to list tags for a selected resource
+   *
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_ListTagsForResource.html
+   */
+  ListTagsForResource = 'license-manager-linux-subscriptions:ListTagsForResource',
+  /**
+   * Grants permission to create a new subscription provider in AWS License Manager
+   *
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_RegisterSubscriptionProvider.html
+   */
+  RegisterSubscriptionProvider = 'license-manager-linux-subscriptions:RegisterSubscriptionProvider',
+  /**
+   * Grants permission to tag a selected resource
+   *
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_TagResource.html
+   */
+  TagResource = 'license-manager-linux-subscriptions:TagResource',
+  /**
+   * Grants permission to untag a selected resource
+   *
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_UntagResource.html
+   */
+  UntagResource = 'license-manager-linux-subscriptions:UntagResource',
   /**
    * Grants permission to update the service settings for Linux subscriptions in AWS
    * License Manager
    *
-   * See https://docs.aws.amazon.com/license-manager/latest/APIReference/API_UpdateServiceSettings.html
+   * See https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_UpdateServiceSettings.html
    */
   UpdateServiceSettings = 'license-manager-linux-subscriptions:UpdateServiceSettings',
 }

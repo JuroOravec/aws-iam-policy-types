@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsoutposts.html
  *
- * 2024-02-12T09:58:35.143Z
+ * 2025-02-24T21:49:07.975Z
  */
 export enum AwsOutpostsActions {
+  /**
+   * Grants permission to cancel a capacity task
+   *
+   * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_CancelCapacityTask.html
+   */
+  CancelCapacityTask = 'outposts:CancelCapacityTask',
   /**
    * Grants permission to cancel an order
    *
@@ -52,6 +58,12 @@ export enum AwsOutpostsActions {
    */
   DeleteSite = 'outposts:DeleteSite',
   /**
+   * Grants permission to get information about the specified capacity task
+   *
+   * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetCapacityTask.html
+   */
+  GetCapacityTask = 'outposts:GetCapacityTask',
+  /**
    * Grants permission to get a catalog item
    *
    * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetCatalogItem.html
@@ -83,6 +95,12 @@ export enum AwsOutpostsActions {
    */
   GetOutpostInstanceTypes = 'outposts:GetOutpostInstanceTypes',
   /**
+   * Grants permission to get the supported instance types for the specified Outpost
+   *
+   * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetOutpostSupportedInstanceTypes.html
+   */
+  GetOutpostSupportedInstanceTypes = 'outposts:GetOutpostSupportedInstanceTypes',
+  /**
    * Grants permission to get a private connectivity configuration
    *
    * See https://docs.aws.amazon.com/outposts/latest/userguide/how-outposts-works.html#private-connectivity
@@ -101,11 +119,30 @@ export enum AwsOutpostsActions {
    */
   GetSiteAddress = 'outposts:GetSiteAddress',
   /**
+   * Grants permission to list all running instances for the specified Outpost
+   *
+   * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListAssetInstances.html
+   */
+  ListAssetInstances = 'outposts:ListAssetInstances',
+  /**
    * Grants permission to list the assets for your Outpost
    *
    * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListAssets.html
    */
   ListAssets = 'outposts:ListAssets',
+  /**
+   * Grants permission to list all running instances that are blocking the capacity
+   * task from running for the specified Outpost
+   *
+   * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListBlockingInstancesForCapacityTask.html
+   */
+  ListBlockingInstancesForCapacityTask = 'outposts:ListBlockingInstancesForCapacityTask',
+  /**
+   * Grants permission to list the capacity tasks for your AWS account
+   *
+   * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListCapacityTasks.html
+   */
+  ListCapacityTasks = 'outposts:ListCapacityTasks',
   /**
    * Grants permission to list all catalog items
    *
@@ -136,6 +173,12 @@ export enum AwsOutpostsActions {
    * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListTagsForResource.html
    */
   ListTagsForResource = 'outposts:ListTagsForResource',
+  /**
+   * Grants permission to create a capacity task
+   *
+   * See https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartCapacityTask.html
+   */
+  StartCapacityTask = 'outposts:StartCapacityTask',
   /**
    * Grants permission to start a connection for your Outpost server
    *

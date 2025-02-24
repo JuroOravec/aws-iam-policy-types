@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedstreamingforkafkaconnect.html
  *
- * 2024-02-12T09:58:13.842Z
+ * 2025-02-24T21:48:46.425Z
  */
 export enum AwsKafkaconnectActions {
   /**
@@ -40,11 +40,23 @@ export enum AwsKafkaconnectActions {
    */
   DeleteCustomPlugin = 'kafkaconnect:DeleteCustomPlugin',
   /**
+   * Grants permission to delete an MSK Connect worker configuration
+   *
+   * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_DeleteWorkerConfiguration.html
+   */
+  DeleteWorkerConfiguration = 'kafkaconnect:DeleteWorkerConfiguration',
+  /**
    * Grants permission to describe an MSK Connect connector
    *
    * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_DescribeConnector.html
    */
   DescribeConnector = 'kafkaconnect:DescribeConnector',
+  /**
+   * Grants permission to describe a MSK Connect connector operation
+   *
+   * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_DescribeConnectorOperation.html
+   */
+  DescribeConnectorOperation = 'kafkaconnect:DescribeConnectorOperation',
   /**
    * Grants permission to describe an MSK Connect custom plugin
    *
@@ -58,6 +70,12 @@ export enum AwsKafkaconnectActions {
    */
   DescribeWorkerConfiguration = 'kafkaconnect:DescribeWorkerConfiguration',
   /**
+   * Grants permission to list all operations of a given MSK Connect connector
+   *
+   * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_ListConnectorOperations.html
+   */
+  ListConnectorOperations = 'kafkaconnect:ListConnectorOperations',
+  /**
    * Grants permission to list all MSK Connect connectors in this account
    *
    * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_ListConnectors.html
@@ -70,11 +88,29 @@ export enum AwsKafkaconnectActions {
    */
   ListCustomPlugins = 'kafkaconnect:ListCustomPlugins',
   /**
+   * Grants permission to list tags of an MSK Connect resource
+   *
+   * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_ListTagsForResource.html
+   */
+  ListTagsForResource = 'kafkaconnect:ListTagsForResource',
+  /**
    * Grants permission to list all MSK Connect worker configurations in this account
    *
    * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_ListWorkerConfigurations.html
    */
   ListWorkerConfigurations = 'kafkaconnect:ListWorkerConfigurations',
+  /**
+   * Grants permission to tag an MSK Connect resource
+   *
+   * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_TagResource.html
+   */
+  TagResource = 'kafkaconnect:TagResource',
+  /**
+   * Grants permission to remove tags from an MSK Connect resource
+   *
+   * See https://docs.aws.amazon.com/MSKC/latest/mskc/API_UntagResource.html
+   */
+  UntagResource = 'kafkaconnect:UntagResource',
   /**
    * Grants permission to update an MSK Connect connector
    *

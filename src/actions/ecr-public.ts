@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticcontainerregistrypublic.html
  *
- * 2024-02-12T09:57:07.714Z
+ * 2025-02-24T21:47:46.259Z
  */
 export enum AwsEcrPublicActions {
   /**

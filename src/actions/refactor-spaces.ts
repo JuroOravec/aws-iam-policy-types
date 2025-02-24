@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationhubrefactorspaces.html
  *
- * 2024-02-12T09:58:25.067Z
+ * 2025-02-24T21:48:57.841Z
  */
 export enum AwsRefactorSpacesActions {
   /**

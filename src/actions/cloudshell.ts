@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudshell.html
  *
- * 2024-02-12T09:56:24.323Z
+ * 2025-02-24T21:47:05.062Z
  */
 export enum AwsCloudshellActions {
   /**
@@ -28,6 +28,12 @@ export enum AwsCloudshellActions {
    * See https://docs.aws.amazon.com/cloudshell/latest/userguide/sec-auth-with-identities.html#DeleteEnvironment
    */
   DeleteEnvironment = 'cloudshell:DeleteEnvironment',
+  /**
+   * Grants permission to return descriptions of existing user's environments
+   *
+   * See https://docs.aws.amazon.com/cloudshell/latest/userguide/sec-auth-with-identities.html#DescribeEnvironments
+   */
+  DescribeEnvironments = 'cloudshell:DescribeEnvironments',
   /**
    * Grants permission to read a CloudShell environment status
    *

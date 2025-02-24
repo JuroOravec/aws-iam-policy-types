@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsresourcegroups.html
  *
- * 2024-02-12T09:58:56.909Z
+ * 2025-02-24T21:49:27.478Z
  */
 export enum AwsResourceGroupsActions {
   /**
@@ -15,6 +15,12 @@ export enum AwsResourceGroupsActions {
    * See https://docs.aws.amazon.com/servicecatalog/latest/arguide/associate-resources.html
    */
   AssociateResource = 'resource-groups:AssociateResource',
+  /**
+   * Grants permission to cancel a tag-sync task for an application group
+   *
+   * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_CancelTagSyncTask.html
+   */
+  CancelTagSyncTask = 'resource-groups:CancelTagSyncTask',
   /**
    * Grants permission to create a resource group with a specified name, description
    * , and resource query
@@ -28,6 +34,12 @@ export enum AwsResourceGroupsActions {
    * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_DeleteGroup.html
    */
   DeleteGroup = 'resource-groups:DeleteGroup',
+  /**
+   * Grants permission to delete a resource-based policy for the specified group
+   *
+   * See https://docs.aws.amazon.com/license-manager/latest/userguide/management-role.html#service-linked-role-permissions-management-role
+   */
+  DeleteGroupPolicy = 'resource-groups:DeleteGroupPolicy',
   /**
    * Grants permission to disassociate a resource from an Application
    *
@@ -55,11 +67,23 @@ export enum AwsResourceGroupsActions {
    */
   GetGroupConfiguration = 'resource-groups:GetGroupConfiguration',
   /**
+   * Grants permission to get a resource-based policy for the specified group
+   *
+   * See https://docs.aws.amazon.com/license-manager/latest/userguide/management-role.html#service-linked-role-permissions-management-role
+   */
+  GetGroupPolicy = 'resource-groups:GetGroupPolicy',
+  /**
    * Grants permission to get the query associated with a specified resource group
    *
    * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetGroupQuery.html
    */
   GetGroupQuery = 'resource-groups:GetGroupQuery',
+  /**
+   * Grants permission to get information of a specified tag-sync task
+   *
+   * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetTagSyncTask.html
+   */
+  GetTagSyncTask = 'resource-groups:GetTagSyncTask',
   /**
    * Grants permission to get the tags associated with a specified resource group
    *
@@ -80,11 +104,29 @@ export enum AwsResourceGroupsActions {
    */
   ListGroupResources = 'resource-groups:ListGroupResources',
   /**
+   * Grants permission to list grouping statuses for a specified application group
+   *
+   * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListGroupingStatuses.html
+   */
+  ListGroupingStatuses = 'resource-groups:ListGroupingStatuses',
+  /**
    * Grants permission to list all resource groups in your account
    *
    * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListGroups.html
    */
   ListGroups = 'resource-groups:ListGroups',
+  /**
+   * Grants permission to list supported resource types
+   *
+   * See https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-query.html
+   */
+  ListResourceTypes = 'resource-groups:ListResourceTypes',
+  /**
+   * Grants permission to list all tag-sync tasks in your account
+   *
+   * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListTagSyncTasks.html
+   */
+  ListTagSyncTasks = 'resource-groups:ListTagSyncTasks',
   /**
    * Grants permission to put the service configuration associated with the specifie
    * d resource group
@@ -104,6 +146,12 @@ export enum AwsResourceGroupsActions {
    * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_SearchResources.html
    */
   SearchResources = 'resource-groups:SearchResources',
+  /**
+   * Grants permission to create a tag-sync task for an application group
+   *
+   * See https://docs.aws.amazon.com/ARG/latest/APIReference/API_StartTagSyncTask.html
+   */
+  StartTagSyncTask = 'resource-groups:StartTagSyncTask',
   /**
    * Grants permission to tag a specified resource group
    *

@@ -6,9 +6,27 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbilling.html
  *
- * 2024-02-12T09:56:12.633Z
+ * 2025-02-24T21:46:53.879Z
  */
 export enum AwsBillingActions {
+  /**
+   * Grants permission to create a billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_CreateBillingView.html
+   */
+  CreateBillingView = 'billing:CreateBillingView',
+  /**
+   * Grants permission to delete a billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_DeleteBillingView.html
+   */
+  DeleteBillingView = 'billing:DeleteBillingView',
+  /**
+   * Grants permission to delete a billing view resource policy
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_DeleteResourcePolicy.html
+   */
+  DeleteResourcePolicy = 'billing:DeleteResourcePolicy',
   /**
    * Grants permission to perform queries on billing information
    *
@@ -36,6 +54,12 @@ export enum AwsBillingActions {
    */
   GetBillingPreferences = 'billing:GetBillingPreferences',
   /**
+   * Grants permission to get the metadata for a specified billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_GetBillingView.html
+   */
+  GetBillingView = 'billing:GetBillingView',
+  /**
    * Grants permission to view the account's contract information including the cont
    * ract number, end-user organization names, PO numbers and if the account is used
    * to service public-sector customers
@@ -57,17 +81,35 @@ export enum AwsBillingActions {
    */
   GetIAMAccessPreference = 'billing:GetIAMAccessPreference',
   /**
+   * Grants permission to get the resource policy specified billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_GetResourcePolicy.html
+   */
+  GetResourcePolicy = 'billing:GetResourcePolicy',
+  /**
    * Grants permission to retrieve the account's default Seller of Record
    *
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
    */
   GetSellerOfRecord = 'billing:GetSellerOfRecord',
   /**
-   * Grants permission to get billing information for your proforma billing groups
+   * Grants permission to get a list of all your available billing views
    *
-   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_ListBillingViews.html
    */
   ListBillingViews = 'billing:ListBillingViews',
+  /**
+   * Grants permission to get the list of source views for a specified billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_ListSourceViewsForBillingView.html
+   */
+  ListSourceViewsForBillingView = 'billing:ListSourceViewsForBillingView',
+  /**
+   * Grants permission to get the list of tags for a specified billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_ListTagsForResource.html
+   */
+  ListTagsForResource = 'billing:ListTagsForResource',
   /**
    * Grants permission to set the account's contract information end-user organizati
    * on names and if the account is used to service public-sector customers
@@ -76,11 +118,29 @@ export enum AwsBillingActions {
    */
   PutContractInformation = 'billing:PutContractInformation',
   /**
+   * Grants permission to put a billing view resource policy
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_PutResourcePolicy.html
+   */
+  PutResourcePolicy = 'billing:PutResourcePolicy',
+  /**
    * Grants permission to redeem an AWS credit
    *
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
    */
   RedeemCredits = 'billing:RedeemCredits',
+  /**
+   * Grants permission to add tags to a specified billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_TagResource.html
+   */
+  TagResource = 'billing:TagResource',
+  /**
+   * Grants permission to remove a tag from a specified billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_UntagResource.html
+   */
+  UntagResource = 'billing:UntagResource',
   /**
    * Grants permission to update billing preferences such as reserved instance, savi
    * ngs plans and credits sharing
@@ -88,6 +148,12 @@ export enum AwsBillingActions {
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
    */
   UpdateBillingPreferences = 'billing:UpdateBillingPreferences',
+  /**
+   * Grants permission to update a billing view
+   *
+   * See https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_UpdateBillingView.html
+   */
+  UpdateBillingView = 'billing:UpdateBillingView',
   /**
    * Grants permission to update the Allow IAM Access billing preference
    *

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdeepracer.html
  *
- * 2024-02-12T09:56:56.343Z
+ * 2025-02-24T21:47:35.392Z
  */
 export enum AwsDeepracerActions {
   /**
@@ -15,6 +15,13 @@ export enum AwsDeepracerActions {
    * See https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-manage-community-races.html
    */
   AddLeaderboardAccessPermission = 'deepracer:AddLeaderboardAccessPermission',
+  /**
+   * Grants permission to retrieve information of the KMS key that the user currentl
+   * y has assigned to their account
+   *
+   * See https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-admin-describe-account-key.html
+   */
+  AdminDescribeAccountKey = 'deepracer:AdminDescribeAccountKey',
   /**
    * Grants permission to get current admin multiuser configuration for this account
    *
@@ -46,6 +53,12 @@ export enum AwsDeepracerActions {
    * See https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-admin-set-account-config.html
    */
   AdminSetAccountConfig = 'deepracer:AdminSetAccountConfig',
+  /**
+   * Grants permission to update the KMS key that is assigned to the user's account
+   *
+   * See https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-admin-update-account-key.html
+   */
+  AdminUpdateAccountKey = 'deepracer:AdminUpdateAccountKey',
   /**
    * Grants permission to clone an existing DeepRacer model
    *

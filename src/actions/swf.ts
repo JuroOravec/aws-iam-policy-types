@@ -6,35 +6,35 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsimpleworkflowservice.html
  *
- * 2024-02-12T09:59:17.098Z
+ * 2025-02-24T21:49:46.870Z
  */
 export enum AwsSwfActions {
   /**
    * Grants permission to cancel a previously started timer and record a TimerCancel
    * ed event in the history
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   CancelTimer = 'swf:CancelTimer',
   /**
    * Grants permission to close the workflow execution and record a WorkflowExecutio
    * nCanceled event in the history
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   CancelWorkflowExecution = 'swf:CancelWorkflowExecution',
   /**
    * Grants permission to close the workflow execution and record a WorkflowExecutio
    * nCompleted event in the history
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   CompleteWorkflowExecution = 'swf:CompleteWorkflowExecution',
   /**
    * Grants permission to close the workflow execution and start a new workflow exec
    * ution of the same type using the same workflow ID and a unique run Id
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   ContinueAsNewWorkflowExecution = 'swf:ContinueAsNewWorkflowExecution',
   /**
@@ -65,6 +65,18 @@ export enum AwsSwfActions {
    * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CountPendingDecisionTasks.html
    */
   CountPendingDecisionTasks = 'swf:CountPendingDecisionTasks',
+  /**
+   * Grants permission to delete the specified activity type
+   *
+   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DeleteActivityType.html
+   */
+  DeleteActivityType = 'swf:DeleteActivityType',
+  /**
+   * Grants permission to delete the specified workflow type
+   *
+   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DeleteWorkflowType.html
+   */
+  DeleteWorkflowType = 'swf:DeleteWorkflowType',
   /**
    * Grants permission to deprecate the specified activity type
    *
@@ -113,7 +125,7 @@ export enum AwsSwfActions {
    * Grants permission to close the workflow execution and record a WorkflowExecutio
    * nFailed event in the history
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   FailWorkflowExecution = 'swf:FailWorkflowExecution',
   /**
@@ -186,7 +198,7 @@ export enum AwsSwfActions {
   /**
    * Grants permission to record a MarkerRecorded event in the history
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   RecordMarker = 'swf:RecordMarker',
   /**
@@ -212,14 +224,14 @@ export enum AwsSwfActions {
   /**
    * Grants permission to attempt to cancel a previously scheduled activity task
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   RequestCancelActivityTask = 'swf:RequestCancelActivityTask',
   /**
    * Grants permission to request that a request be made to cancel the specified ext
    * ernal workflow execution
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   RequestCancelExternalWorkflowExecution = 'swf:RequestCancelExternalWorkflowExecution',
   /**
@@ -261,14 +273,14 @@ export enum AwsSwfActions {
   /**
    * Grants permission to schedule an activity task
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   ScheduleActivityTask = 'swf:ScheduleActivityTask',
   /**
    * Grants permission to request a signal to be delivered to the specified external
    * workflow execution and records
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   SignalExternalWorkflowExecution = 'swf:SignalExternalWorkflowExecution',
   /**
@@ -282,13 +294,13 @@ export enum AwsSwfActions {
   /**
    * Grants permission to request that a child workflow execution be started
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   StartChildWorkflowExecution = 'swf:StartChildWorkflowExecution',
   /**
    * Grants permission to start a timer for a workflow execution
    *
-   * See https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decision.html
+   * See ${APIReferenceDocPage}API_Decision.html
    */
   StartTimer = 'swf:StartTimer',
   /**

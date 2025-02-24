@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazongamelift.html
  *
- * 2024-02-12T09:57:29.966Z
+ * 2025-02-24T21:48:06.578Z
  */
 export enum AwsGameliftActions {
   /**
@@ -36,6 +36,20 @@ export enum AwsGameliftActions {
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateBuild.html
    */
   CreateBuild = 'gamelift:CreateBuild',
+  /**
+   * Grants permission to create a new container fleet of computing resources to run
+   * your game servers
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerFleet.html
+   */
+  CreateContainerFleet = 'gamelift:CreateContainerFleet',
+  /**
+   * Grants permission to create a new container group definition using images store
+   * d in an Amazon ECR repository
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerGroupDefinition.html
+   */
+  CreateContainerGroupDefinition = 'gamelift:CreateContainerGroupDefinition',
   /**
    * Grants permission to create a new fleet of computing resources to run your game
    * servers
@@ -132,6 +146,18 @@ export enum AwsGameliftActions {
    */
   DeleteBuild = 'gamelift:DeleteBuild',
   /**
+   * Grants permission to delete a container fleet
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DeleteContainerFleet.html
+   */
+  DeleteContainerFleet = 'gamelift:DeleteContainerFleet',
+  /**
+   * Grants permission to delete a container group definition
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DeleteContainerGroupDefinition.html
+   */
+  DeleteContainerGroupDefinition = 'gamelift:DeleteContainerGroupDefinition',
+  /**
    * Grants permission to delete an empty fleet
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DeleteFleet.html
@@ -223,12 +249,24 @@ export enum AwsGameliftActions {
    */
   DescribeBuild = 'gamelift:DescribeBuild',
   /**
-   * Grants permission to retrieve general properties of the compute such as ARN, fl
-   * eet details, SDK endpoints, and location
+   * Grants permission to retrieve information for a compute in a fleet
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeCompute.html
    */
   DescribeCompute = 'gamelift:DescribeCompute',
+  /**
+   * Grants permission to retrieve the properties of an existing container fleet
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeContainerFleet.html
+   */
+  DescribeContainerFleet = 'gamelift:DescribeContainerFleet',
+  /**
+   * Grants permission to retrieve the properties of an existing container group def
+   * inition
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeContainerGroupDefinition.html
+   */
+  DescribeContainerGroupDefinition = 'gamelift:DescribeContainerGroupDefinition',
   /**
    * Grants permission to retrieve the maximum allowed and current usage for EC2 ins
    * tance types
@@ -243,11 +281,17 @@ export enum AwsGameliftActions {
    */
   DescribeFleetAttributes = 'gamelift:DescribeFleetAttributes',
   /**
-   * Grants permission to retrieve the current capacity setting for fleets
+   * Grants permission to retrieve the current capacity settings for managed fleets
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetCapacity.html
    */
   DescribeFleetCapacity = 'gamelift:DescribeFleetCapacity',
+  /**
+   * Grants permission to retrieve the properties of an existing fleet deployment
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetDeployment.html
+   */
+  DescribeFleetDeployment = 'gamelift:DescribeFleetDeployment',
   /**
    * Grants permission to retrieve entries from a fleet's event log
    *
@@ -331,7 +375,7 @@ export enum AwsGameliftActions {
    */
   DescribeGameSessions = 'gamelift:DescribeGameSessions',
   /**
-   * Grants permission to retrieve information about instances in a fleet
+   * Grants permission to retrieve information about instances in a managed fleet
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeInstances.html
    */
@@ -392,14 +436,15 @@ export enum AwsGameliftActions {
    */
   DescribeVpcPeeringConnections = 'gamelift:DescribeVpcPeeringConnections',
   /**
-   * Grants permission to retrieve access credentials of the compute
+   * Grants permission to retrieve credentials to remotely access a compute in a man
+   * aged fleet
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetComputeAccess.html
    */
   GetComputeAccess = 'gamelift:GetComputeAccess',
   /**
-   * Grants permission to retrieve an authorization token for a compute and fleet to
-   * use in game server processes
+   * Grants permission to retrieve an authentication token that allows processes on
+   * a compute to send requests to the Amazon GameLift service
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetComputeAuthToken.html
    */
@@ -435,6 +480,34 @@ export enum AwsGameliftActions {
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListCompute.html
    */
   ListCompute = 'gamelift:ListCompute',
+  /**
+   * Grants permission to retrieve the properties of all existing container fleets i
+   * n the current Region
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListContainerFleets.html
+   */
+  ListContainerFleets = 'gamelift:ListContainerFleets',
+  /**
+   * Grants permission to retrieve the properties of all versions of an existing con
+   * tainer group definition
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListContainerGroupDefinitionVersions.html
+   */
+  ListContainerGroupDefinitionVersions = 'gamelift:ListContainerGroupDefinitionVersions',
+  /**
+   * Grants permission to retrieve the properties of all existing container group de
+   * finitions in the current Region
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListContainerGroupDefinitions.html
+   */
+  ListContainerGroupDefinitions = 'gamelift:ListContainerGroupDefinitions',
+  /**
+   * Grants permission to retrieve the properties of all existing fleet deployments
+   * in the current Region
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListFleetDeployments.html
+   */
+  ListFleetDeployments = 'gamelift:ListFleetDeployments',
   /**
    * Grants permission to retrieve a list of fleet IDs for all fleets in the current
    * Region
@@ -581,6 +654,12 @@ export enum AwsGameliftActions {
    */
   TagResource = 'gamelift:TagResource',
   /**
+   * Grants permission to shut down an existing game session
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_TerminateGameSession.html
+   */
+  TerminateGameSession = 'gamelift:TerminateGameSession',
+  /**
    * Grants permission to untag GameLift resources
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_UntagResource.html
@@ -599,13 +678,26 @@ export enum AwsGameliftActions {
    */
   UpdateBuild = 'gamelift:UpdateBuild',
   /**
+   * Grants permission to update an existing container fleet
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateContainerFleet.html
+   */
+  UpdateContainerFleet = 'gamelift:UpdateContainerFleet',
+  /**
+   * Grants permission to update the properties of an existing container group defin
+   * ition
+   *
+   * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateContainerGroupDefinition.html
+   */
+  UpdateContainerGroupDefinition = 'gamelift:UpdateContainerGroupDefinition',
+  /**
    * Grants permission to update the general properties of an existing fleet
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateFleetAttributes.html
    */
   UpdateFleetAttributes = 'gamelift:UpdateFleetAttributes',
   /**
-   * Grants permission to adjust a fleet's capacity settings
+   * Grants permission to adjust a managed fleet's capacity settings
    *
    * See https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateFleetCapacity.html
    */

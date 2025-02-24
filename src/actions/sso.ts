@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycentersuccessortoawssinglesign-on.html
  *
- * 2024-02-12T09:57:37.885Z
+ * 2025-02-24T21:48:13.281Z
  */
 export enum AwsSsoActions {
   /**

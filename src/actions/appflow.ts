@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonappflow.html
  *
- * 2024-02-12T09:56:00.385Z
+ * 2025-02-24T21:46:42.213Z
  */
 export enum AwsAppflowActions {
   /**

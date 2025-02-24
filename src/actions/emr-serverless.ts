@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonemrserverless.html
  *
- * 2024-02-12T09:57:21.412Z
+ * 2025-02-24T21:47:57.739Z
  */
 export enum AwsEmrServerlessActions {
   /**
@@ -15,6 +15,13 @@ export enum AwsEmrServerlessActions {
    * See https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/interactive-workloads.html
    */
   AccessInteractiveEndpoints = 'emr-serverless:AccessInteractiveEndpoints',
+  /**
+   * Grants permission to execute interactive workloads on Livy Endpoint enabled on
+   * an EMR Serverless Application
+   *
+   * See https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/interactive-workloads-livy-endpoints.html
+   */
+  AccessLivyEndpoints = 'emr-serverless:AccessLivyEndpoints',
   /**
    * Grants permission to cancel a job run
    *
@@ -57,6 +64,12 @@ export enum AwsEmrServerlessActions {
    * See https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ListApplications.html
    */
   ListApplications = 'emr-serverless:ListApplications',
+  /**
+   * Grants permission to list job run attempts associated with a job run
+   *
+   * See https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ListJobRunAttempts.html
+   */
+  ListJobRunAttempts = 'emr-serverless:ListJobRunAttempts',
   /**
    * Grants permission to list job runs associated with an application
    *

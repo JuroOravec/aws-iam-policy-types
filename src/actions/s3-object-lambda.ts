@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3objectlambda.html
  *
- * 2024-02-12T09:59:04.977Z
+ * 2025-02-24T21:49:34.113Z
  */
 export enum AwsS3ObjectLambdaActions {
   /**

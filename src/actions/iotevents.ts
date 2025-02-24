@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotevents.html
  *
- * 2024-02-12T09:57:49.249Z
+ * 2025-02-24T21:48:23.958Z
  */
 export enum AwsIoteventsActions {
   /**

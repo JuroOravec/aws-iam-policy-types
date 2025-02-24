@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3express.html
  *
- * 2024-02-12T09:59:03.477Z
+ * 2025-02-24T21:49:33.087Z
  */
 export enum AwsS3expressActions {
   /**
@@ -41,6 +41,20 @@ export enum AwsS3expressActions {
    */
   GetBucketPolicy = 's3express:GetBucketPolicy',
   /**
+   * Grants permission to return the default encryption configuration for a director
+   * y bucket
+   *
+   * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketEncryption.html
+   */
+  GetEncryptionConfiguration = 's3express:GetEncryptionConfiguration',
+  /**
+   * Grants permission to return the lifecycle configuration information set on a di
+   * rectory bucket
+   *
+   * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html
+   */
+  GetLifecycleConfiguration = 's3express:GetLifecycleConfiguration',
+  /**
    * Grants permission to list all directory buckets owned by the authenticated send
    * er of the request
    *
@@ -53,4 +67,17 @@ export enum AwsS3expressActions {
    * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketPolicy.html
    */
   PutBucketPolicy = 's3express:PutBucketPolicy',
+  /**
+   * Grants permission to set the encryption configuration for a directory bucket
+   *
+   * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncryption.html
+   */
+  PutEncryptionConfiguration = 's3express:PutEncryptionConfiguration',
+  /**
+   * Grants permission to create a new lifecycle configuration for the directory buc
+   * ket or replace an existing lifecycle configuration
+   *
+   * See https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html
+   */
+  PutLifecycleConfiguration = 's3express:PutLifecycleConfiguration',
 }

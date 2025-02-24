@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncognitosync.html
  *
- * 2024-02-12T09:56:41.280Z
+ * 2025-02-24T21:47:20.147Z
  */
 export enum AwsCognitoSyncActions {
   /**

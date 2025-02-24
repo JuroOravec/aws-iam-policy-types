@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedserviceforprometheus.html
  *
- * 2024-02-12T09:58:12.397Z
+ * 2025-02-24T21:48:45.448Z
  */
 export enum AwsApsActions {
   /**
@@ -256,6 +256,12 @@ export enum AwsApsActions {
    * See https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-UpdateLoggingConfiguration
    */
   UpdateLoggingConfiguration = 'aps:UpdateLoggingConfiguration',
+  /**
+   * Grants permission to update a scraper
+   *
+   * See https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-UpdateScraper
+   */
+  UpdateScraper = 'aps:UpdateScraper',
   /**
    * Grants permission to modify the alias of existing AMP workspace
    *

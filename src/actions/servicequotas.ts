@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_servicequotas.html
  *
- * 2024-02-12T09:59:13.676Z
+ * 2025-02-24T21:49:43.363Z
  */
 export enum AwsServicequotasActions {
   /**
@@ -89,7 +89,7 @@ export enum AwsServicequotasActions {
    * Grants permission to return a list of the service quota increase requests from
    * the service quota template
    *
-   * See https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListServiceQuotaIncreaseRequestsInTemplate
+   * See https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListServiceQuotaIncreaseRequestsInTemplate.html
    */
   ListServiceQuotaIncreaseRequestsInTemplate = 'servicequotas:ListServiceQuotaIncreaseRequestsInTemplate',
   /**
@@ -108,7 +108,7 @@ export enum AwsServicequotasActions {
   /**
    * Grants permission to view the existing tags on a SQ resource
    *
-   * See https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListTagsForResource
+   * See https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListTagsForResource.html
    */
   ListTagsForResource = 'servicequotas:ListTagsForResource',
   /**
@@ -126,14 +126,14 @@ export enum AwsServicequotasActions {
   /**
    * Grants permission to associate a set of tags with an existing SQ resource
    *
-   * See https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_TagResource
+   * See https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_TagResource.html
    */
   TagResource = 'servicequotas:TagResource',
   /**
    * Grants permission to remove a set of tags from a SQ resource, where tags to be
    * removed match a set of customer-supplied tag keys
    *
-   * See https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_UntagResource
+   * See https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_UntagResource.html
    */
   UntagResource = 'servicequotas:UntagResource',
 }

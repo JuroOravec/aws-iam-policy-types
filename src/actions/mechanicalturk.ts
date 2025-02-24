@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmechanicalturk.html
  *
- * 2024-02-12T09:58:21.412Z
+ * 2025-02-24T21:48:53.924Z
  */
 export enum AwsMechanicalturkActions {
   /**

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspaymentcryptography.html
  *
- * 2024-02-12T09:58:36.708Z
+ * 2025-02-24T21:49:10.403Z
  */
 export enum AwsPaymentCryptographyActions {
   /**
@@ -68,6 +68,12 @@ export enum AwsPaymentCryptographyActions {
    * See https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_GenerateMac.html
    */
   GenerateMac = 'payment-cryptography:GenerateMac',
+  /**
+   * Grants permission to generate a MAC (Message Authentication Code) cryptogram
+   *
+   * See https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_GenerateMacEmvPinChange.html
+   */
+  GenerateMacEmvPinChange = 'payment-cryptography:GenerateMacEmvPinChange',
   /**
    * Grants permission to generate pin-related data such as PIN, PIN Verification Va
    * lue (PVV), PIN Block and PIN Offset during new card issuance or card re-issuanc

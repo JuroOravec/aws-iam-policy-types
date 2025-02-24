@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonchime.html
  *
- * 2024-02-12T09:56:17.649Z
+ * 2025-02-24T21:46:58.889Z
  */
 export enum AwsChimeActions {
   /**
@@ -68,6 +68,13 @@ export enum AwsChimeActions {
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_AssociateSigninDelegateGroupsWithAccount.html
    */
   AssociateSigninDelegateGroupsWithAccount = 'chime:AssociateSigninDelegateGroupsWithAccount',
+  /**
+   * Grants permission to associate the specified Amazon Connect instance with an Am
+   * azon Chime Voice Connector
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnect.html#amazonconnect-actions-as-permissions
+   */
+  AssociateVoiceConnectorConnect = 'chime:AssociateVoiceConnectorConnect',
   /**
    * Grants permission to authorize an Active Directory for your Amazon Chime Enterp
    * rise account
@@ -170,7 +177,9 @@ export enum AwsChimeActions {
    */
   CreateApiKey = 'chime:CreateApiKey',
   /**
-   * Grants permission to create an app instance under the AWS account
+   * Grants permission to create an app instance in the AWS account (tag-based acces
+   * s controls are only supported on identity-chime.<region>.amazonaws.com endpoint
+   * s)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_CreateAppInstance.html
    */
@@ -182,13 +191,15 @@ export enum AwsChimeActions {
    */
   CreateAppInstanceAdmin = 'chime:CreateAppInstanceAdmin',
   /**
-   * Grants permission to create a bot under an Amazon Chime AppInstance
+   * Grants permission to create a bot within an AppInstance (tag-based access contr
+   * ols are only supported on identity-chime.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_CreateAppInstanceBot.html
    */
   CreateAppInstanceBot = 'chime:CreateAppInstanceBot',
   /**
-   * Grants permission to create a user under an Amazon Chime AppInstance
+   * Grants permission to create a user within an AppInstance (tag-based access cont
+   * rols are only supported on identity-chime.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_CreateAppInstanceUser.html
    */
@@ -213,7 +224,9 @@ export enum AwsChimeActions {
    */
   CreateCDRBucket = 'chime:CreateCDRBucket',
   /**
-   * Grants permission to create a channel for an app instance under the AWS account
+   * Grants permission to create a channel for an app instance in the AWS account (t
+   * ag-based access controls are only supported on messaging-chime.<region>.amazona
+   * ws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html
    */
@@ -225,8 +238,9 @@ export enum AwsChimeActions {
    */
   CreateChannelBan = 'chime:CreateChannelBan',
   /**
-   * Grants permission to create a channel flow for an app instance under the AWS ac
-   * count
+   * Grants permission to create a channel flow for an app instance in the AWS accou
+   * nt (tag-based access controls are only supported on messaging-chime.<region>.am
+   * azonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelFlow.html
    */
@@ -244,50 +258,77 @@ export enum AwsChimeActions {
    */
   CreateChannelModerator = 'chime:CreateChannelModerator',
   /**
-   * Grants permission to create a media capture pipeline
+   * Grants permission to create an Amazon Connect Analytics Connector in the AWS ac
+   * count (tag-based access controls are only supported on voice-chime.<region>.ama
+   * zonaws.com endpoints)
+   *
+   * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnector.html
+   */
+  CreateConnectAnalyticsConnector = 'chime:CreateConnectAnalyticsConnector',
+  /**
+   * Grants permission to create an Amazon Connect Call Transfer Connector in the AW
+   * S account (tag-based access controls are only supported on voice-chime.<region>
+   * .amazonaws.com endpoints)
+   *
+   * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnector.html
+   */
+  CreateConnectCallTransferConnector = 'chime:CreateConnectCallTransferConnector',
+  /**
+   * Grants permission to create a media capture pipeline (tag-based access controls
+   * are only supported on media-pipelines-chime.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html
    */
   CreateMediaCapturePipeline = 'chime:CreateMediaCapturePipeline',
   /**
-   * Grants permission to create a media concatenation pipeline
+   * Grants permission to create a media concatenation pipeline (tag-based access co
+   * ntrols are only supported on media-pipelines-chime.<region>.amazonaws.com endpo
+   * ints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaConcatenationPipeline.html
    */
   CreateMediaConcatenationPipeline = 'chime:CreateMediaConcatenationPipeline',
   /**
-   * Grants permission to create a media insights pipeline
+   * Grants permission to create a media insights pipeline (tag-based access control
+   * s are only supported on media-pipelines-chime.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipeline.html
    */
   CreateMediaInsightsPipeline = 'chime:CreateMediaInsightsPipeline',
   /**
-   * Grants permission to create a media insights pipeline configuration
+   * Grants permission to create a media insights pipeline configuration (tag-based
+   * access controls are only supported on media-pipelines-chime.<region>.amazonaws.
+   * com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaInsightsPipelineConfiguration.html
    */
   CreateMediaInsightsPipelineConfiguration = 'chime:CreateMediaInsightsPipelineConfiguration',
   /**
-   * Grants permission to create a media live connector pipeline
+   * Grants permission to create a media live connector pipeline (tag-based access c
+   * ontrols are only supported on media-pipelines-chime.<region>.amazonaws.com endp
+   * oints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaLiveConnectorPipeline.html
    */
   CreateMediaLiveConnectorPipeline = 'chime:CreateMediaLiveConnectorPipeline',
   /**
-   * Grants permission to create kinesis video stream pool
+   * Grants permission to create kinesis video stream pool (tag-based access control
+   * s are only supported on media-pipelines-chime.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaPipelineKinesisVideoStreamPool.html
    */
   CreateMediaPipelineKinesisVideoStreamPool = 'chime:CreateMediaPipelineKinesisVideoStreamPool',
   /**
-   * Grants permission to create a media stream pipeline
+   * Grants permission to create a media stream pipeline (tag-based access controls
+   * are only supported on media-pipelines-chime.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaStreamPipeline.html
    */
   CreateMediaStreamPipeline = 'chime:CreateMediaStreamPipeline',
   /**
-   * Grants permission to create a new Amazon Chime SDK meeting in the specified med
-   * ia Region, with no initial attendees
+   * Grants permission to create a new meeting in the specified media Region, with n
+   * o initial attendees (tag-based access controls are only supported on meetings-c
+   * hime.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeeting.html
    */
@@ -300,8 +341,9 @@ export enum AwsChimeActions {
    */
   CreateMeetingDialOut = 'chime:CreateMeetingDialOut',
   /**
-   * Grants permission to create a new Amazon Chime SDK meeting in the specified med
-   * ia Region, with a set of attendees
+   * Grants permission to create a new meeting in the specified media Region, with a
+   * set of attendees (tag-based access controls are only supported on meetings-chim
+   * e.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateMeetingWithAttendees.html
    */
@@ -332,8 +374,9 @@ export enum AwsChimeActions {
    */
   CreateRoomMembership = 'chime:CreateRoomMembership',
   /**
-   * Grants permission to create an Amazon Chime SIP media application under the adm
-   * inistrator's AWS account
+   * Grants permission to create an Amazon Chime SIP media application in the AWS ac
+   * count (tag-based access controls are only supported on voice-chime.<region>.ama
+   * zonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateSipMediaApplication.html
    */
@@ -359,10 +402,11 @@ export enum AwsChimeActions {
    */
   CreateUser = 'chime:CreateUser',
   /**
-   * Grants permission to create a Amazon Chime Voice Connector under the administra
-   * tor's AWS account
+   * Grants permission to create a Voice Connector in the AWS account (tag-based acc
+   * ess controls are only supported on voice-chime.<region>.amazonaws.com endpoints
+   * )
    *
-   * See https://docs.aws.amazon.com/chime/latest/APIReference/API_CreateVoiceConnector.html
+   * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceConnector.html
    */
   CreateVoiceConnector = 'chime:CreateVoiceConnector',
   /**
@@ -379,7 +423,8 @@ export enum AwsChimeActions {
    */
   CreateVoiceProfile = 'chime:CreateVoiceProfile',
   /**
-   * Grants permission to create a voice profile domain
+   * Grants permission to create a voice profile domain (tag-based access controls a
+   * re only supported on voice-chime.<region>.amazonaws.com endpoints)
    *
    * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfileDomain.html
    */
@@ -600,6 +645,13 @@ export enum AwsChimeActions {
    */
   DeleteVoiceConnectorEmergencyCallingConfiguration = 'chime:DeleteVoiceConnectorEmergencyCallingConfiguration',
   /**
+   * Grants permission to delete the configuration of the external system that is co
+   * nnected with the specified Amazon Chime Voice Connector
+   *
+   * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_DeleteVoiceConnectorExternalSystemsConfiguration.html
+   */
+  DeleteVoiceConnectorExternalSystemsConfiguration = 'chime:DeleteVoiceConnectorExternalSystemsConfiguration',
+  /**
    * Grants permission to delete the specified Amazon Chime Voice Connector Group
    *
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_DeleteVoiceConnectorGroup.html
@@ -766,6 +818,13 @@ export enum AwsChimeActions {
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_DisassociateSigninDelegateGroupsFromAccount.html
    */
   DisassociateSigninDelegateGroupsFromAccount = 'chime:DisassociateSigninDelegateGroupsFromAccount',
+  /**
+   * Grants permission to disassociate the Amazon Connect instance from the specifie
+   * d Amazon Chime Voice Connector
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnect.html#amazonconnect-actions-as-permissions
+   */
+  DisassociateVoiceConnectorConnect = 'chime:DisassociateVoiceConnectorConnect',
   /**
    * Grants permission to disconnect the Active Directory from your Amazon Chime Ent
    * erprise account
@@ -1038,6 +1097,13 @@ export enum AwsChimeActions {
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_GetVoiceConnectorEmergencyCallingConfiguration.html
    */
   GetVoiceConnectorEmergencyCallingConfiguration = 'chime:GetVoiceConnectorEmergencyCallingConfiguration',
+  /**
+   * Grants permission to get the configuration of the external system that is conne
+   * cted with the specified Amazon Chime Voice Connector
+   *
+   * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_GetVoiceConnectorExternalSystemsConfiguration.html
+   */
+  GetVoiceConnectorExternalSystemsConfiguration = 'chime:GetVoiceConnectorExternalSystemsConfiguration',
   /**
    * Grants permission to get details for the specified Amazon Chime Voice Connector
    * Group
@@ -1541,6 +1607,13 @@ export enum AwsChimeActions {
    */
   PutVoiceConnectorEmergencyCallingConfiguration = 'chime:PutVoiceConnectorEmergencyCallingConfiguration',
   /**
+   * Grants permission to update the configuration of the external system that is co
+   * nnected with the specified Amazon Chime Voice Connector
+   *
+   * See https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorExternalSystemsConfiguration.html
+   */
+  PutVoiceConnectorExternalSystemsConfiguration = 'chime:PutVoiceConnectorExternalSystemsConfiguration',
+  /**
    * Grants permission to add logging configuration for the specified Amazon Chime V
    * oice Connector
    *
@@ -1746,8 +1819,9 @@ export enum AwsChimeActions {
    */
   TagMeeting = 'chime:TagMeeting',
   /**
-   * Grants permission to apply the specified tags to the specified Amazon Chime res
-   * ource
+   * Grants permission to apply the specified tags to the specified resource (tag-ba
+   * sed access controls are only supported on *-chime.<region>.amazonaws.com endpoi
+   * nts)
    *
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_TagResource.html
    */
@@ -1774,8 +1848,9 @@ export enum AwsChimeActions {
    */
   UntagMeeting = 'chime:UntagMeeting',
   /**
-   * Grants permission to untag the specified tags from the specified Amazon Chime r
-   * esource
+   * Grants permission to untag the specified tags from the specified resource (tag-
+   * based access controls are only supported on *-chime.<region>.amazonaws.com endp
+   * oints)
    *
    * See https://docs.aws.amazon.com/chime/latest/APIReference/API_UntagResource.html
    */

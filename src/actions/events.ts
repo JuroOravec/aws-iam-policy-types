@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoneventbridge.html
  *
- * 2024-02-12T09:57:22.487Z
+ * 2025-02-24T21:47:59.767Z
  */
 export enum AwsEventsActions {
   /**
@@ -365,4 +365,10 @@ export enum AwsEventsActions {
    * See https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_UpdateEndpoint.html
    */
   UpdateEndpoint = 'events:UpdateEndpoint',
+  /**
+   * Grants permission to update event buses
+   *
+   * See https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_UpdateEventBus.html
+   */
+  UpdateEventBus = 'events:UpdateEventBus',
 }

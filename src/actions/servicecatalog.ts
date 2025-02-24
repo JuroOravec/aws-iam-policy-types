@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsservicecatalog.html
  *
- * 2024-02-12T09:59:12.654Z
+ * 2025-02-24T21:49:42.394Z
  */
 export enum AwsServicecatalogActions {
   /**
@@ -196,6 +196,12 @@ export enum AwsServicecatalogActions {
    * See https://docs.aws.amazon.com/servicecatalog/latest/dg/API_DeleteProvisioningArtifact.html
    */
   DeleteProvisioningArtifact = 'servicecatalog:DeleteProvisioningArtifact',
+  /**
+   * Grants permission to delete a resource-based policy for the specified resource
+   *
+   * See https://docs.aws.amazon.com/servicecatalog/latest/arguide/sharing-definitions.html
+   */
+  DeleteResourcePolicy = 'servicecatalog:DeleteResourcePolicy',
   /**
    * Grants permission to delete a self-service action
    *
@@ -416,6 +422,12 @@ export enum AwsServicecatalogActions {
    */
   GetProvisionedProductOutputs = 'servicecatalog:GetProvisionedProductOutputs',
   /**
+   * Grants permission to get a resource-based policy for the specified resource
+   *
+   * See https://docs.aws.amazon.com/servicecatalog/latest/arguide/sharing-definitions.html
+   */
+  GetResourcePolicy = 'servicecatalog:GetResourcePolicy',
+  /**
    * Grants permission to import a resource into a provisioned product
    *
    * See https://docs.aws.amazon.com/servicecatalog/latest/dg/API_ImportAsProvisionedProduct.html
@@ -606,6 +618,12 @@ export enum AwsServicecatalogActions {
    * See https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_PutConfiguration.html
    */
   PutConfiguration = 'servicecatalog:PutConfiguration',
+  /**
+   * Grants permission to add a resource-based policy for the specified resource
+   *
+   * See https://docs.aws.amazon.com/servicecatalog/latest/arguide/sharing-definitions.html
+   */
+  PutResourcePolicy = 'servicecatalog:PutResourcePolicy',
   /**
    * Grants permission to reject a portfolio that has been shared with you that you
    * previously accepted

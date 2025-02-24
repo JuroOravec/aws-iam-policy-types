@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudformation.html
  *
- * 2024-02-12T09:56:21.674Z
+ * 2025-02-24T21:47:02.457Z
  */
 export enum AwsCloudformationActions {
   /**
@@ -71,6 +71,12 @@ export enum AwsCloudformationActions {
    * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackInstances.html
    */
   CreateStackInstances = 'cloudformation:CreateStackInstances',
+  /**
+   * Grants permission to create a stack refactor
+   *
+   * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackRefactor.html
+   */
+  CreateStackRefactor = 'cloudformation:CreateStackRefactor',
   /**
    * Grants permission to create a stackset as specified in the template
    *
@@ -203,6 +209,12 @@ export enum AwsCloudformationActions {
    */
   DescribeStackInstance = 'cloudformation:DescribeStackInstance',
   /**
+   * Grants permission to return the description for the specified stack refactor
+   *
+   * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackRefactor.html
+   */
+  DescribeStackRefactor = 'cloudformation:DescribeStackRefactor',
+  /**
    * Grants permission to return a description of the specified resource in the spec
    * ified stack
    *
@@ -293,6 +305,13 @@ export enum AwsCloudformationActions {
    */
   ExecuteChangeSet = 'cloudformation:ExecuteChangeSet',
   /**
+   * Grants permission to execute a stack refactor using the input information that
+   * was provided when the specified stack refactor was created
+   *
+   * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteStackRefactor.html
+   */
+  ExecuteStackRefactor = 'cloudformation:ExecuteStackRefactor',
+  /**
    * Grants permission to retrieve a generated template
    *
    * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetGeneratedTemplate.html
@@ -345,6 +364,13 @@ export enum AwsCloudformationActions {
    */
   ListGeneratedTemplates = 'cloudformation:ListGeneratedTemplates',
   /**
+   * Grants permission to return Hook invocations result information for the specifi
+   * ed target
+   *
+   * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListHookResults.html
+   */
+  ListHookResults = 'cloudformation:ListHookResults',
+  /**
    * Grants permission to list all stacks that are importing an exported output valu
    * e
    *
@@ -388,12 +414,31 @@ export enum AwsCloudformationActions {
    */
   ListStackInstances = 'cloudformation:ListStackInstances',
   /**
+   * Grants permission to return the list of actions of the specified stack refactor
+   *
+   * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackRefactorActions.html
+   */
+  ListStackRefactorActions = 'cloudformation:ListStackRefactorActions',
+  /**
+   * Grants permission to return the ID and status of each active stack refactor
+   *
+   * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackRefactors.html
+   */
+  ListStackRefactors = 'cloudformation:ListStackRefactors',
+  /**
    * Grants permission to return descriptions of all resources of the specified stac
    * k
    *
    * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackResources.html
    */
   ListStackResources = 'cloudformation:ListStackResources',
+  /**
+   * Grants permission to return summary information about StackSet Auto Deployment
+   * Targets
+   *
+   * See https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSetAutoDeploymentTargets.html
+   */
+  ListStackSetAutoDeploymentTargets = 'cloudformation:ListStackSetAutoDeploymentTargets',
   /**
    * Grants permission to return summary information about the results of a stack se
    * t operation

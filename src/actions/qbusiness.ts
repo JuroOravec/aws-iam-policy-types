@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqbusiness.html
  *
- * 2024-02-12T09:58:46.233Z
+ * 2025-02-24T21:49:18.254Z
  */
 export enum AwsQbusinessActions {
   /**
@@ -15,6 +15,20 @@ export enum AwsQbusinessActions {
    * See ${APIReferenceDocPage}API_AddUserLicenses.html
    */
   AddUserLicenses = 'qbusiness:AddUserLicenses',
+  /**
+   * Grants permission to configure vended log delivery for Amazon Q Business applic
+   * ation resource
+   *
+   * See ${UserGuideDocPage}monitoring-overview.html
+   */
+  AllowVendedLogDeliveryForResource = 'qbusiness:AllowVendedLogDeliveryForResource',
+  /**
+   * Grants permission to associate resource based policy statement to the applicati
+   * on
+   *
+   * See ${APIReferenceDocPage}API_AssociatePermission.html
+   */
+  AssociatePermission = 'qbusiness:AssociatePermission',
   /**
    * Grants permission to batch delete document
    *
@@ -27,6 +41,12 @@ export enum AwsQbusinessActions {
    * See ${APIReferenceDocPage}API_BatchPutDocument.html
    */
   BatchPutDocument = 'qbusiness:BatchPutDocument',
+  /**
+   * Grants permission to cancel a subscription
+   *
+   * See ${APIReferenceDocPage}API_CancelSubscription.html
+   */
+  CancelSubscription = 'qbusiness:CancelSubscription',
   /**
    * Grants permission to chat using an application
    *
@@ -46,6 +66,12 @@ export enum AwsQbusinessActions {
    */
   CreateApplication = 'qbusiness:CreateApplication',
   /**
+   * Grants permission to create DataAccessor to the application
+   *
+   * See ${APIReferenceDocPage}API_CreateDataAccessor.html
+   */
+  CreateDataAccessor = 'qbusiness:CreateDataAccessor',
+  /**
    * Grants permission to create a data source for a given application and index
    *
    * See ${APIReferenceDocPage}API_CreateDataSource.html
@@ -57,6 +83,12 @@ export enum AwsQbusinessActions {
    * See ${APIReferenceDocPage}API_CreateIndex.html
    */
   CreateIndex = 'qbusiness:CreateIndex',
+  /**
+   * Grants permission to create a new integration for a Q Business application
+   *
+   * See ${APIReferenceDocPage}API_CreateIntegration.html
+   */
+  CreateIntegration = 'qbusiness:CreateIntegration',
   /**
    * Grants permission to create a license
    *
@@ -76,6 +108,12 @@ export enum AwsQbusinessActions {
    */
   CreateRetriever = 'qbusiness:CreateRetriever',
   /**
+   * Grants permission to create a subscription
+   *
+   * See ${APIReferenceDocPage}API_CreateSubscription.html
+   */
+  CreateSubscription = 'qbusiness:CreateSubscription',
+  /**
    * Grants permission to create a user
    *
    * See ${APIReferenceDocPage}API_CreateUser.html
@@ -94,6 +132,12 @@ export enum AwsQbusinessActions {
    */
   DeleteApplication = 'qbusiness:DeleteApplication',
   /**
+   * Grants permission to delete an attachment in the current chat context
+   *
+   * See ${APIReferenceDocPage}API_DeleteAttachment.html
+   */
+  DeleteAttachment = 'qbusiness:DeleteAttachment',
+  /**
    * Grants permission to delete chat controls configuration for an application
    *
    * See ${APIReferenceDocPage}API_DeleteChatControlsConfiguration.html
@@ -105,6 +149,12 @@ export enum AwsQbusinessActions {
    * See ${APIReferenceDocPage}API_DeleteConversation.html
    */
   DeleteConversation = 'qbusiness:DeleteConversation',
+  /**
+   * Grants permission to delete DataAccessor
+   *
+   * See ${APIReferenceDocPage}API_DeleteDataAccessor.html
+   */
+  DeleteDataAccessor = 'qbusiness:DeleteDataAccessor',
   /**
    * Grants permission to delete a DataSource
    *
@@ -123,6 +173,12 @@ export enum AwsQbusinessActions {
    * See ${APIReferenceDocPage}API_DeleteIndex.html
    */
   DeleteIndex = 'qbusiness:DeleteIndex',
+  /**
+   * Grants permission to delete an integration for a Q Business application
+   *
+   * See ${APIReferenceDocPage}API_DeleteIntegration.html
+   */
+  DeleteIntegration = 'qbusiness:DeleteIntegration',
   /**
    * Grants permission to delete a plugin
    *
@@ -148,6 +204,20 @@ export enum AwsQbusinessActions {
    */
   DeleteWebExperience = 'qbusiness:DeleteWebExperience',
   /**
+   * Grants permission to disable the ACL crawl while creating the Amazon Q Business
+   * data source resource
+   *
+   * See ${UserGuideDocPage}setting-up.html#DisableAclOnDataSource
+   */
+  DisableAclOnDataSource = 'qbusiness:DisableAclOnDataSource',
+  /**
+   * Grants permission to disassociate resource based policy statement to the applic
+   * ation
+   *
+   * See ${APIReferenceDocPage}API_DisassociatePermission.html
+   */
+  DisassociatePermission = 'qbusiness:DisassociatePermission',
+  /**
    * Grants permission to get an application
    *
    * See ${APIReferenceDocPage}API_GetApplication.html
@@ -159,6 +229,12 @@ export enum AwsQbusinessActions {
    * See ${APIReferenceDocPage}API_GetChatControlsConfiguration.html
    */
   GetChatControlsConfiguration = 'qbusiness:GetChatControlsConfiguration',
+  /**
+   * Grants permission to get DataAccessor
+   *
+   * See ${APIReferenceDocPage}API_GetDataAccessor.html
+   */
+  GetDataAccessor = 'qbusiness:GetDataAccessor',
   /**
    * Grants permission to get a data source
    *
@@ -178,17 +254,35 @@ export enum AwsQbusinessActions {
    */
   GetIndex = 'qbusiness:GetIndex',
   /**
+   * Grants permission to get an integration for a Q Business application
+   *
+   * See ${APIReferenceDocPage}API_GetIntegration.html
+   */
+  GetIntegration = 'qbusiness:GetIntegration',
+  /**
    * Grants permission to get a license
    *
    * See ${APIReferenceDocPage}API_GetLicense.html
    */
   GetLicense = 'qbusiness:GetLicense',
   /**
+   * Grants permission to get the media associated to a system message
+   *
+   * See ${APIReferenceDocPage}API_GetMedia.html
+   */
+  GetMedia = 'qbusiness:GetMedia',
+  /**
    * Grants permission to get a plugin
    *
    * See ${APIReferenceDocPage}API_GetPlugin.html
    */
   GetPlugin = 'qbusiness:GetPlugin',
+  /**
+   * Grants permission to get resource based policy of the application
+   *
+   * See ${APIReferenceDocPage}API_GetPolicy.html
+   */
+  GetPolicy = 'qbusiness:GetPolicy',
   /**
    * Grants permission to get a retriever
    *
@@ -214,11 +308,23 @@ export enum AwsQbusinessActions {
    */
   ListApplications = 'qbusiness:ListApplications',
   /**
+   * Grants permission to list attachments in the current chat context
+   *
+   * See ${APIReferenceDocPage}API_ListAttachments.html
+   */
+  ListAttachments = 'qbusiness:ListAttachments',
+  /**
    * Grants permission to list all conversations for an application
    *
    * See ${APIReferenceDocPage}API_ListConversations.html
    */
   ListConversations = 'qbusiness:ListConversations',
+  /**
+   * Grants permission to list DataAccessors for the application
+   *
+   * See ${APIReferenceDocPage}API_ListDataAccessors.html
+   */
+  ListDataAccessors = 'qbusiness:ListDataAccessors',
   /**
    * Grants permission to get Data Source sync job history
    *
@@ -250,11 +356,35 @@ export enum AwsQbusinessActions {
    */
   ListIndices = 'qbusiness:ListIndices',
   /**
+   * Grants permission to list all integrations for a Q Business application
+   *
+   * See ${APIReferenceDocPage}API_ListIntegrations.html
+   */
+  ListIntegrations = 'qbusiness:ListIntegrations',
+  /**
    * Grants permission to list all messages
    *
    * See ${APIReferenceDocPage}API_ListMessages.html
    */
   ListMessages = 'qbusiness:ListMessages',
+  /**
+   * Grants permission to list the plugins actions of a plugin within application
+   *
+   * See ${APIReferenceDocPage}API_ListPluginActions.html
+   */
+  ListPluginActions = 'qbusiness:ListPluginActions',
+  /**
+   * Grants permission to list all the actions for a plugin type
+   *
+   * See ${APIReferenceDocPage}API_ListPluginTypeActions.html
+   */
+  ListPluginTypeActions = 'qbusiness:ListPluginTypeActions',
+  /**
+   * Grants permission to list all the plugin type metadata
+   *
+   * See ${APIReferenceDocPage}API_ListPluginTypeMetadata.html
+   */
+  ListPluginTypeMetadata = 'qbusiness:ListPluginTypeMetadata',
   /**
    * Grants permission to list the plugins of an application
    *
@@ -267,6 +397,12 @@ export enum AwsQbusinessActions {
    * See ${APIReferenceDocPage}API_ListRetrievers.html
    */
   ListRetrievers = 'qbusiness:ListRetrievers',
+  /**
+   * Grants permission to list subscriptions
+   *
+   * See ${APIReferenceDocPage}API_ListSubscriptions.html
+   */
+  ListSubscriptions = 'qbusiness:ListSubscriptions',
   /**
    * Grants permission to list tags for a resource
    *
@@ -298,17 +434,36 @@ export enum AwsQbusinessActions {
    */
   PutGroup = 'qbusiness:PutGroup',
   /**
+   * Grants permission to put resource based policy statement to the application
+   *
+   * See ${APIReferenceDocPage}API_AssociatePermission.html
+   */
+  PutResourcePolicy = 'qbusiness:PutResourcePolicy',
+  /**
    * Grants permission to remove licenses for one or more users
    *
    * See ${APIReferenceDocPage}API_RemoveUserLicenses.html
    */
   RemoveUserLicenses = 'qbusiness:RemoveUserLicenses',
   /**
+   * Grants permission to search relevant content from the Amazon Q Business Applica
+   * tion
+   *
+   * See ${APIReferenceDocPage}API_SearchRelevantContent.html
+   */
+  SearchRelevantContent = 'qbusiness:SearchRelevantContent',
+  /**
    * Grants permission to start Data Source sync job
    *
    * See ${APIReferenceDocPage}API_StartDataSourceSyncJob.html
    */
   StartDataSourceSyncJob = 'qbusiness:StartDataSourceSyncJob',
+  /**
+   * Grants permission to start deployment for an integration
+   *
+   * See ${APIReferenceDocPage}API_StartDeployment.html
+   */
+  StartDeployment = 'qbusiness:StartDeployment',
   /**
    * Grants permission to stop Data Source sync job
    *
@@ -340,6 +495,12 @@ export enum AwsQbusinessActions {
    */
   UpdateChatControlsConfiguration = 'qbusiness:UpdateChatControlsConfiguration',
   /**
+   * Grants permission to update DataAccessor
+   *
+   * See ${APIReferenceDocPage}API_UpdateDataAccessor.html
+   */
+  UpdateDataAccessor = 'qbusiness:UpdateDataAccessor',
+  /**
    * Grants permission to update a DataSource
    *
    * See ${APIReferenceDocPage}API_UpdateDataSource.html
@@ -352,6 +513,12 @@ export enum AwsQbusinessActions {
    */
   UpdateIndex = 'qbusiness:UpdateIndex',
   /**
+   * Grants permission to update an integration for a Q Business application
+   *
+   * See ${APIReferenceDocPage}API_UpdateIntegration.html
+   */
+  UpdateIntegration = 'qbusiness:UpdateIntegration',
+  /**
    * Grants permission to update a plugin
    *
    * See ${APIReferenceDocPage}API_UpdatePlugin.html
@@ -363,6 +530,12 @@ export enum AwsQbusinessActions {
    * See ${APIReferenceDocPage}API_UpdateRetriever.html
    */
   UpdateRetriever = 'qbusiness:UpdateRetriever',
+  /**
+   * Grants permission to update a subscription
+   *
+   * See ${APIReferenceDocPage}API_UpdateSubscription.html
+   */
+  UpdateSubscription = 'qbusiness:UpdateSubscription',
   /**
    * Grants permission to update a user
    *

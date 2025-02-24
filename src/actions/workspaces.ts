@@ -6,9 +6,16 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkspaces.html
  *
- * 2024-02-12T09:59:42.532Z
+ * 2025-02-24T21:50:11.572Z
  */
 export enum AwsWorkspacesActions {
+  /**
+   * Grants permission to accept invitations from other AWS accounts to share the sa
+   * me configuration for WorkSpaces BYOL
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_AcceptAccountLinkInvitation.html
+   */
+  AcceptAccountLinkInvitation = 'workspaces:AcceptAccountLinkInvitation',
   /**
    * Grants permission to associate connection aliases with directories
    *
@@ -39,6 +46,13 @@ export enum AwsWorkspacesActions {
    * See https://docs.aws.amazon.com/workspaces/latest/api/API_CopyWorkspaceImage.html
    */
   CopyWorkspaceImage = 'workspaces:CopyWorkspaceImage',
+  /**
+   * Grants permission to invite other AWS accounts to share the same configuration
+   * for WorkSpaces BYOL
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_CreateAccountLinkInvitation.html
+   */
+  CreateAccountLinkInvitation = 'workspaces:CreateAccountLinkInvitation',
   /**
    * Grants permission to create an Amazon Connect client add-in within a directory
    *
@@ -94,6 +108,19 @@ export enum AwsWorkspacesActions {
    * See https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspaces.html
    */
   CreateWorkspaces = 'workspaces:CreateWorkspaces',
+  /**
+   * Grants permission to create a WorkSpaces Pool
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspacesPool.html
+   */
+  CreateWorkspacesPool = 'workspaces:CreateWorkspacesPool',
+  /**
+   * Grants permission to delete invitations to other AWS accounts to share the same
+   * configuration for WorkSpaces BYOL
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteAccountLinkInvitation.html
+   */
+  DeleteAccountLinkInvitation = 'workspaces:DeleteAccountLinkInvitation',
   /**
    * Grants permission to delete AWS WorkSpaces Client branding data within a direct
    * ory
@@ -288,6 +315,19 @@ export enum AwsWorkspacesActions {
    */
   DescribeWorkspacesConnectionStatus = 'workspaces:DescribeWorkspacesConnectionStatus',
   /**
+   * Grants permission to retrieve information about the sessions of a WorkSpaces Po
+   * ol
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorkspacesPoolSessions.html
+   */
+  DescribeWorkspacesPoolSessions = 'workspaces:DescribeWorkspacesPoolSessions',
+  /**
+   * Grants permission to retrieve information about WorkSpaces Pools
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorkspacesPools.html
+   */
+  DescribeWorkspacesPools = 'workspaces:DescribeWorkspacesPools',
+  /**
    * Grants permission to disassociate connection aliases from directories
    *
    * See https://docs.aws.amazon.com/workspaces/latest/api/API_DisassociateConnectionAlias.html
@@ -306,6 +346,13 @@ export enum AwsWorkspacesActions {
    */
   DisassociateWorkspaceApplication = 'workspaces:DisassociateWorkspaceApplication',
   /**
+   * Grants permission to retrieve a link with another AWS Account for sharing confi
+   * guration for WorkSpaces BYOL
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_GetAccountLink.html
+   */
+  GetAccountLink = 'workspaces:GetAccountLink',
+  /**
    * Grants permission to import AWS WorkSpaces Client branding data within a direct
    * ory
    *
@@ -319,6 +366,13 @@ export enum AwsWorkspacesActions {
    * See https://docs.aws.amazon.com/workspaces/latest/api/API_ImportWorkspaceImage.html
    */
   ImportWorkspaceImage = 'workspaces:ImportWorkspaceImage',
+  /**
+   * Grants permission to retrieve links with the AWS Account(s) that share your con
+   * figuration for WorkSpaces BYOL
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_ListAccountLinks.html
+   */
+  ListAccountLinks = 'workspaces:ListAccountLinks',
   /**
    * Grants permission to list the available CIDR ranges for enabling Bring Your Own
    * License (BYOL) for WorkSpaces accounts
@@ -366,6 +420,12 @@ export enum AwsWorkspacesActions {
    */
   ModifySelfservicePermissions = 'workspaces:ModifySelfservicePermissions',
   /**
+   * Grants permission to modify the streaming properties
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyStreamingProperties.html
+   */
+  ModifyStreamingProperties = 'workspaces:ModifyStreamingProperties',
+  /**
    * Grants permission to specify which devices and operating systems users can use
    * to access their WorkSpaces
    *
@@ -410,6 +470,13 @@ export enum AwsWorkspacesActions {
    */
   RegisterWorkspaceDirectory = 'workspaces:RegisterWorkspaceDirectory',
   /**
+   * Grants permission to reject invitations from other AWS accounts to share the sa
+   * me configuration for WorkSpaces BYOL
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_RejectAccountLinkInvitation.html
+   */
+  RejectAccountLinkInvitation = 'workspaces:RejectAccountLinkInvitation',
+  /**
    * Grants permission to restore WorkSpaces
    *
    * See https://docs.aws.amazon.com/workspaces/latest/api/API_RestoreWorkspace.html
@@ -428,11 +495,23 @@ export enum AwsWorkspacesActions {
    */
   StartWorkspaces = 'workspaces:StartWorkspaces',
   /**
+   * Grants permission to start a WorkSpaces Pool
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_StartWorkspacesPool.html
+   */
+  StartWorkspacesPool = 'workspaces:StartWorkspacesPool',
+  /**
    * Grants permission to stop AutoStop WorkSpaces
    *
    * See https://docs.aws.amazon.com/workspaces/latest/api/API_StopWorkspaces.html
    */
   StopWorkspaces = 'workspaces:StopWorkspaces',
+  /**
+   * Grants permission to stop a WorkSpaces Pool
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_StopWorkspacesPool.html
+   */
+  StopWorkspacesPool = 'workspaces:StopWorkspacesPool',
   /**
    * Grants permission to federated users to sign in by using their existing credent
    * ials and stream their workspace
@@ -446,6 +525,18 @@ export enum AwsWorkspacesActions {
    * See https://docs.aws.amazon.com/workspaces/latest/api/API_TerminateWorkspaces.html
    */
   TerminateWorkspaces = 'workspaces:TerminateWorkspaces',
+  /**
+   * Grants permission to terminate a WorkSpaces Pool
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_TerminateWorkspacesPool.html
+   */
+  TerminateWorkspacesPool = 'workspaces:TerminateWorkspacesPool',
+  /**
+   * Grants permission to terminate a WorkSpaces Pool session
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_TerminateWorkspacesPoolSession.html
+   */
+  TerminateWorkspacesPoolSession = 'workspaces:TerminateWorkspacesPoolSession',
   /**
    * Grants permission to update an Amazon Connect client add-in. Use this action to
    * update the name and endpoint URL of an Amazon Connect client add-in
@@ -478,4 +569,10 @@ export enum AwsWorkspacesActions {
    * See https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateWorkspaceImagePermission.html
    */
   UpdateWorkspaceImagePermission = 'workspaces:UpdateWorkspaceImagePermission',
+  /**
+   * Grants permission to update the WorkSpaces pool
+   *
+   * See https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateWorkspacesPool.html
+   */
+  UpdateWorkspacesPool = 'workspaces:UpdateWorkspacesPool',
 }

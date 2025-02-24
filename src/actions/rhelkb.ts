@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrhelknowledgebaseportal.html
  *
- * 2024-02-12T09:58:57.398Z
+ * 2025-02-24T21:49:27.932Z
  */
 export enum AwsRhelkbActions {
   /**

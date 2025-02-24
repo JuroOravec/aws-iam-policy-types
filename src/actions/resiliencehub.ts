@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsresiliencehub.html
  *
- * 2024-02-12T09:58:54.356Z
+ * 2025-02-24T21:49:25.547Z
  */
 export enum AwsResiliencehubActions {
+  /**
+   * Grants permission to accept resource grouping recommendations
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_AcceptResourceGroupingRecommendations.html
+   */
+  AcceptResourceGroupingRecommendations = 'resiliencehub:AcceptResourceGroupingRecommendations',
   /**
    * Grants permission to add draft application version resource mappings
    *
@@ -142,11 +148,24 @@ export enum AwsResiliencehubActions {
    */
   DescribeDraftAppVersionResourcesImportStatus = 'resiliencehub:DescribeDraftAppVersionResourcesImportStatus',
   /**
+   * Grants permission to describe metrics export
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeMetricsExport.html
+   */
+  DescribeMetricsExport = 'resiliencehub:DescribeMetricsExport',
+  /**
    * Grants permission to describe resiliency policy
    *
    * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeResiliencyPolicy.html
    */
   DescribeResiliencyPolicy = 'resiliencehub:DescribeResiliencyPolicy',
+  /**
+   * Grants permission to describe the latest status of the grouping recommendation
+   * process
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeResourceGroupingRecommendationTask.html
+   */
+  DescribeResourceGroupingRecommendationTask = 'resiliencehub:DescribeResourceGroupingRecommendationTask',
   /**
    * Grants permission to import resources to draft application version
    *
@@ -166,6 +185,13 @@ export enum AwsResiliencehubActions {
    * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppAssessmentComplianceDrifts.html
    */
   ListAppAssessmentComplianceDrifts = 'resiliencehub:ListAppAssessmentComplianceDrifts',
+  /**
+   * Grants permission to list resource drifts that were detected while running an a
+   * ssessment
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppAssessmentResourceDrifts.html
+   */
+  ListAppAssessmentResourceDrifts = 'resiliencehub:ListAppAssessmentResourceDrifts',
   /**
    * Grants permission to list application assessment
    *
@@ -221,6 +247,12 @@ export enum AwsResiliencehubActions {
    */
   ListApps = 'resiliencehub:ListApps',
   /**
+   * Grants permission to list metrics
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListMetrics.html
+   */
+  ListMetrics = 'resiliencehub:ListMetrics',
+  /**
    * Grants permission to list recommendation templates
    *
    * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListRecommendationTemplates.html
@@ -232,6 +264,12 @@ export enum AwsResiliencehubActions {
    * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListResiliencyPolicies.html
    */
   ListResiliencyPolicies = 'resiliencehub:ListResiliencyPolicies',
+  /**
+   * Grants permission to list resource grouping recommendations
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListResourceGroupingRecommendations.html
+   */
+  ListResourceGroupingRecommendations = 'resiliencehub:ListResourceGroupingRecommendations',
   /**
    * Grants permission to list SOP recommendations
    *
@@ -275,6 +313,12 @@ export enum AwsResiliencehubActions {
    */
   PutDraftAppVersionTemplate = 'resiliencehub:PutDraftAppVersionTemplate',
   /**
+   * Grants permission to reject resource grouping recommendations
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_RejectResourceGroupingRecommendations.html
+   */
+  RejectResourceGroupingRecommendations = 'resiliencehub:RejectResourceGroupingRecommendations',
+  /**
    * Grants permission to remove draft application version mappings
    *
    * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_RemoveDraftAppVersionResourceMappings.html
@@ -292,6 +336,18 @@ export enum AwsResiliencehubActions {
    * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_StartAppAssessment.html
    */
   StartAppAssessment = 'resiliencehub:StartAppAssessment',
+  /**
+   * Grants permission to start the metrics export
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_StartMetricsExport.html
+   */
+  StartMetricsExport = 'resiliencehub:StartMetricsExport',
+  /**
+   * Grants permission to start the grouping recommendation generation process
+   *
+   * See https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_StartResourceGroupingRecommendationTask.html
+   */
+  StartResourceGroupingRecommendationTask = 'resiliencehub:StartResourceGroupingRecommendationTask',
   /**
    * Grants permission to assign a resource tag
    *

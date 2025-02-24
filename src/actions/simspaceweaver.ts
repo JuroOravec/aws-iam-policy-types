@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssimspaceweaver.html
  *
- * 2024-02-12T09:59:18.079Z
+ * 2025-02-24T21:49:47.820Z
  */
 export enum AwsSimspaceweaverActions {
   /**

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondatalifecyclemanager.html
  *
- * 2024-02-12T09:56:51.778Z
+ * 2025-02-24T21:47:30.742Z
  */
 export enum AwsDlmActions {
   /**

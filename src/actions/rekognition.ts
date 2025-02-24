@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrekognition.html
  *
- * 2024-02-12T09:58:53.685Z
+ * 2025-02-24T21:49:24.546Z
  */
 export enum AwsRekognitionActions {
   /**

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2imagebuilder.html
  *
- * 2024-02-12T09:57:04.585Z
+ * 2025-02-24T21:47:43.091Z
  */
 export enum AwsImagebuilderActions {
   /**
@@ -209,6 +209,12 @@ export enum AwsImagebuilderActions {
    */
   GetLifecyclePolicy = 'imagebuilder:GetLifecyclePolicy',
   /**
+   * Grants permission to retrieve Marketplace provided resource
+   *
+   * See https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetMarketplaceResource.html
+   */
+  GetMarketplaceResource = 'imagebuilder:GetMarketplaceResource',
+  /**
    * Grants permission to view details about a workflow
    *
    * See https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetWorkflow.html
@@ -232,6 +238,12 @@ export enum AwsImagebuilderActions {
    * See https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ImportComponent.html
    */
   ImportComponent = 'imagebuilder:ImportComponent',
+  /**
+   * Grants permission to import a disk image
+   *
+   * See https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ImportDiskImage.html
+   */
+  ImportDiskImage = 'imagebuilder:ImportDiskImage',
   /**
    * Grants permission to import an image
    *

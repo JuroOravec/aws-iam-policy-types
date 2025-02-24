@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediapackage.html
  *
- * 2024-02-12T09:57:17.337Z
+ * 2025-02-24T21:47:53.920Z
  */
 export enum AwsMediapackageActions {
   /**

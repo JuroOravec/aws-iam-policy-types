@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworklink.html
  *
- * 2024-02-12T09:59:40.881Z
+ * 2025-02-24T21:50:10.035Z
  */
 export enum AwsWorklinkActions {
   /**

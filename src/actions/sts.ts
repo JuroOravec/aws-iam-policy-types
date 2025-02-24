@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssecuritytokenservice.html
  *
- * 2024-02-12T09:59:11.050Z
+ * 2025-02-24T21:49:40.870Z
  */
 export enum AwsStsActions {
   /**
@@ -31,6 +31,13 @@ export enum AwsStsActions {
    * See https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html
    */
   AssumeRoleWithWebIdentity = 'sts:AssumeRoleWithWebIdentity',
+  /**
+   * Grants permission to obtain a set of temporary security credentials that you ca
+   * n use to perform privileged tasks in member accounts in your organization
+   *
+   * See https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoot.html
+   */
+  AssumeRoot = 'sts:AssumeRoot',
   /**
    * Grants permission to decode additional information about the authorization stat
    * us of a request from an encoded message returned in response to an AWS request

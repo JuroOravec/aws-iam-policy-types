@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudwatchinternetmonitor.html
  *
- * 2024-02-12T09:56:28.197Z
+ * 2025-02-24T21:47:08.509Z
  */
 export enum AwsInternetmonitorActions {
   /**
@@ -29,6 +29,12 @@ export enum AwsInternetmonitorActions {
    */
   GetHealthEvent = 'internetmonitor:GetHealthEvent',
   /**
+   * Grants permission to get information about a specified internet event
+   *
+   * See https://docs.aws.amazon.com/internet-monitor/latest/api/API_GetInternetEvent.html
+   */
+  GetInternetEvent = 'internetmonitor:GetInternetEvent',
+  /**
    * Grants permission to get information about a monitor
    *
    * See https://docs.aws.amazon.com/internet-monitor/latest/api/API_GetMonitor.html
@@ -47,11 +53,23 @@ export enum AwsInternetmonitorActions {
    */
   GetQueryStatus = 'internetmonitor:GetQueryStatus',
   /**
+   * Grants permission to share Internet Monitor resources with a monitoring account
+   *
+   * See https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account-Setup.html#CloudWatch-Unified-Cross-Account-Setup-permissions
+   */
+  Link = 'internetmonitor:Link',
+  /**
    * Grants permission to list all health events for a monitor
    *
    * See https://docs.aws.amazon.com/internet-monitor/latest/api/API_ListHealthEvents.html
    */
   ListHealthEvents = 'internetmonitor:ListHealthEvents',
+  /**
+   * Grants permission to list all internet events
+   *
+   * See https://docs.aws.amazon.com/internet-monitor/latest/api/API_ListInternetEvents.html
+   */
+  ListInternetEvents = 'internetmonitor:ListInternetEvents',
   /**
    * Grants permission to list all monitors in an account and their statuses
    *

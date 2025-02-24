@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmessagedeliveryservice.html
  *
- * 2024-02-12T09:58:22.544Z
+ * 2025-02-24T21:48:54.921Z
  */
 export enum AwsEc2messagesActions {
   /**

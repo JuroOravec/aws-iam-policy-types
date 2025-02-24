@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsperformanceinsights.html
  *
- * 2024-02-12T09:58:37.866Z
+ * 2025-02-24T21:49:11.350Z
  */
 export enum AwsPiActions {
   /**

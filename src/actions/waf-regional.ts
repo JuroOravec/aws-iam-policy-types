@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awswafregional.html
  *
- * 2024-02-12T09:59:38.181Z
+ * 2025-02-24T21:50:07.263Z
  */
 export enum AwsWafRegionalActions {
   /**

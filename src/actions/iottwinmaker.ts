@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiottwinmaker.html
  *
- * 2024-02-12T09:57:53.639Z
+ * 2025-02-24T21:48:27.545Z
  */
 export enum AwsIottwinmakerActions {
   /**

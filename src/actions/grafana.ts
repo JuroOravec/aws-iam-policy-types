@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedgrafana.html
  *
- * 2024-02-12T09:58:11.850Z
+ * 2025-02-24T21:48:44.949Z
  */
 export enum AwsGrafanaActions {
   /**
@@ -28,6 +28,18 @@ export enum AwsGrafanaActions {
    */
   CreateWorkspaceApiKey = 'grafana:CreateWorkspaceApiKey',
   /**
+   * Grants permission to create service accounts for a workspace
+   *
+   * See https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
+   */
+  CreateWorkspaceServiceAccount = 'grafana:CreateWorkspaceServiceAccount',
+  /**
+   * Grants permission to create service account tokens for a workspace
+   *
+   * See https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
+   */
+  CreateWorkspaceServiceAccountToken = 'grafana:CreateWorkspaceServiceAccountToken',
+  /**
    * Grants permission to delete a workspace
    *
    * See https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
@@ -39,6 +51,18 @@ export enum AwsGrafanaActions {
    * See https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
    */
   DeleteWorkspaceApiKey = 'grafana:DeleteWorkspaceApiKey',
+  /**
+   * Grants permission to delete service accounts for a workspace
+   *
+   * See https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
+   */
+  DeleteWorkspaceServiceAccount = 'grafana:DeleteWorkspaceServiceAccount',
+  /**
+   * Grants permission to delete service account tokens for a workspace
+   *
+   * See https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
+   */
+  DeleteWorkspaceServiceAccountToken = 'grafana:DeleteWorkspaceServiceAccountToken',
   /**
    * Grants permission to describe a workspace
    *
@@ -83,6 +107,18 @@ export enum AwsGrafanaActions {
    * See https://docs.aws.amazon.com/grafana/latest/APIReference/API_ListVersions.html
    */
   ListVersions = 'grafana:ListVersions',
+  /**
+   * Grants permission to list service account tokens for a workspace
+   *
+   * See https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
+   */
+  ListWorkspaceServiceAccountTokens = 'grafana:ListWorkspaceServiceAccountTokens',
+  /**
+   * Grants permission to list service accounts for a workspace
+   *
+   * See https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
+   */
+  ListWorkspaceServiceAccounts = 'grafana:ListWorkspaceServiceAccounts',
   /**
    * Grants permission to list workspaces
    *

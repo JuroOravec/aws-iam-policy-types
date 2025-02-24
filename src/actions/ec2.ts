@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html
  *
- * 2024-02-12T09:57:03.410Z
+ * 2025-02-24T21:47:42.045Z
  */
 export enum AwsEc2Actions {
   /**
@@ -15,6 +15,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptAddressTransfer.html
    */
   AcceptAddressTransfer = 'ec2:AcceptAddressTransfer',
+  /**
+   * Grants permission to accept assign billing of the available capacity of a share
+   * d Capacity Reservation to the calling account
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptCapacityReservationBillingOwnership.html
+   */
+  AcceptCapacityReservationBillingOwnership = 'ec2:AcceptCapacityReservationBillingOwnership',
   /**
    * Grants permission to accept a Convertible Reserved Instance exchange quote
    *
@@ -114,6 +121,13 @@ export enum AwsEc2Actions {
    */
   AssociateAddress = 'ec2:AssociateAddress',
   /**
+   * Grants permission to assign billing of the unused capacity of a shared Capacity
+   * Reservation to a consumer account
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateCapacityReservationBillingOwner.html
+   */
+  AssociateCapacityReservationBillingOwner = 'ec2:AssociateCapacityReservationBillingOwner',
+  /**
    * Grants permission to associate a target network with a Client VPN endpoint
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateClientVpnTargetNetwork.html
@@ -172,6 +186,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateRouteTable.html
    */
   AssociateRouteTable = 'ec2:AssociateRouteTable',
+  /**
+   * Grants permission to associate a security group with another VPC in the same Re
+   * gion
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateSecurityGroupVpc.html
+   */
+  AssociateSecurityGroupVpc = 'ec2:AssociateSecurityGroupVpc',
   /**
    * Grants permission to associate a CIDR block with a subnet
    *
@@ -309,6 +330,12 @@ export enum AwsEc2Actions {
    */
   CancelConversionTask = 'ec2:CancelConversionTask',
   /**
+   * Grants permission to cancel a declarative policies report
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelDeclarativePoliciesReport.html
+   */
+  CancelDeclarativePoliciesReport = 'ec2:CancelDeclarativePoliciesReport',
+  /**
    * Grants permission to cancel an active export task
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelExportTask.html
@@ -364,8 +391,7 @@ export enum AwsEc2Actions {
   CopyFpgaImage = 'ec2:CopyFpgaImage',
   /**
    * Grants permission to copy an Amazon Machine Image (AMI) from a source Region to
-   * the current Region. Resource-level permissions specified for this action apply
-   * to the new AMI only. They do not apply to the source AMI
+   * the current Region
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyImage.html
    */
@@ -384,6 +410,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCapacityReservation.html
    */
   CreateCapacityReservation = 'ec2:CreateCapacityReservation',
+  /**
+   * Grants permission to create a new Capacity Reservation by splitting the availab
+   * le capacity of the source Capacity Reservation
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCapacityReservationBySplitting.html
+   */
+  CreateCapacityReservationBySplitting = 'ec2:CreateCapacityReservationBySplitting',
   /**
    * Grants permission to create a Capacity Reservation Fleet
    *
@@ -523,6 +556,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpam.html
    */
   CreateIpam = 'ec2:CreateIpam',
+  /**
+   * Grants permission to create a verification token, which proves ownership of an
+   * external resource
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamExternalResourceVerificationToken.html
+   */
+  CreateIpamExternalResourceVerificationToken = 'ec2:CreateIpamExternalResourceVerificationToken',
   /**
    * Grants permission to create an IP address pool for Amazon VPC IP Address Manage
    * r (IPAM), which is a collection of contiguous IP address CIDRs
@@ -868,6 +908,13 @@ export enum AwsEc2Actions {
    */
   CreateVpc = 'ec2:CreateVpc',
   /**
+   * Grants permission to create an exclusion list for blocked public access on a VP
+   * C
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcBlockPublicAccessExclusion.html
+   */
+  CreateVpcBlockPublicAccessExclusion = 'ec2:CreateVpcBlockPublicAccessExclusion',
+  /**
    * Grants permission to create a VPC endpoint for an AWS service
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpoint.html
@@ -1012,6 +1059,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpam.html
    */
   DeleteIpam = 'ec2:DeleteIpam',
+  /**
+   * Grants permission to delete a verification token, which proves ownership of an
+   * external resource
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamExternalResourceVerificationToken.html
+   */
+  DeleteIpamExternalResourceVerificationToken = 'ec2:DeleteIpamExternalResourceVerificationToken',
   /**
    * Grants permission to delete an Amazon VPC IP Address Manager (IPAM) pool
    *
@@ -1347,6 +1401,13 @@ export enum AwsEc2Actions {
    */
   DeleteVpc = 'ec2:DeleteVpc',
   /**
+   * Grants permission to delete an exclusion list for blocked public access on a VP
+   * C
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcBlockPublicAccessExclusion.html
+   */
+  DeleteVpcBlockPublicAccessExclusion = 'ec2:DeleteVpcBlockPublicAccessExclusion',
+  /**
    * Grants permission to delete one or more VPC endpoint connection notifications
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcEndpointConnectionNotifications.html
@@ -1504,11 +1565,30 @@ export enum AwsEc2Actions {
    */
   DescribeByoipCidrs = 'ec2:DescribeByoipCidrs',
   /**
+   * Grants permission to describe Capacity Block extensions history
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityBlockExtensionHistory.html
+   */
+  DescribeCapacityBlockExtensionHistory = 'ec2:DescribeCapacityBlockExtensionHistory',
+  /**
+   * Grants permission to describe Capacity Block extensions offerings
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityBlockExtensionOfferings.html
+   */
+  DescribeCapacityBlockExtensionOfferings = 'ec2:DescribeCapacityBlockExtensionOfferings',
+  /**
    * Grants permission to describe Capacity Block offerings available for purchase
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityBlockOfferings.html
    */
   DescribeCapacityBlockOfferings = 'ec2:DescribeCapacityBlockOfferings',
+  /**
+   * Grants permission to describe one or more requests to assign the billing of the
+   * unused capacity of a Capacity Reservation
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityReservationBillingRequests.html
+   */
+  DescribeCapacityReservationBillingRequests = 'ec2:DescribeCapacityReservationBillingRequests',
   /**
    * Grants permission to describe one or more Capacity Reservation Fleets
    *
@@ -1584,6 +1664,12 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCustomerGateways.html
    */
   DescribeCustomerGateways = 'ec2:DescribeCustomerGateways',
+  /**
+   * Grants permission to describe one or more declarative policies reports
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeDeclarativePoliciesReports.html
+   */
+  DescribeDeclarativePoliciesReports = 'ec2:DescribeDeclarativePoliciesReports',
   /**
    * Grants permission to describe one or more DHCP options sets
    *
@@ -1760,6 +1846,12 @@ export enum AwsEc2Actions {
    */
   DescribeInstanceEventWindows = 'ec2:DescribeInstanceEventWindows',
   /**
+   * Grants permission to describe the AMI that was used to launch an instance
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceImageMetadata.html
+   */
+  DescribeInstanceImageMetadata = 'ec2:DescribeInstanceImageMetadata',
+  /**
    * Grants permission to describe the status of one or more instances
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceStatus.html
@@ -1805,6 +1897,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamByoasn.html
    */
   DescribeIpamByoasn = 'ec2:DescribeIpamByoasn',
+  /**
+   * Grants permission to describe verification tokens, which proves ownership of an
+   * external resource
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamExternalResourceVerificationTokens.html
+   */
+  DescribeIpamExternalResourceVerificationTokens = 'ec2:DescribeIpamExternalResourceVerificationTokens',
   /**
    * Grants permission to describe Amazon VPC IP Address Manager (IPAM) pools
    *
@@ -1911,6 +2010,12 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLockedSnapshots.html
    */
   DescribeLockedSnapshots = 'ec2:DescribeLockedSnapshots',
+  /**
+   * Grants permission to describe your EC2 Mac Dedicated hosts
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeMacHosts.html
+   */
+  DescribeMacHosts = 'ec2:DescribeMacHosts',
   /**
    * Grants permission to describe your managed prefix lists and any AWS-managed pre
    * fix lists
@@ -2079,6 +2184,12 @@ export enum AwsEc2Actions {
    */
   DescribeSecurityGroupRules = 'ec2:DescribeSecurityGroupRules',
   /**
+   * Grants permission to describe security group VPC associations
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroupVpcAssociations.html
+   */
+  DescribeSecurityGroupVpcAssociations = 'ec2:DescribeSecurityGroupVpcAssociations',
+  /**
    * Grants permission to describe one or more security groups
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroups.html
@@ -2164,6 +2275,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTags.html
    */
   DescribeTags = 'ec2:DescribeTags',
+  /**
+   * Grants permission to describe traffic mirror filters that determine the traffic
+   * that is mirrored
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTrafficMirrorFilterRules.html
+   */
+  DescribeTrafficMirrorFilterRules = 'ec2:DescribeTrafficMirrorFilterRules',
   /**
    * Grants permission to describe one or more traffic mirror filters
    *
@@ -2323,6 +2441,19 @@ export enum AwsEc2Actions {
    */
   DescribeVpcAttribute = 'ec2:DescribeVpcAttribute',
   /**
+   * Grants permission to describe an exclusion list for blocked public access on a
+   * VPC
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcBlockPublicAccessExclusions.html
+   */
+  DescribeVpcBlockPublicAccessExclusions = 'ec2:DescribeVpcBlockPublicAccessExclusions',
+  /**
+   * Grants permission to describe options for blocked public access on a VPC
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcBlockPublicAccessOptions.html
+   */
+  DescribeVpcBlockPublicAccessOptions = 'ec2:DescribeVpcBlockPublicAccessOptions',
+  /**
    * Grants permission to describe the ClassicLink status of one or more VPCs
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcClassicLink.html
@@ -2335,6 +2466,12 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcClassicLinkDnsSupport.html
    */
   DescribeVpcClassicLinkDnsSupport = 'ec2:DescribeVpcClassicLinkDnsSupport',
+  /**
+   * Grants permission to describe the VPC endpoint associations
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpointAssociations.html
+   */
+  DescribeVpcEndpointAssociations = 'ec2:DescribeVpcEndpointAssociations',
   /**
    * Grants permission to describe the connection notifications for VPC endpoints an
    * d VPC endpoint services
@@ -2443,6 +2580,12 @@ export enum AwsEc2Actions {
    */
   DisableAddressTransfer = 'ec2:DisableAddressTransfer',
   /**
+   * Grants permission to disable allowed images settings
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableAllowedImagesSettings.html
+   */
+  DisableAllowedImagesSettings = 'ec2:DisableAllowedImagesSettings',
+  /**
    * Grants permission to disable infrastructure performance metric subscriptions
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableAwsNetworkPerformanceMetricSubscription.html
@@ -2486,6 +2629,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableImageDeprecation.html
    */
   DisableImageDeprecation = 'ec2:DisableImageDeprecation',
+  /**
+   * Grants permission to disable deregistration protection for an AMI. When deregis
+   * tration protection is disabled, the AMI can be deregistered
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableImageDeregistrationProtection.html
+   */
+  DisableImageDeregistrationProtection = 'ec2:DisableImageDeregistrationProtection',
   /**
    * Grants permission to disable an AWS Organizations member account as an Amazon V
    * PC IP Address Manager (IPAM) admin account
@@ -2541,6 +2691,13 @@ export enum AwsEc2Actions {
    */
   DisassociateAddress = 'ec2:DisassociateAddress',
   /**
+   * Grants permission to cancel a pending request to assign billing of the unused c
+   * apacity of a Capacity Reservation to a consumer account
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateCapacityReservationBillingOwner.html
+   */
+  DisassociateCapacityReservationBillingOwner = 'ec2:DisassociateCapacityReservationBillingOwner',
+  /**
    * Grants permission to disassociate a target network from a Client VPN endpoint
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateClientVpnTargetNetwork.html
@@ -2591,6 +2748,12 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateRouteTable.html
    */
   DisassociateRouteTable = 'ec2:DisassociateRouteTable',
+  /**
+   * Grants permission to disassociate a security group from a VPC
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateSecurityGroupVpc.html
+   */
+  DisassociateSecurityGroupVpc = 'ec2:DisassociateSecurityGroupVpc',
   /**
    * Grants permission to disassociate a CIDR block from a subnet
    *
@@ -2644,6 +2807,12 @@ export enum AwsEc2Actions {
    */
   EnableAddressTransfer = 'ec2:EnableAddressTransfer',
   /**
+   * Grants permission to enable allowed images settings
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableAllowedImagesSettings.html
+   */
+  EnableAllowedImagesSettings = 'ec2:EnableAllowedImagesSettings',
+  /**
    * Grants permission to enable infrastructure performance subscriptions
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableAwsNetworkPerformanceMetricSubscription.html
@@ -2688,6 +2857,13 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableImageDeprecation.html
    */
   EnableImageDeprecation = 'ec2:EnableImageDeprecation',
+  /**
+   * Grants permission to enable deregistration protection for an AMI. When deregist
+   * ration protection is enabled, the AMI can't be deregistered
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableImageDeregistrationProtection.html
+   */
+  EnableImageDeregistrationProtection = 'ec2:EnableImageDeregistrationProtection',
   /**
    * Grants permission to enable an AWS Organizations member account as an Amazon VP
    * C IP Address Manager (IPAM) admin account
@@ -2777,6 +2953,18 @@ export enum AwsEc2Actions {
    */
   ExportTransitGatewayRoutes = 'ec2:ExportTransitGatewayRoutes',
   /**
+   * Grants permission to export a verified access instance client configuration
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportVerifiedAccessInstanceClientConfiguration.html
+   */
+  ExportVerifiedAccessInstanceClientConfiguration = 'ec2:ExportVerifiedAccessInstanceClientConfiguration',
+  /**
+   * Grants permission to get the allowed settings for images
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAllowedImagesSettings.html
+   */
+  GetAllowedImagesSettings = 'ec2:GetAllowedImagesSettings',
+  /**
    * Grants permission to get the list of roles associated with an ACM certificate
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAssociatedEnclaveCertificateIamRoles.html
@@ -2820,6 +3008,12 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetConsoleScreenshot.html
    */
   GetConsoleScreenshot = 'ec2:GetConsoleScreenshot',
+  /**
+   * Grants permission to get the report summary of declarative policies
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetDeclarativePoliciesReportSummary.html
+   */
+  GetDeclarativePoliciesReportSummary = 'ec2:GetDeclarativePoliciesReportSummary',
   /**
    * Grants permission to get the default credit option for CPU usage of a burstable
    * performance instance family
@@ -2869,6 +3063,20 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetImageBlockPublicAccessState.html
    */
   GetImageBlockPublicAccessState = 'ec2:GetImageBlockPublicAccessState',
+  /**
+   * Grants permission to view the default instance metadata service (IMDS) settings
+   * set for your account in the specified Region
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceMetadataDefaults.html
+   */
+  GetInstanceMetadataDefaults = 'ec2:GetInstanceMetadataDefaults',
+  /**
+   * Grants permission to get the public endorsement key associated with the Nitro T
+   * rusted Platform Module (NitroTPM) for the specified instance
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceTpmEkPub.html
+   */
+  GetInstanceTpmEkPub = 'ec2:GetInstanceTpmEkPub',
   /**
    * Grants permission to view a list of instance types with specified instance attr
    * ibutes
@@ -3075,6 +3283,12 @@ export enum AwsEc2Actions {
    */
   GetVerifiedAccessEndpointPolicy = 'ec2:GetVerifiedAccessEndpointPolicy',
   /**
+   * Grants permission to get verified access endpoint targets
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVerifiedAccessEndpointTargets.html
+   */
+  GetVerifiedAccessEndpointTargets = 'ec2:GetVerifiedAccessEndpointTargets',
+  /**
    * Grants permission to show the contents of the Verified Access policy associated
    * with the group
    *
@@ -3279,6 +3493,12 @@ export enum AwsEc2Actions {
    */
   ModifyInstanceCapacityReservationAttributes = 'ec2:ModifyInstanceCapacityReservationAttributes',
   /**
+   * Grants permission to modify the CPU options on an instance
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceCpuOptions.html
+   */
+  ModifyInstanceCpuOptions = 'ec2:ModifyInstanceCpuOptions',
+  /**
    * Grants permission to modify the credit option for CPU usage on an instance
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceCreditSpecification.html
@@ -3303,11 +3523,24 @@ export enum AwsEc2Actions {
    */
   ModifyInstanceMaintenanceOptions = 'ec2:ModifyInstanceMaintenanceOptions',
   /**
+   * Grants permission to modify the default instance metadata service (IMDS) settin
+   * gs for your account in the specified Region
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceMetadataDefaults.html
+   */
+  ModifyInstanceMetadataDefaults = 'ec2:ModifyInstanceMetadataDefaults',
+  /**
    * Grants permission to modify the metadata options for an instance
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceMetadataOptions.html
    */
   ModifyInstanceMetadataOptions = 'ec2:ModifyInstanceMetadataOptions',
+  /**
+   * Grants permission to modify the network performance options for an instance
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceNetworkPerformanceOptions.html
+   */
+  ModifyInstanceNetworkPerformanceOptions = 'ec2:ModifyInstanceNetworkPerformanceOptions',
   /**
    * Grants permission to modify the placement attributes for an instance
    *
@@ -3515,6 +3748,19 @@ export enum AwsEc2Actions {
    */
   ModifyVpcAttribute = 'ec2:ModifyVpcAttribute',
   /**
+   * Grants permission to modify an exclusion list for blocked public access on a VP
+   * C
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcBlockPublicAccessExclusion.html
+   */
+  ModifyVpcBlockPublicAccessExclusion = 'ec2:ModifyVpcBlockPublicAccessExclusion',
+  /**
+   * Grants permission to modify options for blocked public access on a VPC
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcBlockPublicAccessOptions.html
+   */
+  ModifyVpcBlockPublicAccessOptions = 'ec2:ModifyVpcBlockPublicAccessOptions',
+  /**
    * Grants permission to modify an attribute of a VPC endpoint
    *
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcEndpoint.html
@@ -3605,6 +3851,13 @@ export enum AwsEc2Actions {
    */
   MoveByoipCidrToIpam = 'ec2:MoveByoipCidrToIpam',
   /**
+   * Grants permission to move available capacity from a source Capacity Reservation
+   * to a destination Capacity Reservation
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MoveCapacityReservationInstances.html
+   */
+  MoveCapacityReservationInstances = 'ec2:MoveCapacityReservationInstances',
+  /**
    * Grants permission to temporarily pause I/O operations for a target Amazon EBS v
    * olume
    *
@@ -3644,6 +3897,12 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseCapacityBlock.html
    */
   PurchaseCapacityBlock = 'ec2:PurchaseCapacityBlock',
+  /**
+   * Grants permission to purchase a Capacity Block extension
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseCapacityBlockExtension.html
+   */
+  PurchaseCapacityBlockExtension = 'ec2:PurchaseCapacityBlockExtension',
   /**
    * Grants permission to purchase a reservation with configurations that match thos
    * e of a Dedicated Host
@@ -3705,6 +3964,13 @@ export enum AwsEc2Actions {
    */
   RegisterTransitGatewayMulticastGroupSources = 'ec2:RegisterTransitGatewayMulticastGroupSources',
   /**
+   * Grants permission to reject a request to assign billing of the available capaci
+   * ty of a shared Capacity Reservation to your account
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectCapacityReservationBillingOwnership.html
+   */
+  RejectCapacityReservationBillingOwnership = 'ec2:RejectCapacityReservationBillingOwnership',
+  /**
    * Grants permission to reject requests to associate cross-account subnets with a
    * transit gateway multicast domain
    *
@@ -3761,6 +4027,12 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceIamInstanceProfileAssociation.html
    */
   ReplaceIamInstanceProfileAssociation = 'ec2:ReplaceIamInstanceProfileAssociation',
+  /**
+   * Grants permission to replace image criteria in allowed images settings
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceImageCriteriaInAllowedImagesSettings.html
+   */
+  ReplaceImageCriteriaInAllowedImagesSettings = 'ec2:ReplaceImageCriteriaInAllowedImagesSettings',
   /**
    * Grants permission to change which network ACL a subnet is associated with
    *
@@ -3957,6 +4229,12 @@ export enum AwsEc2Actions {
    * See https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html#send-spot-instance-interruptions
    */
   SendSpotInstanceInterruptions = 'ec2:SendSpotInstanceInterruptions',
+  /**
+   * Grants permission to start a declarative policies report
+   *
+   * See https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartDeclarativePoliciesReport.html
+   */
+  StartDeclarativePoliciesReport = 'ec2:StartDeclarativePoliciesReport',
   /**
    * Grants permission to start a stopped instance
    *

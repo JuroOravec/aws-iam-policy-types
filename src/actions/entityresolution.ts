@@ -6,169 +6,247 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsentityresolution.html
  *
- * 2024-02-12T09:57:21.919Z
+ * 2025-02-24T21:47:59.254Z
  */
 export enum AwsEntityresolutionActions {
   /**
+   * Grants permission to give an AWS service or another account permission to use a
+   * n AWS Entity Resolution resources
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_AddPolicyStatement.html
+   */
+  AddPolicyStatement = 'entityresolution:AddPolicyStatement',
+  /**
+   * Grants permission to batch delete unique Id
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_BatchDeleteUniqueId.html
+   */
+  BatchDeleteUniqueId = 'entityresolution:BatchDeleteUniqueId',
+  /**
    * Grants permission to create a idmapping workflow
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_CreateIdMappingWorkflow.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateIdMappingWorkflow.html
    */
   CreateIdMappingWorkflow = 'entityresolution:CreateIdMappingWorkflow',
   /**
+   * Grants permission to create a IdNamespace
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateIdNamespace.html
+   */
+  CreateIdNamespace = 'entityresolution:CreateIdNamespace',
+  /**
    * Grants permission to create a matching workflow
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_CreateMatchingWorkflow.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateMatchingWorkflow.html
    */
   CreateMatchingWorkflow = 'entityresolution:CreateMatchingWorkflow',
   /**
    * Grants permission to create a schema mapping
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_CreateSchemaMapping.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_CreateSchemaMapping.html
    */
   CreateSchemaMapping = 'entityresolution:CreateSchemaMapping',
   /**
    * Grants permission to delete a idmapping workflow
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_DeleteIdMappingWorkflow.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_DeleteIdMappingWorkflow.html
    */
   DeleteIdMappingWorkflow = 'entityresolution:DeleteIdMappingWorkflow',
   /**
+   * Grants permission to delete a IdNamespace
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_DeleteIdNamespace.html
+   */
+  DeleteIdNamespace = 'entityresolution:DeleteIdNamespace',
+  /**
    * Grants permission to delete a matching workflow
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_DeleteMatchingWorkflow.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_DeleteMatchingWorkflow.html
    */
   DeleteMatchingWorkflow = 'entityresolution:DeleteMatchingWorkflow',
   /**
+   * Grants permission to delete permission given to an AWS service or another accou
+   * nt permission to use an AWS Entity Resolution resources
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_DeletePolicyStatement.html
+   */
+  DeletePolicyStatement = 'entityresolution:DeletePolicyStatement',
+  /**
    * Grants permission to delete a schema mapping
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_DeleteSchemaMapping.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_DeleteSchemaMapping.html
    */
   DeleteSchemaMapping = 'entityresolution:DeleteSchemaMapping',
   /**
    * Grants permission to get a idmapping job
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_GetIdMappingJob.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetIdMappingJob.html
    */
   GetIdMappingJob = 'entityresolution:GetIdMappingJob',
   /**
    * Grants permission to get a idmapping workflow
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_GetIdMappingWorkflow.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetIdMappingWorkflow.html
    */
   GetIdMappingWorkflow = 'entityresolution:GetIdMappingWorkflow',
   /**
+   * Grants permission to get a IdNamespace
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetIdNamespace.html
+   */
+  GetIdNamespace = 'entityresolution:GetIdNamespace',
+  /**
    * Grants permission to get match Id
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_GetMatchId.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetMatchId.html
    */
   GetMatchId = 'entityresolution:GetMatchId',
   /**
    * Grants permission to get a matching job
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_GetMatchingJob.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetMatchingJob.html
    */
   GetMatchingJob = 'entityresolution:GetMatchingJob',
   /**
    * Grants permission to get a matching workflow
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_GetMatchingWorkflow.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetMatchingWorkflow.html
    */
   GetMatchingWorkflow = 'entityresolution:GetMatchingWorkflow',
   /**
+   * Grants permission to get a resource policy for an AWS Entity Resolution resourc
+   * es
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetPolicy.html
+   */
+  GetPolicy = 'entityresolution:GetPolicy',
+  /**
    * Grants permission to get provider service
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_GetProviderService.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetProviderService.html
    */
   GetProviderService = 'entityresolution:GetProviderService',
   /**
    * Grants permission to get a schema mapping
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_GetSchemaMapping.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetSchemaMapping.html
    */
   GetSchemaMapping = 'entityresolution:GetSchemaMapping',
   /**
    * Grants permission to list idmapping jobs
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_ListIdMappingJobs.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_ListIdMappingJobs.html
    */
   ListIdMappingJobs = 'entityresolution:ListIdMappingJobs',
   /**
    * Grants permission to list idmapping workflows
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_ListIdMappingWorkflows.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_ListIdMappingWorkflows.html
    */
   ListIdMappingWorkflows = 'entityresolution:ListIdMappingWorkflows',
   /**
+   * Grants permission to list IdNamespaces
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_ListIdNamespaces.html
+   */
+  ListIdNamespaces = 'entityresolution:ListIdNamespaces',
+  /**
    * Grants permission to list matching jobs
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_ListMatchingJobs.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_ListMatchingJobs.html
    */
   ListMatchingJobs = 'entityresolution:ListMatchingJobs',
   /**
    * Grants permission to list matching workflows
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_ListMatchingWorkflows.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_ListMatchingWorkflows.html
    */
   ListMatchingWorkflows = 'entityresolution:ListMatchingWorkflows',
   /**
    * Grants permission to list provider service
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_ListProviderServices.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_ListProviderServices.html
    */
   ListProviderServices = 'entityresolution:ListProviderServices',
   /**
    * Grants permission to list schema mappings
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_ListSchemaMappings.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_ListSchemaMappings.html
    */
   ListSchemaMappings = 'entityresolution:ListSchemaMappings',
   /**
    * Grants permission to List tags for a resource
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_ListTagsForResource.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_ListTagsForResource.html
    */
   ListTagsForResource = 'entityresolution:ListTagsForResource',
   /**
+   * Grants permission to put a resource policy for an AWS Entity Resolution resourc
+   * es
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_PutPolicy.html
+   */
+  PutPolicy = 'entityresolution:PutPolicy',
+  /**
    * Grants permission to start a idmapping job
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_StartIdMappingJob.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_StartIdMappingJob.html
    */
   StartIdMappingJob = 'entityresolution:StartIdMappingJob',
   /**
    * Grants permission to start a matching job
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_StartMatchingJob.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_StartMatchingJob.html
    */
   StartMatchingJob = 'entityresolution:StartMatchingJob',
   /**
    * Grants permission to adds tags to a resource
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_TagResource.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_TagResource.html
    */
   TagResource = 'entityresolution:TagResource',
   /**
    * Grants permission to untag a resource
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_UntagResource.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_UntagResource.html
    */
   UntagResource = 'entityresolution:UntagResource',
   /**
    * Grants permission to update a idmapping workflow
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_UpdateIdMappingWorkflow.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_UpdateIdMappingWorkflow.html
    */
   UpdateIdMappingWorkflow = 'entityresolution:UpdateIdMappingWorkflow',
   /**
+   * Grants permission to update a IdNamespace
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_UpdateIdNamespace.html
+   */
+  UpdateIdNamespace = 'entityresolution:UpdateIdNamespace',
+  /**
    * Grants permission to update a matching workflow
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_UpdateMatchingWorkflow.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_UpdateMatchingWorkflow.html
    */
   UpdateMatchingWorkflow = 'entityresolution:UpdateMatchingWorkflow',
   /**
    * Grants permission to update a schema mapping
    *
-   * See https://docs.aws.amazon.com/entityresolution/latest/userguide/API_UpdateSchemaMapping.html
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_UpdateSchemaMapping.html
    */
   UpdateSchemaMapping = 'entityresolution:UpdateSchemaMapping',
+  /**
+   * Grants permission to give an AWS service or another account permission to use I
+   * dNamespace within a workflow
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_UseIdNamespace.html
+   */
+  UseIdNamespace = 'entityresolution:UseIdNamespace',
+  /**
+   * Grants permission to give an AWS service or another account permission to use w
+   * orkflow within a IdNamespace
+   *
+   * See https://docs.aws.amazon.com/entityresolution/latest/apireference/API_UseWorkflow.html
+   */
+  UseWorkflow = 'entityresolution:UseWorkflow',
 }

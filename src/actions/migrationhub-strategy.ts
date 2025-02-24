@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationhubstrategyrecommendations.html
  *
- * 2024-02-12T09:58:25.567Z
+ * 2025-02-24T21:48:58.328Z
  */
 export enum AwsMigrationhubStrategyActions {
   /**
@@ -130,6 +130,18 @@ export enum AwsMigrationhubStrategyActions {
    * See https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListServers.html
    */
   ListServers = 'migrationhub-strategy:ListServers',
+  /**
+   * Grants permission to the collector to send logs to the service
+   *
+   * See https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_PutLogData.html
+   */
+  PutLogData = 'migrationhub-strategy:PutLogData',
+  /**
+   * Grants permission to the collector to send metrics to the service
+   *
+   * See https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_PutMetricData.html
+   */
+  PutMetricData = 'migrationhub-strategy:PutMetricData',
   /**
    * Grants permission to save customer's Migration/Modernization preferences
    *

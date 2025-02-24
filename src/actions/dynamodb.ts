@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondynamodb.html
  *
- * 2024-02-12T09:57:00.854Z
+ * 2025-02-24T21:47:39.932Z
  */
 export enum AwsDynamodbActions {
   /**
@@ -65,6 +65,12 @@ export enum AwsDynamodbActions {
    * See https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DeleteItem.html
    */
   DeleteItem = 'dynamodb:DeleteItem',
+  /**
+   * Grants permission to delete the resource-based policy attached to the resource
+   *
+   * See https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DeleteResourcePolicy.html
+   */
+  DeleteResourcePolicy = 'dynamodb:DeleteResourcePolicy',
   /**
    * Grants permission to the DeleteTable operation which deletes a table and all of
    * its items
@@ -206,6 +212,13 @@ export enum AwsDynamodbActions {
    */
   ExportTableToPointInTime = 'dynamodb:ExportTableToPointInTime',
   /**
+   * Grants permission to view the status of Attribute Based Access Control for the
+   * account
+   *
+   * See https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-enable-ddb.html
+   */
+  GetAbacStatus = 'dynamodb:GetAbacStatus',
+  /**
    * Grants permission to the GetItem operation that returns a set of attributes for
    * the item with the given primary key
    *
@@ -219,9 +232,9 @@ export enum AwsDynamodbActions {
    */
   GetRecords = 'dynamodb:GetRecords',
   /**
-   * Grants permission to get a resource-based policy
+   * Grants permission to view a resource-based policy for a resource
    *
-   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondynamodb.html
+   * See https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetResourcePolicy.html
    */
   GetResourcePolicy = 'dynamodb:GetResourcePolicy',
   /**
@@ -326,6 +339,12 @@ export enum AwsDynamodbActions {
    */
   PutItem = 'dynamodb:PutItem',
   /**
+   * Grants permission to attach a resource-based policy to the resource
+   *
+   * See https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutResourcePolicy.html
+   */
+  PutResourcePolicy = 'dynamodb:PutResourcePolicy',
+  /**
    * Grants permission to use the primary key of a table or a secondary index to dir
    * ectly access items from that table or index
    *
@@ -378,6 +397,13 @@ export enum AwsDynamodbActions {
    */
   UntagResource = 'dynamodb:UntagResource',
   /**
+   * Grants permission to update the status of Attribute Based Access Control for th
+   * e account
+   *
+   * See https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-enable-ddb.html
+   */
+  UpdateAbacStatus = 'dynamodb:UpdateAbacStatus',
+  /**
    * Grants permission to enable or disable continuous backups
    *
    * See https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateContinuousBackups.html
@@ -415,6 +441,13 @@ export enum AwsDynamodbActions {
    * See https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html
    */
   UpdateItem = 'dynamodb:UpdateItem',
+  /**
+   * Grants permission to update data replication configurations for the specified K
+   * inesis data stream
+   *
+   * See https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateKinesisStreamingDestination.html
+   */
+  UpdateKinesisStreamingDestination = 'dynamodb:UpdateKinesisStreamingDestination',
   /**
    * Grants permission to modify the provisioned throughput settings, global seconda
    * ry indexes, or DynamoDB Streams settings for a given table

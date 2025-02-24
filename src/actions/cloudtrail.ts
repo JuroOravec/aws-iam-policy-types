@@ -6,12 +6,12 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudtrail.html
  *
- * 2024-02-12T09:56:25.231Z
+ * 2025-02-24T21:47:05.572Z
  */
 export enum AwsCloudtrailActions {
   /**
-   * Grants permission to add one or more tags to a trail, event data store, or chan
-   * nel, up to a limit of 50
+   * Grants permission to add one or more tags to a trail, event data store, channel
+   * or dashboard, up to a limit of 50
    *
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AddTags.html
    */
@@ -29,6 +29,12 @@ export enum AwsCloudtrailActions {
    */
   CreateChannel = 'cloudtrail:CreateChannel',
   /**
+   * Grants permission to create a dashboard
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CreateDashboard.html
+   */
+  CreateDashboard = 'cloudtrail:CreateDashboard',
+  /**
    * Grants permission to create an event data store
    *
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CreateEventDataStore.html
@@ -38,7 +44,7 @@ export enum AwsCloudtrailActions {
    * Grants permission to create a service-linked channel that specifies the setting
    * s for delivery of log data to an AWS service
    *
-   * See API_CreateServiceLinkedChannel.html
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/viewing-service-linked-channels.html#slc-service-events
    */
   CreateServiceLinkedChannel = 'cloudtrail:CreateServiceLinkedChannel',
   /**
@@ -55,6 +61,12 @@ export enum AwsCloudtrailActions {
    */
   DeleteChannel = 'cloudtrail:DeleteChannel',
   /**
+   * Grants permission to delete a dashboard
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DeleteDashboard.html
+   */
+  DeleteDashboard = 'cloudtrail:DeleteDashboard',
+  /**
    * Grants permission to delete an event data store
    *
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DeleteEventDataStore.html
@@ -69,7 +81,7 @@ export enum AwsCloudtrailActions {
   /**
    * Grants permission to delete a service-linked channel
    *
-   * See API_DeleteServiceLinkedChannel.html
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/viewing-service-linked-channels.html#slc-service-events
    */
   DeleteServiceLinkedChannel = 'cloudtrail:DeleteServiceLinkedChannel',
   /**
@@ -113,11 +125,31 @@ export enum AwsCloudtrailActions {
    */
   EnableFederation = 'cloudtrail:EnableFederation',
   /**
+   * Grants permission to generate a query for a specified event data store using th
+   * e CloudTrail Lake query generator
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-query-generator.html
+   */
+  GenerateQuery = 'cloudtrail:GenerateQuery',
+  /**
+   * Grants permission to generate a results summary for specified queries using the
+   * CloudTrail natural language generator
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-results-summary.html
+   */
+  GenerateQueryResultsSummary = 'cloudtrail:GenerateQueryResultsSummary',
+  /**
    * Grants permission to return information about a specific channel
    *
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetChannel.html
    */
   GetChannel = 'cloudtrail:GetChannel',
+  /**
+   * Grants permission to list settings for the dashboard
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetDashboard.html
+   */
+  GetDashboard = 'cloudtrail:GetDashboard',
   /**
    * Grants permission to list settings for the event data store
    *
@@ -128,7 +160,7 @@ export enum AwsCloudtrailActions {
    * Grants permission to get data from an event data store by using the AWS Glue Da
    * ta Catalog
    *
-   * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/query-federation.html#query-federation-permissions
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-federation.html#query-federation-permissions
    */
   GetEventDataStoreData = 'cloudtrail:GetEventDataStoreData',
   /**
@@ -165,7 +197,7 @@ export enum AwsCloudtrailActions {
   /**
    * Grants permission to list settings for the service-linked channel
    *
-   * See API_GetServiceLinkedChannel.html
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/viewing-service-linked-channels.html#slc-service-events
    */
   GetServiceLinkedChannel = 'cloudtrail:GetServiceLinkedChannel',
   /**
@@ -188,6 +220,13 @@ export enum AwsCloudtrailActions {
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListChannels.html
    */
   ListChannels = 'cloudtrail:ListChannels',
+  /**
+   * Grants permission to list dashboards associated with the current region for you
+   * r account
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListDashboards.html
+   */
+  ListDashboards = 'cloudtrail:ListDashboards',
   /**
    * Grants permission to list event data stores associated with the current region
    * for your account
@@ -225,12 +264,12 @@ export enum AwsCloudtrailActions {
    * Grants permission to list service-linked channels associated with the current r
    * egion for a specified account
    *
-   * See API_ListServiceLinkedChannels.html
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/viewing-service-linked-channels.html#slc-service-events
    */
   ListServiceLinkedChannels = 'cloudtrail:ListServiceLinkedChannels',
   /**
-   * Grants permission to list the tags for trails, event data stores, or channels i
-   * n the current region
+   * Grants permission to list the tags for trails, event data stores, channels or d
+   * ashboards in the current region
    *
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListTags.html
    */
@@ -276,7 +315,8 @@ export enum AwsCloudtrailActions {
    */
   RegisterOrganizationDelegatedAdmin = 'cloudtrail:RegisterOrganizationDelegatedAdmin',
   /**
-   * Grants permission to remove tags from a trail, event data store, or channel
+   * Grants permission to remove tags from a trail, event data store, channel or das
+   * hboard
    *
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_RemoveTags.html
    */
@@ -287,6 +327,18 @@ export enum AwsCloudtrailActions {
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_RestoreEventDataStore.html
    */
   RestoreEventDataStore = 'cloudtrail:RestoreEventDataStore',
+  /**
+   * Grants permission to perform semantic search for CloudTrail Lake sample queries
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-console-queries.html
+   */
+  SearchSampleQueries = 'cloudtrail:SearchSampleQueries',
+  /**
+   * Grants permission to start a refresh on the specified dashboard
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StartDashboardRefresh.html
+   */
+  StartDashboardRefresh = 'cloudtrail:StartDashboardRefresh',
   /**
    * Grants permission to start ingestion on an event data store
    *
@@ -339,15 +391,22 @@ export enum AwsCloudtrailActions {
    */
   UpdateChannel = 'cloudtrail:UpdateChannel',
   /**
+   * Grants permission to update a dashboard
+   *
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateDashboard.html
+   */
+  UpdateDashboard = 'cloudtrail:UpdateDashboard',
+  /**
    * Grants permission to update an event data store
    *
    * See https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateEventDataStore.html
    */
   UpdateEventDataStore = 'cloudtrail:UpdateEventDataStore',
   /**
-   * Grants permission to update the settings that specify delivery of log files
+   * Grants permission to update the service-linked channel settings for delivery of
+   * log data to an AWS service
    *
-   * See API_UpdateServiceLinkedChannel.html
+   * See https://docs.aws.amazon.com/awscloudtrail/latest/userguide/viewing-service-linked-channels.html#slc-service-events
    */
   UpdateServiceLinkedChannel = 'cloudtrail:UpdateServiceLinkedChannel',
   /**

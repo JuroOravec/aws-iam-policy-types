@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsns.html
  *
- * 2024-02-12T09:59:19.628Z
+ * 2025-02-24T21:49:49.276Z
  */
 export enum AwsSnsActions {
   /**

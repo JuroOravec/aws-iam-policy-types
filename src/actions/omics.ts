@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthomics.html
  *
- * 2024-02-12T09:57:35.569Z
+ * 2025-02-24T21:48:11.764Z
  */
 export enum AwsOmicsActions {
   /**
@@ -76,6 +76,12 @@ export enum AwsOmicsActions {
    */
   CreateReferenceStore = 'omics:CreateReferenceStore',
   /**
+   * Grants permission to create a new workflow run cache
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_CreateRunCache.html
+   */
+  CreateRunCache = 'omics:CreateRunCache',
+  /**
    * Grants permission to create a new workflow run group
    *
    * See https://docs.aws.amazon.com/omics/latest/api/API_CreateRunGroup.html
@@ -137,11 +143,23 @@ export enum AwsOmicsActions {
    */
   DeleteRun = 'omics:DeleteRun',
   /**
+   * Grants permission to delete a workflow run cache
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_DeleteRunCache.html
+   */
+  DeleteRunCache = 'omics:DeleteRunCache',
+  /**
    * Grants permission to delete a workflow run group
    *
    * See https://docs.aws.amazon.com/omics/latest/api/API_DeleteRunGroup.html
    */
   DeleteRunGroup = 'omics:DeleteRunGroup',
+  /**
+   * Grants permission to delete an access policy on a given store
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_DeleteS3AccessPolicy.html
+   */
+  DeleteS3AccessPolicy = 'omics:DeleteS3AccessPolicy',
   /**
    * Grants permission to delete a Sequence Store
    *
@@ -250,6 +268,12 @@ export enum AwsOmicsActions {
    */
   GetRun = 'omics:GetRun',
   /**
+   * Grants permission to retrieve workflow run cache details
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_GetRunCache.html
+   */
+  GetRunCache = 'omics:GetRunCache',
+  /**
    * Grants permission to retrieve workflow run group details
    *
    * See https://docs.aws.amazon.com/omics/latest/api/API_GetRunGroup.html
@@ -261,6 +285,12 @@ export enum AwsOmicsActions {
    * See https://docs.aws.amazon.com/omics/latest/api/API_GetRunTask.html
    */
   GetRunTask = 'omics:GetRunTask',
+  /**
+   * Grants permission to get details about an access policy on a given store
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_GetS3AccessPolicy.html
+   */
+  GetS3AccessPolicy = 'omics:GetS3AccessPolicy',
   /**
    * Grants permission to get details about a Sequence Store
    *
@@ -365,6 +395,12 @@ export enum AwsOmicsActions {
    */
   ListReferences = 'omics:ListReferences',
   /**
+   * Grants permission to retrieve a list of workflow run caches
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_ListRunCaches.html
+   */
+  ListRunCaches = 'omics:ListRunCaches',
+  /**
    * Grants permission to retrieve a list of workflow run groups
    *
    * See https://docs.aws.amazon.com/omics/latest/api/API_ListRunGroups.html
@@ -418,6 +454,12 @@ export enum AwsOmicsActions {
    * See https://docs.aws.amazon.com/omics/latest/api/API_ListWorkflows.html
    */
   ListWorkflows = 'omics:ListWorkflows',
+  /**
+   * Grants permission to put an access policy on a given store
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_PutS3AccessPolicy.html
+   */
+  PutS3AccessPolicy = 'omics:PutS3AccessPolicy',
   /**
    * Grants permission to import a list of Annotation files to an Annotation Store
    *
@@ -488,11 +530,23 @@ export enum AwsOmicsActions {
    */
   UpdateAnnotationStoreVersion = 'omics:UpdateAnnotationStoreVersion',
   /**
+   * Grants permission to update a workflow run cache
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_UpdateRunCache.html
+   */
+  UpdateRunCache = 'omics:UpdateRunCache',
+  /**
    * Grants permission to update a workflow run group
    *
    * See https://docs.aws.amazon.com/omics/latest/api/API_UpdateRunGroup.html
    */
   UpdateRunGroup = 'omics:UpdateRunGroup',
+  /**
+   * Grants permission to update details about a Sequence Store
+   *
+   * See https://docs.aws.amazon.com/omics/latest/api/API_UpdateSequenceStore.html
+   */
+  UpdateSequenceStore = 'omics:UpdateSequenceStore',
   /**
    * Grants permission to update metadata about the Variant Store
    *

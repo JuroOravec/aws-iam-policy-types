@@ -6,9 +6,16 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnectcases.html
  *
- * 2024-02-12T09:56:45.667Z
+ * 2025-02-24T21:47:23.982Z
  */
 export enum AwsCasesActions {
+  /**
+   * Grants permission to retrieve information about the case rules in the case doma
+   * in
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_BatchGetCaseRule.html
+   */
+  BatchGetCaseRule = 'cases:BatchGetCaseRule',
   /**
    * Grants permission to retrieve information about the fields in the case domain
    *
@@ -27,6 +34,12 @@ export enum AwsCasesActions {
    * See https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateCase.html
    */
   CreateCase = 'cases:CreateCase',
+  /**
+   * Grants permission to create a case rule in the case domain
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateCaseRule.html
+   */
+  CreateCaseRule = 'cases:CreateCaseRule',
   /**
    * Grants permission to create a new case domain
    *
@@ -59,11 +72,42 @@ export enum AwsCasesActions {
    */
   CreateTemplate = 'cases:CreateTemplate',
   /**
+   * Grants permission to delete the case rule in the case domain
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteCaseRule.html
+   */
+  DeleteCaseRule = 'cases:DeleteCaseRule',
+  /**
    * Grants permission to delete the domain
    *
    * See https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteDomain.html
    */
   DeleteDomain = 'cases:DeleteDomain',
+  /**
+   * Grants permission to delete the field in the case domain
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteField.html
+   */
+  DeleteField = 'cases:DeleteField',
+  /**
+   * Grants permission to delete the layout in the case domain
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteLayout.html
+   */
+  DeleteLayout = 'cases:DeleteLayout',
+  /**
+   * Grants permission to delete a related item associated to a case in the case dom
+   * ain
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteRelatedItem.html
+   */
+  DeleteRelatedItem = 'cases:DeleteRelatedItem',
+  /**
+   * Grants permission to delete the template in the case domain
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteTemplate.html
+   */
+  DeleteTemplate = 'cases:DeleteTemplate',
   /**
    * Grants permission to retrieve information about a case in the case domain
    *
@@ -101,6 +145,12 @@ export enum AwsCasesActions {
    * See https://docs.aws.amazon.com/cases/latest/APIReference/API_GetTemplate.html
    */
   GetTemplate = 'cases:GetTemplate',
+  /**
+   * Grants permission to list case rules in the case domain
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_ListCaseRules.html
+   */
+  ListCaseRules = 'cases:ListCaseRules',
   /**
    * Grants permission to list cases for a specific contact in the case domain
    *
@@ -182,6 +232,12 @@ export enum AwsCasesActions {
    * See https://docs.aws.amazon.com/cases/latest/APIReference/API_UpdateCase.html
    */
   UpdateCase = 'cases:UpdateCase',
+  /**
+   * Grants permission to update the case rule in the case domain
+   *
+   * See https://docs.aws.amazon.com/cases/latest/APIReference/API_UpdateCaseRule.html
+   */
+  UpdateCaseRule = 'cases:UpdateCaseRule',
   /**
    * Grants permission to update the field in the case domain
    *

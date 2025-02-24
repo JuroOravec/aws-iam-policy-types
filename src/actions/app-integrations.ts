@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonappintegrations.html
  *
- * 2024-02-12T09:56:00.957Z
+ * 2025-02-24T21:46:42.730Z
  */
 export enum AwsAppIntegrationsActions {
   /**
@@ -165,6 +165,12 @@ export enum AwsAppIntegrationsActions {
    * See https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_UpdateDataIntegration.html
    */
   UpdateDataIntegration = 'app-integrations:UpdateDataIntegration',
+  /**
+   * Grants permission to modify a DataIntegrationAssociation
+   *
+   * See https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_UpdateDataIntegrationAssociation.html
+   */
+  UpdateDataIntegrationAssociation = 'app-integrations:UpdateDataIntegrationAssociation',
   /**
    * Grants permission to modify an EventIntegration
    *

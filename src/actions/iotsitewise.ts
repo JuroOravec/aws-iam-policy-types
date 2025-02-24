@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotsitewise.html
  *
- * 2024-02-12T09:57:53.101Z
+ * 2025-02-24T21:48:27.002Z
  */
 export enum AwsIotsitewiseActions {
   /**
@@ -96,6 +96,12 @@ export enum AwsIotsitewiseActions {
    */
   CreateDashboard = 'iotsitewise:CreateDashboard',
   /**
+   * Grants permission to create a dataset
+   *
+   * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateDataset.html
+   */
+  CreateDataset = 'iotsitewise:CreateDataset',
+  /**
    * Grants permission to create a gateway
    *
    * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateGateway.html
@@ -143,6 +149,12 @@ export enum AwsIotsitewiseActions {
    * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteDashboard.html
    */
   DeleteDashboard = 'iotsitewise:DeleteDashboard',
+  /**
+   * Grants permission to delete a dataset
+   *
+   * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteDataset.html
+   */
+  DeleteDataset = 'iotsitewise:DeleteDataset',
   /**
    * Grants permission to delete a gateway
    *
@@ -221,6 +233,12 @@ export enum AwsIotsitewiseActions {
    * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeDashboard.html
    */
   DescribeDashboard = 'iotsitewise:DescribeDashboard',
+  /**
+   * Grants permission to describe dataset
+   *
+   * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeDataset.html
+   */
+  DescribeDataset = 'iotsitewise:DescribeDataset',
   /**
    * Grants permission to describe the default encryption configuration for the AWS
    * account
@@ -326,6 +344,12 @@ export enum AwsIotsitewiseActions {
    */
   GetInterpolatedAssetPropertyValues = 'iotsitewise:GetInterpolatedAssetPropertyValues',
   /**
+   * Grants permission to invoke an assistant
+   *
+   * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_InvokeAssistant.html
+   */
+  InvokeAssistant = 'iotsitewise:InvokeAssistant',
+  /**
    * Grants permission to list all access policies for an identity or a resource
    *
    * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListAccessPolicies.html
@@ -398,6 +422,12 @@ export enum AwsIotsitewiseActions {
    * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListDashboards.html
    */
   ListDashboards = 'iotsitewise:ListDashboards',
+  /**
+   * Grants permission to list all datasets
+   *
+   * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListDatasets.html
+   */
+  ListDatasets = 'iotsitewise:ListDatasets',
   /**
    * Grants permission to list all gateways
    *
@@ -507,6 +537,12 @@ export enum AwsIotsitewiseActions {
    * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateDashboard.html
    */
   UpdateDashboard = 'iotsitewise:UpdateDashboard',
+  /**
+   * Grants permission to update a dataset
+   *
+   * See https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateDataset.html
+   */
+  UpdateDataset = 'iotsitewise:UpdateDataset',
   /**
    * Grants permission to update a gateway
    *

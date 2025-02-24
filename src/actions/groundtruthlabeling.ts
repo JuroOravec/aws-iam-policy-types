@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazongroundtruthlabeling.html
  *
- * 2024-02-12T09:57:32.908Z
+ * 2025-02-24T21:48:09.293Z
  */
 export enum AwsGroundtruthlabelingActions {
   /**
@@ -17,17 +17,71 @@ export enum AwsGroundtruthlabelingActions {
    */
   AssociatePatchToManifestJob = 'groundtruthlabeling:AssociatePatchToManifestJob',
   /**
+   * Grants permission to create a GT+ Batch
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  CreateBatch = 'groundtruthlabeling:CreateBatch',
+  /**
+   * Grants permission to create intake form
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  CreateIntakeForm = 'groundtruthlabeling:CreateIntakeForm',
+  /**
+   * Grants permission to create a GT+ Project
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  CreateProject = 'groundtruthlabeling:CreateProject',
+  /**
+   * Grants permission to create a GT+ Workflow Definition
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  CreateWorkflowDefinition = 'groundtruthlabeling:CreateWorkflowDefinition',
+  /**
    * Grants permission to get status of GroundTruthLabeling Jobs
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
    */
   DescribeConsoleJob = 'groundtruthlabeling:DescribeConsoleJob',
   /**
+   * Grants permission to generate LiDAR Preview Task
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  GenerateLIDARPreviewTaskConfigJob = 'groundtruthlabeling:GenerateLIDARPreviewTaskConfigJob',
+  /**
+   * Grants permission to get a GT+ Batch
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  GetBatch = 'groundtruthlabeling:GetBatch',
+  /**
+   * Grants permission to get a intake forms
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  GetIntakeFormStatus = 'groundtruthlabeling:GetIntakeFormStatus',
+  /**
+   * Grants permission to list a GT+ Batchs
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  ListBatches = 'groundtruthlabeling:ListBatches',
+  /**
    * Grants permission to list dataset objects in a manifest file
    *
    * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
    */
   ListDatasetObjects = 'groundtruthlabeling:ListDatasetObjects',
+  /**
+   * Grants permission to list a GT+ Projects
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  ListProjects = 'groundtruthlabeling:ListProjects',
   /**
    * Grants permission to filter records from a manifest file using S3 select. Get s
    * ample entries based on random sampling
@@ -42,4 +96,16 @@ export enum AwsGroundtruthlabelingActions {
    * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
    */
   RunGenerateManifestByCrawlingJob = 'groundtruthlabeling:RunGenerateManifestByCrawlingJob',
+  /**
+   * Grants permission to generate metrics from objects in manifest
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  RunGenerateManifestMetricsJob = 'groundtruthlabeling:RunGenerateManifestMetricsJob',
+  /**
+   * Grants permission to update a GT+ Batch
+   *
+   * See https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file
+   */
+  UpdateBatch = 'groundtruthlabeling:UpdateBatch',
 }

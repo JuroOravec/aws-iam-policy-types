@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkinesisdatastreams.html
  *
- * 2024-02-12T09:57:59.496Z
+ * 2025-02-24T21:48:32.571Z
  */
 export enum AwsKinesisActions {
   /**

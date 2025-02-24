@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapplicationmigrationservice.html
  *
- * 2024-02-12T09:56:04.306Z
+ * 2025-02-24T21:46:45.211Z
  */
 export enum AwsMgnActions {
   /**
@@ -70,6 +70,12 @@ export enum AwsMgnActions {
    */
   CreateLaunchConfigurationTemplate = 'mgn:CreateLaunchConfigurationTemplate',
   /**
+   * Grants permission to create a network migration definition
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateNetworkMigrationDefinition.html
+   */
+  CreateNetworkMigrationDefinition = 'mgn:CreateNetworkMigrationDefinition',
+  /**
    * Grants permission to create replication configuration template
    *
    * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateReplicationConfigurationTemplate.html
@@ -111,6 +117,12 @@ export enum AwsMgnActions {
    * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteLaunchConfigurationTemplate.html
    */
   DeleteLaunchConfigurationTemplate = 'mgn:DeleteLaunchConfigurationTemplate',
+  /**
+   * Grants permission to delete a network migration definition
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteNetworkMigrationDefinition.html
+   */
+  DeleteNetworkMigrationDefinition = 'mgn:DeleteNetworkMigrationDefinition',
   /**
    * Grants permission to delete replication configuration template
    *
@@ -256,6 +268,18 @@ export enum AwsMgnActions {
    */
   GetLaunchConfiguration = 'mgn:GetLaunchConfiguration',
   /**
+   * Grants permission to get a network migration definition
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_GetNetworkMigrationDefinition.html
+   */
+  GetNetworkMigrationDefinition = 'mgn:GetNetworkMigrationDefinition',
+  /**
+   * Grants permission to get a network migration mapper segment construct
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_GetNetworkMigrationMapperSegmentConstruct.html
+   */
+  GetNetworkMigrationMapperSegmentConstruct = 'mgn:GetNetworkMigrationMapperSegmentConstruct',
+  /**
    * Grants permission to get replication configuration
    *
    * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_GetReplicationConfiguration.html
@@ -321,6 +345,78 @@ export enum AwsMgnActions {
    * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListManagedAccounts.html
    */
   ListManagedAccounts = 'mgn:ListManagedAccounts',
+  /**
+   * Grants permission to list network migration analyses
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationAnalyses.html
+   */
+  ListNetworkMigrationAnalyses = 'mgn:ListNetworkMigrationAnalyses',
+  /**
+   * Grants permission to list network migration analysis results
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationAnalysisResults.html
+   */
+  ListNetworkMigrationAnalysisResults = 'mgn:ListNetworkMigrationAnalysisResults',
+  /**
+   * Grants permission to list network migration code generation segments
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationCodeGenerationSegments.html
+   */
+  ListNetworkMigrationCodeGenerationSegments = 'mgn:ListNetworkMigrationCodeGenerationSegments',
+  /**
+   * Grants permission to list network migration code generations
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationCodeGenerations.html
+   */
+  ListNetworkMigrationCodeGenerations = 'mgn:ListNetworkMigrationCodeGenerations',
+  /**
+   * Grants permission to list network migration definitions
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationDefinitions.html
+   */
+  ListNetworkMigrationDefinitions = 'mgn:ListNetworkMigrationDefinitions',
+  /**
+   * Grants permission to list network migration deployed stacks
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationDeployedStacks.html
+   */
+  ListNetworkMigrationDeployedStacks = 'mgn:ListNetworkMigrationDeployedStacks',
+  /**
+   * Grants permission to list network migration deployed stacks deletions
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationDeployedStacksDeletions.html
+   */
+  ListNetworkMigrationDeployedStacksDeletions = 'mgn:ListNetworkMigrationDeployedStacksDeletions',
+  /**
+   * Grants permission to list network migration deployments
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationDeployments.html
+   */
+  ListNetworkMigrationDeployments = 'mgn:ListNetworkMigrationDeployments',
+  /**
+   * Grants permission to list network migration executions
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationExecutions.html
+   */
+  ListNetworkMigrationExecutions = 'mgn:ListNetworkMigrationExecutions',
+  /**
+   * Grants permission to list network migration mapper segment constructs
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationMapperSegmentConstructs.html
+   */
+  ListNetworkMigrationMapperSegmentConstructs = 'mgn:ListNetworkMigrationMapperSegmentConstructs',
+  /**
+   * Grants permission to list network migration mapper segments
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationMapperSegments.html
+   */
+  ListNetworkMigrationMapperSegments = 'mgn:ListNetworkMigrationMapperSegments',
+  /**
+   * Grants permission to list network migration mappings
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkMigrationMappings.html
+   */
+  ListNetworkMigrationMappings = 'mgn:ListNetworkMigrationMappings',
   /**
    * Grants permission to list source server action documents
    *
@@ -496,6 +592,36 @@ export enum AwsMgnActions {
    */
   StartImport = 'mgn:StartImport',
   /**
+   * Grants permission to start a network migration analysis
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetworkMigrationAnalysis.html
+   */
+  StartNetworkMigrationAnalysis = 'mgn:StartNetworkMigrationAnalysis',
+  /**
+   * Grants permission to start network migration code generation
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetworkMigrationCodeGeneration.html
+   */
+  StartNetworkMigrationCodeGeneration = 'mgn:StartNetworkMigrationCodeGeneration',
+  /**
+   * Grants permission to start deletion of network migration deployed stacks
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetworkMigrationDeployedStacksDeletion.html
+   */
+  StartNetworkMigrationDeployedStacksDeletion = 'mgn:StartNetworkMigrationDeployedStacksDeletion',
+  /**
+   * Grants permission to start a network migration deployment
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetworkMigrationDeployment.html
+   */
+  StartNetworkMigrationDeployment = 'mgn:StartNetworkMigrationDeployment',
+  /**
+   * Grants permission to start a network migration mapping
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetworkMigrationMapping.html
+   */
+  StartNetworkMigrationMapping = 'mgn:StartNetworkMigrationMapping',
+  /**
    * Grants permission to start replication
    *
    * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartReplication.html
@@ -597,6 +723,24 @@ export enum AwsMgnActions {
    * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateLaunchConfigurationTemplate.html
    */
   UpdateLaunchConfigurationTemplate = 'mgn:UpdateLaunchConfigurationTemplate',
+  /**
+   * Grants permission to update a network migration definition
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateNetworkMigrationDefinition.html
+   */
+  UpdateNetworkMigrationDefinition = 'mgn:UpdateNetworkMigrationDefinition',
+  /**
+   * Grants permission to update a network migration mapper segment
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateNetworkMigrationMapperSegment.html
+   */
+  UpdateNetworkMigrationMapperSegment = 'mgn:UpdateNetworkMigrationMapperSegment',
+  /**
+   * Grants permission to update a network migration mapper segment construct
+   *
+   * See https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateNetworkMigrationMapperSegmentConstruct.html
+   */
+  UpdateNetworkMigrationMapperSegmentConstruct = 'mgn:UpdateNetworkMigrationMapperSegmentConstruct',
   /**
    * Grants permission to update replication configuration
    *

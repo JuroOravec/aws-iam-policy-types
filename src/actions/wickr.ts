@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awswickr.html
  *
- * 2024-02-12T09:59:39.794Z
+ * 2025-02-24T21:50:09.064Z
  */
 export enum AwsWickrActions {
   /**
@@ -21,6 +21,12 @@ export enum AwsWickrActions {
    * See https://docs.aws.amazon.com/wickr/latest/adminguide/security-iam.html
    */
   CreateNetwork = 'wickr:CreateNetwork',
+  /**
+   * Grants permission to create a delete Wickr networks
+   *
+   * See https://docs.aws.amazon.com/wickr/latest/adminguide/security-iam.html
+   */
+  DeleteNetwork = 'wickr:DeleteNetwork',
   /**
    * Grants permission to view Wickr networks
    *

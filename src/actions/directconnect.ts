@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdirectconnect.html
  *
- * 2024-02-12T09:56:59.213Z
+ * 2025-02-24T21:47:37.892Z
  */
 export enum AwsDirectconnectActions {
   /**

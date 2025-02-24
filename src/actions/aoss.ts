@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonopensearchserverless.html
  *
- * 2024-02-12T09:58:32.171Z
+ * 2025-02-24T21:49:05.491Z
  */
 export enum AwsAossActions {
   /**

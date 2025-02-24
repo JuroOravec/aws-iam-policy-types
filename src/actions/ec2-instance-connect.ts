@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2instanceconnect.html
  *
- * 2024-02-12T09:57:05.076Z
+ * 2025-02-24T21:47:43.549Z
  */
 export enum AwsEc2InstanceConnectActions {
   /**

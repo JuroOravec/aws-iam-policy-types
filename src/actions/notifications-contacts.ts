@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsusernotificationscontacts.html
  *
- * 2024-02-12T09:59:34.992Z
+ * 2025-02-24T21:50:03.786Z
  */
 export enum AwsNotificationsContactsActions {
   /**

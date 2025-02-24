@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awswell-architectedtool.html
  *
- * 2024-02-12T09:59:39.295Z
+ * 2025-02-24T21:50:08.591Z
  */
 export enum AwsWellarchitectedActions {
   /**
@@ -21,6 +21,12 @@ export enum AwsWellarchitectedActions {
    * See https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_AssociateProfiles.html
    */
   AssociateProfiles = 'wellarchitected:AssociateProfiles',
+  /**
+   * Grants permission to configure the integration
+   *
+   * See https://docs.aws.amazon.com/wellarchitected/latest/userguide/setting-up-jira.html
+   */
+  ConfigureIntegration = 'wellarchitected:ConfigureIntegration',
   /**
    * Grants permission to an owner of a lens to share with other AWS accounts and IA
    * M users
@@ -158,6 +164,12 @@ export enum AwsWellarchitectedActions {
    * See https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_GetConsolidatedReport.html
    */
   GetConsolidatedReport = 'wellarchitected:GetConsolidatedReport',
+  /**
+   * Grants permission to get all settings for the account
+   *
+   * See https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_GetGlobalSettings.html
+   */
+  GetGlobalSettings = 'wellarchitected:GetGlobalSettings',
   /**
    * Grants permission to get an existing lens
    *
@@ -370,11 +382,17 @@ export enum AwsWellarchitectedActions {
    */
   UpdateAnswer = 'wellarchitected:UpdateAnswer',
   /**
-   * Grants permission to update settings to enable aws-organization support
+   * Grants permission to manage all settings for the account
    *
    * See https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_UpdateGlobalSettings.html
    */
   UpdateGlobalSettings = 'wellarchitected:UpdateGlobalSettings',
+  /**
+   * Grants permission to update properties of the integration
+   *
+   * See https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_UpdateIntegration.html
+   */
+  UpdateIntegration = 'wellarchitected:UpdateIntegration',
   /**
    * Grants permission to update properties of the specified lens review
    *

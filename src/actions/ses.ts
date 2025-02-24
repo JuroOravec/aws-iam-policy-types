@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsimpleemailservicev2.html
  *
- * 2024-02-12T09:59:16.560Z
+ * 2025-02-24T21:49:46.369Z
  */
 export enum AwsSesActions {
   /**
@@ -95,6 +95,12 @@ export enum AwsSesActions {
    */
   CreateImportJob = 'ses:CreateImportJob',
   /**
+   * Grants permission to create a new multi-region endpoint
+   *
+   * See https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateMultiRegionEndpoint.html
+   */
+  CreateMultiRegionEndpoint = 'ses:CreateMultiRegionEndpoint',
+  /**
    * Grants permission to delete an existing configuration set
    *
    * See https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteConfigurationSet.html
@@ -149,6 +155,12 @@ export enum AwsSesActions {
    * See https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEmailTemplate.html
    */
   DeleteEmailTemplate = 'ses:DeleteEmailTemplate',
+  /**
+   * Grants permission to delete a multi-region endpoint
+   *
+   * See https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteMultiRegionEndpoint.html
+   */
+  DeleteMultiRegionEndpoint = 'ses:DeleteMultiRegionEndpoint',
   /**
    * Grants permission to remove an email address from the suppression list for your
    * account
@@ -285,6 +297,12 @@ export enum AwsSesActions {
    */
   GetMessageInsights = 'ses:GetMessageInsights',
   /**
+   * Grants permission to get information about a multi-region endpoint
+   *
+   * See https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMultiRegionEndpoint.html
+   */
+  GetMultiRegionEndpoint = 'ses:GetMultiRegionEndpoint',
+  /**
    * Grants permission to retrieve information about a specific email address that's
    * on the suppression list for your account
    *
@@ -360,6 +378,12 @@ export enum AwsSesActions {
    * See https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListImportJobs.html
    */
   ListImportJobs = 'ses:ListImportJobs',
+  /**
+   * Grants permission to list all of the multi-region endpoints for your account
+   *
+   * See https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListMultiRegionEndpoints.html
+   */
+  ListMultiRegionEndpoints = 'ses:ListMultiRegionEndpoints',
   /**
    * Grants permission to list recommendations for your account
    *

@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupport.html
  *
- * 2024-02-12T09:59:23.303Z
+ * 2025-02-24T21:49:52.292Z
  */
 export enum AwsSupportActions {
   /**

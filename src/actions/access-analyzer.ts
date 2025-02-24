@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamaccessanalyzer.html
  *
- * 2024-02-12T09:57:37.129Z
+ * 2025-02-24T21:48:12.718Z
  */
 export enum AwsAccessAnalyzerActions {
   /**
@@ -34,6 +34,13 @@ export enum AwsAccessAnalyzerActions {
    * See https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckNoNewAccess.html
    */
   CheckNoNewAccess = 'access-analyzer:CheckNoNewAccess',
+  /**
+   * Grants permission to check that public access is not allowed by a resource poli
+   * cy
+   *
+   * See https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_CheckNoPublicAccess.html
+   */
+  CheckNoPublicAccess = 'access-analyzer:CheckNoPublicAccess',
   /**
    * Grants permission to create an access preview for the specified analyzer
    *
@@ -65,6 +72,12 @@ export enum AwsAccessAnalyzerActions {
    */
   DeleteArchiveRule = 'access-analyzer:DeleteArchiveRule',
   /**
+   * Grants permission to generate recommendation steps to resolve a finding
+   *
+   * See https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GenerateFindingRecommendation.html
+   */
+  GenerateFindingRecommendation = 'access-analyzer:GenerateFindingRecommendation',
+  /**
    * Grants permission to retrieve information about an access preview
    *
    * See https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetAccessPreview.html
@@ -95,6 +108,12 @@ export enum AwsAccessAnalyzerActions {
    * See https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetFindingV2.html
    */
   GetFinding = 'access-analyzer:GetFinding',
+  /**
+   * Grants permission to retrieve recommendation steps to resolve a finding
+   *
+   * See https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_GetFindingRecommendation.html
+   */
+  GetFindingRecommendation = 'access-analyzer:GetFindingRecommendation',
   /**
    * Grants permission to retrieve statistics for findings
    *
@@ -180,6 +199,12 @@ export enum AwsAccessAnalyzerActions {
    * See https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_UntagResource.html
    */
   UntagResource = 'access-analyzer:UntagResource',
+  /**
+   * Grants permission to modify an analyzer's configuration
+   *
+   * See https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_UpdateAnalyzer.html
+   */
+  UpdateAnalyzer = 'access-analyzer:UpdateAnalyzer',
   /**
    * Grants permission to modify an archive rule
    *

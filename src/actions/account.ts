@@ -6,9 +6,16 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsaccountmanagement.html
  *
- * 2024-02-12T09:55:50.277Z
+ * 2025-02-24T21:46:32.436Z
  */
 export enum AwsAccountActions {
+  /**
+   * Grants permission to accept the process to update the primary email address of
+   * an account
+   *
+   * See https://docs.aws.amazon.com/accounts/latest/reference/API_AcceptPrimaryEmailUpdate.html
+   */
+  AcceptPrimaryEmailUpdate = 'account:AcceptPrimaryEmailUpdate',
   /**
    * Grants permission to close an account
    *
@@ -58,6 +65,12 @@ export enum AwsAccountActions {
    */
   GetContactInformation = 'account:GetContactInformation',
   /**
+   * Grants permission to retrieve the primary email address of an account
+   *
+   * See https://docs.aws.amazon.com/accounts/latest/reference/API_GetPrimaryEmail.html
+   */
+  GetPrimaryEmail = 'account:GetPrimaryEmail',
+  /**
    * Grants permission to get the opt-in status of a Region
    *
    * See https://docs.aws.amazon.com/accounts/latest/reference/API_GetRegionOptStatus.html
@@ -87,4 +100,11 @@ export enum AwsAccountActions {
    * See https://docs.aws.amazon.com/accounts/latest/reference/API_PutContactInformation.html
    */
   PutContactInformation = 'account:PutContactInformation',
+  /**
+   * Grants permission to start the process to update the primary email address of a
+   * n account
+   *
+   * See https://docs.aws.amazon.com/accounts/latest/reference/API_StartPrimaryEmailUpdate.html
+   */
+  StartPrimaryEmailUpdate = 'account:StartPrimaryEmailUpdate',
 }

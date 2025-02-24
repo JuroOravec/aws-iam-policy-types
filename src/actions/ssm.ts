@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanager.html
  *
- * 2024-02-12T09:59:25.475Z
+ * 2025-02-24T21:49:54.777Z
  */
 export enum AwsSsmActions {
   /**
@@ -428,6 +428,14 @@ export enum AwsSsmActions {
    */
   DisassociateOpsItemRelatedItem = 'ssm:DisassociateOpsItemRelatedItem',
   /**
+   * Grants permission to a Systems Manager delegated administrator to view related
+   * resource details about OpsItems across multiple AWS accounts in the AWS Managem
+   * ent Console
+   *
+   * See https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html#systems-manager-namespace-other-API-operations
+   */
+  ExecuteAPI = 'ssm:ExecuteAPI',
+  /**
    * Grants permission to view details of a specified Automation execution
    *
    * See https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_AutomationExecution.html
@@ -480,6 +488,13 @@ export enum AwsSsmActions {
    * See https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetDocument.html
    */
   GetDocument = 'ssm:GetDocument',
+  /**
+   * Grants permission to retrieve an existing preview that shows the effects that r
+   * unning a specified Automation runbook would have on the targeted resources
+   *
+   * See https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetExecutionPreview.html
+   */
+  GetExecutionPreview = 'ssm:GetExecutionPreview',
   /**
    * Grants permission to view instance inventory details per the specified criteria
    *
@@ -682,6 +697,20 @@ export enum AwsSsmActions {
    */
   ListInventoryEntries = 'ssm:ListInventoryEntries',
   /**
+   * Grants permission to view details about managed nodes based on specified filter
+   * s
+   *
+   * See https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ListNodes.html
+   */
+  ListNodes = 'ssm:ListNodes',
+  /**
+   * Grants permission to view summary information about managed nodes based on spec
+   * ified filters and aggregators
+   *
+   * See https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ListNodesSummary.html
+   */
+  ListNodesSummary = 'ssm:ListNodesSummary',
+  /**
    * Grants permission to view details about OpsItemEvents
    *
    * See https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ListOpsItemEvents.html
@@ -847,6 +876,13 @@ export enum AwsSsmActions {
    * See https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartChangeRequestExecution.html
    */
   StartChangeRequestExecution = 'ssm:StartChangeRequestExecution',
+  /**
+   * Grants permission to create a preview showing the effects that running a specif
+   * ied Automation runbook would have on the targeted resources
+   *
+   * See https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartExecutionPreview.html
+   */
+  StartExecutionPreview = 'ssm:StartExecutionPreview',
   /**
    * Grants permission to initiate a connection to a specified target for a Session
    * Manager session

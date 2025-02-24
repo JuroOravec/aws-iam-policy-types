@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncognitoidentity.html
  *
- * 2024-02-12T09:56:40.776Z
+ * 2025-02-24T21:47:19.675Z
  */
 export enum AwsCognitoIdentityActions {
   /**

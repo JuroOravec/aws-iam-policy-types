@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscomputeoptimizer.html
  *
- * 2024-02-12T09:56:43.474Z
+ * 2025-02-24T21:47:22.176Z
  */
 export enum AwsComputeOptimizerActions {
   /**
@@ -50,6 +50,13 @@ export enum AwsComputeOptimizerActions {
    */
   ExportECSServiceRecommendations = 'compute-optimizer:ExportECSServiceRecommendations',
   /**
+   * Grants permission to export idle recommendations to S3 for the provided account
+   * s
+   *
+   * See https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_ExportIdleRecommendations.html
+   */
+  ExportIdleRecommendations = 'compute-optimizer:ExportIdleRecommendations',
+  /**
    * Grants permission to export Lambda function recommendations to S3 for the provi
    * ded accounts
    *
@@ -63,6 +70,12 @@ export enum AwsComputeOptimizerActions {
    * See https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_ExportLicenseRecommendations.html
    */
   ExportLicenseRecommendations = 'compute-optimizer:ExportLicenseRecommendations',
+  /**
+   * Grants permission to export rds recommendations to S3 for the provided accounts
+   *
+   * See https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_ExportRDSDatabaseRecommendations.html
+   */
+  ExportRDSDatabaseRecommendations = 'compute-optimizer:ExportRDSDatabaseRecommendations',
   /**
    * Grants permission to get recommendations for the provided AutoScaling groups
    *
@@ -121,6 +134,12 @@ export enum AwsComputeOptimizerActions {
    */
   GetEnrollmentStatusesForOrganization = 'compute-optimizer:GetEnrollmentStatusesForOrganization',
   /**
+   * Grants permission to get idle recommendations for the specified account(s)
+   *
+   * See https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_GetIdleRecommendations.html
+   */
+  GetIdleRecommendations = 'compute-optimizer:GetIdleRecommendations',
+  /**
    * Grants permission to get recommendations for the provided Lambda functions
    *
    * See https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_GetLambdaFunctionRecommendations.html
@@ -132,6 +151,19 @@ export enum AwsComputeOptimizerActions {
    * See https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_GetLicenseRecommendations.html
    */
   GetLicenseRecommendations = 'compute-optimizer:GetLicenseRecommendations',
+  /**
+   * Grants permission to get the recommendation projected metrics of the specified
+   * instance
+   *
+   * See https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_GetRDSDatabaseRecommendationProjectedMetrics.html
+   */
+  GetRDSDatabaseRecommendationProjectedMetrics = 'compute-optimizer:GetRDSDatabaseRecommendationProjectedMetrics',
+  /**
+   * Grants permission to get rds recommendations for the specified account(s)
+   *
+   * See https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_GetRDSDatabaseRecommendations.html
+   */
+  GetRDSDatabaseRecommendations = 'compute-optimizer:GetRDSDatabaseRecommendations',
   /**
    * Grants permission to get recommendation preferences
    *

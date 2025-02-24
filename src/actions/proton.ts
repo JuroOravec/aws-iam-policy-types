@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsproton.html
  *
- * 2024-02-12T09:58:44.421Z
+ * 2025-02-24T21:49:16.750Z
  */
 export enum AwsProtonActions {
   /**

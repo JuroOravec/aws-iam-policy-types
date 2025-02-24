@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscustomerverificationservice.html
  *
- * 2024-02-12T09:56:50.705Z
+ * 2025-02-24T21:47:29.776Z
  */
 export enum AwsCustomerVerificationActions {
   /**
@@ -15,6 +15,12 @@ export enum AwsCustomerVerificationActions {
    * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
    */
   CreateCustomerVerificationDetails = 'customer-verification:CreateCustomerVerificationDetails',
+  /**
+   * Grants permission to create upload URLs
+   *
+   * See https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions
+   */
+  CreateUploadUrls = 'customer-verification:CreateUploadUrls',
   /**
    * Grants permission to get customer verification data
    *

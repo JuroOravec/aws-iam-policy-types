@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbillingconsole.html
  *
- * 2024-02-12T09:56:14.157Z
+ * 2025-02-24T21:46:55.802Z
  */
 export enum AwsAwsPortalActions {
   /**

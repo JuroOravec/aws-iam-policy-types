@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapplicationcostprofilerservice.html
  *
- * 2024-02-12T09:56:02.179Z
+ * 2025-02-24T21:46:43.677Z
  */
 export enum AwsApplicationCostProfilerActions {
   /**

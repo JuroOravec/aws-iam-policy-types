@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalappliancesandsoftwareactivationservice.html
  *
- * 2024-02-12T09:57:15.193Z
+ * 2025-02-24T21:47:51.887Z
  */
 export enum AwsElementalActivationsActions {
   /**
@@ -24,12 +24,32 @@ export enum AwsElementalActivationsActions {
    */
   CompleteFileUpload = 'elemental-activations:CompleteFileUpload',
   /**
+   * Grants permission to confirm asset ownership
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software/
+   */
+  ConfirmAccount = 'elemental-activations:ConfirmAccount',
+  /**
+   * Grants permission to download the kickstart files for AWS Elemental Appliances
+   * and Software purchases
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software/
+   */
+  DownloadKickstart = 'elemental-activations:DownloadKickstart',
+  /**
    * Grants permission to download the Software files for AWS Elemental Appliances a
    * nd Software Purchases
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software/
    */
   DownloadSoftware = 'elemental-activations:DownloadSoftware',
+  /**
+   * Grants permission to generate a software license for an AWS Elemental Appliance
+   * s and Software purchase
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software/
+   */
+  GenerateLicense = 'elemental-activations:GenerateLicense',
   /**
    * Grants permission to generate Software Licenses for AWS Elemental Appliances an
    * d Software Purchases
@@ -38,24 +58,35 @@ export enum AwsElementalActivationsActions {
    */
   GenerateLicenses = 'elemental-activations:GenerateLicenses',
   /**
-   * Grants permission to describe an activation
+   * Grants permission to describe the software version of an artifact group
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software/
    */
-  GetActivation = 'elemental-activations:GetActivation',
+  GetArtifactGroupSoftwareVersions = 'elemental-activations:GetArtifactGroupSoftwareVersions',
   /**
-   * Grants permission to list tags for an AWS Elemental Activations resource
+   * Grants permission to describe an asset
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software/
    */
-  ListTagsForResource = 'elemental-activations:ListTagsForResource',
+  GetAsset = 'elemental-activations:GetAsset',
   /**
-   * Grants permission to start the process of registering customer account for AWS
-   * Elemental Appliances and Software Purchases
+   * Grants permission to describe assets associated to the requesting account
    *
    * See https://docs.aws.amazon.com/elemental-appliances-software/
    */
-  StartAccountRegistration = 'elemental-activations:StartAccountRegistration',
+  GetAssets = 'elemental-activations:GetAssets',
+  /**
+   * Grants permission to get all product advisories
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software/
+   */
+  GetProductAdvisories = 'elemental-activations:GetProductAdvisories',
+  /**
+   * Grants permission to describe available software versions
+   *
+   * See https://docs.aws.amazon.com/elemental-appliances-software/
+   */
+  GetSoftwareVersions = 'elemental-activations:GetSoftwareVersions',
   /**
    * Grants permission to start the process of uploading a Software file for AWS Ele
    * mental Appliances and Software Purchases
@@ -63,16 +94,4 @@ export enum AwsElementalActivationsActions {
    * See https://docs.aws.amazon.com/elemental-appliances-software/
    */
   StartFileUpload = 'elemental-activations:StartFileUpload',
-  /**
-   * Grants permission to add a tag for an AWS Elemental Activations resource
-   *
-   * See https://docs.aws.amazon.com/elemental-appliances-software/
-   */
-  TagResource = 'elemental-activations:TagResource',
-  /**
-   * Grants permission to remove a tag from an AWS Elemental Activations resource
-   *
-   * See https://docs.aws.amazon.com/elemental-appliances-software/
-   */
-  UntagResource = 'elemental-activations:UntagResource',
 }

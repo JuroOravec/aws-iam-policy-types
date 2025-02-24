@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsfaultinjectionservice.html
  *
- * 2024-02-12T09:57:24.676Z
+ * 2025-02-24T21:48:01.987Z
  */
 export enum AwsFisActions {
   /**
@@ -58,6 +58,12 @@ export enum AwsFisActions {
    * See https://docs.aws.amazon.com/fis/latest/APIReference/API_GetExperimentTemplate.html
    */
   GetExperimentTemplate = 'fis:GetExperimentTemplate',
+  /**
+   * Grants permission to get information about the safety lever
+   *
+   * See https://docs.aws.amazon.com/fis/latest/APIReference/API_GetSafetyLever.html
+   */
+  GetSafetyLever = 'fis:GetSafetyLever',
   /**
    * Grants permission to retrieve an AWS FIS target account configuration for an AW
    * S FIS experiment template
@@ -171,6 +177,12 @@ export enum AwsFisActions {
    * See https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateExperimentTemplate.html
    */
   UpdateExperimentTemplate = 'fis:UpdateExperimentTemplate',
+  /**
+   * Grants permission to update the state of the safety lever
+   *
+   * See https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateSafetyLeverState.html
+   */
+  UpdateSafetyLeverState = 'fis:UpdateSafetyLeverState',
   /**
    * Grants permission to update an AWS FIS target account configuration
    *

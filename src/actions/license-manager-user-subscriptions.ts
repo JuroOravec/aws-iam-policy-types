@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslicensemanagerusersubscriptions.html
  *
- * 2024-02-12T09:58:05.663Z
+ * 2025-02-24T21:48:37.552Z
  */
 export enum AwsLicenseManagerUserSubscriptionsActions {
   /**
@@ -16,6 +16,20 @@ export enum AwsLicenseManagerUserSubscriptionsActions {
    * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_AssociateUser.html
    */
   AssociateUser = 'license-manager-user-subscriptions:AssociateUser',
+  /**
+   * Grants permission to create a license server endpoint for a given server type f
+   * or a given Identity Provider
+   *
+   * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_CreateLicenseServerEndpoint.html
+   */
+  CreateLicenseServerEndpoint = 'license-manager-user-subscriptions:CreateLicenseServerEndpoint',
+  /**
+   * Grants permission to delete a license server endpoint for a given server type f
+   * or a given Identity Provider
+   *
+   * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_DeleteLicenseServerEndpoint.html
+   */
+  DeleteLicenseServerEndpoint = 'license-manager-user-subscriptions:DeleteLicenseServerEndpoint',
   /**
    * Grants permission to deregister Microsoft Active Directory with license-manager
    * -user-subscriptions for a product
@@ -45,12 +59,24 @@ export enum AwsLicenseManagerUserSubscriptionsActions {
    */
   ListInstances = 'license-manager-user-subscriptions:ListInstances',
   /**
+   * Grants permission to list license server endpoints
+   *
+   * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_ListLicenseServerEndpoints.html
+   */
+  ListLicenseServerEndpoints = 'license-manager-user-subscriptions:ListLicenseServerEndpoints',
+  /**
    * Grants permission to lists all the product subscriptions for a product and iden
    * tity provider
    *
    * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_ListProductSubscriptions.html
    */
   ListProductSubscriptions = 'license-manager-user-subscriptions:ListProductSubscriptions',
+  /**
+   * Grants permission to list tags for a selected resource
+   *
+   * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_ListTagsForResource.html
+   */
+  ListTagsForResource = 'license-manager-user-subscriptions:ListTagsForResource',
   /**
    * Grants permission to list all the users associated to an instance launched for
    * a product
@@ -79,6 +105,18 @@ export enum AwsLicenseManagerUserSubscriptionsActions {
    * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StopProductSubscription.html
    */
   StopProductSubscription = 'license-manager-user-subscriptions:StopProductSubscription',
+  /**
+   * Grants permission to tag a selected resource
+   *
+   * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_TagResource.html
+   */
+  TagResource = 'license-manager-user-subscriptions:TagResource',
+  /**
+   * Grants permission to untag a selected resource
+   *
+   * See https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_UntagResource.html
+   */
+  UntagResource = 'license-manager-user-subscriptions:UntagResource',
   /**
    * Grants permission to update the identity provider configuration
    *

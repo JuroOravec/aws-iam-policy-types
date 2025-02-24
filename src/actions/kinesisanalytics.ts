@@ -6,197 +6,209 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkinesisanalyticsv2.html
  *
- * 2024-02-12T09:57:58.975Z
+ * 2025-02-24T21:48:32.085Z
  */
 export enum AwsKinesisanalyticsActions {
   /**
    * Grants permission to add cloudwatch logging option to the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationCloudWatchLoggingOption.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplicationCloudWatchLoggingOption.html
    */
   AddApplicationCloudWatchLoggingOption = 'kinesisanalytics:AddApplicationCloudWatchLoggingOption',
   /**
    * Grants permission to add input to the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationInput.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplicationInput.html
    */
   AddApplicationInput = 'kinesisanalytics:AddApplicationInput',
   /**
    * Grants permission to add input processing configuration to the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationInputProcessingConfiguration.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplicationInputProcessingConfiguration.html
    */
   AddApplicationInputProcessingConfiguration = 'kinesisanalytics:AddApplicationInputProcessingConfiguration',
   /**
    * Grants permission to add output to the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationOutput.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplicationOutput.html
    */
   AddApplicationOutput = 'kinesisanalytics:AddApplicationOutput',
   /**
    * Grants permission to add reference data source to the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationReferenceDataSource.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplicationReferenceDataSource.html
    */
   AddApplicationReferenceDataSource = 'kinesisanalytics:AddApplicationReferenceDataSource',
   /**
    * Grants permission to add VPC configuration to the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationVpcConfiguration.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplicationVpcConfiguration.html
    */
   AddApplicationVpcConfiguration = 'kinesisanalytics:AddApplicationVpcConfiguration',
   /**
    * Grants permission to create an application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplication.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplication.html
    */
   CreateApplication = 'kinesisanalytics:CreateApplication',
   /**
    * Grants permission to create and return a URL that you can use to connect to an
    * application's extension
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplicationPresignedUrl.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplicationPresignedUrl.html
    */
   CreateApplicationPresignedUrl = 'kinesisanalytics:CreateApplicationPresignedUrl',
   /**
    * Grants permission to create a snapshot for an application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplicationSnapshot.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplicationSnapshot.html
    */
   CreateApplicationSnapshot = 'kinesisanalytics:CreateApplicationSnapshot',
   /**
    * Grants permission to delete the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplication.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplication.html
    */
   DeleteApplication = 'kinesisanalytics:DeleteApplication',
   /**
    * Grants permission to delete the specified cloudwatch logging option of the appl
    * ication
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationCloudWatchLoggingOption.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationCloudWatchLoggingOption.html
    */
   DeleteApplicationCloudWatchLoggingOption = 'kinesisanalytics:DeleteApplicationCloudWatchLoggingOption',
   /**
    * Grants permission to delete the specified input processing configuration of the
    * application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationInputProcessingConfiguration.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationInputProcessingConfiguration.html
    */
   DeleteApplicationInputProcessingConfiguration = 'kinesisanalytics:DeleteApplicationInputProcessingConfiguration',
   /**
    * Grants permission to delete the specified output of the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationOutput.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationOutput.html
    */
   DeleteApplicationOutput = 'kinesisanalytics:DeleteApplicationOutput',
   /**
    * Grants permission to delete the specified reference data source of the applicat
    * ion
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationReferenceDataSource.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationReferenceDataSource.html
    */
   DeleteApplicationReferenceDataSource = 'kinesisanalytics:DeleteApplicationReferenceDataSource',
   /**
    * Grants permission to delete a snapshot for an application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationSnapshot.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationSnapshot.html
    */
   DeleteApplicationSnapshot = 'kinesisanalytics:DeleteApplicationSnapshot',
   /**
    * Grants permission to delete the specified VPC configuration of the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationVpcConfiguration.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApplicationVpcConfiguration.html
    */
   DeleteApplicationVpcConfiguration = 'kinesisanalytics:DeleteApplicationVpcConfiguration',
   /**
    * Grants permission to describe the specified application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DescribeApplication.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeApplication.html
    */
   DescribeApplication = 'kinesisanalytics:DescribeApplication',
   /**
+   * Grants permission to describe an application operation of an application
+   *
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeApplicationOperation.html
+   */
+  DescribeApplicationOperation = 'kinesisanalytics:DescribeApplicationOperation',
+  /**
    * Grants permission to describe an application snapshot
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DescribeApplicationSnapshot.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeApplicationSnapshot.html
    */
   DescribeApplicationSnapshot = 'kinesisanalytics:DescribeApplicationSnapshot',
   /**
    * Grants permission to describe the application version of an application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DescribeApplicationVersion.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeApplicationVersion.html
    */
   DescribeApplicationVersion = 'kinesisanalytics:DescribeApplicationVersion',
   /**
    * Grants permission to discover the input schema for the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DiscoverInputSchema.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DiscoverInputSchema.html
    */
   DiscoverInputSchema = 'kinesisanalytics:DiscoverInputSchema',
   /**
+   * Grants permission to list application operations of an application
+   *
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListApplicationOperations.html
+   */
+  ListApplicationOperations = 'kinesisanalytics:ListApplicationOperations',
+  /**
    * Grants permission to list the snapshots for an application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListApplicationSnapshots.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListApplicationSnapshots.html
    */
   ListApplicationSnapshots = 'kinesisanalytics:ListApplicationSnapshots',
   /**
    * Grants permission to list application versions of an application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListApplicationVersions.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListApplicationVersions.html
    */
   ListApplicationVersions = 'kinesisanalytics:ListApplicationVersions',
   /**
    * Grants permission to list applications for the account
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListApplications.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListApplications.html
    */
   ListApplications = 'kinesisanalytics:ListApplications',
   /**
    * Grants permission to fetch the tags associated with the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListTagsForResource.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListTagsForResource.html
    */
   ListTagsForResource = 'kinesisanalytics:ListTagsForResource',
   /**
    * Grants permission to perform rollback operation on an application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_RollbackApplication.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_RollbackApplication.html
    */
   RollbackApplication = 'kinesisanalytics:RollbackApplication',
   /**
    * Grants permission to start the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_StartApplication.html
    */
   StartApplication = 'kinesisanalytics:StartApplication',
   /**
    * Grants permission to stop the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_StopApplication.html
    */
   StopApplication = 'kinesisanalytics:StopApplication',
   /**
    * Grants permission to add tags to the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_TagResource.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_TagResource.html
    */
   TagResource = 'kinesisanalytics:TagResource',
   /**
    * Grants permission to remove the specified tags from the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_UntagResource.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UntagResource.html
    */
   UntagResource = 'kinesisanalytics:UntagResource',
   /**
    * Grants permission to update the application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_UpdateApplication.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html
    */
   UpdateApplication = 'kinesisanalytics:UpdateApplication',
   /**
    * Grants permission to update the maintenance configuration of an application
    *
-   * See https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_UpdateApplicationMaintenanceConfiguration.html
+   * See https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplicationMaintenanceConfiguration.html
    */
   UpdateApplicationMaintenanceConfiguration = 'kinesisanalytics:UpdateApplicationMaintenanceConfiguration',
 }

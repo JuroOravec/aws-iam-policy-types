@@ -6,9 +6,15 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdataexchange.html
  *
- * 2024-02-12T09:56:51.283Z
+ * 2025-02-24T21:47:30.279Z
  */
 export enum AwsDataexchangeActions {
+  /**
+   * Grants permission to accept a data grant
+   *
+   * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_AcceptDataGrant.html
+   */
+  AcceptDataGrant = 'dataexchange:AcceptDataGrant',
   /**
    * Grants permission to cancel a job
    *
@@ -21,6 +27,12 @@ export enum AwsDataexchangeActions {
    * See https://docs.aws.amazon.com/data-exchange/latest/userguide/api-permissions-ref.html
    */
   CreateAsset = 'dataexchange:CreateAsset',
+  /**
+   * Grants permission to create a data grant
+   *
+   * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_CreateDataGrant.html
+   */
+  CreateDataGrant = 'dataexchange:CreateDataGrant',
   /**
    * Grants permission to create a data set
    *
@@ -52,6 +64,12 @@ export enum AwsDataexchangeActions {
    */
   DeleteAsset = 'dataexchange:DeleteAsset',
   /**
+   * Grants permission to delete a data grant
+   *
+   * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_DeleteDataGrant.html
+   */
+  DeleteDataGrant = 'dataexchange:DeleteDataGrant',
+  /**
    * Grants permission to delete a data set
    *
    * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_DeleteDataSet.html
@@ -77,6 +95,12 @@ export enum AwsDataexchangeActions {
    */
   GetAsset = 'dataexchange:GetAsset',
   /**
+   * Grants permission to get a data grant
+   *
+   * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_GetDataGrant.html
+   */
+  GetDataGrant = 'dataexchange:GetDataGrant',
+  /**
    * Grants permission to get information about a data set
    *
    * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_GetDataSet.html
@@ -95,11 +119,23 @@ export enum AwsDataexchangeActions {
    */
   GetJob = 'dataexchange:GetJob',
   /**
+   * Grants permission to get a received data grant
+   *
+   * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_GetReceivedDataGrant.html
+   */
+  GetReceivedDataGrant = 'dataexchange:GetReceivedDataGrant',
+  /**
    * Grants permission to get information about a revision
    *
    * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_GetRevision.html
    */
   GetRevision = 'dataexchange:GetRevision',
+  /**
+   * Grants permission to list data grants for the account
+   *
+   * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_ListDataGrants.html
+   */
+  ListDataGrants = 'dataexchange:ListDataGrants',
   /**
    * Grants permission to list the revisions of a data set
    *
@@ -125,6 +161,12 @@ export enum AwsDataexchangeActions {
    */
   ListJobs = 'dataexchange:ListJobs',
   /**
+   * Grants permission to list received data grants for the account
+   *
+   * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_ListReceivedDataGrants.html
+   */
+  ListReceivedDataGrants = 'dataexchange:ListReceivedDataGrants',
+  /**
    * Grants permission to get list the assets of a revision
    *
    * See https://docs.aws.amazon.com/data-exchange/latest/apireference/API_ListRevisionAssets.html
@@ -138,11 +180,17 @@ export enum AwsDataexchangeActions {
    */
   ListTagsForResource = 'dataexchange:ListTagsForResource',
   /**
-   * Grants permission to publish a data set
+   * Grants permission to publish a data set to a product
    *
    * See https://docs.aws.amazon.com/data-exchange/latest/userguide/api-permissions-ref.html
    */
   PublishDataSet = 'dataexchange:PublishDataSet',
+  /**
+   * Grants permission to publish a data set to a data grant
+   *
+   * See https://docs.aws.amazon.com/data-exchange/latest/userguide/api-permissions-ref.html
+   */
+  PublishToDataGrant = 'dataexchange:PublishToDataGrant',
   /**
    * Grants permission to revoke subscriber access to a revision
    *

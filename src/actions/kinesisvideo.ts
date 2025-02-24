@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkinesisvideostreams.html
  *
- * 2024-02-12T09:58:01.187Z
+ * 2025-02-24T21:48:33.529Z
  */
 export enum AwsKinesisvideoActions {
   /**
@@ -127,7 +127,7 @@ export enum AwsKinesisvideoActions {
   /**
    * Grants permission to get the ICE server configuration
    *
-   * See https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_AWSAcuitySignalingService_GetIceServerConfig.html
+   * See https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_signaling_GetIceServerConfig.html
    */
   GetIceServerConfig = 'kinesisvideo:GetIceServerConfig',
   /**
@@ -158,9 +158,15 @@ export enum AwsKinesisvideoActions {
   /**
    * Grants permission to join a storage session for a channel
    *
-   * See https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_AWSAcuityRoutingServiceLambda_JoinStorageSession.html
+   * See https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html
    */
   JoinStorageSession = 'kinesisvideo:JoinStorageSession',
+  /**
+   * Grants permission to join a storage session for a channel as viewer
+   *
+   * See https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html
+   */
+  JoinStorageSessionAsViewer = 'kinesisvideo:JoinStorageSessionAsViewer',
   /**
    * Grants permission to list an edge agent configurations
    *
@@ -207,7 +213,7 @@ export enum AwsKinesisvideoActions {
   /**
    * Grants permission to send the Alexa SDP offer to the master
    *
-   * See https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_AWSAcuitySignalingService_SendAlexaOfferToMaster.html
+   * See https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_signaling_SendAlexaOfferToMaster.html
    */
   SendAlexaOfferToMaster = 'kinesisvideo:SendAlexaOfferToMaster',
   /**

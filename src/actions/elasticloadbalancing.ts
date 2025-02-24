@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticloadbalancingv2.html
  *
- * 2024-02-12T09:57:12.045Z
+ * 2025-02-24T21:47:49.363Z
  */
 export enum AwsElasticloadbalancingActions {
   /**
@@ -79,6 +79,12 @@ export enum AwsElasticloadbalancingActions {
    */
   DeleteRule = 'elasticloadbalancing:DeleteRule',
   /**
+   * Grants permission to delete the specified shared trust store association
+   *
+   * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteSharedTrustStoreAssociation.html
+   */
+  DeleteSharedTrustStoreAssociation = 'elasticloadbalancing:DeleteSharedTrustStoreAssociation',
+  /**
    * Grants permission to delete the specified target group
    *
    * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteTargetGroup.html
@@ -104,6 +110,18 @@ export enum AwsElasticloadbalancingActions {
    * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeAccountLimits.html
    */
   DescribeAccountLimits = 'elasticloadbalancing:DescribeAccountLimits',
+  /**
+   * Grants permission to describe the capacity reservation for a load balancer
+   *
+   * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeCapacityReservation.html
+   */
+  DescribeCapacityReservation = 'elasticloadbalancing:DescribeCapacityReservation',
+  /**
+   * Grants permission to describe the attributes for the specified listener
+   *
+   * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeListenerAttributes.html
+   */
+  DescribeListenerAttributes = 'elasticloadbalancing:DescribeListenerAttributes',
   /**
    * Grants permission to describe the certificates for the specified secure listene
    * r
@@ -192,6 +210,12 @@ export enum AwsElasticloadbalancingActions {
    */
   DescribeTrustStores = 'elasticloadbalancing:DescribeTrustStores',
   /**
+   * Grants permission to retrieve the resource policy associated with the resource
+   *
+   * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_GetResourcePolicy.html
+   */
+  GetResourcePolicy = 'elasticloadbalancing:GetResourcePolicy',
+  /**
    * Grants permission to retrieve a trust store CA certificates bundle
    *
    * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_GetTrustStoreCaCertificatesBundle.html
@@ -204,11 +228,23 @@ export enum AwsElasticloadbalancingActions {
    */
   GetTrustStoreRevocationContent = 'elasticloadbalancing:GetTrustStoreRevocationContent',
   /**
+   * Grants permission to modify the capacity reservation for a load balancer
+   *
+   * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyCapacityReservation.html
+   */
+  ModifyCapacityReservation = 'elasticloadbalancing:ModifyCapacityReservation',
+  /**
    * Grants permission to modify the specified properties of the specified listener
    *
    * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyListener.html
    */
   ModifyListener = 'elasticloadbalancing:ModifyListener',
+  /**
+   * Grants permission to modify the attributes of the specified listener
+   *
+   * See https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyListenerAttributes.html
+   */
+  ModifyListenerAttributes = 'elasticloadbalancing:ModifyListenerAttributes',
   /**
    * Grants permission to modify the attributes of the specified load balancer
    *

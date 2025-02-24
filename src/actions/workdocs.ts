@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkdocs.html
  *
- * 2024-02-12T09:59:40.371Z
+ * 2025-02-24T21:50:09.556Z
  */
 export enum AwsWorkdocsActions {
   /**
@@ -213,6 +213,12 @@ export enum AwsWorkdocsActions {
    */
   DescribeGroups = 'workdocs:DescribeGroups',
   /**
+   * Grants permission to describe the export history for an instance
+   *
+   * See https://docs.aws.amazon.com/workdocs/latest/adminguide/migration-tool.html
+   */
+  DescribeInstanceExports = 'workdocs:DescribeInstanceExports',
+  /**
    * Grants permission to describe instances
    *
    * See https://docs.aws.amazon.com/workdocs/latest/adminguide/getting_started.html
@@ -343,6 +349,12 @@ export enum AwsWorkdocsActions {
    * See https://docs.aws.amazon.com/workdocs/latest/APIReference/API_SearchResources.html
    */
   SearchResources = 'workdocs:SearchResources',
+  /**
+   * Grants permission to start an export for an instance
+   *
+   * See https://docs.aws.amazon.com/workdocs/latest/adminguide/migration-tool.html
+   */
+  StartInstanceExport = 'workdocs:StartInstanceExport',
   /**
    * Grants permission to update the specified attributes of the specified document
    *

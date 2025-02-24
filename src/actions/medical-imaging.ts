@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthimaging.html
  *
- * 2024-02-12T09:57:34.489Z
+ * 2025-02-24T21:48:10.746Z
  */
 export enum AwsMedicalImagingActions {
   /**
@@ -39,6 +39,25 @@ export enum AwsMedicalImagingActions {
    * See https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDICOMImportJob.html
    */
   GetDICOMImportJob = 'medical-imaging:GetDICOMImportJob',
+  /**
+   * Grants permission to get dicom instance in dcm format
+   *
+   * See https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_dicom_GetDICOMInstance.html
+   */
+  GetDICOMInstance = 'medical-imaging:GetDICOMInstance',
+  /**
+   * Grants permission to get dicom instance frames in format requested by the custo
+   * mer
+   *
+   * See https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_dicom_GetDICOMInstanceFrames.html
+   */
+  GetDICOMInstanceFrames = 'medical-imaging:GetDICOMInstanceFrames',
+  /**
+   * Grants permission to get dicom instance metadata in DICOM JSON format
+   *
+   * See https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_dicom_GetDICOMInstanceMetadata.html
+   */
+  GetDICOMInstanceMetadata = 'medical-imaging:GetDICOMInstanceMetadata',
   /**
    * Grants permission to get data store properties
    *

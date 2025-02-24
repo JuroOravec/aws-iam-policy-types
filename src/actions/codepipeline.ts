@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodepipeline.html
  *
- * 2024-02-12T09:56:38.075Z
+ * 2025-02-24T21:47:17.276Z
  */
 export enum AwsCodepipelineActions {
   /**
@@ -144,6 +144,19 @@ export enum AwsCodepipelineActions {
    */
   ListPipelines = 'codepipeline:ListPipelines',
   /**
+   * Grants permission to list the rule executions that have occurred in a pipeline
+   *
+   * See https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_ListRuleExecutions.html
+   */
+  ListRuleExecutions = 'codepipeline:ListRuleExecutions',
+  /**
+   * Grants permission to list a summary of all the rule types available for pipelin
+   * es in your account
+   *
+   * See https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_ListRuleTypes.html
+   */
+  ListRuleTypes = 'codepipeline:ListRuleTypes',
+  /**
    * Grants permission to list tags for a CodePipeline resource
    *
    * See https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_ListTagsForResource.html
@@ -155,6 +168,13 @@ export enum AwsCodepipelineActions {
    * See https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_ListWebhooks.html
    */
   ListWebhooks = 'codepipeline:ListWebhooks',
+  /**
+   * Grants permission to resume the pipeline execution by overriding a condition in
+   * a stage
+   *
+   * See https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_OverrideStageCondition.html
+   */
+  OverrideStageCondition = 'codepipeline:OverrideStageCondition',
   /**
    * Grants permission to view information about any jobs for CodePipeline to act on
    *
@@ -229,6 +249,12 @@ export enum AwsCodepipelineActions {
    * See https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_RetryStageExecution.html
    */
   RetryStageExecution = 'codepipeline:RetryStageExecution',
+  /**
+   * Grants permission to rollback the stage to a previous successful execution
+   *
+   * See https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_RollbackStage.html
+   */
+  RollbackStage = 'codepipeline:RollbackStage',
   /**
    * Grants permission to run the most recent revision through the pipeline
    *

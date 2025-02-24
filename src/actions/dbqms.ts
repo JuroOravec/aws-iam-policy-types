@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_databasequerymetadataservice.html
  *
- * 2024-02-12T09:56:53.479Z
+ * 2025-02-24T21:47:32.303Z
  */
 export enum AwsDbqmsActions {
   /**

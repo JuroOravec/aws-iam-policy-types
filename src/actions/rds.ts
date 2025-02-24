@@ -6,7 +6,7 @@
  * Extracted by `aws-iam-policy` from
  * https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrds.html
  *
- * 2024-02-12T09:58:48.711Z
+ * 2025-02-24T21:49:21.063Z
  */
 export enum AwsRdsActions {
   /**
@@ -63,6 +63,12 @@ export enum AwsRdsActions {
    */
   CancelExportTask = 'rds:CancelExportTask',
   /**
+   * Grants permission to copy a custom engine version
+   *
+   * See https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrds.html
+   */
+  CopyCustomDBEngineVersion = 'rds:CopyCustomDBEngineVersion',
+  /**
    * Grants permission to copy the specified DB cluster parameter group
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDBClusterParameterGroup.html
@@ -113,7 +119,7 @@ export enum AwsRdsActions {
   CreateDBCluster = 'rds:CreateDBCluster',
   /**
    * Grants permission to create a new custom endpoint and associates it with an Ama
-   * zon Aurora DB cluster
+   * zon Aurora DB cluster or Amazon DocumentDB cluster
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBClusterEndpoint.html
    */
@@ -193,8 +199,8 @@ export enum AwsRdsActions {
    */
   CreateEventSubscription = 'rds:CreateEventSubscription',
   /**
-   * Grants permission to create an Aurora global database spread across multiple re
-   * gions
+   * Grants permission to create an Aurora global database or DocumentDB global data
+   * base spread across multiple regions
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateGlobalCluster.html
    */
@@ -252,7 +258,7 @@ export enum AwsRdsActions {
   DeleteDBClusterAutomatedBackup = 'rds:DeleteDBClusterAutomatedBackup',
   /**
    * Grants permission to delete a custom endpoint and removes it from an Amazon Aur
-   * ora DB cluster
+   * ora DB cluster or Amazon DocumentDB cluster
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBClusterEndpoint.html
    */
@@ -426,7 +432,8 @@ export enum AwsRdsActions {
    */
   DescribeDBClusterSnapshots = 'rds:DescribeDBClusterSnapshots',
   /**
-   * Grants permission to return information about provisioned Aurora DB clusters
+   * Grants permission to return information about provisioned Aurora DB clusters or
+   * DocumentDB clusters
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusters.html
    */
@@ -520,6 +527,13 @@ export enum AwsRdsActions {
    */
   DescribeDBSnapshotAttributes = 'rds:DescribeDBSnapshotAttributes',
   /**
+   * Grants permission to return information about tenant databases in DB snapshots.
+   * You can filter by Region or snapshot
+   *
+   * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBSnapshotTenantDatabases.html
+   */
+  DescribeDBSnapshotTenantDatabases = 'rds:DescribeDBSnapshotTenantDatabases',
+  /**
    * Grants permission to return information about DB snapshots
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBSnapshots.html
@@ -531,13 +545,6 @@ export enum AwsRdsActions {
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBSubnetGroups.html
    */
   DescribeDBSubnetGroups = 'rds:DescribeDBSubnetGroups',
-  /**
-   * Grants permission to return information about tenant databases in DB snapshots.
-   * You can filter by Region or snapshot
-   *
-   * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBSnapshotTenantDatabases.html
-   */
-  DescribeDbSnapshotTenantDatabases = 'rds:DescribeDbSnapshotTenantDatabases',
   /**
    * Grants permission to return the default engine and system parameter information
    * for the cluster database engine
@@ -580,7 +587,8 @@ export enum AwsRdsActions {
    */
   DescribeExportTasks = 'rds:DescribeExportTasks',
   /**
-   * Grants permission to return information about Aurora global database clusters
+   * Grants permission to return information about Aurora global database clusters o
+   * r DocumentDB global database clusters
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeGlobalClusters.html
    */
@@ -733,14 +741,15 @@ export enum AwsRdsActions {
    */
   ModifyCustomDBEngineVersion = 'rds:ModifyCustomDBEngineVersion',
   /**
-   * Grants permission to modify a setting for an Amazon Aurora DB cluster
+   * Grants permission to modify a setting for an Amazon Aurora DB cluster or Amazon
+   * DocumentDB cluster
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html
    */
   ModifyDBCluster = 'rds:ModifyDBCluster',
   /**
    * Grants permission to modify the properties of an endpoint in an Amazon Aurora D
-   * B cluster
+   * B cluster or Amazon DocumentDB cluster
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterEndpoint.html
    */
@@ -828,11 +837,18 @@ export enum AwsRdsActions {
    */
   ModifyEventSubscription = 'rds:ModifyEventSubscription',
   /**
-   * Grants permission to modify a setting for an Amazon Aurora global cluster
+   * Grants permission to modify a setting for an Amazon Aurora global cluster or Am
+   * azon DocumentDB global cluster
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyGlobalCluster.html
    */
   ModifyGlobalCluster = 'rds:ModifyGlobalCluster',
+  /**
+   * Grants permission to modify an Aurora zero-ETL integration with Redshift
+   *
+   * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyIntegration.html
+   */
+  ModifyIntegration = 'rds:ModifyIntegration',
   /**
    * Grants permission to modify an existing option group
    *
@@ -897,7 +913,7 @@ export enum AwsRdsActions {
   RegisterDBProxyTargets = 'rds:RegisterDBProxyTargets',
   /**
    * Grants permission to detach an Aurora secondary cluster from an Aurora global d
-   * atabase cluster
+   * atabase cluster or DocumentDB global cluster
    *
    * See https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RemoveFromGlobalCluster.html
    */
