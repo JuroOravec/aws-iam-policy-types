@@ -192,20 +192,24 @@ export const extract = async () => {
   for (const service of services) {
     // Extract specific page
     const doc = await fetchHtml(service.href);
-    const { actions, servicePrefix } = await extractAwsPolicyActionsFromServicePage(doc);
-    const { name, content } = formatAwsPolicyActionsForService({
-      url: service.href,
-      serviceName: service.name,
-      servicePrefix,
-      actions,
-    });
+    try {
+      const { actions, servicePrefix } = await extractAwsPolicyActionsFromServicePage(doc);
+      const { name, content } = formatAwsPolicyActionsForService({
+        url: service.href,
+        serviceName: service.name,
+        servicePrefix,
+        actions,
+      });
 
-    // Save it to a file
-    const filename = path.join(actionsDir, `${servicePrefix}.ts`);
-    await fps.writeFile(filename, content, 'utf-8');
+      // Save it to a file
+      const filename = path.join(actionsDir, `${servicePrefix}.ts`);
+      await fps.writeFile(filename, content, 'utf-8');
 
-    // Allow to import the file from the package
-    importPaths.push({ name, path: `./actions/${servicePrefix}` });
+      // Allow to import the file from the package
+      importPaths.push({ name, path: `./actions/${servicePrefix}` });
+    } catch (e) {
+      console.error('skipping', service, 'due to', e.message);
+    }
 
     // Wait to avoid making rate limiting against AWS docs
     await wait(250);
